@@ -1,5 +1,5 @@
 import afriglobe from "../../assets/images/afriglobe.png";
-import appzone from "../../assets/images/appzone.png";
+import appzone from "../../assets/images/Appzone.png";
 import palmpay from "../../assets/images/palmpay.png";
 import wetfire from "../../assets/images/wetfire.png";
 import vilo from "../../assets/images/vilo.png";
