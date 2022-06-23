@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import group11 from "../../assets/images/group11.png";
+import group11 from "../../assets/images/Group11.png";
 import coma from "../../assets/images/coma.png";
 import Carousel from "react-material-ui-carousel";
 
