@@ -18,7 +18,7 @@ function HeroSection() {
           data-aos="fade-right"
           data-aos-duration="2000"
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-[#222057] font-gilroy text-center lg:text-left  w-full align-left text-[#232323] mb-4 lg:leading-snug	">
+          <h1 className="text-4xl md:text-5xl font-bold  font-gilroy text-center lg:text-left  w-full align-left text-[#222057] mb-4 lg:leading-snug	">
             Acquire <span className="text-amber-500">Tech Skills</span> For a
             Borderless Career.
           </h1>
