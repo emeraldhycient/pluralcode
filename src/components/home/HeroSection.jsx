@@ -14,9 +14,9 @@ function HeroSection() {
           <h1 className="text-5xl font-bold text-[#222057] font-gilroy text-left w-full align-left text-[#232323] mb-4 leading-snug	">
             Acquire Tech Skills For a Borderless Career.
           </h1>
-          <p className="font-gilroy text-[#232323] mb-8">
-            Learn from elite level mentor and become a top level professional in
-            the field of tech
+          <p className="font-gilroyregular text-[16px] font-extralight text-[#232323] mb-8">
+            Learn from elite level mentor and become a top level <br />
+            professional in the field of tech
           </p>
           <div className="flex  items-center">
             <GetStarted />

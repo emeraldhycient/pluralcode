@@ -27,18 +27,10 @@ function BridgingGap() {
     },
     {
       id: 3,
-      title: "For Impact",
+      title: "Impact (CSR)",
       description:
         "A bridging gap is a gap between two or more skills that can be bridged to create a new skill. It is a way to create a new skill from existing skills.",
       image: group35,
-      link: "/bridging-gap",
-    },
-    {
-      id: 4,
-      title: "For Impact",
-      description:
-        "A bridging gap is a gap between two or more skills that can be bridged to create a new skill. It is a way to create a new skill from existing skills.",
-      image: group33,
       link: "/bridging-gap",
     },
   ]);
@@ -72,10 +64,10 @@ function BridgingGap() {
               data-aos="fade-right"
               data-aos-duration="2000"
             >
-              <h1 className="text-2xl font-bold text-[#222057] font-gilroy text-left w-full align-left text-[#232323] mb-4 leading-snug	">
+              <h1 className="text-[36px] font-extralight text-[#222057] font-gilroymedium text-left w-full align-left text-[#232323] mb-4 leading-snug	">
                 {gap.title}
               </h1>
-              <p className="font-gilroy text-[#232323] mb-8">
+              <p className="font-gilroyregular text-[16px] font-extralight text-[#232323] mb-8">
                 {gap.description}
               </p>
               <div className="">

@@ -68,9 +68,11 @@ function Testimonies() {
                   <h1 className="font-extrabold text-lg">
                     {testimony.name} |{" "}
                   </h1>
-                  <h4 className="text-lg font-thin">{testimony.course}</h4>
+                  <h4 className="font-gilroyregular text-[16px] font-extralight font-extralight ml-1">
+                    {testimony.course}
+                  </h4>
                 </div>
-                <p className="font-gilroy text-sm font-extralight text-white  ml-3">
+                <p className="font-gilroyregular text-[16px] font-extralight font-extralight text-white  ml-3">
                   {testimony.content}
                   <img src={coma} alt="" className="w-4 float-right mt-4" />
                 </p>

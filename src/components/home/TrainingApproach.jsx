@@ -10,19 +10,19 @@ function TrainingApproach() {
       image: approach,
       title: "Physical Classes",
       content:
-        "A physical conducive learning  environment for hands on learning and inter-personal development.",
+        "A physical conducive learning  environment for hands-on training.",
     },
     {
       image: approach1,
       title: "Virtual Classes",
       content:
-        "A virtual learning program that allows for access to coursework anytime, anywhere, flexibility and self paced learning.",
+        "A virtual learning program that allows for  flexibility and self-paced learning.",
     },
     {
       image: approach2,
       title: "One-on-One Mentoring",
       content:
-        "A one on one mentorship that allows high interaction with the mentor in a low stress environment.",
+        "A one on one mentorship that allows for high interaction with the mentor.",
     },
   ]);
 
@@ -33,7 +33,7 @@ function TrainingApproach() {
           Our Training Approach
         </h1>
       </center>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 w-11/12 md:w-10/12  mx-auto h-full w-full">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 w-11/12 md:w-11/12  mx-auto h-full w-full">
         {approaches.map((approach) => (
           <TrainingCard approach={approach} />
         ))}

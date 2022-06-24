@@ -13,13 +13,13 @@ function WhereMentorsWork() {
           Where Our Mentors Work
         </h1>
       </center>
-      <div className="grid grid-cols-1 md:grid-cols-6 gap-3 w-11/12 md:w-8/12  mx-auto h-full w-full">
-        <img src={palmpay} alt="palmpay logo" />
-        <img src={afriglobe} alt="afriglobe logo" />
-        <img src={appzone} alt="appzone logo" />
-        <img src={wetfire} alt="wetfire co logo" className="-mt-2" />
-        <img src={vilo} alt="vilo finance logo" className="-mt-2" />
-        <img src={bankly} alt="bankly logo" className="-mt-2" />
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 w-11/12 md:w-8/12  mx-auto h-full w-full">
+        <img src={palmpay} alt="palmpay logo" className="h-8" />
+        <img src={afriglobe} alt="afriglobe logo" className="h-8" />
+        <img src={appzone} alt="appzone logo" className="h-8" />
+        <img src={wetfire} alt="wetfire co logo" className=" h-8" />
+        <img src={vilo} alt="vilo finance logo" className=" h-8" />
+        <img src={bankly} alt="bankly logo" className=" h-8" />
       </div>
     </section>
   );

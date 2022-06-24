@@ -17,7 +17,9 @@ function CourseCard({ course }) {
       <h1 className="text-lg font-bold text-[#222057] font-gilroy text-left w-full align-left text-[#232323] mb-2 mt-3 leading-snug	">
         {title}
       </h1>
-      <p className="text-sm">{content}</p>
+      <p className="font-gilroyregular text-[16px] font-extralight">
+        {content}
+      </p>
 
       <div className="mt-4">
         <a href={link ? link : ""} className="text-amber-500 font-bold text-sm">
