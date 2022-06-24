@@ -5,7 +5,7 @@ import GetStarted from "./home/GetStarted";
 
 function Header() {
   return (
-    <section className="bg-[#FFFDFA] shadow h-[4rem]  px-8 flex items-center justify-between">
+    <section className="bg-[#FFFDFA]  h-[4rem]  px-8 flex items-center justify-between">
       <div className="logo h-full flex items-center">
         <img src={logo} alt="Keep" />
       </div>
