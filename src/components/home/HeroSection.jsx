@@ -7,6 +7,8 @@ import ellipse5 from "../../assets/images/Ellipse 7.png";
 import "./hero.css";
 import GetStarted from "./GetStarted";
 
+import { Tooltip } from "flowbite-react";
+
 function HeroSection() {
   return (
     <section className="h-fit lg:h-[90vh] w-screen">
@@ -47,7 +49,9 @@ function HeroSection() {
               left: "80%",
             }}
           >
-            <img src={ellipse1} alt="" />
+            <Tooltip content="Tooltip content" placement="right" style="dark">
+              <img src={ellipse1} alt="" />
+            </Tooltip>
           </div>
           <div
             className="border-2 border-amber-500 h-8 w-8 ring-2 ring-amber-500 rounded-full hidden lg:block"
@@ -57,7 +61,9 @@ function HeroSection() {
               left: "60%",
             }}
           >
-            <img src={ellipse2} alt="" />
+            <Tooltip content="Tooltip content" placement="right" style="dark">
+              <img src={ellipse2} alt="" />
+            </Tooltip>
           </div>
           <div
             className="border-2 border-amber-500 h-8 w-8 ring-2 ring-amber-500 rounded-full hidden lg:block"
@@ -67,7 +73,9 @@ function HeroSection() {
               left: "60%",
             }}
           >
-            <img src={ellipse3} alt="" />
+            <Tooltip content="Tooltip content" placement="right" style="dark">
+              <img src={ellipse3} alt="" />
+            </Tooltip>
           </div>
           <div
             className="border-2 border-amber-500 h-8 w-8 ring-2 ring-amber-500 rounded-full hidden lg:block"
@@ -77,7 +85,9 @@ function HeroSection() {
               left: "90%",
             }}
           >
-            <img src={ellipse4} alt="" className="" />
+            <Tooltip content="Tooltip content" placement="right" style="dark">
+              <img src={ellipse4} alt="" className="" />
+            </Tooltip>
           </div>
           <div
             className="border-2 border-amber-500 h-8 w-8 ring-2 ring-amber-500 rounded-full hidden lg:block"
@@ -87,7 +97,9 @@ function HeroSection() {
               left: "74%",
             }}
           >
-            <img src={ellipse5} alt="" />
+            <Tooltip content="Tooltip content" placement="right" style="dark">
+              <img src={ellipse5} alt="" />
+            </Tooltip>
           </div>
         </div>
       </div>
