@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/logo.svg";
+import icon from "../assets/images/icon.svg";
 import GetStarted from "./home/GetStarted";
 
 function Header() {
@@ -91,6 +92,9 @@ function Header() {
       </ul>
       <div className="hidden md:block">
         <GetStarted />
+      </div>
+      <div className="block md:hidden">
+        <img src={icon} alt="" />
       </div>
     </section>
   );
