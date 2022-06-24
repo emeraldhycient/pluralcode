@@ -9,24 +9,19 @@ function Ourschool() {
     {
       image: course1,
       title: "Product School",
-      content: `  Our Product School allows you to master professional product and
-      design-based skills ranging from UI Design, UX Research & Product
-      Management.`,
+      content: `Our Product school has been designed to help students launch a successful career in product design (UI/UX) and Product management.`,
       link: "https://www.google.com",
     },
     {
       image: course2,
       title: "            Data School      ",
-      content: `     Master the most attractive field of the 21st century. Build
-      expertise in Data manipulation, Analytics, Visualization, Predictive
-      analytics and Machine Learning`,
+      content: `   Our data school trains and prepares students for careers in Data Analytics/ Science. Build expertise in data manipulation, visualization, predictive analytics, machine learning.`,
       link: "https://www.google.com",
     },
     {
       image: course3,
       title: "Programming School",
-      content: `  Learn to build scalable applications with modern tools. Master
-      Full-Stack Development and Mobile Apps Development.`,
+      content: `  PluralCode provides a 16 weeks, cutting-edge, full-time, and accessible web development course to help you upskill or quickly change careers.`,
       link: "https://www.google.com",
     },
   ]);
