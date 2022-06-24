@@ -5,6 +5,7 @@ function CourseCard({ course }) {
 
   return (
     <div
+      key={title}
       className="bg-white shadow  rounded-tl-3xl rounded-br-3xl p-6"
       data-aos="fade-right"
       data-aos-duration="2000"

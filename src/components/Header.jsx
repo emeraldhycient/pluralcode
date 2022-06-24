@@ -8,7 +8,7 @@ function Header() {
       <div className="logo h-full flex items-center">
         <img src={logo} alt="Keep" />
       </div>
-      <ul className="flex justify-around items-center">
+      <ul className="md:flex justify-around items-center hidden ">
         <li className="mx-2 text-[#232323] font-inter">
           <Link to="/">Home</Link>
         </li>
@@ -69,7 +69,7 @@ function Header() {
             </svg>
           </Link>
         </li>
-        <li className="mx-2 text-[#232323] font-inter">
+        <li className="mx-2 text-[#232323] font-inter ">
           <Link to="/about" className="flex items-center">
             More
             <svg
@@ -89,7 +89,9 @@ function Header() {
           </Link>
         </li>
       </ul>
-      <GetStarted />
+      <div className="hidden md:block">
+        <GetStarted />
+      </div>
     </section>
   );
 }

@@ -41,10 +41,13 @@ function Testimonies() {
   ]);
 
   return (
-    <section className="h-[100vh] py-16 w-screen bg-[#222057]">
+    <section className="h-fit lg:h-[100vh] py-16 w-screen bg-[#222057]">
       <Carousel next={(next, active) => {}} prev={(prev, active) => {}}>
         {testimony.map((testimony) => (
-          <div className="grid grid-cols-1 md:grid-cols-2 w-11/12 md:w-9/12  mx-auto h-full w-full">
+          <div
+            className="grid grid-cols-1 md:grid-cols-2 w-11/12 md:w-9/12  mx-auto h-full w-full"
+            key={testimony.name}
+          >
             <div
               className="h-full w-full flex justify-center items-center"
               data-aos="fade-right"
@@ -55,7 +58,7 @@ function Testimonies() {
 
             <div className=" h-full flex flex-col justify-center  text-left w-full align-left">
               <h1
-                className="text-5xl font-thin  font-gilroy text-left w-full align-left text-white mb-4 leading-snug	"
+                className="text-3xl md:text-5xl font-thin  font-gilroy text-left w-full align-left text-white mb-4 leading-snug	"
                 data-aos="zoom-in-up"
                 data-aos-duration="1200"
               >

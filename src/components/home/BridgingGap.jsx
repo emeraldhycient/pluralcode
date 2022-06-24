@@ -21,7 +21,7 @@ function BridgingGap() {
       id: 2,
       title: "For Organizations",
       description:
-        "A bridging gap is a gap between two or more skills that can be bridged to create a new skill. It is a way to create a new skill from existing skills.",
+        "Suitable for corporate Organizations who wants to train employees for joint corporate development",
       image: group34,
       link: "/bridging-gap",
     },
@@ -29,16 +29,16 @@ function BridgingGap() {
       id: 3,
       title: "Impact (CSR)",
       description:
-        "A bridging gap is a gap between two or more skills that can be bridged to create a new skill. It is a way to create a new skill from existing skills.",
+        "Impacting the extensive knowledge tech for a sustainable career development.",
       image: group35,
       link: "/bridging-gap",
     },
   ]);
 
   return (
-    <section className="h-[120vh] py-10 w-screen bg-white">
+    <section className="h-fit lg:h-[120vh] py-10 w-screen bg-white mt-10 md:mt-0">
       <center data-aos="zoom-in-up" data-aos-duration="1200">
-        <h1 className="text-4xl font-medium text-[#222057] font-gilroy text-center w-full align-left text-[#232323] mb-20 leading-snug	">
+        <h1 className="text-3xl md:text-4xl font-medium text-[#222057] font-gilroy text-center w-full align-left text-[#232323] mb-10 md:mb-20 leading-snug	">
           Bridging Africa’s Talent Gap
         </h1>{" "}
       </center>
@@ -49,14 +49,14 @@ function BridgingGap() {
             key={gap.id}
           >
             <div
-              className="col-span-2"
+              className="md:col-span-2 mb-4 md:mb-0"
               style={{
                 background: `url(${spiral}) no-repeat center center `,
               }}
               data-aos="zoom-in-up"
               data-aos-duration="1800"
             >
-              <img src={gap.image} alt="map" className="w-[80%] " />
+              <img src={gap.image} alt="map" className="w-full md:w-[80%] " />
             </div>
 
             <div
@@ -64,7 +64,7 @@ function BridgingGap() {
               data-aos="fade-right"
               data-aos-duration="2000"
             >
-              <h1 className="text-[36px] font-extralight text-[#222057] font-gilroymedium text-left w-full align-left text-[#232323] mb-4 leading-snug	">
+              <h1 className="text-[36px] font-extralight text-[#222057] font-gilroymedium text-center md:text-left w-full align-left text-[#232323] mb-4 leading-snug	">
                 {gap.title}
               </h1>
               <p className="font-gilroyregular text-[16px] font-extralight text-[#232323] mb-8">

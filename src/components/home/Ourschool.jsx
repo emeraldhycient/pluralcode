@@ -32,15 +32,15 @@ function Ourschool() {
   ]);
 
   return (
-    <section className="h-fit py-36 w-screen bg-gray-50">
+    <section className="h-fit py-12 lg:py-36 w-screen bg-gray-50">
       <center data-aos="zoom-in-up" data-aos-duration="1200">
-        <h1 className="text-4xl font-medium text-[#222057] font-gilroy text-center w-full align-left text-[#232323] mb-20 leading-snug	">
+        <h1 className="text-4xl font-medium text-[#222057] font-gilroy text-center w-full align-left text-[#232323] mb-12 lg:mb-20 leading-snug	">
           Our Schools
         </h1>
       </center>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3 w-11/12 md:w-9/12  mx-auto h-full w-full">
         {courses.map((course) => (
-          <CourseCard course={course} />
+          <CourseCard course={course} key={course.title} />
         ))}
       </div>
     </section>
