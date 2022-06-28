@@ -12,7 +12,7 @@ function Courses() {
       image: productdesign,
       duration: "8weeks",
       start_date: "01/01/2020",
-      link: "https://www.pluralcode.com/product-school/product-design",
+      link: "/schools/product/product-design",
       level: "beginner",
       mode: "physical",
     },

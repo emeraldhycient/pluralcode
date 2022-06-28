@@ -6,7 +6,7 @@ import HeroSection from "../../components/programming_school/HeroSection";
 import WhereMentorsWork from "../../components/home/WhereMentorsWork";
 import Testimonies from "../../components/home/Testimonies";
 import SalaryExpectation from "../../components/programming_school/SalaryExpectation";
-import Courses from "../../components/product_school/Courses";
+import Courses from "../../components/programming_school/Courses";
 
 function Programming() {
   return (

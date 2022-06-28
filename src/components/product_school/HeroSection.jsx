@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import product from "../../assets/images/product.png";
 import GetStarted from "./GetStarted";
+import peoples from "../../assets/images/peoples.png";
 
 function HeroSection() {
   return (
@@ -24,11 +25,19 @@ function HeroSection() {
       </div>
       <div className="flex justify-between items-center md:w-4/12 mx-auto z-20 -mt-8">
         <div className="h-16 w-32 bg-white border shadow shadow-xl rounded-lg w-56 mr-20 hidden md:block">
-          <div className="py-3"></div>
+          <center>
+            <div className="py-1">
+              <img src={peoples} alt="" className="h-8 w-[60%]" />
+            </div>
+          </center>
           <h6 className="text-xs text-center">200+ Learners</h6>
         </div>
         <div className="h-16 w-[80%] bg-white border shadow shadow-xl rounded-lg md:w-60 mx-auto md:mx-0">
-          <div className="py-3"></div>
+          <center>
+            <div className="py-1">
+              <img src={peoples} alt="" className="h-8 w-[60%]" />
+            </div>
+          </center>
           <h6 className="text-xs text-center">1000+ Students Trained</h6>
         </div>
       </div>
