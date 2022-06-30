@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Product from "./pages/product_school/Product";
 import Programming from "./pages/programming_school/Programming";
 import Design from "./pages/product_school/product_design/Design";
+import Corporate from "./pages/corporate/Corporate";
 
 function App() {
   useEffect(() => {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/schools/product/product-design" element={<Design />} />
         <Route path="/schools/data" element={<DataSchool />} />
         <Route path="/schools/programming" element={<Programming />} />
+        <Route path="/corporate-training" element={<Corporate />} />
       </Routes>
     </BrowserRouter>
   );
