@@ -9,6 +9,7 @@ import Product from "./pages/product_school/Product";
 import Programming from "./pages/programming_school/Programming";
 import Design from "./pages/product_school/product_design/Design";
 import Corporate from "./pages/corporate/Corporate";
+import Hireus from "./pages/hiretalent/Hireus";
 
 function App() {
   useEffect(() => {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/schools/data" element={<DataSchool />} />
         <Route path="/schools/programming" element={<Programming />} />
         <Route path="/corporate-training" element={<Corporate />} />
+        <Route path="/Hire-talent" element={<Hireus />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,6 +1,6 @@
 .map {
-    background: url(../../assets/images/map3.png) no-repeat center center;
-    background-size: contain;
+    background: url(../../assets/images/mp3.svg) no-repeat right center;
+    background-size: cover;
     width: 100%;
 }
 

@@ -23,9 +23,8 @@ function HeroSection() {
             Borderless Career.
           </h1>
           <p className="font-gilroyregular text-[16px] text-center lg:text-left  font-extralight text-[#232323] mb-8">
-            Learn from elite level mentor and become a top level{" "}
-            <br className="hidden lg:block" />
-            professional in the field of tech
+            Your global tech journey begins here. Master the skills you need to
+            start <br className="hidden lg:block" />a successful career.
           </p>
           <div className="flex flex-col lg:flex-row  items-center">
             <GetStarted />
@@ -42,63 +41,63 @@ function HeroSection() {
           data-aos-duration="3000"
         >
           <div
-            className="border-2 border-amber-500 h-8 w-8 ring-2 ring-amber-500 rounded-full hidden lg:block"
+            className="border border-amber-500 h-8 w-8  rounded-full hidden lg:block"
             style={{
               position: "absolute",
               top: "50%",
+              left: "88%",
+            }}
+          >
+            <Tooltip content="Tooltip content" placement="right" style="dark">
+              <img src={ellipse1} alt="" className="w-9" />
+            </Tooltip>
+          </div>
+          <div
+            className="border border-amber-500 h-8 w-8  rounded-full hidden lg:block"
+            style={{
+              position: "absolute",
+              top: "35%",
+              left: "53%",
+            }}
+          >
+            <Tooltip content="Tooltip content" placement="right" style="dark">
+              <img src={ellipse2} alt="" className="w-9" />
+            </Tooltip>
+          </div>
+          <div
+            className="border border-amber-500 h-8 w-8  rounded-full hidden lg:block"
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "60%",
+            }}
+          >
+            <Tooltip content="Tooltip content" placement="right" style="dark">
+              <img src={ellipse3} alt="" className="w-9" />
+            </Tooltip>
+          </div>
+          <div
+            className="border border-amber-500 h-8 w-8  rounded-full hidden lg:block"
+            style={{
+              position: "absolute",
+              top: "35%",
               left: "80%",
             }}
           >
             <Tooltip content="Tooltip content" placement="right" style="dark">
-              <img src={ellipse1} alt="" />
+              <img src={ellipse4} alt="" className="w-9" />
             </Tooltip>
           </div>
           <div
-            className="border-2 border-amber-500 h-8 w-8 ring-2 ring-amber-500 rounded-full hidden lg:block"
+            className="border border-amber-500 h-8 w-8  rounded-full hidden lg:block"
             style={{
               position: "absolute",
-              top: "40%",
-              left: "60%",
+              top: "65%",
+              left: "84%",
             }}
           >
             <Tooltip content="Tooltip content" placement="right" style="dark">
-              <img src={ellipse2} alt="" />
-            </Tooltip>
-          </div>
-          <div
-            className="border-2 border-amber-500 h-8 w-8 ring-2 ring-amber-500 rounded-full hidden lg:block"
-            style={{
-              position: "absolute",
-              top: "55%",
-              left: "60%",
-            }}
-          >
-            <Tooltip content="Tooltip content" placement="right" style="dark">
-              <img src={ellipse3} alt="" />
-            </Tooltip>
-          </div>
-          <div
-            className="border-2 border-amber-500 h-8 w-8 ring-2 ring-amber-500 rounded-full hidden lg:block"
-            style={{
-              position: "absolute",
-              top: "40%",
-              left: "90%",
-            }}
-          >
-            <Tooltip content="Tooltip content" placement="right" style="dark">
-              <img src={ellipse4} alt="" className="" />
-            </Tooltip>
-          </div>
-          <div
-            className="border-2 border-amber-500 h-8 w-8 ring-2 ring-amber-500 rounded-full hidden lg:block"
-            style={{
-              position: "absolute",
-              top: "62%",
-              left: "74%",
-            }}
-          >
-            <Tooltip content="Tooltip content" placement="right" style="dark">
-              <img src={ellipse5} alt="" />
+              <img src={ellipse5} alt="" className="w-9" />
             </Tooltip>
           </div>
         </div>

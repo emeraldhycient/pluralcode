@@ -27,6 +27,17 @@ function Courses() {
       level: "beginner",
       mode: "physical",
     },
+    {
+      title: "Machine Learning",
+      description:
+        "Become a professional product manager in 8 weeks. Learn how to gather users data, identify their needs and how it benefits them.",
+      image: productmanagement,
+      duration: "8weeks",
+      start_date: "01/01/2020",
+      link: "/schools/product/product-management",
+      level: "beginner",
+      mode: "physical",
+    },
   ]);
 
   return (

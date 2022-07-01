@@ -15,13 +15,13 @@ function Ourschool() {
     {
       image: course2,
       title: "            Data School      ",
-      content: `   Our data school trains and prepares students for careers in Data Analytics/ Science. Build expertise in data manipulation, visualization, predictive analytics, machine learning.`,
+      content: `   Our data school trains students for careers in Data Science. Learn data manipulation, visualization & machine learning.`,
       link: "https://www.google.com",
     },
     {
       image: course3,
       title: "Programming School",
-      content: `  PluralCode provides a 16 weeks, cutting-edge, full-time, and accessible web development course to help you upskill or quickly change careers.`,
+      content: `  Master mordern tools for building scalable software with our programming courses to help you upskill or change careers.`,
       link: "https://www.google.com",
     },
   ]);
