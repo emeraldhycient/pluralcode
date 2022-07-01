@@ -1,4 +1,4 @@
-import section3 from "../../assets/images/image2.png";
+import section3 from "../../assets/images/Image2.png";
 
 function Section4() {
   return (
