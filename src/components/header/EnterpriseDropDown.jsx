@@ -8,9 +8,7 @@ function EnterpriseDropDown() {
           <a href="/corporate-training">Corporate Trainings</a>
         </li>
         <li className="font-gilroyregular text-[14px] my-1">
-          <a href="/schools/product/product-management">
-            Custom Software Development
-          </a>
+          <a href="/services">Custom Software Development</a>
         </li>
         <li className="font-gilroyregular text-[14px] my-1">
           <a href="/Hire-talent">Hire Our Talents</a>

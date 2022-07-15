@@ -19,7 +19,7 @@ function Header() {
   const [isMobileSideBarShowing, setisMobileSideBarShowing] = useState(false);
 
   return (
-    <section className="absolute w-full">
+    <section className="absolute w-full mb-6">
       <section className="bg-[#FFFDFA]  h-[4rem]  px-8 flex items-center justify-between">
         <div className="logo h-full flex items-center">
           <img src={logo} alt="Keep" />
