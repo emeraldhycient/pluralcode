@@ -7,7 +7,7 @@ function CourseCard({ course }) {
       <img
         src={course.image}
         alt="product"
-        className="w-full h-32 md:h-[80%] rounded-lg"
+        className="w-[400px] h-32 md:h-[230px] rounded-lg"
       />
       <div className="">
         <h6>

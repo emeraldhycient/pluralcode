@@ -39,68 +39,7 @@ function HeroSection() {
           className="map order-first lg:order-last"
           data-aos="fade-left"
           data-aos-duration="3000"
-        >
-          <div
-            className="border border-amber-500 h-8 w-8  rounded-full hidden lg:block"
-            style={{
-              position: "absolute",
-              top: "50%",
-              left: "88%",
-            }}
-          >
-            <Tooltip content="Tooltip content" placement="right" style="dark">
-              <img src={ellipse1} alt="" className="w-9" />
-            </Tooltip>
-          </div>
-          <div
-            className="border border-amber-500 h-8 w-8  rounded-full hidden lg:block"
-            style={{
-              position: "absolute",
-              top: "35%",
-              left: "53%",
-            }}
-          >
-            <Tooltip content="Tooltip content" placement="right" style="dark">
-              <img src={ellipse2} alt="" className="w-9" />
-            </Tooltip>
-          </div>
-          <div
-            className="border border-amber-500 h-8 w-8  rounded-full hidden lg:block"
-            style={{
-              position: "absolute",
-              top: "50%",
-              left: "60%",
-            }}
-          >
-            <Tooltip content="Tooltip content" placement="right" style="dark">
-              <img src={ellipse3} alt="" className="w-9" />
-            </Tooltip>
-          </div>
-          <div
-            className="border border-amber-500 h-8 w-8  rounded-full hidden lg:block"
-            style={{
-              position: "absolute",
-              top: "35%",
-              left: "80%",
-            }}
-          >
-            <Tooltip content="Tooltip content" placement="right" style="dark">
-              <img src={ellipse4} alt="" className="w-9" />
-            </Tooltip>
-          </div>
-          <div
-            className="border border-amber-500 h-8 w-8  rounded-full hidden lg:block"
-            style={{
-              position: "absolute",
-              top: "65%",
-              left: "84%",
-            }}
-          >
-            <Tooltip content="Tooltip content" placement="right" style="dark">
-              <img src={ellipse5} alt="" className="w-9" />
-            </Tooltip>
-          </div>
-        </div>
+        ></div>
       </div>
     </section>
   );

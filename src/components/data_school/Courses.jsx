@@ -6,7 +6,7 @@ import productmanagement from "../../assets/images/productmanagement.png";
 function Courses() {
   const [courses, setCourses] = useState([
     {
-      title: "Product Design",
+      title: "",
       description:
         "Learn Ui/Ux from scratch without writing a single code. Master how to design high fidelity interface with FIGMA, design journey mapping and empathize with users.",
       image: productdesign,
@@ -24,6 +24,17 @@ function Courses() {
       duration: "8weeks",
       start_date: "01/01/2020",
       link: "https://www.pluralcode.com/product-school/product-design",
+      level: "beginner",
+      mode: "physical",
+    },
+    {
+      title: "Machine Learning",
+      description:
+        "Become a professional product manager in 8 weeks. Learn how to gather users data, identify their needs and how it benefits them.",
+      image: productmanagement,
+      duration: "8weeks",
+      start_date: "01/01/2020",
+      link: "/schools/product/product-management",
       level: "beginner",
       mode: "physical",
     },

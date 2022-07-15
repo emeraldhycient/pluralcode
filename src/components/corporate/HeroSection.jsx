@@ -27,12 +27,12 @@ function HeroSection() {
             </Link>
           </button>
         </div>
-        <div className="col-span- pb-2 mt-8 md:mt-0">
+        <div className="col-span- pb-2 mt-8 md:mt-0 flex justify-center items-center pt-6 md:pt-16">
           <center>
             <img
               src={cop}
               alt="corporate training"
-              className="w-[95%] md:w-[80%] h-full"
+              className="w-[95%] md:w-[80%] h-[90%]"
             />
           </center>
         </div>
