@@ -13,6 +13,7 @@ import Hireus from "./pages/hiretalent/Hireus";
 import Services from "./pages/ourservices/Services";
 import Webseries from "./pages/webseries/Webseries";
 import Sandbox from "./pages/sandbox/Sandbox";
+import Exclusive from "./pages/exclusive/Exclusive";
 
 function App() {
   useEffect(() => {
@@ -32,6 +33,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/webseries" element={<Webseries />} />
         <Route path="/sandbox" element={<Sandbox />} />
+        <Route path="/exclusive" element={<Exclusive />} />
       </Routes>
     </BrowserRouter>
   );

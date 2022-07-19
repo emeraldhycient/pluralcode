@@ -21,7 +21,7 @@ function Section2() {
               elit. Adipiscing.
             </p>
           </div>
-          <div className="w-[20%] mt-4 ml-5">
+          <div className="w-[50%] md:w-[20%] mt-4 ml-5">
             <GetStarted />
           </div>
         </div>

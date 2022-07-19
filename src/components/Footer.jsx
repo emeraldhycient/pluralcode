@@ -6,12 +6,13 @@ import { TbBrandLinkedin } from "react-icons/tb";
 
 function Footer() {
   return (
-    <section className="bg-gray-100 h-fit md:h-[60vh] w-full pt-16 px-3 md:p-16">
+    <section className="bg-gray-100 h-fit  lg:h-[60vh] w-full pt-16 px-3 md:p-16">
       <div className="grid grid-cols-1 md:grid-cols-6 gap-8 w-full">
         <div className="w-full md:col-span-2">
           <img src={logo} alt="" />
-          <p className="text-sm text-gray-500 mt-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim.
+          <p className="font-gilroyregular text-[16px] text-center lg:text-left  font-extralight text-[#232323] mt-3">
+            Your global tech journey begins here. Master the skills you need to
+            start a successful career.
           </p>
           <div className="flex mt-3">
             <AiOutlineInstagram className="text-[#222057] mr-3" size={25} />

@@ -11,7 +11,7 @@ function PlatformDropDown() {
           <a href="/webseries">Web Series</a>
         </li>
         <li className="font-gilroyregular text-[14px] my-1">
-          <a href="/schools/product/product-management">Exclusive</a>
+          <a href="/exclusive">Exclusive</a>
         </li>
       </ul>
     </div>
