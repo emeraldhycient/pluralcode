@@ -1,26 +1,25 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import group11 from "../../assets/images/Group11.png";
+import temiloluwa from "../../assets/images/temiloluwa.svg";
+import Ojerinde from "../../assets/images/Ojerinde.svg";
 import coma from "../../assets/images/coma.png";
 import Carousel from "react-material-ui-carousel";
 
 function Testimonies() {
   const [testimony, settestimony] = useState([
     {
-      name: "Bukola Lawal",
+      name: "Temiloluwa Abimbola",
       course: "Product Designer",
-      content: `              We’ve created a smooth learning experience for our students over
-      the years with a great educational value, hands on mentorship and
-      a conducive learning environment. See what they are saying:`,
-      image: group11,
+      content: ` I learned product design, which is everything a business owner does before any product is being launched and while the product is ongoing.
+      The class was simplified to everyone’s level and was worked around everyone's schedule as well. That made it easy for a working-class person like me to attend. Also, the instructor and academy team were amazing.`,
+      image: temiloluwa,
     },
     {
-      name: "Abiola jane",
-      course: "ui/ux designer",
-      content: `              We’ve created a smooth learning experience for our students over
-      the years with a great educational value, hands on mentorship and
-      a conducive learning environment. See what they are saying:`,
-      image: group11,
+      name: "Ojerinde Adenike",
+      course: "Product Designer",
+      content: `We’ve created a smooth learning experience for our students over the years with a great educational value, hands on mentorship and a conducive learning environment. `,
+      image: Ojerinde,
     },
     {
       name: "shole Lawal",
