@@ -5,7 +5,7 @@ function MoreDropDown() {
     <div className="w-fit h-fit p-6 bg-white z-20  rounded-3xl hidden md:block relative shadow shadow-lg mx-auto">
       <ul className="w-full">
         <li className="font-gilroyregular text-[14px] my-1">
-          <a href="/corporate-training">Why Pluralcode</a>
+          <a href="/about">Why Pluralcode</a>
         </li>
         <li className="font-gilroyregular text-[14px] my-1">
           <a href="/schools/product/product-management">
