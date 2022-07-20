@@ -10,19 +10,19 @@ function Ourschool() {
       image: course1,
       title: "Product School",
       content: `Our Product school has been designed to help students launch a successful career in product design (UI/UX) and Product management.`,
-      link: "https://www.google.com",
+      link: "schools/product",
     },
     {
       image: course2,
       title: "            Data School      ",
       content: `   Our data school trains students for careers in Data Science. Learn data manipulation, visualization & machine learning.`,
-      link: "https://www.google.com",
+      link: "schools/data",
     },
     {
       image: course3,
       title: "Programming School",
       content: `  Master mordern tools for building scalable software with our programming courses to help you upskill or change careers.`,
-      link: "https://www.google.com",
+      link: "schools/programming",
     },
   ]);
 

@@ -6,22 +6,11 @@ import productmanagement from "../../assets/images/productmanagement.png";
 function Courses() {
   const [courses, setCourses] = useState([
     {
-      title: "",
+      title: "Data Analytics",
       description:
-        "Learn Ui/Ux from scratch without writing a single code. Master how to design high fidelity interface with FIGMA, design journey mapping and empathize with users.",
+        "Learn to build Financial models, forecast performances and perform Valuations for companies. Become industry ready in just 12 weeks.",
       image: productdesign,
-      duration: "8weeks",
-      start_date: "01/01/2020",
-      link: "https://www.pluralcode.com/product-school/product-design",
-      level: "beginner",
-      mode: "physical",
-    },
-    {
-      title: "Product Management",
-      description:
-        "Become a professional product manager in 8 weeks. Learn how to gather users data, identify their needs and how it benefits them.",
-      image: productmanagement,
-      duration: "8weeks",
+      duration: "12weeks",
       start_date: "01/01/2020",
       link: "https://www.pluralcode.com/product-school/product-design",
       level: "beginner",
@@ -30,11 +19,11 @@ function Courses() {
     {
       title: "Machine Learning",
       description:
-        "Become a professional product manager in 8 weeks. Learn how to gather users data, identify their needs and how it benefits them.",
+        "Analyze and visualize data using Machine learning models. This course dives into the basics of machine learning using an approachable, and well-known programming language, Python.",
       image: productmanagement,
-      duration: "8weeks",
+      duration: "16weeks",
       start_date: "01/01/2020",
-      link: "/schools/product/product-management",
+      link: "https://www.pluralcode.com/product-school/product-design",
       level: "beginner",
       mode: "physical",
     },
