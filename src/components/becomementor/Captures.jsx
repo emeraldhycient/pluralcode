@@ -17,8 +17,8 @@ function Captures() {
       <div className="w-[40%] mx-auto flex flex-col justify-center items-center mt-12">
         <h1 className="text-xl font-bold mb-4">Our Mission</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing.
+          Our mission at PluralCode is to create a major impact in raising the
+          next generation of Africa’s tech geniuses.
         </p>
       </div>
     </div>

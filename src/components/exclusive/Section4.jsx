@@ -12,9 +12,9 @@ function Section4() {
               Remote & Physical Options{" "}
             </h1>
             <p className="font-gilroyregular">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Adipiscing.
+              Exclusive learning allows you learn on your own terms, weekday or
+              weekends. Take your private tutorials, when you want it, where you
+              want it.
             </p>
           </div>
           <div className="w-[50%] md:w-[20%] mt-4 ml-5">

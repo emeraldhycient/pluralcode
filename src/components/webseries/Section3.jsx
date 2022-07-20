@@ -13,9 +13,8 @@ function Section3() {
               Ask Burning Questions{" "}
             </h1>
             <p className="font-gilroyregular">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Adipiscing.
+              Be a part of the conversation. Get answers to burning questions in
+              your areas of interest.
             </p>
           </div>
           <div className="w-[50%] md:w-[20%] mt-4 ml-5">

@@ -13,9 +13,8 @@ function Section3() {
               Remote & Physical Options{" "}
             </h1>
             <p className="font-gilroyregular">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Adipiscing.
+              Learn from the comfort of your home/ work space or physical
+              learning structure with acute mentorship.
             </p>
           </div>
           <div className="w-[50%] md:w-[20%] mt-4 ml-5">

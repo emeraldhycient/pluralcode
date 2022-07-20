@@ -16,9 +16,8 @@ function Section2() {
               World-Class Guests{" "}
             </h1>
             <p className="font-gilroyregular">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Adipiscing.
+              Learn from high profile guests across all areas of the tech
+              industry.
             </p>
           </div>
           <div className="w-[50%] md:w-[20%] mt-4 ml-5">

@@ -13,9 +13,8 @@ function HeroSection() {
             <span className="text-[#F8991D]">Talk Tech & Careers </span>
           </h1>
           <p className="font-gilroyregular text-[16px] md:text-center lg:text-left  font-extralight text-[#232323] mb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-            hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus
-            rhoncus pulvinar aliquam
+            We have a weekly 1 hour session where we bring professional guests
+            to talk tech. Click to get invite.
           </p>
           <div className="w-[30%]">
             <GetStarted />

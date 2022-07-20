@@ -11,9 +11,8 @@ function Section1() {
               Flexibility
             </h1>
             <p className="font-gilroyregular">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Adipiscing.
+              Flexible class schedule with hands on intensive learning, quality
+              approach at your own pace.
             </p>
           </div>
           <div className="w-[50%] md:w-[20%] mt-4 ml-5">

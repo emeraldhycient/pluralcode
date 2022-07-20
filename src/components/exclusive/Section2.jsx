@@ -16,9 +16,10 @@ function Section2() {
               Project Based Learning{" "}
             </h1>
             <p className="font-gilroyregular">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Adipiscing.
+              Practical learning instructional approach designed to give
+              students the opportunity to develop knowledge and skills through
+              engaging projects set around challenges and problems they may face
+              in the real world.
             </p>
           </div>
           <div className="w-[50%] md:w-[20%] mt-4 ml-5">

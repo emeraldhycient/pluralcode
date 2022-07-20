@@ -13,8 +13,9 @@ function HeroSection() {
             On Your Own Terms
           </h1>
           <p className="font-gilroyregular text-[16px] md:text-center lg:text-left  font-extralight text-[#232323] mb-8">
-            Launch a tech career without limits. Learn from world-class mentors,
-            position yourself and get hired as a tech professional.
+            Our exclusive tutorial gives you access to a private tutor, with
+            quality one on one mentorship, fewer distractions, greater learning
+            and focus
           </p>
           <div className="w-[30%]">
             <GetStarted />

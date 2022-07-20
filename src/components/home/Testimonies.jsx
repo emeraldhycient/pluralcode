@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import group11 from "../../assets/images/Group11.png";
-import temiloluwa from "../../assets/images/temiloluwa.svg";
-import Ojerinde from "../../assets/images/Ojerinde.svg";
+import temiloluwa from "../../assets/images/temiloluwa.png";
+import Ojerinde from "../../assets/images/Ojerinde.png";
+import Etim from "../../assets/images/Etim.png";
 import coma from "../../assets/images/coma.png";
 import Carousel from "react-material-ui-carousel";
 
@@ -18,24 +19,15 @@ function Testimonies() {
     {
       name: "Ojerinde Adenike",
       course: "Product Designer",
-      content: `We’ve created a smooth learning experience for our students over the years with a great educational value, hands on mentorship and a conducive learning environment. `,
+      content: `I learned a lot and networking was top-notch. We were able to meet with calm external professionals that enlightened us more about product design. It was transparent and I could say confidently that it was worth my time, resources, and emotions. 
+      I look forward to making them proud and a point of reference in the future. `,
       image: Ojerinde,
     },
     {
-      name: "shole Lawal",
-      course: "Digital Marketing",
-      content: `              We’ve created a smooth learning experience for our students over
-      the years with a great educational value, hands on mentorship and
-      a conducive learning environment. See what they are saying:`,
-      image: group11,
-    },
-    {
-      name: "igweze hycient",
-      course: "software engineer",
-      content: `              We’ve created a smooth learning experience for our students over
-      the years with a great educational value, hands on mentorship and
-      a conducive learning environment. See what they are saying:`,
-      image: group11,
+      name: "Etim Samuel",
+      course: " Product Designer",
+      content: `I had a nice time during the product design class, the mentor was on point and apt. I came in as a learner and finished a pro. The payment plan was good as well. It was an entire lovely experience.`,
+      image: Etim,
     },
   ]);
 
