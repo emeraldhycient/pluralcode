@@ -13,7 +13,7 @@ function Hero() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <h1 className="text-6xl font-extrabold md:w-[40%] mt-32 mx-auto text-transparent bg-clip-text bg-gradient-to-r from-[#222057] to-[#F8991D]">
+      <h1 className="text-6xl font-extrabold md:w-[40%] mt-32 mx-auto text-transparent bg-clip-text bg-gradient-to-r from-[#222057] to-[#F8991D] text-center">
         We Live To Make A Difference
       </h1>
       <img src={sand2} alt="" className="h-80 " />
