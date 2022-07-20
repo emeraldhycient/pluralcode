@@ -34,46 +34,62 @@ function Footer() {
             <div className="">
               <h1 className="text-base text-gray-700 mb-4"> Courses </h1>
               <ul>
-                <li className="text-xs text-gray-600 mb-2">Product Design</li>
                 <li className="text-xs text-gray-600 mb-2">
-                  Product Management
+                  <a href="/schools/product/product-design">Product Design</a>
                 </li>
-                <li className="text-xs text-gray-600 mb-2">Data Analysis</li>
-                <li className="text-xs text-gray-600 mb-2">Machine Learning</li>
+                <li className="text-xs text-gray-600 mb-2">
+                  <a href="/schools/product/product-management">
+                    Product Management
+                  </a>
+                </li>
+                <li className="text-xs text-gray-600 mb-2">
+                  <a href="/schools/data/data-analysis">Data Analysis</a>
+                </li>
+                <li className="text-xs text-gray-600 mb-2">
+                  <a href="/schools/data/machine-learning">Machine Learning</a>
+                </li>
               </ul>
             </div>
             <div className="">
               <h1 className="text-sm text-gray-700 mb-4"> Platforms </h1>
               <ul>
                 <li className="text-xs text-gray-600 mb-2">
-                  Pluralcode SandBox
+                  <a href="/sandbox">Pluralcode SandBox</a>
                 </li>
-                <li className="text-xs text-gray-600 mb-2">Web Series</li>
-                <li className="text-xs text-gray-600 mb-2">Exclusive </li>
+                <li className="text-xs text-gray-600 mb-2">
+                  <a href="/webseries">Web Series</a>
+                </li>
+                <li className="text-xs text-gray-600 mb-2">
+                  <a href="/exclusive">Exclusive</a>{" "}
+                </li>
               </ul>
             </div>
             <div className="">
               <h1 className="text-sm text-gray-700 mb-4"> Enterprise </h1>
               <ul>
                 <li className="text-xs text-gray-600 mb-2">
-                  Corporate Trainings{" "}
+                  <a href="/corporate-training">Corporate Trainings </a>
                 </li>
                 <li className="text-xs text-gray-600 mb-2">
-                  Custom Software Development{" "}
+                  <a href="/services">Custom Software Development </a>
                 </li>
                 <li className="text-xs text-gray-600 mb-2">
-                  Hire Our Talents{" "}
+                  <a href="/hire-talent">Hire Our Talents</a>
                 </li>
               </ul>
             </div>{" "}
             <div className="">
               <h1 className="text-sm text-gray-700 mb-4"> More </h1>
               <ul>
-                <li className="text-xs text-gray-600 mb-2">Why Pluralcode </li>
                 <li className="text-xs text-gray-600 mb-2">
-                  Talk to Student Advisor{" "}
+                  <a href="/about">Why Pluralcode</a>
                 </li>
-                <li className="text-xs text-gray-600 mb-2">Become a Mentor </li>
+                <li className="text-xs text-gray-600 mb-2">
+                  <a href="/advisor">Talk to Student Advisor </a>
+                </li>
+                <li className="text-xs text-gray-600 mb-2">
+                  <a href="/mentor">Become a Mentor</a>
+                </li>
               </ul>
             </div>{" "}
           </div>
