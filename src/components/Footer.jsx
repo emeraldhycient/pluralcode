@@ -15,10 +15,18 @@ function Footer() {
             start a successful career.
           </p>
           <div className="flex mt-3">
-            <AiOutlineInstagram className="text-[#222057] mr-3" size={25} />
-            <AiOutlineFacebook className="text-[#222057] mr-3" size={25} />
-            <TbBrandTwitter className="text-[#222057] mr-3" size={25} />
-            <TbBrandLinkedin className="text-[#222057] mr-3" size={25} />
+            <a href="https://www.instagram.com/pluralcode_academy">
+              <AiOutlineInstagram className="text-[#222057] mr-3" size={25} />
+            </a>
+            <a href="https://www.facebook.com/103573938645826/posts/pfbid02RKRpzHEVeVEdAVfSiyBiXQDfMrfWzvpZKaPK9XeJAhdJFxsq3vKcSYzonmoppNecl/?d=n">
+              <AiOutlineFacebook className="text-[#222057] mr-3" size={25} />
+            </a>
+            <a href="https://twitter.com/pluralcode/status/1548038713384452096?s=21&t=LSQTusS7JXkNc448HltKew">
+              <TbBrandTwitter className="text-[#222057] mr-3" size={25} />
+            </a>
+            <a href="https://www.linkedin.com/company/pluralcode-technologies/">
+              <TbBrandLinkedin className="text-[#222057] mr-3" size={25} />
+            </a>
           </div>
         </div>
         <div className="col-span-1 md:col-span-4  w-full flex flex-col md:flex-row justify-evenly">
