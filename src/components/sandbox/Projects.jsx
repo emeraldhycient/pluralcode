@@ -3,7 +3,7 @@ import market4opticals1 from "../../assets/images/market4opticals1.svg";
 import achan1 from "../../assets/images/achan1.svg";
 import identtii1 from "../../assets/images/identtii1.svg";
 import truesaver1 from "../../assets/images/truesaver1.svg";
-import image from "../../assets/images/image.svg";
+import image from "../../assets/images/Image.svg";
 
 function Projects() {
   return (

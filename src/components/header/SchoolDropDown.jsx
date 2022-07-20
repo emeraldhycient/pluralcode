@@ -48,6 +48,11 @@ function SchoolDropDown() {
                 Back-End Development
               </a>
             </li>
+            <li className="font-gilroyregular text-[14px] my-1">
+              <a href="/schools/programming/fullstack-development">
+                fullstack Development
+              </a>
+            </li>
           </ul>
         </div>
       </div>
