@@ -8,12 +8,10 @@ function MoreDropDown() {
           <a href="/about">Why Pluralcode</a>
         </li>
         <li className="font-gilroyregular text-[14px] my-1">
-          <a href="/schools/product/product-management">
-            Talk to Student Advisor{" "}
-          </a>
+          <a href="/advisor">Talk to Student Advisor </a>
         </li>
         <li className="font-gilroyregular text-[14px] my-1">
-          <a href="/advisor">Become a Mentor</a>
+          <a href="/mentor">Become a Mentor</a>
         </li>
       </ul>
     </div>
