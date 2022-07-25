@@ -41,7 +41,7 @@ function Section2() {
   ]);
 
   return (
-    <div className="h-fit md:h-screen w-full w-screen pt-10 md:pt-0 bg-[#FFFDFA] pb-20 flex flex-col justify-center items-center">
+    <div className="h-fit lg:h-screen w-full w-screen pt-10 md:pt-0 bg-[#FFFDFA] pb-20 flex flex-col justify-center items-center">
       <h1 className="text-[30px] font-semibold text-center text-[#222057] mb-2 md:mb-10 pt-10">
         Why Us
       </h1>

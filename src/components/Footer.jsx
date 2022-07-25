@@ -10,7 +10,7 @@ function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-6 gap-8 w-full">
         <div className="w-full md:col-span-2">
           <img src={logo} alt="" />
-          <p className="font-gilroyregular text-[16px] text-center lg:text-left  font-extralight text-[#232323] mt-3">
+          <p className="font-gilroyregular text-[16px]  font-extralight text-[#232323] mt-3">
             Your global tech journey begins here. Master the skills you need to
             start a successful career.
           </p>

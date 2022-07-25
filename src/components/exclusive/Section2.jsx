@@ -22,7 +22,7 @@ function Section2() {
               in the real world.
             </p>
           </div>
-          <div className="w-[50%] md:w-[20%] mt-4 ml-5">
+          <div className="w-[50%] lg:w-[20%] mt-4 ml-5">
             <GetStarted />
           </div>
         </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 function Outline({ course }) {
   return (
-    <div className="bg-[#F8991D08] h-72 w-full p-6 mb-4 rounded-lg">
+    <div className="bg-[#F8991D08] h-72 md:h-fit w-full p-6 mb-4 rounded-lg">
       <div className="grid grid-cols-6 gap-2">
         <img src={course.icon} alt="" />
         <div className="col-span-5">

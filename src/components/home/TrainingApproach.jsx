@@ -33,7 +33,7 @@ function TrainingApproach() {
           Our Training Approach
         </h1>
       </center>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 w-11/12 md:w-11/12  mx-auto h-full w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 w-11/12 md:w-11/12  mx-auto h-full w-full">
         {approaches.map((approach) => (
           <TrainingCard approach={approach} key={approach.title} />
         ))}
