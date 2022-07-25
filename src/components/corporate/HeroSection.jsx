@@ -13,30 +13,45 @@ function HeroSection() {
 
   const [name, setname] = useState("");
   const [email, setemail] = useState("");
+  const [description, setdescription] = useState("");
+  const [industry, setindustry] = useState("");
+  const [phone, setphone] = useState("");
+  const [trainingfocus, settrainingfocus] = useState("");
+  const [numberOfTrainees, setnumberOfTrainees] = useState("");
 
   const API_URL = import.meta.env.VITE_API_URL;
 
   const notifySuccess = () =>
-    toast.success("bronchure sent successfully, kindly check your email!", {
-      position: "top-right",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-    });
+    toast.success(
+      "thank you for reaching out , we would get back to you at the earliest!",
+      {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      }
+    );
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setloading(true);
 
     const formdata = new FormData();
-    formdata.append("name", name);
+    formdata.append("business_name", name);
     formdata.append("email", email);
-    formdata.append("course", "Product Design");
+    formdata.append("training_focus", trainingfocus);
+    formdata.append("industry", industry);
+    formdata.append("phone", phone);
+    formdata.append("number_of_trainees", numberOfTrainees);
+    formdata.append("description", description);
 
-    const response = await axios.post(`${API_URL}download_brochure`, formdata);
+    const response = await axios.post(
+      `${API_URL}hireourtalent_registeration`,
+      formdata
+    );
     // console.log(response);
     if (response.status === 200) {
       setloading(false);
@@ -115,8 +130,8 @@ function HeroSection() {
                       <TextInput
                         id="Industry"
                         placeholder="What industry does your business belong?"
-                        value={name}
-                        onChange={(e) => setname(e.target.value)}
+                        value={industry}
+                        onChange={(e) => setindustry(e.target.value)}
                         required={true}
                       />
                     </div>
@@ -139,36 +154,39 @@ function HeroSection() {
                       <TextInput
                         id="PhoneNumber"
                         placeholder="Enter Business Phone Number"
-                        value={name}
-                        onChange={(e) => setname(e.target.value)}
+                        value={phone}
+                        onChange={(e) => setphone(e.target.value)}
                         required={true}
                       />
                     </div>
-                    <div>
-                      <div className="mb-2 block">
-                        <Label htmlFor="name" value="Business Name" />
-                      </div>
-                      <TextInput
-                        id="name"
-                        placeholder="Enter Business Name"
-                        value={name}
-                        onChange={(e) => setname(e.target.value)}
-                        required={true}
-                      />
-                    </div>
+
                     <div>
                       <div className="mb-2 block">
                         <Label htmlFor="TrainingFocus" value="Training Focus" />
                       </div>
-                      <select className="form-select block w-full mt-1 rounded-lg border border-gray-300 mb-2 text-gray-400">
+                      <select
+                        value={trainingfocus}
+                        onChange={(e) => settrainingfocus(e.target.value)}
+                        className="form-select block w-full mt-1 rounded-lg border border-gray-300 mb-2 text-gray-400"
+                      >
                         <option>Select Training Focus</option>
-                        <option>Product Design</option>
-                        <option>Product Development</option>
-                        <option>front Development</option>
-                        <option>Back Development</option>
-                        <option>Fullstack Development</option>
-                        <option>Data Analysis</option>
-                        <option>Machine Learning</option>
+                        <option value="product design">Product Design</option>
+                        <option value="product management">
+                          Product Development
+                        </option>
+                        <option value="front development">
+                          front Development
+                        </option>
+                        <option value="backend development">
+                          Backend Development
+                        </option>
+                        <option value="fullstack development">
+                          Fullstack Development
+                        </option>
+                        <option value="data analysis">Data Analysis</option>
+                        <option value="Machine Learning">
+                          Machine Learning
+                        </option>
                       </select>
                     </div>
                     <div>
@@ -178,8 +196,8 @@ function HeroSection() {
                       <TextInput
                         id="trainee"
                         placeholder="Number of Trainees"
-                        value={name}
-                        onChange={(e) => setname(e.target.value)}
+                        value={numberOfTrainees}
+                        onChange={(e) => setnumberOfTrainees(e.target.value)}
                         required={true}
                       />
                     </div>
@@ -190,6 +208,8 @@ function HeroSection() {
                       <Textarea
                         id="Description"
                         placeholder="Leave additional message..."
+                        value={description}
+                        onChange={(e) => setdescription(e.target.value)}
                         required={true}
                         rows={4}
                       />
