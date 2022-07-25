@@ -13,7 +13,7 @@ function MoreDropDown() {
           </a>
         </li>
         <li className="font-gilroyregular text-[14px] my-1">
-          <a href="/Hire-talent">Become a Mentor</a>
+          <a href="/advisor">Become a Mentor</a>
         </li>
       </ul>
     </div>

@@ -6,7 +6,10 @@ import { TbBrandLinkedin } from "react-icons/tb";
 
 function Footer() {
   return (
-    <section className="bg-gray-100 h-fit  lg:h-[60vh] w-full pt-16 px-3 md:p-16">
+    <section
+      className="bg-gray-100 h-fit  lg:h-[60vh] w-full pt-16 px-3 md:p-16"
+      id="footer"
+    >
       <div className="grid grid-cols-1 md:grid-cols-6 gap-8 w-full">
         <div className="w-full md:col-span-2">
           <img src={logo} alt="" />

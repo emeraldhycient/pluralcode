@@ -15,6 +15,8 @@ import Webseries from "./pages/webseries/Webseries";
 import Sandbox from "./pages/sandbox/Sandbox";
 import Exclusive from "./pages/exclusive/Exclusive";
 import About from "./pages/about/About";
+import Advisor from "./pages/advisor/Advisor";
+import BecomeMentor from "./pages/becomementor/BecomeMentor";
 
 function App() {
   useEffect(() => {
@@ -36,6 +38,8 @@ function App() {
         <Route path="/sandbox" element={<Sandbox />} />
         <Route path="/exclusive" element={<Exclusive />} />
         <Route path="/about" element={<About />} />
+        <Route path="/advisor" element={<Advisor />} />
+        <Route path="/mentor" element={<BecomeMentor />} />
       </Routes>
     </BrowserRouter>
   );
