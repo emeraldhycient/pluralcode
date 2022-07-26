@@ -17,6 +17,10 @@ import Exclusive from "./pages/exclusive/Exclusive";
 import About from "./pages/about/About";
 import Advisor from "./pages/advisor/Advisor";
 import BecomeMentor from "./pages/becomementor/BecomeMentor";
+import Data_analysis from "./pages/data_school/Data_analysis";
+import Product_management from "./pages/product_school/Product_management";
+import Machine_learning from "./pages/data_school/Machine_learning";
+import Fullstack from "./pages/programming_school/Fullstack";
 
 function App() {
   useEffect(() => {
@@ -29,8 +33,29 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/schools/product" element={<Product />} />
         <Route path="/schools/product/product-design" element={<Design />} />
+        <Route
+          path="/schools/product/product-management"
+          element={<Product_management />}
+        />
         <Route path="/schools/data" element={<DataSchool />} />
+        <Route path="/schools/data/data-analysis" element={<Data_analysis />} />
+        <Route
+          path="/schools/data/machine-learning"
+          element={<Machine_learning />}
+        />
         <Route path="/schools/programming" element={<Programming />} />
+        <Route
+          path="/schools/programming/frontend-development"
+          element={<Fullstack />}
+        />
+        <Route
+          path="/schools/programming/backend-development"
+          element={<Fullstack />}
+        />{" "}
+        <Route
+          path="/schools/programming/fullstack-development"
+          element={<Fullstack />}
+        />{" "}
         <Route path="/corporate-training" element={<Corporate />} />
         <Route path="/Hire-talent" element={<Hireus />} />
         <Route path="/services" element={<Services />} />
