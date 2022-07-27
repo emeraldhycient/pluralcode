@@ -6,6 +6,7 @@ import group35 from "../../assets/images/IMPACT.png";
 import spiral from "../../assets/images/spiral.png";
 import GetStarted from "./GetStarted";
 import Carousel from "react-material-ui-carousel";
+import ScrollIntoView from "react-scroll-into-view";
 
 function BridgingGap() {
   const [gaps, setgaps] = useState([
@@ -15,7 +16,7 @@ function BridgingGap() {
       description:
         "A bridging gap is a gap between two or more skills that can be bridged to create a new skill. It is a way to create a new skill from existing skills.",
       image: group33,
-      link: "/bridging-gap",
+      link: "",
     },
     {
       id: 2,
@@ -23,7 +24,7 @@ function BridgingGap() {
       description:
         "Suitable for corporate Organizations who wants to train employees for joint corporate development",
       image: group34,
-      link: "/bridging-gap",
+      link: "/corporate-training",
     },
     {
       id: 3,
@@ -31,7 +32,7 @@ function BridgingGap() {
       description:
         "Impacting the extensive knowledge tech for a sustainable career development.",
       image: group35,
-      link: "/bridging-gap",
+      link: "/sandbox",
     },
   ]);
 
@@ -71,11 +72,19 @@ function BridgingGap() {
                 {gap.description}
               </p>
               <div className="">
-                <button className="text-[#222057] px-2 py-2 rounded  font-bold">
-                  <Link to={gap.link} className="flex items-center">
-                    Get Started
-                  </Link>
-                </button>
+                {gap.link ? (
+                  <button className="text-[#222057] px-2 py-2 rounded  font-bold">
+                    <Link to={gap.link} className="flex items-center">
+                      Get Started
+                    </Link>
+                  </button>
+                ) : (
+                  <ScrollIntoView selector="#schools">
+                    <button className="text-[#222057] px-2 py-2 rounded  font-bold">
+                      <a className="flex items-center">Get Started</a>
+                    </button>
+                  </ScrollIntoView>
+                )}
               </div>
             </div>
           </div>

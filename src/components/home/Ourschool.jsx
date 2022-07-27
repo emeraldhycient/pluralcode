@@ -27,7 +27,7 @@ function Ourschool() {
   ]);
 
   return (
-    <section className="h-fit py-12 lg:py-36 w-screen bg-gray-50">
+    <section className="h-fit py-12 lg:py-36 w-screen bg-gray-50" id="schools">
       <center data-aos="zoom-in-up" data-aos-duration="1200">
         <h1 className="text-4xl font-medium text-[#222057] font-gilroy text-center w-full align-left text-[#232323] mb-12 lg:mb-20 leading-snug	">
           Our Schools

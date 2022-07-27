@@ -24,7 +24,9 @@ function ModalVideo({ setOpen, video_url }) {
       </div>
 
       <video
-        src={video_url}
+        src={
+          "https://res.cloudinary.com/gofitish/video/upload/v1658931157/videos/Plural_Code_-_Who_We_Are_y2csic.mp4"
+        }
         className="w-full h-full"
         muted
         autoPlay
