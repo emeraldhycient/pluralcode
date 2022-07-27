@@ -60,7 +60,7 @@ function HeroSection() {
   };
 
   return (
-    <section className="h-fit md:h-[60vh] lg:h-fit pt-12 ">
+    <section className="h-fit md:h-[60vh] lg:h-[80vh] pt-12 ">
       <ToastContainer
         position="top-right"
         autoClose={5000}
@@ -245,7 +245,7 @@ function HeroSection() {
             <img
               src={hirehero}
               alt="corporate training"
-              className="w-[95%]  lg:h-[85vh]"
+              className="w-[70%]  lg:h-[60vh]  mt-6 md:mt-12"
             />
           </center>
         </div>

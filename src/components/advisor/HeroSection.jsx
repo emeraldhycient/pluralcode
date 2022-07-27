@@ -23,7 +23,7 @@ function HeroSection() {
           <img
             src={adv}
             alt="product"
-            className="w-[90%] h-96 shadow rounded-full"
+            className="w-[70%] h-96 shadow rounded-full"
           />
         </div>
       </div>

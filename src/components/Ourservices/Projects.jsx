@@ -9,7 +9,7 @@ function Projects() {
   return (
     <div className="w-11/12 md:w-10/12 mx-auto">
       <Tabs.Group aria-label="Tabs with icons" style="underline">
-        <Tabs.Item title={<img src={achan1} className="h-16 w-32" />} icon={""}>
+        <Tabs.Item title={<img src={achan1} className="h-16 w-16" />} icon={""}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
             <div>
               <img src={image} alt="" />
@@ -32,7 +32,7 @@ function Projects() {
           </div>
         </Tabs.Item>
         <Tabs.Item
-          title={<img src={truesaver1} className="h-16 w-32" />}
+          title={<img src={truesaver1} className="h-16 w-16" />}
           icon={""}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full">
@@ -57,7 +57,7 @@ function Projects() {
           </div>
         </Tabs.Item>
         <Tabs.Item
-          title={<img src={identtii1} className="h-16 w-32" />}
+          title={<img src={identtii1} className="h-16 w-16" />}
           icon={""}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
@@ -82,7 +82,7 @@ function Projects() {
           </div>
         </Tabs.Item>
         <Tabs.Item
-          title={<img src={market4opticals1} className="h-16 w-32" />}
+          title={<img src={market4opticals1} className="h-16 w-16" />}
           icon={""}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2">

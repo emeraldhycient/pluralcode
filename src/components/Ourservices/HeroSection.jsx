@@ -13,9 +13,8 @@ function HeroSection() {
             <span className="text-[#F8991D]"> Scalable Products </span>With Us
           </h1>
           <p className="font-gilroyregular text-[16px]  lg:text-left  font-extralight text-[#232323] mb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-            hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus
-            rhoncus pulvinar aliquam
+            Got a product idea? Hire our product managers to build your products
+            to Scale.
           </p>
           <div className="w-[30%]">
             <GetStarted />

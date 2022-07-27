@@ -62,11 +62,11 @@ function Hero() {
         data-aos-duration="2000"
       >
         <h1 className="text-3xl md:text-4xl md:text-5xl font-bold  font-gilroy text-center   w-full align-left text-[#222057] mb-4 lg:leading-snug	">
-          Data Analysis Course
+          Data Analytics Course
         </h1>
         <p className="font-gilroyregular text-[16px] text-center   font-extralight text-[#232323] mb-4">
           Apply Your new skills to real world projects using the latest industry
-          tools and techniques in Data Analysis
+          tools and techniques in Data Analytics
         </p>
         <h4 className="mb-4">Duration: 12 Weeks | Beginner Level</h4>
         <div className="lg:flex flex-col md:flex-row justify-between  items-center">

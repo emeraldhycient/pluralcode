@@ -68,7 +68,7 @@ function Hero() {
           Apply Your new skills to real world projects using the latest industry
           tools and techniques in WebDevelopment.
         </p>
-        <h4 className="mb-4">Duration: 12 Weeks | Beginner Level</h4>
+        <h4 className="mb-4">Duration: 28 Weeks | Beginner Level</h4>
         <div className="lg:flex flex-col md:flex-row justify-between  items-center">
           <button className="bg-amber-500 border border-amber-500  text-white px-8 py-2 text-[12px] rounded mt-3 lg:mt-0 lg:ml-3 w-full md:w-[100%] mx-auto lg:w-fit flex justify-center items-center">
             <Link to="/advisor" className="flex items-center text-white">
