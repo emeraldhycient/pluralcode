@@ -2,7 +2,7 @@ import React from "react";
 
 function SchoolDropDown() {
   return (
-    <div className="w-8/12 h-56 bg-white z-20  rounded-3xl hidden md:block relative shadow shadow-lg mx-auto">
+    <div className="">
       <div className="grid grid-cols-3 p-8">
         <div className="flex justify-center items-center flex-col">
           <h1 className="text-[16px] font-bold  font-gilroy  w-full  text-[#222057] mb-2 md:mb-4 ">

@@ -9,6 +9,7 @@ import TrainingApproach from "../components/home/TrainingApproach";
 import Videobg from "../components/home/Videobg";
 import WhereMentorsWork from "../components/home/WhereMentorsWork";
 import Layout from "../components/layout/Layout";
+import Header2 from "../components/Header2";
 
 function Home() {
   return (
