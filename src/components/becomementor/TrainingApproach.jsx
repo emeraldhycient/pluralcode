@@ -8,21 +8,21 @@ function TrainingApproach() {
   const [approaches, setapproaches] = useState([
     {
       image: approach,
-      title: "Physical Classes",
+      title: "Virtual and Physical",
       content:
-        "A physical conducive learning  environment for hands-on training.",
+        "A Virtual and physical approach for both less distraction learning and classroom teaching",
     },
     {
       image: approach1,
-      title: "Virtual Classes",
+      title: "Professional Curriculum",
       content:
-        "A virtual learning program that allows for  flexibility and self-paced learning.",
+        "Professional standard Curriculum for A-z skill acquisition with Multifaceted real life Projects",
     },
     {
       image: approach2,
-      title: "One-on-One Mentoring",
+      title: "Mentor's Community",
       content:
-        "A one on one mentorship that allows for high interaction with the mentor.",
+        "A community of experienced mentors with quality of mentorship experience towards the students.",
     },
   ]);
 
@@ -30,7 +30,7 @@ function TrainingApproach() {
     <section className="h-fit py-12 md:py-20 w-screen bg-gray-50">
       <center data-aos="zoom-in-up" data-aos-duration="1200">
         <h1 className="text-4xl font-medium text-[#222057] font-gilroy text-center w-full align-left text-[#232323] mb-20 leading-snug	">
-          Our Training Approach
+          Our mentorship Approach
         </h1>
       </center>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 w-11/12 md:w-11/12  mx-auto h-full w-full">

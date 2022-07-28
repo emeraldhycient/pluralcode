@@ -9,99 +9,62 @@ function Projects() {
   return (
     <div className="w-11/12 md:w-10/12 mx-auto">
       <Tabs.Group aria-label="Tabs with icons" style="underline">
-        <Tabs.Item title={<img src={achan1} className="h-16 w-16" />} icon={""}>
+        <Tabs.Item title="unilag" icon={""}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
             <div>
               <img src={image} alt="" />
             </div>
             <div className="h-full flex flex-col justify-center ">
-              <h1 className="text-2xl font-semibold text-amber-400 font-gilroy">
-                Project Title
-              </h1>
               <p className="mt-4 text-sm font-gilroyregular ">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                Pellentesque euismod, nisi vel consectetur euismod, nisi nunc.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                Pellentesque euismod, nisi vel consectetur euismod, nisi nunc.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                Pellentesque euismod, nisi vel consectetur euismod, nisi nunc.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                Pellentesque euismod, nisi vel consectetur euismod, nisi nunc.
+                The SandBox project is an initiative of PluralCode as an
+                academic institution to collaborate with Tertiary institutions
+                or academic oriented firms to sensitize them into transitioning
+                into tech for a profitable future. We have collaborated with
+                Unilag, Slum2School, and gave Scholarships to a number of
+                beneficiaries. University of Lagos as our first installment of
+                the Sandbox initiative where we hosted boot camps on the campus,
+                students learnt, networked and indicated interest in a tech
+                skill.
               </p>
             </div>
           </div>
         </Tabs.Item>
-        <Tabs.Item
-          title={<img src={truesaver1} className="h-16 w-16" />}
-          icon={""}
-        >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full">
-            <div>
-              <img src={image} alt="" />
-            </div>
-            <div className="h-full flex flex-col justify-center ">
-              <h1 className="text-2xl font-semibold text-amber-400 font-gilroy">
-                Project Title
-              </h1>
-              <p className="mt-4 text-sm font-gilroyregular ">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                Pellentesque euismod, nisi vel consectetur euismod, nisi nunc.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                Pellentesque euismod, nisi vel consectetur euismod, nisi nunc.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                Pellentesque euismod, nisi vel consectetur euismod, nisi nunc.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                Pellentesque euismod, nisi vel consectetur euismod, nisi nunc.
-              </p>
-            </div>
-          </div>
-        </Tabs.Item>
-        <Tabs.Item
-          title={<img src={identtii1} className="h-16 w-16" />}
-          icon={""}
-        >
+        <Tabs.Item title="Slum2School" icon={""}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
             <div>
               <img src={image} alt="" />
             </div>
             <div className="h-full flex flex-col justify-center ">
-              <h1 className="text-2xl font-semibold text-amber-400 font-gilroy">
-                Project Title
-              </h1>
               <p className="mt-4 text-sm font-gilroyregular ">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                Pellentesque euismod, nisi vel consectetur euismod, nisi nunc.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                Pellentesque euismod, nisi vel consectetur euismod, nisi nunc.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                Pellentesque euismod, nisi vel consectetur euismod, nisi nunc.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                Pellentesque euismod, nisi vel consectetur euismod, nisi nunc.
+                The SandBox project is an initiative of PluralCode as an
+                academic institution to collaborate with Tertiary institutions
+                or academic oriented firms to sensitize them into transitioning
+                into tech for a profitable future. We have collaborated with
+                Unilag, Slum2School, and gave Scholarships to a number of
+                beneficiaries. University of Lagos as our first installment of
+                the Sandbox initiative where we hosted boot camps on the campus,
+                students learnt, networked and indicated interest in a tech
+                skill.
               </p>
             </div>
           </div>
         </Tabs.Item>
-        <Tabs.Item
-          title={<img src={market4opticals1} className="h-16 w-16" />}
-          icon={""}
-        >
+        <Tabs.Item title="Scholarships" icon={""}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
             <div>
               <img src={image} alt="" />
             </div>
             <div className="h-full flex flex-col justify-center ">
-              <h1 className="text-2xl font-semibold text-amber-400 font-gilroy">
-                Project Title
-              </h1>
               <p className="mt-4 text-sm font-gilroyregular ">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                Pellentesque euismod, nisi vel consectetur euismod, nisi nunc.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                Pellentesque euismod, nisi vel consectetur euismod, nisi nunc.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                Pellentesque euismod, nisi vel consectetur euismod, nisi nunc.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                Pellentesque euismod, nisi vel consectetur euismod, nisi nunc.
+                The SandBox project is an initiative of PluralCode as an
+                academic institution to collaborate with Tertiary institutions
+                or academic oriented firms to sensitize them into transitioning
+                into tech for a profitable future. We have collaborated with
+                Unilag, Slum2School, and gave Scholarships to a number of
+                beneficiaries. University of Lagos as our first installment of
+                the Sandbox initiative where we hosted boot camps on the campus,
+                students learnt, networked and indicated interest in a tech
+                skill.
               </p>
             </div>
           </div>
