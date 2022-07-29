@@ -5,34 +5,38 @@ import hire2 from "../../assets/images/hire2.png";
 import hire3 from "../../assets/images/hire3.png";
 import hire4 from "../../assets/images/hire4.png";
 
-function Section2() {
+function Section3() {
   const [reasons, setreasons] = useState([
     {
       title: "Top-class team",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description:
+        "World class professionals with hands on technical expertise.",
       style: "bg-[#2220570D]",
       textStyle: "text-[#222057]",
       image: hire1,
     },
     {
       title: "Agile Culture",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description:
+        "An understanding, flexible, collaborative environment to achive high performance results.",
       style: "bg-[#F8991D1A]",
       textStyle: "text-[#F8991D]",
 
       image: hire2,
     },
     {
-      title: "Agile Culture",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      title: "Speed",
+      description:
+        "Fast paced collaborative work flow to ensure acute delivery.",
       style: "bg-[#F8991D1A]",
       textStyle: "text-[#F8991D]",
 
       image: hire3,
     },
     {
-      title: "Top-class team",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      title: "Diversity",
+      description:
+        "An organization that accepts  and includes of employees of all backgrounds .",
       style: "bg-[#2220570D]",
       textStyle: "text-[#222057]",
 
@@ -41,7 +45,7 @@ function Section2() {
   ]);
 
   return (
-    <div className="h-fit lg:h-screen w-full w-screen pt-10 md:pt-0 bg-[#FFFDFA] pb-20 flex flex-col justify-center items-center">
+    <div className="h-fit lg:h-screen w-full w-screen pt-10 md:pt-0 bg-[#F8F8FA] pb-20 flex flex-col justify-center items-center">
       <h1 className="text-[30px] font-semibold text-center text-[#222057] mb-2 md:mb-10 pt-10">
         Why Us
       </h1>
@@ -54,4 +58,4 @@ function Section2() {
   );
 }
 
-export default Section2;
+export default Section3;

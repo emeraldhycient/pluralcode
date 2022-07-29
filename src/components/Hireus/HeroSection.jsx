@@ -60,7 +60,7 @@ function HeroSection() {
   };
 
   return (
-    <section className="h-fit md:h-[60vh] lg:h-[80vh] pt-12 ">
+    <section className="h-fit md:h-[60vh] lg:h-[100vh] pt-12  bg-[#FFFDFA]">
       <ToastContainer
         position="top-right"
         autoClose={5000}
@@ -78,7 +78,7 @@ function HeroSection() {
           data-aos="fade-right"
           data-aos-duration="2000"
         >
-          <h1 className="text-4xl md:text-5xl font-bold  font-gilroy lg:text-left  w-full align-left text-[#222057] mb-4 lg:leading-snug mt-20	">
+          <h1 className="text-3xl md:text-4xl font-bold  font-gilroy lg:text-left  w-full align-left text-[#222057] mb-4 lg:leading-snug mt-20	">
             Build a <span className="text-amber-500">World-Class </span>
             Team From Our Talents
           </h1>
@@ -245,7 +245,7 @@ function HeroSection() {
             <img
               src={hirehero}
               alt="corporate training"
-              className="w-[70%]  lg:h-[60vh]  mt-6 md:mt-12"
+              className="w-[70%] md:w-[100%] lg:w-[70%]  lg:h-[90vh]"
             />
           </center>
         </div>

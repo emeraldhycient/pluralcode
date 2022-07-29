@@ -9,30 +9,34 @@ function Section3() {
   const [reasons, setreasons] = useState([
     {
       title: "Top-class team",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description:
+        "World class professionals with hands on technical expertise.",
       style: "bg-[#2220570D]",
       textStyle: "text-[#222057]",
       image: hire1,
     },
     {
       title: "Agile Culture",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description:
+        "An understanding, flexible, collaborative environment to achive high performance results.",
       style: "bg-[#F8991D1A]",
       textStyle: "text-[#F8991D]",
 
       image: hire2,
     },
     {
-      title: "Agile Culture",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      title: "Speed",
+      description:
+        "Fast paced collaborative work flow to ensure acute delivery.",
       style: "bg-[#F8991D1A]",
       textStyle: "text-[#F8991D]",
 
       image: hire3,
     },
     {
-      title: "Top-class team",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      title: "Diversity",
+      description:
+        "An organization that accepts  and includes of employees of all backgrounds .",
       style: "bg-[#2220570D]",
       textStyle: "text-[#222057]",
 

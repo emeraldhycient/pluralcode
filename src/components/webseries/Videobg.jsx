@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./modal.css";
-import videobg from "../../assets/images/videobg1.png";
+import series from "../../assets/images/series.png";
 import ModalVideo from "./ModalVideo";
 
 function Videobg() {
@@ -10,13 +10,13 @@ function Videobg() {
     <section
       className="h-screen w-screen flex justify-center items-center my-16"
       style={{
-        background: `url(${videobg}) no-repeat center center fixed`,
+        background: `url(${series}) no-repeat center center fixed`,
       }}
     >
       {isOpen && (
         <ModalVideo
           setOpen={setOpen}
-          video_url="https://www.w3schools.com/html/mov_bbb.mp4"
+          video_url="https://res.cloudinary.com/gofitish/video/upload/v1659095398/videos/Plural_Code_-_Our_Instructor_t5qtrr.mp4"
         />
       )}
       {!isOpen && (

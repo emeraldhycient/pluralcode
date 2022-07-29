@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./modal.css";
-import videobg from "../../../assets/images/videobg1.png";
+import series from "../../../assets/images/series.png";
 import ModalVideo from "./ModalVideo";
 
 function Videobg() {
@@ -10,7 +10,7 @@ function Videobg() {
     <section
       className="h-screen w-screen flex justify-center items-center my-16"
       style={{
-        background: `url(${videobg}) no-repeat center center fixed`,
+        background: `url(${series}) no-repeat center center fixed`,
       }}
     >
       {isOpen && (

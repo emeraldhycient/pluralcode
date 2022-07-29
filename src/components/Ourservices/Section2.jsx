@@ -7,24 +7,25 @@ function Section2() {
       <h1 className="text-[30px] font-semibold text-center mb-2 md:mb-10 ">
         What We Do
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2  md:grid-cols-4 gap-4 mt-6 w-11/12 md:w-10/12 mx-auto mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-4 mt-6 w-11/12 md:w-10/12 mx-auto mt-8">
         <Step
           title="Website Design"
-          description="Click the button above to fill the application."
+          description="Build international standard website using the most recent front end and back end frame works."
         />
         <Step
           title="Application Development
           "
-          description="Meet with our corporate who are on stand by to work through your application process"
+          description="Develop global standard applications
+          "
         />
         <Step
           title="UI/UX Design"
-          description="You will get a training schedule along with the quote for your training program"
+          description="Build world Class user interfaces with excellent user experience."
         />
         <Step
           title="Data Science & Engineering
           "
-          description="You’re all Set. Enjoy the best of our corporate training program."
+          description="Become indispensable to any company with skills in Data science and engineering "
         />
       </div>
     </div>

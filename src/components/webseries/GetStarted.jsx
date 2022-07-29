@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Spinner, Modal, TextInput, Textarea, Label } from "flowbite-react";
+import {
+  Spinner,
+  Modal,
+  TextInput,
+  Textarea,
+  Label,
+  Button,
+} from "flowbite-react";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -192,7 +199,7 @@ function GetStarted() {
                 </select>
               </div>
 
-              <div className="w-full mt-3">
+              <div className="w-full mt-3 flex justify-between">
                 <button
                   type="submit"
                   className="bg-amber-500 border-[.001rem] border-amber-500  px-8 py-2 text-[12px] rounded mt-3  w-full md:w-[100%]  lg:w-fit flex justify-center items-center text-white"
@@ -208,7 +215,27 @@ function GetStarted() {
                       "Submit"
                     )}
                   </a>
-                </button>{" "}
+                </button>
+                <Button
+                  outline={true}
+                  gradientDuoTone="redToYellow"
+                  onClick={() => setIsModalOpen(!isModalOpen)}
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>{" "}
+                </Button>
               </div>
             </form>
           </div>
