@@ -22,32 +22,30 @@ function Header() {
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
-        <Navbar.Link href="/" active={true}>
-          Home
-        </Navbar.Link>
+        <Navbar.Link href="/">Home</Navbar.Link>
         <Navbar.Link>
-          <Dropdown arrowIcon={false} inline={true} label={"Schools"}>
+          <Dropdown arrowIcon={true} inline={true} label={"Schools"}>
             <Dropdown.Item>
               <SchoolDropDown />
             </Dropdown.Item>
           </Dropdown>
         </Navbar.Link>
         <Navbar.Link>
-          <Dropdown arrowIcon={false} inline={true} label={"Platform"}>
+          <Dropdown arrowIcon={true} inline={true} label={"Platform"}>
             <Dropdown.Item>
               <PlatformDropDown />
             </Dropdown.Item>
           </Dropdown>
         </Navbar.Link>
         <Navbar.Link>
-          <Dropdown arrowIcon={false} inline={true} label={"Enterprise"}>
+          <Dropdown arrowIcon={true} inline={true} label={"Enterprise"}>
             <Dropdown.Item>
               <EnterpriseDropDown />
             </Dropdown.Item>
           </Dropdown>
         </Navbar.Link>
         <Navbar.Link>
-          <Dropdown arrowIcon={false} inline={true} label={"More"}>
+          <Dropdown arrowIcon={true} inline={true} label={"More"}>
             <Dropdown.Item>
               <MoreDropDown />
             </Dropdown.Item>
