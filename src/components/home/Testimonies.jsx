@@ -9,23 +9,23 @@ import Carousel from "react-material-ui-carousel";
 
 function Testimonies() {
   const [testimony, settestimony] = useState([
-    {
+    /*{
       name: "Temiloluwa Abimbola",
-      course: "Product Designer",
+     // course: "Product Designer",
       content: ` I learned product design, which is everything a business owner does before any product is being launched and while the product is ongoing.
       The class was simplified to everyone’s level and was worked around everyone's schedule as well. That made it easy for a working-class person like me to attend. Also, the instructor and academy team were amazing.`,
       image: temiloluwa,
-    },
+    },*/
     {
       name: "Ojerinde Adenike",
-      course: "Product Designer",
+      //course: "Product Designer",
       content: `I learned a lot and networking was top-notch. We were able to meet with calm external professionals that enlightened us more about product design. It was transparent and I could say confidently that it was worth my time, resources, and emotions. 
       I look forward to making them proud and a point of reference in the future. `,
       image: Ojerinde,
     },
     {
       name: "Etim Samuel",
-      course: " Product Designer",
+      //course: " Product Designer",
       content: `I had a nice time during the product design class, the mentor was on point and apt. I came in as a learner and finished a pro. The payment plan was good as well. It was an entire lovely experience.`,
       image: Etim,
     },
