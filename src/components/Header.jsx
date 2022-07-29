@@ -19,7 +19,9 @@ function Header() {
           />
         </Navbar.Brand>
         <div className="flex md:order-2">
-          <GetStarted />
+          <div className="hidden lg:block">
+            <GetStarted />
+          </div>
           <Navbar.Toggle />
         </div>
         <Navbar.Collapse>
@@ -51,7 +53,12 @@ function Header() {
                 <MoreDropDown />
               </Dropdown.Item>
             </Dropdown>
-          </Navbar.Link>{" "}
+          </Navbar.Link>
+          <Navbar.Link>
+            <div className="block md:hidden">
+              <GetStarted />
+            </div>{" "}
+          </Navbar.Link>
         </Navbar.Collapse>
       </Navbar>
     </div>
