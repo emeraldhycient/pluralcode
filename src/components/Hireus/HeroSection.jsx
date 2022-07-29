@@ -83,9 +83,7 @@ function HeroSection() {
             Team From Our Talents
           </h1>
           <p className="font-gilroyregular text-[16px] lg:text-left  font-extralight text-[#232323] mb-8">
-            Learn from elite level mentor and become a top level{" "}
-            <br className="hidden lg:block" />
-            professional in the field of tech
+            Hire the best hands from our team of highly experienced Talents.
           </p>
           <React.Fragment>
             <button
@@ -240,7 +238,7 @@ function HeroSection() {
             </Modal>
           </React.Fragment>
         </div>
-        <div className="col-span- pb-2 mt-8 md:mt-0">
+        <div className="col-span-  mt-8 md:mt-3">
           <center>
             <img
               src={hirehero}

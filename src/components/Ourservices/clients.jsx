@@ -1,4 +1,4 @@
-import mentorswork from "../../assets/images/mentorswork1.png";
+import served from "../../assets/images/served.png";
 
 function Clients() {
   return (
@@ -9,7 +9,7 @@ function Clients() {
         </h1>
       </center>
       <div className="w-11/12 md:w-7/12 mx-auto">
-        <img src={mentorswork} alt="map" className="w-full h-full" />
+        <img src={served} alt="map" className="w-full h-full" />
       </div>
     </section>
   );
