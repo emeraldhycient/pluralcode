@@ -3,6 +3,27 @@
     width: 90vw;
 }
 
+.modalContainer {
+    background-image: url(https://res.cloudinary.com/gofitish/image/upload/v1659209995/images/videobg_q9z3lx.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+
+@media screen and (max-width: 768px) {
+    .modalContainer {
+        background-image: url(../../assets/images/bgimg.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
 .btn {
     height: 100px;
     width: 100px;

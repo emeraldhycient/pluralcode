@@ -10,7 +10,7 @@ function Courses() {
       description:
         "Learn Ui/Ux from scratch without writing a single code. Master how to design high fidelity interface with FIGMA, design journey mapping and empathize with users.",
       image: productdesign,
-      duration: "8weeks",
+      duration: "12 weeks",
       start_date: "01/01/2020",
       link: "/schools/product/product-design",
       level: "beginner",

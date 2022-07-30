@@ -34,16 +34,14 @@ function CourseCard({ course }) {
         >
           {course.description}
         </p>
-        <h5 className="text-sm" data-aos="fade-right" data-aos-duration="2000">
-          {course.duration}
-        </h5>
-        <p
-          className="text-sm  lg:text-left  font-extralight text-[#232323] mb-2"
+        <h5
+          className="text-sm mb-3"
           data-aos="fade-right"
           data-aos-duration="2000"
         >
-          Next Class Starts: {course.start_date}
-        </p>
+          {course.duration}
+        </h5>
+
         <button
           className="bg-amber-500 text-[12px] text-white px-8 py-2 rounded w-fit  lg:mx-0 lg:w-fit flex justify-center items-center"
           data-aos="fade-right"

@@ -27,8 +27,7 @@ function Courses() {
       description:
         "Learn Ui/Ux from scratch without writing a single code. Master how to design high fidelity interface with FIGMA, design journey mapping and empathize with users.",
       image: productdesign,
-      duration: "8weeks",
-      start_date: "01/01/2020",
+      duration: "28 weeks",
       link: "https://www.pluralcode.com/product-school/product-design",
       level: "beginner",
       mode: "physical",
@@ -38,8 +37,7 @@ function Courses() {
       description:
         "Become a professional product manager in 8 weeks. Learn how to gather users data, identify their needs and how it benefits them.",
       image: productmanagement,
-      duration: "8weeks",
-      start_date: "01/01/2020",
+      duration: "28 weeks",
       link: "https://www.pluralcode.com/product-school/product-design",
       level: "beginner",
       mode: "physical",
@@ -49,8 +47,7 @@ function Courses() {
       description:
         "Become a professional product manager in 8 weeks. Learn how to gather users data, identify their needs and how it benefits them.",
       image: productmanagement,
-      duration: "8weeks",
-      start_date: "01/01/2020",
+      duration: "28 weeks",
       link: "https://www.pluralcode.com/product-school/product-design",
       level: "beginner",
       mode: "physical",

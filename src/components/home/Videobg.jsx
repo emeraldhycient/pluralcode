@@ -3,33 +3,32 @@ import "./modal.css";
 import videobg from "../../assets/images/videobg.png";
 import play from "../../assets/images/play.png";
 import ModalVideo from "./ModalVideo";
+import vdbg from "../../assets/images/bgimg.png";
 
 function Videobg() {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <section
-      className="h-screen w-screen flex justify-center items-center"
-      style={{
-        background: `url(${videobg})`,
-        backgroundSize: "center",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundAttachment: "fixed",
-      }}
-    >
-      {isOpen && (
-        <ModalVideo
-          setOpen={setOpen}
-          video_url="https://www.w3schools.com/html/mov_bbb.mp4"
-        />
-      )}
+    <>
       {!isOpen && (
-        <button className="" onClick={(e) => setOpen(!isOpen)}>
-          <img src={play} alt="play" />
-        </button>
+        <section className="h-[50vh] md:h-[100vh] w-screen ">
+          <img
+            src={vdbg}
+            alt=""
+            onClick={(e) => setOpen(!isOpen)}
+            className="h-[50vh] md:h-[100vh] w-screen "
+          />
+        </section>
       )}
-    </section>
+      {isOpen && (
+        <section className="">
+          <ModalVideo
+            setOpen={setOpen}
+            video_url="https://www.w3schools.com/html/mov_bbb.mp4"
+          />
+        </section>
+      )}
+    </>
   );
 }
 
