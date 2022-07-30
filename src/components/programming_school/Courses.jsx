@@ -25,7 +25,7 @@ function Courses() {
     {
       title: "Front-End Development",
       description:
-        "Learn Ui/Ux from scratch without writing a single code. Master how to design high fidelity interface with FIGMA, design journey mapping and empathize with users.",
+        "Learn how to create international standard website and apps using the most recent front End frameworks of the day.",
       image: productdesign,
       duration: "28 weeks",
       link: "https://www.pluralcode.com/product-school/product-design",
@@ -36,7 +36,7 @@ function Courses() {
     {
       title: "FullStack Development",
       description:
-        "Become a professional product manager in 8 weeks. Learn how to gather users data, identify their needs and how it benefits them.",
+        "Learn how to create international standard website and apps using the most recent front End frameworks of the day.",
       image: productmanagement,
       duration: "28 weeks",
       link: "https://www.pluralcode.com/product-school/product-design",
