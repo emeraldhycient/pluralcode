@@ -39,7 +39,7 @@ function HeroSection() {
             <img
               src={adv}
               alt="product"
-              className="w-[70%] h-96 shadow rounded-full"
+              className="w-[70%] h-52 md:h-96 shadow rounded-full"
               onClick={(e) => setOpen(!isOpen)}
               data-aos="fade-up"
               data-aos-duration="2000"
