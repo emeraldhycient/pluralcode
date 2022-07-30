@@ -13,7 +13,7 @@ function Courses() {
       image: productdesign,
       duration: "12weeks",
       start_date: "01/01/2020",
-      link: "/schools/data/data-analysis",
+      link: "/schools/data/data-analytics",
       level: "beginner",
       mode: "physical",
     },

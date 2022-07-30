@@ -22,7 +22,7 @@ function SchoolDropDown() {
         </h1>
         <ul className="w-full">
           <li className="font-gilroyregular text-[14px] my-1">
-            <a href="/schools/data/data-analysis">Data Analytics</a>
+            <a href="/schools/data/data-analytics">Data Analytics</a>
           </li>
           <li className="font-gilroyregular text-[14px] my-1">
             <a href="/schools/data/machine-learning">Machine Learning</a>

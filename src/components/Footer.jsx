@@ -60,7 +60,7 @@ function Footer() {
                   </a>
                 </li>
                 <li className="text-xs text-gray-600 mb-2">
-                  <a href="/schools/data/data-analysis">Data Analysis</a>
+                  <a href="/schools/data/data-analytics">Data Analysis</a>
                 </li>
                 <li className="text-xs text-gray-600 mb-2">
                   <a href="/schools/data/machine-learning">Machine Learning</a>
