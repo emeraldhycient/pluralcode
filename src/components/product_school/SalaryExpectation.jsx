@@ -9,7 +9,7 @@ function SalaryExpectation() {
           <img
             src={sala}
             alt="map"
-            className="w-[90%] md:w-[80%] h-56 md:h-96 mx-auto"
+            className="w-[80%] md:w-[80%] h-56 md:h-96 mx-auto"
           />
         </div>
 

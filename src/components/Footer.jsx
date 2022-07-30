@@ -18,16 +18,28 @@ function Footer() {
             start a successful career.
           </p>
           <div className="flex mt-3">
-            <a href="https://www.instagram.com/pluralcode_academy">
+            <a
+              href="https://www.instagram.com/pluralcode_academy"
+              target="_blank"
+            >
               <AiOutlineInstagram className="text-[#222057] mr-3" size={25} />
             </a>
-            <a href="https://www.facebook.com/103573938645826/posts/pfbid02RKRpzHEVeVEdAVfSiyBiXQDfMrfWzvpZKaPK9XeJAhdJFxsq3vKcSYzonmoppNecl/?d=n">
+            <a
+              href="https://www.facebook.com/103573938645826/posts/pfbid02RKRpzHEVeVEdAVfSiyBiXQDfMrfWzvpZKaPK9XeJAhdJFxsq3vKcSYzonmoppNecl/?d=n"
+              target="_blank"
+            >
               <AiOutlineFacebook className="text-[#222057] mr-3" size={25} />
             </a>
-            <a href="https://twitter.com/pluralcode/status/1548038713384452096?s=21&t=LSQTusS7JXkNc448HltKew">
+            <a
+              href="https://twitter.com/pluralcode/status/1548038713384452096?s=21&t=LSQTusS7JXkNc448HltKew"
+              target="_blank"
+            >
               <TbBrandTwitter className="text-[#222057] mr-3" size={25} />
             </a>
-            <a href="https://www.linkedin.com/company/pluralcode-technologies/">
+            <a
+              href="https://www.linkedin.com/company/pluralcode-technologies/"
+              target="_blank"
+            >
               <TbBrandLinkedin className="text-[#222057] mr-3" size={25} />
             </a>
           </div>
