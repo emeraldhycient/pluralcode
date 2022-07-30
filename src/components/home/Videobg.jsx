@@ -11,7 +11,7 @@ function Videobg() {
     <section
       className="h-screen w-screen flex justify-center items-center"
       style={{
-        background: `url(https://res.cloudinary.com/gofitish/image/upload/v1659209995/images/videobg_q9z3lx.png)`,
+        background: `url(${videobg})`,
         backgroundSize: "center",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
