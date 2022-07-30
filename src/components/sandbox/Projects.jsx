@@ -12,13 +12,26 @@ function Projects() {
         <Tabs.Item title="unilag" icon={""}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
             <div>
-              <img src={image} alt="" />
+              <img
+                src={image}
+                alt=""
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              />
             </div>
             <div className="h-full flex flex-col justify-center ">
-              <h1 className="text-2xl font-semibold text-amber-400 font-gilroy">
+              <h1
+                className="text-2xl font-semibold text-amber-400 font-gilroy"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              >
                 Unilag
               </h1>
-              <p className="mt-4 text-sm font-gilroyregular ">
+              <p
+                className="mt-4 text-sm font-gilroyregular "
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              >
                 The SandBox project is an initiative of PluralCode as an
                 academic institution to collaborate with Tertiary institutions
                 or academic oriented firms to sensitize them into transitioning
@@ -35,13 +48,26 @@ function Projects() {
         <Tabs.Item title="Slum2School" icon={""}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
             <div>
-              <img src={image} alt="" />
+              <img
+                src={image}
+                alt=""
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              />
             </div>
             <div className="h-full flex flex-col justify-center ">
-              <h1 className="text-2xl font-semibold text-amber-400 font-gilroy">
+              <h1
+                className="text-2xl font-semibold text-amber-400 font-gilroy"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              >
                 Slum2School
               </h1>
-              <p className="mt-4 text-sm font-gilroyregular ">
+              <p
+                className="mt-4 text-sm font-gilroyregular "
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              >
                 We have helped the team at Slum2school to attain a level of
                 success at their switch into the tech world, helping their
                 members of staff know what tech skills would be beneficial to
@@ -55,13 +81,26 @@ function Projects() {
         <Tabs.Item title="Scholarships" icon={""}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
             <div>
-              <img src={image} alt="" />
+              <img
+                src={image}
+                alt=""
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              />
             </div>
             <div className="h-full flex flex-col justify-center ">
-              <h1 className="text-2xl font-semibold text-amber-400 font-gilroy">
+              <h1
+                className="text-2xl font-semibold text-amber-400 font-gilroy"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              >
                 Scholarships
               </h1>
-              <p className="mt-4 text-sm font-gilroyregular ">
+              <p
+                className="mt-4 text-sm font-gilroyregular"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              >
                 Our model being helping 1000 Nigerians launch a sustainable
                 career in tech, we have created scholarship programs that
                 allowed six beneficiaries so far learn a tech course 100% Free.

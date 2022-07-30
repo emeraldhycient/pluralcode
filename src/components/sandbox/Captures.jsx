@@ -7,7 +7,13 @@ import mentor5 from "../../assets/images/mentor5.png";
 function Captures() {
   return (
     <div className="h-fit md:h-fit lg:h-screen w-full flex justify-center items-center flex-col py-10 md:py-0">
-      <img src={mentor5} alt="" className="w-full h-32  lg:h-[368px]" />
+      <img
+        src={mentor5}
+        alt=""
+        className="w-full h-32  lg:h-[368px]"
+        data-aos="fade-left"
+        data-aos-duration="2000"
+      />
 
       {/* <div className="grid grid-cols-2 md:grid-cols-3 gap-2 w-full w-10/12 mx-auto">
         <div className="">
