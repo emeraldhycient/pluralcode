@@ -32,16 +32,7 @@ function Courses() {
       level: "beginner",
       mode: "physical",
     },
-    {
-      title: "Backend Development",
-      description:
-        "Become a professional product manager in 8 weeks. Learn how to gather users data, identify their needs and how it benefits them.",
-      image: productmanagement,
-      duration: "28 weeks",
-      link: "https://www.pluralcode.com/product-school/product-design",
-      level: "beginner",
-      mode: "physical",
-    },
+
     {
       title: "FullStack Development",
       description:
