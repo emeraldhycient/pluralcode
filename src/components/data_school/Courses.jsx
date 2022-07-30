@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import CourseCard from "./CourseCard";
 import productdesign from "../../assets/images/productdesign.png";
 import productmanagement from "../../assets/images/productmanagement.png";
+import axios from "axios";
 
 function Courses() {
   const [courses, setCourses] = useState([
@@ -28,6 +29,22 @@ function Courses() {
       mode: "physical",
     },
   ]);
+
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get(
+        "https://pluralcode.academy/pluralcode_payments/api/get_website_course_list"
+      )
+      .then((res) => {
+        setData(res.data);
+        console.log(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   return (
     <section className="mt-6 ">
