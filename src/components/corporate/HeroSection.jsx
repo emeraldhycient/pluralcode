@@ -82,11 +82,25 @@ function HeroSection() {
       />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-11/12 md:w-10/12 mx-auto h-full w-full">
         <div className=" h-full flex flex-col md:justify-center items-left text-left w-full align-left">
-          <h6 className="text-amber-500">Get Your Staff SkilledUp With</h6>
-          <h1 className="text-4xl md:text-5xl font-bold  font-gilroy  lg:text-left  w-full align-left text-[#222057] mb-4 lg:leading-snug	">
+          <h6
+            className="text-amber-500"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            Get Your Staff SkilledUp With
+          </h6>
+          <h1
+            className="text-4xl md:text-5xl font-bold  font-gilroy  lg:text-left  w-full align-left text-[#222057] mb-4 lg:leading-snug	"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
             Our Corporate Training{" "}
           </h1>
-          <p className="font-gilroyregular text-[16px]  lg:text-left  font-extralight text-[#232323] mb-8">
+          <p
+            className="font-gilroyregular text-[16px]  lg:text-left  font-extralight text-[#232323] mb-8"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
             Your employees deserve the best training programs out there. Our
             corporate training program is designed to educate employees. While
             it helps employers, it is also beneficial for employees as it helps
@@ -96,7 +110,9 @@ function HeroSection() {
           <React.Fragment>
             <button
               onClick={() => setIsModalOpen(!isModalOpen)}
-              className="bg-amber-500 text-white px-2 py-2 rounded w-44 text-center"
+              className="bg-amber-500 text-white px-2 py-2 rounded w-44 text-center "
+              data-aos="fade-right"
+              data-aos-duration="2000"
             >
               <a className="flex text-center justify-center items-center w-full">
                 Get Started
@@ -273,6 +289,8 @@ function HeroSection() {
               src={cop}
               alt="corporate training"
               className="w-[95%] md:w-[80%] h-[90%]"
+              data-aos="fade-left"
+              data-aos-duration="2000"
             />
           </center>
         </div>

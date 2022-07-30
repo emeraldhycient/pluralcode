@@ -82,14 +82,28 @@ function Section4() {
       <div className="grid grid-cols-1 md:grid-cols-2 w-11/12 md:w-10/12 mx-auto">
         <div className="flex justify-center items-center flex-col mt-10 md:mt-0 order-last">
           <center>
-            <img src={section3} alt="" className="w-[80%]" />
+            <img
+              src={section3}
+              alt=""
+              className="w-[80%]"
+              data-aos="fade-left"
+              data-aos-duration="2000"
+            />
           </center>
         </div>
         <div className="flex justify-center  flex-col mx-4">
-          <h1 className="text-xl md:text-2xl font-bold  font-gilroy  w-full  text-[#222057] mb-2 md:mb-4 ">
+          <h1
+            className="text-xl md:text-2xl font-bold  font-gilroy  w-full  text-[#222057] mb-2 md:mb-4 "
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
             Result-Driven Approach{" "}
           </h1>
-          <p className="font-gilroyregular">
+          <p
+            className="font-gilroyregular"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
             We set specific, measurable improvement goals and match resources,
             tools, and action plans to the requirements of accomplishing
             success.
@@ -98,6 +112,8 @@ function Section4() {
             <button
               onClick={() => setIsModalOpen(!isModalOpen)}
               className="bg-amber-500 text-white px-2 py-2 rounded w-44 text-center mt-3"
+              data-aos="fade-right"
+              data-aos-duration="2000"
             >
               <a className="flex text-center justify-center items-center w-full">
                 Get Started

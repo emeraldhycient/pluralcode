@@ -63,11 +63,19 @@ function HeroSection() {
     <section className="h-fit md:h-[65vh] lg:h-screen w-screen pt-12">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-11/12 md:w-10/12 mx-auto h-full w-full">
         <div className=" h-full flex flex-col md:justify-center items-left text-left w-full align-left">
-          <h1 className="text-4xl md:text-5xl font-bold  font-gilroy  lg:text-left  w-full align-left text-[#222057] mb-4 lg:leading-snug	">
+          <h1
+            className="text-4xl md:text-5xl font-bold  font-gilroy  lg:text-left  w-full align-left text-[#222057] mb-4 lg:leading-snug	"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+          >
             <span className="text-amber-500">Mentor</span> Tech
             <span className="text-amber-500"> Talents</span>For Global Impact
           </h1>
-          <p className="font-gilroyregular text-[16px]  lg:text-left  font-extralight text-[#232323] mb-8">
+          <p
+            className="font-gilroyregular text-[16px]  lg:text-left  font-extralight text-[#232323] mb-8"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+          >
             Become a mentor! Join our team of Tech Experts to mentor our
             students to prepare them for a profitable future.
           </p>
@@ -86,6 +94,8 @@ function HeroSection() {
             <button
               onClick={() => setIsModalOpen(!isModalOpen)}
               className="bg-amber-500 text-white px-2 py-2 rounded w-[50%] md:w-[40%] "
+              data-aos="fade-down"
+              data-aos-duration="2000"
             >
               <a className="flex justify-center items-center text-center w-full">
                 Get Started
@@ -259,6 +269,8 @@ function HeroSection() {
               src={ment}
               alt="corporate training"
               className="w-[95%] md:w-[80%] h-[90%]"
+              data-aos="fade-up"
+              data-aos-duration="2000"
             />
           </center>
         </div>

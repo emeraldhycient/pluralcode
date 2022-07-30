@@ -11,14 +11,26 @@ function HeroSection() {
     <section className="h-fit md:h-[60vh] lg:h-[90vh] w-screen pt-12 bg-[#F8F8FA]">
       <div className="grid grid-cols-1 md:grid-cols-4 w-11/12 md:w-10/12 mx-auto h-full w-full">
         <div className="col-span-2  h-full flex flex-col md:justify-center items-left text-left w-full align-left">
-          <h1 className="text-4xl md:text-5xl font-bold  font-gilroy  lg:text-left  w-full align-left text-[#222057] mb-4 lg:leading-tight	">
+          <h1
+            className="text-4xl md:text-5xl font-bold  font-gilroy  lg:text-left  w-full align-left text-[#222057] mb-4 lg:leading-tight	"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+          >
             Talk to student advisor
           </h1>
-          <p className="font-gilroyregular text-[16px]  lg:text-left  font-extralight text-[#232323] mb-8">
+          <p
+            className="font-gilroyregular text-[16px]  lg:text-left  font-extralight text-[#232323] mb-8"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+          >
             Get professional counsel from our Student advisors in areas relating
             to starting a career in tech.
           </p>
-          <div className="w-[70%] lg:w-[40%]">
+          <div
+            className="w-[70%] lg:w-[40%]"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+          >
             <GetStarted />
           </div>
         </div>
@@ -29,6 +41,8 @@ function HeroSection() {
               alt="product"
               className="w-[70%] h-96 shadow rounded-full"
               onClick={(e) => setOpen(!isOpen)}
+              data-aos="fade-up"
+              data-aos-duration="2000"
             />
           </div>
         )}

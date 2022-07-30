@@ -7,7 +7,11 @@ function Details() {
   return (
     <section className="h-fit py-20">
       <div className="grid grid-cols-1 md:grid-cols-2 w-11/12 md:w-9/12 mx-auto h-full w-full">
-        <div className="flex justify-center flex-col">
+        <div
+          className="flex justify-center flex-col"
+          data-aos="fade-down"
+          data-aos-duration="2000"
+        >
           <h1 className="text-2xl md:text-3xl font-bold  font-gilroy md:text-center lg:text-left  w-full align-left text-[#222057] mb-4 lg:leading-tight	">
             Reach Out to Us{" "}
           </h1>
@@ -43,7 +47,13 @@ function Details() {
           </p>
         </div>
         <div className="w-full">
-          <img src={about3} alt="" srcset="" />
+          <img
+            src={about3}
+            alt=""
+            srcset=""
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          />
         </div>
       </div>
     </section>

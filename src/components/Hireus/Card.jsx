@@ -3,7 +3,11 @@ import React from "react";
 function Card({ reason }) {
   const { title, description, image, style, textStyle } = reason;
   return (
-    <div className="grid grid-cols-2">
+    <div
+      className="grid grid-cols-2"
+      data-aos="fade-right"
+      data-aos-duration="2000"
+    >
       <div
         className={`${style} h-40 md:h-[200px] flex justify-center items-center flex-col p-3`}
       >

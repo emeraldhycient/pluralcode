@@ -244,6 +244,8 @@ function HeroSection() {
               src={hirehero}
               alt="corporate training"
               className="w-[70%] md:w-[100%] lg:w-[70%]  lg:h-[90vh]"
+              data-aos="fade-left"
+              data-aos-duration="2000"
             />
           </center>
         </div>

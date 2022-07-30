@@ -9,6 +9,8 @@ function Footer() {
     <section
       className="bg-gray-100 h-fit  lg:h-[60vh] w-full pt-16 px-3 md:p-16"
       id="footer"
+      data-aos="fade-down-right"
+      data-aos-duration="2000"
     >
       <div className="grid grid-cols-1 md:grid-cols-6 gap-8 w-full">
         <div className="w-full md:col-span-2">
