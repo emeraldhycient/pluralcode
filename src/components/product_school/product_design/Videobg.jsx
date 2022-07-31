@@ -9,7 +9,7 @@ function Videobg() {
   return (
     <>
       {!isOpen && (
-        <section className="h-[50vh] md:h-[100vh] w-screen ">
+        <section className="h-[40vh] mb-16 md:mb-0 md:h-[100vh] w-screen ">
           <img
             src={school}
             alt=""
