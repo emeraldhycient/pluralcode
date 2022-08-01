@@ -70,6 +70,7 @@ function Hero() {
           tools and techniques in WebDevelopment.
         </p>
         <h4 className="mb-4">Duration: 28 Weeks | Beginner Level</h4>
+        <h4 className="mb-4">Tuition Starting From: 320,000 </h4>
         <div className="lg:flex flex-col md:flex-row justify-between  items-center">
           <ApplyNow course="full stack" reference="62bb0bc968666" />
 

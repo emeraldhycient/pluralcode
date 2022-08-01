@@ -70,6 +70,7 @@ function Hero() {
           tools and techniques in Product design.
         </p>
         <h4 className="mb-4">Duration: 12 Weeks | Beginner Level</h4>
+        <h4 className="mb-4">Tuition Starting From: 100,000 </h4>
         <div className="lg:flex flex-col md:flex-row justify-between  items-center">
           <ApplyNow course="product design" reference="62bb084620283" />
 

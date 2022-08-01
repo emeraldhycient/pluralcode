@@ -70,6 +70,7 @@ function Hero() {
           tools and techniques in Data Analytics
         </p>
         <h4 className="mb-4">Duration: 12 Weeks | Beginner Level</h4>
+        <h4 className="mb-4">Tuition Starting From: 180,000 </h4>
         <div className="lg:flex flex-col md:flex-row justify-between  items-center">
           <ApplyNow course="Data Analytics" reference="62b9c81e5e89c" />
           <button className="bg-white border-[.001rem] border-slate-500 text-amber-500 text-white px-8 py-2 text-[12px] rounded mt-3 lg:mt-0 lg:ml-3 w-full md:w-[100%] mx-auto lg:w-fit flex justify-center items-center">
