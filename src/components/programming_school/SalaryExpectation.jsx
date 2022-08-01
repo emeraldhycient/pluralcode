@@ -44,15 +44,6 @@ function SalaryExpectation() {
             States. At senior level web developers are paid an average N450-N500
             thousand monthly.
           </h6>
-          <button
-            className="bg-amber-500 text-[12px] text-white px-8 py-2 rounded w-fit  lg:mx-0 lg:w-fit flex justify-center items-center"
-            data-aos="fade-right"
-            data-aos-duration="2000"
-          >
-            <Link to="" className="flex items-center">
-              Learn More
-            </Link>
-          </button>
         </div>
       </div>
     </section>

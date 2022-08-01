@@ -40,19 +40,10 @@ function SalaryExpectation() {
             data-aos="fade-left"
             data-aos-duration="2000"
           >
-            In the Us you can earn up to $100,00 working remotely as a product
+            In the U.S you can earn up to $100,00 working remotely as a product
             manager. The average Product manager earns between N250,00-N500,000
             per month in the Nigerian Tech market.
           </h6>
-          <button
-            className="bg-amber-500 text-[12px] text-white px-8 py-2 rounded w-fit  lg:mx-0 lg:w-fit flex justify-center items-center"
-            data-aos="fade-left"
-            data-aos-duration="2000"
-          >
-            <Link to="" className="flex items-center">
-              Learn More
-            </Link>
-          </button>
         </div>
       </div>
     </section>
