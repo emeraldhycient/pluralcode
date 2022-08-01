@@ -33,7 +33,7 @@ function Header() {
             </Dropdown>
           </Navbar.Link>
           <Navbar.Link>
-            <Dropdown arrowIcon={true} inline={true} label={"Platform"}>
+            <Dropdown arrowIcon={true} inline={true} label={"Platforms"}>
               <Dropdown.Item>
                 <PlatformDropDown />
               </Dropdown.Item>
