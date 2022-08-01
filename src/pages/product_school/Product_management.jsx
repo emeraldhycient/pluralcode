@@ -43,6 +43,24 @@ function Product_management() {
       isActive: false,
     },
     {
+      title: "Can I pay in installments?      ",
+      content:
+        "Yes, we have an installments option, where you pay 50% initial fee and spread the great through the first two months of the program       ",
+      isActive: false,
+    },
+    {
+      title: "Are Certificates awarded at the end of the program?      ",
+      content:
+        "Yes, Certificate of completion is awarded at the end of all our programs.",
+      isActive: false,
+    },
+    {
+      title: "What is required of me to start a class.      ",
+      content:
+        "A working laptop, a note pad and the willingness to start to finish.",
+      isActive: false,
+    },
+    {
       title: "What is required of me to start a class.      ",
       content:
         "A working laptop, a note pad and the willingness to start to finish.",

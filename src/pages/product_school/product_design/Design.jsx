@@ -54,6 +54,24 @@ function Design() {
       Learning, practicing, and creating a good portfolio can take a minimum of 6 months. But like I said it can be less depending on how fast you can learn. You also need to be ready financially. So you may want to save before starting.`,
       isActive: false,
     },
+    {
+      title: "Can I pay in installments?      ",
+      content:
+        "Yes, we have an installments option, where you pay 50% initial fee and spread the great through the first two months of the program       ",
+      isActive: false,
+    },
+    {
+      title: "Are Certificates awarded at the end of the program?      ",
+      content:
+        "Yes, Certificate of completion is awarded at the end of all our programs.",
+      isActive: false,
+    },
+    {
+      title: "What is required of me to start a class.      ",
+      content:
+        "A working laptop, a note pad and the willingness to start to finish.",
+      isActive: false,
+    },
   ]);
 
   return (

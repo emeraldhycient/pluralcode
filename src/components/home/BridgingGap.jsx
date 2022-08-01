@@ -14,7 +14,7 @@ function BridgingGap() {
       id: 1,
       title: "For Individuals",
       description:
-        "A bridging gap is a gap between two or more skills that can be bridged to create a new skill. It is a way to create a new skill from existing skills.",
+        "Master in-demand tech skills that will help you achieve your dream of a career change, workplace promotion or international job opportunities.",
       image: group33,
       link: "",
     },
