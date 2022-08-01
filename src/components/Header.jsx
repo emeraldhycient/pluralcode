@@ -11,7 +11,7 @@ function Header() {
   return (
     <div className="sticky top-0 backdrop-grayscale z-40">
       <Navbar fluid={true} rounded={true}>
-        <Navbar.Brand href="https://flowbite.com/">
+        <Navbar.Brand href="/">
           <img
             src={logo}
             className="mr-3 ml-6 h-6 sm:h-9"
@@ -25,7 +25,6 @@ function Header() {
           <Navbar.Toggle />
         </div>
         <Navbar.Collapse>
-          <Navbar.Link href="/">Home</Navbar.Link>
           <Navbar.Link>
             <Dropdown arrowIcon={true} inline={true} label={"Schools"}>
               <Dropdown.Item>
