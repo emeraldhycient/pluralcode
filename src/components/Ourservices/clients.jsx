@@ -1,4 +1,4 @@
-import served from "../../assets/images/served.png";
+import served from "../../assets/images/served.svg";
 
 function Clients() {
   return (
