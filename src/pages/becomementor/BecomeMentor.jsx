@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeroSection from "../../components/becomementor/HeroSection";
 import Captures from "../../components/becomementor/Captures";
 import Footer from "../../components/Footer";
@@ -9,6 +9,10 @@ import TrainingApproach from "../../components/becomementor/TrainingApproach";
 import Section2 from "../../components/becomementor/Section2";
 
 function BecomeMentor() {
+  useEffect(() => {
+    document.title = "Mentor Tech Talents For Global Impact";
+  }, []);
+
   return (
     <Layout>
       <Header />

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Layout from "../../components/layout/Layout";
@@ -9,6 +9,10 @@ import SalaryExpectation from "../../components/data_school/SalaryExpectation";
 import Courses from "../../components/data_school/Courses";
 
 function DataSchool() {
+  useEffect(() => {
+    document.title = "Data School";
+  }, []);
+
   return (
     <Layout>
       <Header />

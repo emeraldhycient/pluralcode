@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Book from "../../components/advisor/Book";
 import HeroSection from "../../components/advisor/HeroSection";
 import Section1 from "../../components/advisor/Section1";
@@ -9,6 +9,10 @@ import Header from "../../components/Header";
 import Layout from "../../components/layout/Layout";
 
 function Advisor() {
+  useEffect(() => {
+    document.title = "Talk to student advisor    ";
+  }, []);
+
   return (
     <Layout>
       <Header />

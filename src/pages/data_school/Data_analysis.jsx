@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Faq from "../../components/Faq";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
@@ -64,6 +64,10 @@ function Data_analysis() {
       isActive: false,
     },
   ]);
+
+  useEffect(() => {
+    document.title = "Data Analytics";
+  }, []);
 
   return (
     <>

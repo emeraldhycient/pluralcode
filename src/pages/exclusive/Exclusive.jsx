@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Layout from "../../components/layout/Layout";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
@@ -12,6 +12,10 @@ import Section4 from "../../components/exclusive/Section4";
 import Hire from "../../components/exclusive/Hire";
 
 function Exclusive() {
+  useEffect(() => {
+    document.title = "Get A Private Tutor  & Learn On Your Own Terms";
+  }, []);
+
   return (
     <Layout>
       <Header />

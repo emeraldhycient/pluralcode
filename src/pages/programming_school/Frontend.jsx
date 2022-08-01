@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Testimonies from "../../components/home/Testimonies";
@@ -8,6 +8,10 @@ import Videobg from "../../../components/product_school/product_design/Videobg";
 import YouWillLearn from "../../../components/product_school/product_design/YouWillLearn";
 
 function Frontend() {
+  useEffect(() => {
+    document.title = "software development school";
+  }, []);
+
   return (
     <>
       <Header />

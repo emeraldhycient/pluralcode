@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Faq from "../../components/Faq";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
@@ -59,6 +59,10 @@ function Machine_learning() {
       isActive: false,
     },
   ]);
+
+  useEffect(() => {
+    document.title = "Machine Learning";
+  }, []);
 
   return (
     <>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Layout from "../../components/layout/Layout";
@@ -9,6 +9,10 @@ import Section2 from "../../components/Ourservices/Section2";
 import Section3 from "../../components/Ourservices/Section3";
 
 function Services() {
+  useEffect(() => {
+    document.title = "  Build & Launch Scalable Products With Us";
+  }, []);
+
   return (
     <Layout>
       <Header />

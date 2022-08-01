@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Layout from "../../components/layout/Layout";
@@ -9,6 +9,10 @@ import SalaryExpectation from "../../components/product_school/SalaryExpectation
 import Courses from "../../components/product_school/Courses";
 
 function Product() {
+  useEffect(() => {
+    document.title = "Product School";
+  }, []);
+
   return (
     <Layout>
       <Header />

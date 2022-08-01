@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Details from "../../components/about/Details";
 import Hero from "../../components/about/Hero";
 import Section1 from "../../components/about/Section1";
@@ -8,6 +8,11 @@ import Header from "../../components/Header";
 import Layout from "../../components/layout/Layout";
 
 function About() {
+  useEffect(() => {
+    document.title = `Building Solutions  For Global
+    Impact`;
+  }, []);
+
   return (
     <Layout>
       <Header />
