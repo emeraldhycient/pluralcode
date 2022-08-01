@@ -68,8 +68,9 @@ function HeroSection() {
             data-aos="fade-down"
             data-aos-duration="2000"
           >
-            <span className="text-amber-500">Mentor</span> Tech
-            <span className="text-amber-500"> Talents</span>For Global Impact
+            Mentor
+            <span className="text-amber-500"> Tech Talents {""}</span>For Global
+            Impact
           </h1>
           <p
             className="font-gilroyregular text-[16px]  lg:text-left  font-extralight text-[#232323] mb-8"
