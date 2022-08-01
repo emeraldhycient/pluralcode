@@ -63,7 +63,7 @@ function HeroSection() {
         >
           <center>
             <div className="py-1">
-              <img src={peoples} alt="" className="h-12 w-[60%]" />
+              <img src={peoples} alt="" className="h-8 w-[60%]" />
             </div>
           </center>
           <h6 className="text-xs text-center">1000+ Students Trained</h6>

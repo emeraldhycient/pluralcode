@@ -15,7 +15,9 @@ function Services() {
       <HeroSection />
       <Clients />
       <Section2 />
-      <Projects />
+      {/*
+        <Projects />
+        */}
       <Section3 />
       <Footer />
     </Layout>
