@@ -31,7 +31,7 @@ function YouWillLearn() {
       lessons: ["Bootstrap", "Sass"],
     },
     {
-      week: "7,8&9",
+      week: "7,8&9...28",
       icon: week2,
       lessons: [
         "React",
