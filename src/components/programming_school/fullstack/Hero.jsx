@@ -63,7 +63,7 @@ function Hero() {
         data-aos-duration="2000"
       >
         <h1 className="text-3xl md:text-4xl md:text-5xl font-bold  font-gilroy text-center   w-full align-left text-[#222057] mb-4 lg:leading-snug	">
-          WebDevelopment Course
+          Software Development Course
         </h1>
         <p className="font-gilroyregular text-[16px] text-center   font-extralight text-[#232323] mb-4">
           Apply Your new skills to real world projects using the latest industry
