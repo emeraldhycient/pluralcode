@@ -12,10 +12,10 @@ function Fullstack() {
     <>
       <Header />
       <Hero />
+      <Videobg />
       <YouWillLearn />
       <WhereMentorsWork />
       <Testimonies />
-      <Videobg />
       <Footer />
     </>
   );

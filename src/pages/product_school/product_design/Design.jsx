@@ -12,10 +12,10 @@ function Design() {
     <>
       <Header />
       <Hero />
+      <Videobg />
       <YouWillLearn />
       <WhereMentorsWork />
       <Testimonies />
-      <Videobg />
       <Footer />
     </>
   );

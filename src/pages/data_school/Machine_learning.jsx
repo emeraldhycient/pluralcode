@@ -12,10 +12,10 @@ function Machine_learning() {
     <>
       <Header />
       <Hero />
+      <Videobg />
       <YouWillLearn />
       <WhereMentorsWork />
       <Testimonies />
-      <Videobg />
       <Footer />
     </>
   );
