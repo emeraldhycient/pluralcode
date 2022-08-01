@@ -12,10 +12,10 @@ function Data_analysis() {
     <>
       <Header />
       <Hero />
+      <Videobg />
       <YouWillLearn />
       <WhereMentorsWork />
       <Testimonies />
-      <Videobg />
       <Footer />
     </>
   );
