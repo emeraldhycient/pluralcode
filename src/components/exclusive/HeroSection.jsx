@@ -26,7 +26,7 @@ function HeroSection() {
             and focus
           </p>
           <div
-            className="w-[30%]"
+            className="w-[50%] lg:w-[20%] "
             data-aos="fade-left"
             data-aos-duration="2000"
           >
