@@ -11,7 +11,7 @@ function Videobg() {
   return (
     <>
       {!isOpen && (
-        <section className="h-[30vh] md:h-[120vh] w-screen ">
+        <section className="h-[30vh] md:h-[120vh] w-screen md:hidden block">
           <img
             src={vdbg}
             alt=""
@@ -19,6 +19,18 @@ function Videobg() {
             className="h-[30vh] md:h-[120vh] w-screen "
           />
         </section>
+      )}
+      {!isOpen && (
+        <section
+          className="md:h-[70vh] lg:h-[100vh] w-screen hidden md:block"
+          onClick={(e) => setOpen(!isOpen)}
+          style={{
+            backgroundImage: `url(${vdbg})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        ></section>
       )}
       {isOpen && (
         <section className="">
