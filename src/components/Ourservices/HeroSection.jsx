@@ -21,8 +21,8 @@ function HeroSection() {
             data-aos="fade-left"
             data-aos-duration="2000"
           >
-            Got a product idea? Hire our product managers to build your products
-            to Scale.
+            got an idea for a website or an app? let’s build it and help you
+            bring it to life
           </p>
           <div
             className="w-[30%]"

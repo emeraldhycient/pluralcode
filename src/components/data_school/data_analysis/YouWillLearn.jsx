@@ -59,7 +59,7 @@ function YouWillLearn() {
       ],
     },
     {
-      week: "7,8&9 ...16",
+      week: "7,8&9 ...12",
       icon: week2,
       lessons: [
         "Data wrangling",

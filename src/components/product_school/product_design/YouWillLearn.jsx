@@ -62,7 +62,7 @@ function YouWillLearn() {
       ],
     },
     {
-      week: "7,8&9",
+      week: "7,8&9...12",
       icon: week2,
       lessons: [
         "Spliting into groups",

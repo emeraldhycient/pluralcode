@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import CourseCard from "./CourseCard";
-import productdesign from "../../assets/images/productdesign.png";
-import productmanagement from "../../assets/images/productmanagement.png";
+import pr from "../../assets/images/pr1.jpg";
+import pr2 from "../../assets/images/pr2.jpg";
 import axios from "axios";
 
 function Courses() {
@@ -26,7 +26,7 @@ function Courses() {
       title: "Front-End Development",
       description:
         "Learn how to create international standard website and apps using the most recent front End frameworks of the day.",
-      image: productdesign,
+      image: pr,
       duration: "28 weeks",
       link: "/schools/programming/frontend-development",
       level: "beginner",
@@ -37,7 +37,7 @@ function Courses() {
       title: "FullStack Development",
       description:
         "Learn how to create international standard website and apps using the most recent front End frameworks of the day.",
-      image: productmanagement,
+      image: pr2,
       duration: "28 weeks",
       link: "/schools/programming/frontend-development",
       level: "beginner",

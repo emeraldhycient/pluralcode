@@ -13,7 +13,7 @@ function Section4() {
               data-aos="fade-left"
               data-aos-duration="2000"
             >
-              Remote & Physical Options{" "}
+              Truly Exclusive{" "}
             </h1>
             <p
               className="font-gilroyregular"

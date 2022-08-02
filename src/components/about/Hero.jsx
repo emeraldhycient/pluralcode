@@ -18,8 +18,8 @@ function Hero() {
           data-aos="fade-left"
           data-aos-duration="2000"
         >
-          Your employees deserve the best training programs out there. Our
-          corporate training program is designed to educate employees.
+          Pluralcode exists to bring African technology, ideas and talents to
+          the global market
         </p>
       </div>
       <div

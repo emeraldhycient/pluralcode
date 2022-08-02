@@ -22,7 +22,7 @@ function Videobg() {
         <section className="">
           <ModalVideo
             setOpen={setOpen}
-            video_url="https://res.cloudinary.com/gofitish/video/upload/v1659095398/videos/Plural_Code_-_Our_Instructor_t5qtrr.mp4"
+            video_url="https://res.cloudinary.com/gofitish/video/upload/v1659440602/videos/Product_Management_IG_h9ahuc.mp4"
           />
         </section>
       )}

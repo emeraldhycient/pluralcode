@@ -1,7 +1,7 @@
 import { useState } from "react";
 import CourseCard from "./CourseCard";
-import productdesign from "../../assets/images/productdesign.png";
-import productmanagement from "../../assets/images/productmanagement.png";
+import product_des from "../../assets/images/product_des.jpg";
+import product_mgt from "../../assets/images/product_mgt.jpg";
 
 function Courses() {
   const [courses, setCourses] = useState([
@@ -9,7 +9,7 @@ function Courses() {
       title: "Product Design",
       description:
         "Learn Ui/Ux from scratch without writing a single code. Master how to design high fidelity interface with FIGMA, design journey mapping and empathize with users.",
-      image: productdesign,
+      image: product_des,
       duration: "12 weeks",
       start_date: "01/01/2020",
       link: "/schools/product/product-design",
@@ -20,7 +20,7 @@ function Courses() {
       title: "Product Management",
       description:
         "Become a professional product manager in 8 weeks. Learn how to gather users data, identify their needs and how it benefits them.",
-      image: productmanagement,
+      image: product_mgt,
       duration: "8weeks",
       start_date: "01/01/2020",
       link: "/schools/product/product-management",

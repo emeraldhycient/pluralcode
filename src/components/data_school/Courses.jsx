@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import CourseCard from "./CourseCard";
-import productdesign from "../../assets/images/productdesign.png";
-import productmanagement from "../../assets/images/productmanagement.png";
+import data1 from "../../assets/images/data1.jpg";
+import data2 from "../../assets/images/data2.jpg";
 import axios from "axios";
 
 function Courses() {
@@ -10,7 +10,7 @@ function Courses() {
       title: "Data Analytics",
       description:
         "Learn to build Financial models, forecast performances and perform Valuations for companies. Become industry ready in just 12 weeks.",
-      image: productdesign,
+      image: data1,
       duration: "12weeks",
       start_date: "01/01/2020",
       link: "/schools/data/data-analytics",
@@ -21,7 +21,7 @@ function Courses() {
       title: "Machine Learning",
       description:
         "Analyze and visualize data using Machine learning models. This course dives into the basics of machine learning using an approachable, and well-known programming language, Python.",
-      image: productmanagement,
+      image: data2,
       duration: "16weeks",
       start_date: "01/01/2020",
       link: "/schools/data/machine-learning",
