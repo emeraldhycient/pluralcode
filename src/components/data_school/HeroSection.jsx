@@ -43,32 +43,6 @@ function HeroSection() {
           <img src={data} alt="product" className="w-[90%] h-full" />
         </div>
       </div>
-      <div className="flex justify-between items-center md:w-4/12 mx-auto z-20 -mt-8">
-        <div
-          className="h-32 md:h-fit w-32 bg-white border shadow shadow-xl rounded-lg w-56 mr-20 hidden md:block"
-          data-aos="fade-right"
-          data-aos-duration="2000"
-        >
-          <center>
-            <div className="py-1">
-              <img src={peoples} alt="" className="h-8 w-[60%]" />
-            </div>
-          </center>
-          <h6 className="text-xs text-center">200+ Learners</h6>
-        </div>
-        <div
-          className="h-20 md:h-fit w-[80%] md:w-[100%] bg-white border shadow shadow-xl rounded-lg md:w-60 mx-auto md:mx-0"
-          data-aos="fade-left"
-          data-aos-duration="2000"
-        >
-          <center>
-            <div className="py-1">
-              <img src={peoples} alt="" className="h-8 w-[60%]" />
-            </div>
-          </center>
-          <h6 className="text-xs text-center">1000+ Students Trained</h6>
-        </div>
-      </div>
     </section>
   );
 }

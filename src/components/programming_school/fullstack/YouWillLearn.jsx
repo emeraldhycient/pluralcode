@@ -8,27 +8,27 @@ function YouWillLearn() {
     {
       week: "1",
       icon: week,
-      lessons: ["HTML5"],
+      lessons: ["HTML5", "forms", "Images", "Videos", "Iframes"],
     },
     {
       week: "2",
       icon: week2,
-      lessons: ["CSS3"],
+      lessons: ["CSS3", "flex Box", "Grid", "Responsive", "Animations"],
     },
     {
       week: "3",
       icon: week,
-      lessons: [" JavaScript"],
+      lessons: [" JavaScript", "Variables", "DOM", "fetch", "JSON"],
     },
     {
       week: "4",
       icon: week2,
-      lessons: ["JSON"],
+      lessons: ["JSON", "Ajax", "Promises", "Async/Await", "Events"],
     },
     {
       week: "5&6",
       icon: week,
-      lessons: ["Bootstrap", "Sass"],
+      lessons: ["Bootstrap", "Sass", "Introduction to React", "React Hooks"],
     },
     {
       week: "7,8&9...28",

@@ -11,7 +11,7 @@ function CourseCard({ course }) {
       <img
         src={course.image}
         alt="product"
-        className="w-[400px] h-32 md:h-[230px] rounded-lg"
+        className="w-[400px] h-[200px] md:h-[230px] rounded-lg"
         data-aos="fade-right"
         data-aos-duration="2000"
       />

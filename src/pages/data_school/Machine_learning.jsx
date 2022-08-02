@@ -11,28 +11,33 @@ import YouWillLearn from "../../components/data_school/machine_learning/YouWillL
 function Machine_learning() {
   const [faqs, setfaqs] = useState([
     {
-      title: "header long something something something",
-      content: "content long something something something",
+      title: "What is Machine learning?",
+      content: `Machine learning is the ability of a system to learn a task without being explicitly programmed from given data. It focuses on the development of computer programs that can access data and use it to learn for themselves.`,
       isActive: false,
     },
     {
-      title: "header long something something something",
-      content: "content long something something something",
+      title: "What skills are needed for machine learning jobs?      ",
+      content: `PluralCode runs a beginner friendly model, although having a background knowledge in Data Analytics is a plus.
+      `,
       isActive: false,
     },
     {
-      title: "header long something something something",
-      content: "content long something something something",
+      title: "Can I learn virtually?      ",
+      content:
+        "There's only physical option for Machine learning, we currently do not offer a virtual class for machine learning      .",
       isActive: false,
     },
     {
-      title: "header long something something something",
-      content: "content long something something something",
+      title: "Do you teach Python?      ",
+      content:
+        "Yes, Python for Machine learning is part of the curriculum for taking Machine learning",
       isActive: false,
     },
     {
-      title: "header long something something something",
-      content: "content long something something something",
+      title:
+        "Is Artifical intelligence and Machine learning the same thing?      ",
+      content:
+        "Machine learning comprises artificial intelligence algorithms that create systems capable of making predictions or classifications based on data.",
       isActive: false,
     },
     {
@@ -54,8 +59,9 @@ function Machine_learning() {
       isActive: false,
     },
     {
-      title: "header long something something something",
-      content: "content long something something something",
+      title: "Are machine learning careers in demand?      ",
+      content:
+        "Machine learning careers are in demand, as employers from most sectors adopt the technology and processes",
       isActive: false,
     },
   ]);
