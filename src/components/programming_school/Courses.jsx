@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import CourseCard from "./CourseCard";
-import pr from "../../assets/images/pr1.jpg";
-import pr2 from "../../assets/images/pr2.jpg";
+import pr from "../../assets/images/Pr1.jpg";
+import pr2 from "../../assets/images/Pr2.jpg";
 import axios from "axios";
 
 function Courses() {
