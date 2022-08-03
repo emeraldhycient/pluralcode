@@ -102,7 +102,7 @@ function Footer() {
                   <a href="/about">Why Pluralcode</a>
                 </li>
                 <li className="text-xs text-gray-600 mb-2">
-                  <a href="/advisor">Talk to Student Advisor </a>
+                  <a href="/advisors">Talk to Student Advisor </a>
                 </li>
                 <li className="text-xs text-gray-600 mb-2">
                   <a href="/mentor">Become a Mentor</a>

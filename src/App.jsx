@@ -66,7 +66,7 @@ function App() {
         <Route path="/sandbox" element={<Sandbox />} />
         <Route path="/exclusive" element={<Exclusive />} />
         <Route path="/about" element={<About />} />
-        <Route path="/advisor" element={<Advisor />} />
+        <Route path="/advisors" element={<Advisor />} />
         <Route path="/mentor" element={<BecomeMentor />} />
       </Routes>
     </BrowserRouter>

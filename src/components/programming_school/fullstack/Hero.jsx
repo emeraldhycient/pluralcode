@@ -75,7 +75,7 @@ function Hero() {
           <ApplyNow course="full stack" reference="62bb0bc968666" />
 
           <button className="bg-white border-[.001rem] border-slate-500 text-amber-500 text-white px-8 py-2 text-[12px] rounded mt-3 lg:mt-0 lg:ml-3 w-full md:w-[100%] mx-auto lg:w-fit flex justify-center items-center">
-            <Link to="/advisor" className="flex items-center text-amber-500">
+            <Link to="/advisors" className="flex items-center text-amber-500">
               Talk To Student Advisor
             </Link>
           </button>

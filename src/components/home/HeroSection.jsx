@@ -29,7 +29,7 @@ function HeroSection() {
           <div className="flex flex-col lg:flex-row  items-center">
             <GetStarted />
             <button className="bg-white border border-amber-500 text-amber-500 text-white px-8 py-2 text-[12px] rounded mt-3 lg:mt-0 lg:ml-3 w-[80%] mx-auto lg:w-fit flex justify-center items-center">
-              <Link to="/advisor" className="flex items-center text-amber-500">
+              <Link to="/advisors" className="flex items-center text-amber-500">
                 Contact Student Advisor
               </Link>
             </button>
