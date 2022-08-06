@@ -42,11 +42,18 @@ function HeroSection() {
           </div>
         </div>
         <div
-          className="map order-first lg:order-last"
+          className="map order-first lg:order-last hidden md:block"
           data-aos="fade-left"
           data-aos-duration="3000"
         >
-          <Lottie options={defaultOptions} height={400} width={400} />
+          <Lottie options={defaultOptions} height={550} width={700} />
+        </div>
+        <div
+          className="map order-first lg:order-last block md:hidden"
+          data-aos="fade-left"
+          data-aos-duration="3000"
+        >
+          <Lottie options={defaultOptions} height={300} width={350} />
         </div>
       </div>
     </section>
