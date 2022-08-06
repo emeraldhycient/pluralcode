@@ -8,7 +8,7 @@
     .map {
         /* background: url(../../assets/images/map.png) no-repeat center center;
         background-size: cover;*/
-        width: 100%;
-        height: 40vh;
+        width: 100vw;
+        height: 60vh;
     }
 }
