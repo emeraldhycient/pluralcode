@@ -11,20 +11,21 @@ import YouWillLearn from "../../components/data_school/machine_learning/YouWillL
 function Machine_learning() {
   const [faqs, setfaqs] = useState([
     {
-      title: "What is Machine learning?",
-      content: `Machine learning is the ability of a system to learn a task without being explicitly programmed from given data. It focuses on the development of computer programs that can access data and use it to learn for themselves.`,
+      title: "What skills are needed for Data science jobs?      ",
+      content: `PluralCode runs a beginner friendly model, although having a background knowledge in Data Analytics is a plus.
+      `,
       isActive: false,
     },
     {
-      title: "What skills are needed for machine learning jobs?      ",
-      content: `PluralCode runs a beginner friendly model, although having a background knowledge in Data Analytics is a plus.
+      title: "Is Data Science different from Data Analytics",
+      content: `While Data Science focuses on finding meaningful correlations between large datasets, Data Analytics is designed to uncover the specifics of extracted insights. In other words, Data Analytics is a branch of Data Science that focuses on more specific answers to the questions that Data Science brings forth.
       `,
       isActive: false,
     },
     {
       title: "Can I learn virtually?      ",
       content:
-        "There's only physical option for Machine learning, we currently do not offer a virtual class for machine learning      .",
+        "There's only physical option for data science, we currently do not offer a virtual class for data science learning      .",
       isActive: false,
     },
     {
@@ -56,12 +57,6 @@ function Machine_learning() {
       title: "What is required of me to start a class.      ",
       content:
         "A working laptop, a note pad and the willingness to start to finish.",
-      isActive: false,
-    },
-    {
-      title: "Are machine learning careers in demand?      ",
-      content:
-        "Machine learning careers are in demand, as employers from most sectors adopt the technology and processes",
       isActive: false,
     },
   ]);

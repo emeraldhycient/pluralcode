@@ -1,15 +1,21 @@
 import { Link } from "react-router-dom";
-import ellipse1 from "../../assets/images/Ellipse 1.png";
-import ellipse2 from "../../assets/images/Ellipse 4.png";
-import ellipse3 from "../../assets/images/Ellipse 5.png";
-import ellipse4 from "../../assets/images/Ellipse 6.png";
-import ellipse5 from "../../assets/images/Ellipse 7.png";
 import "./hero.css";
 import GetStarted from "./GetStarted";
+import Lottie from "react-lottie";
+import animationData from "../../assets/Pluralcode raw-03.json";
 
 import { Tooltip } from "flowbite-react";
 
 function HeroSection() {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   return (
     <section className="h-fit lg:h-[90vh] w-screen">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 w-full md:w-11/12 mx-auto h-full w-full">
@@ -39,7 +45,9 @@ function HeroSection() {
           className="map order-first lg:order-last"
           data-aos="fade-left"
           data-aos-duration="3000"
-        ></div>
+        >
+          <Lottie options={defaultOptions} height={400} width={400} />
+        </div>
       </div>
     </section>
   );

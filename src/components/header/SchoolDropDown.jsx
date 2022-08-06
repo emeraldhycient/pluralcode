@@ -25,7 +25,7 @@ function SchoolDropDown() {
             <a href="/schools/data/data-analytics">Data Analytics</a>
           </li>
           <li className="font-gilroyregular text-[14px] my-1">
-            <a href="/schools/data/machine-learning">Machine Learning</a>
+            <a href="/schools/data/data-science">Data science</a>
           </li>
         </ul>
       </div>

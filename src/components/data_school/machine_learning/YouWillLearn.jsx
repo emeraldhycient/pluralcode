@@ -8,10 +8,7 @@ function YouWillLearn() {
     {
       week: "1",
       icon: week,
-      lessons: [
-        " Introduction to basic Python",
-        "  Introduction to Statistics Learning ",
-      ],
+      lessons: [" Databasing Excel ", "  Introduction to Statistics Learning "],
     },
     {
       week: "2",

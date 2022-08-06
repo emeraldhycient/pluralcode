@@ -43,7 +43,7 @@ function App() {
           element={<Data_analysis />}
         />
         <Route
-          path="/schools/data/machine-learning"
+          path="/schools/data/data-science"
           element={<Machine_learning />}
         />
         <Route path="/schools/programming" element={<Programming />} />

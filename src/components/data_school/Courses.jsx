@@ -14,19 +14,19 @@ function Courses() {
       duration: "12weeks",
       start_date: "01/01/2020",
       link: "/schools/data/data-analytics",
-      level: "beginner",
-      mode: "physical",
+      level: "beginners",
+      mode: "",
     },
     {
-      title: "Machine Learning",
+      title: "Data science",
       description:
-        "Analyze and visualize data using Machine learning models. This course dives into the basics of machine learning using an approachable, and well-known programming language, Python.",
+        " Analyze and visualize data using data science tools.This course also dives into the basics of Data analytics and full fledged machine learning using an approachable, and well-known programming language, Python.",
       image: data2,
-      duration: "16weeks",
+      duration: "20weeks",
       start_date: "01/01/2020",
-      link: "/schools/data/machine-learning",
-      level: "beginner",
-      mode: "physical",
+      link: "/schools/data/data-science",
+      level: "beginners",
+      mode: "",
     },
   ]);
 
