@@ -53,7 +53,7 @@ function HeroSection() {
           data-aos="fade-left"
           data-aos-duration="3000"
         >
-          <Lottie options={defaultOptions} height={400} width={380} />
+          <Lottie options={defaultOptions} height={410} width={380} />
         </div>
       </div>
     </section>
