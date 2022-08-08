@@ -17,7 +17,7 @@ function CourseCard({ course }) {
       />
       <div className="pb-4">
         <h6 data-aos="fade-right" data-aos-duration="2000">
-          <span className="text-semibold"> For {course.level}|</span>{" "}
+          <span className="text-semibold"> {course.level}</span>{" "}
           <span className="text-sm">{course.mode}</span>
         </h6>
         <h1

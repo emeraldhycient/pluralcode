@@ -29,8 +29,8 @@ function Courses() {
       image: pr,
       duration: "28 weeks",
       link: "/schools/programming/frontend-development",
-      level: "beginner",
-      mode: "physical",
+      level: "",
+      mode: "",
     },
 
     {
@@ -40,8 +40,8 @@ function Courses() {
       image: pr2,
       duration: "28 weeks",
       link: "/schools/programming/frontend-development",
-      level: "beginner",
-      mode: "physical",
+      level: "",
+      mode: "",
     },
   ]);
 

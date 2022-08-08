@@ -13,8 +13,8 @@ function Courses() {
       duration: "12 weeks",
       start_date: "01/01/2020",
       link: "/schools/product/product-design",
-      level: "beginner",
-      mode: "physical",
+      level: "",
+      mode: "",
     },
     {
       title: "Product Management",
@@ -24,8 +24,8 @@ function Courses() {
       duration: "8weeks",
       start_date: "01/01/2020",
       link: "/schools/product/product-management",
-      level: "beginner",
-      mode: "physical",
+      level: "",
+      mode: "",
     },
   ]);
 

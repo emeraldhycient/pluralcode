@@ -68,10 +68,10 @@ function BridgingGap() {
               <h1 className="text-[36px] font-extralight text-[#222057] font-gilroymedium text-center md:text-left w-full align-left text-[#232323] mb-4 leading-snug	">
                 {gap.title}
               </h1>
-              <p className="font-gilroyregular text-[16px] font-extralight text-[#232323] mb-8">
+              <p className="font-gilroyregular text-[16px] font-extralight text-[#232323] mb-8 text-center md:text-left">
                 {gap.description}
               </p>
-              <div className="">
+              <div className="text-center md:text-left">
                 {gap.link ? (
                   <button className="text-[#222057] px-2 py-2 rounded  font-bold">
                     <Link to={gap.link} className="flex items-center">

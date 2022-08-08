@@ -12,3 +12,12 @@
         height: 50vh;
     }
 }
+
+@media screen and (max-width: 568px) {
+    .map {
+        /* background: url(../../assets/images/map.png) no-repeat center center;
+        background-size: cover;*/
+        width: 100vw;
+        height: 53vh;
+    }
+}

@@ -14,7 +14,7 @@ function Courses() {
       duration: "12weeks",
       start_date: "01/01/2020",
       link: "/schools/data/data-analytics",
-      level: "beginners",
+      level: "",
       mode: "",
     },
     {
@@ -25,7 +25,7 @@ function Courses() {
       duration: "20weeks",
       start_date: "01/01/2020",
       link: "/schools/data/data-science",
-      level: "beginners",
+      level: "",
       mode: "",
     },
   ]);
