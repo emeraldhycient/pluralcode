@@ -37,7 +37,7 @@ function BridgingGap() {
   ]);
 
   return (
-    <section className="h-fit lg:h-[120vh] py-10 w-screen bg-white mt-10 md:mt-0">
+    <section className="h-fit  py-10 w-screen bg-white mt-10 md:mt-0">
       <center data-aos="zoom-in-up" data-aos-duration="1200">
         <h1 className="text-3xl md:text-4xl font-medium text-[#222057] font-gilroy text-center w-full align-left text-[#232323] mb-10 md:mb-20 leading-snug	">
           Bridging Africa’s Talent Gap
@@ -50,7 +50,7 @@ function BridgingGap() {
             key={gap.id}
           >
             <div
-              className="md:col-span-2 mb-4 md:mb-0 mt-4 pt-6"
+              className="md:col-span-2 mb-4 md:mb-0 mt-12"
               style={{
                 background: `url(${spiral}) no-repeat center center `,
               }}
