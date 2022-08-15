@@ -63,16 +63,16 @@ function Hero() {
         data-aos-duration="2000"
       >
         <h1 className="text-3xl md:text-4xl md:text-5xl font-bold  font-gilroy text-center   w-full align-left text-[#222057] mb-4 lg:leading-snug	">
-          Product management Course
+          Cloud Computing (MS Azure)
         </h1>
         <p className="font-gilroyregular text-[16px] text-center   font-extralight text-[#232323] mb-4">
           Apply Your new skills to real world projects using the latest industry
-          tools and techniques in Product management.
+          tools and techniques in Cloud Computing.
         </p>
-        <h4 className="mb-4">Duration: 8 Weeks | Beginner Level</h4>
+        <h4 className="mb-4">Duration: 16 Weeks | Beginner Level</h4>
         <h4 className="mb-4">Tuition Starting From: 150,000 </h4>
         <div className="lg:flex flex-col md:flex-row justify-between  items-center">
-          <ApplyNow course="product management" reference="62bb084620283" />
+          <ApplyNow course="product design" reference="62bb084620283" />
 
           <button className="bg-white border-[.001rem] border-slate-500 text-amber-500 text-white px-8 py-2 text-[12px] rounded mt-3 lg:mt-0 lg:ml-3 w-full md:w-[100%] mx-auto lg:w-fit flex justify-center items-center">
             <Link to="/advisors" className="flex items-center text-amber-500">

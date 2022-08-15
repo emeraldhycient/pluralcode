@@ -6,7 +6,7 @@ import product_mgt from "../../assets/images/product_mgt.jpg";
 function Courses() {
   const [courses, setCourses] = useState([
     {
-      title: "Cloud Computing",
+      title: "Cloud Computing (MS Azure)",
       description:
         "Learn to use popular Cloud platforms, understand Cloud computing concepts and technologies apply virtualization and its use in Infrastructure development.",
       image: product_mgt,

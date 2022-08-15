@@ -4,11 +4,11 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Testimonies from "../../components/home/Testimonies";
 import WhereMentorsWork from "../../components/home/WhereMentorsWork";
-import Hero from "../../components/product_school/product_management/Hero";
-import Videobg from "../../components/product_school/product_management/Videobg";
-import YouWillLearn from "../../components/product_school/product_management/YouWillLearn";
+import Hero from "../../components/cloud_school/azure/Hero";
+import Videobg from "../../components/cloud_school/azure/Videobg";
+import YouWillLearn from "../../components/cloud_school/azure/YouWillLearn";
 
-function Product_management() {
+function Azure() {
   const [faqs, setfaqs] = useState([
     {
       title: "What is Product Management?",
@@ -86,4 +86,4 @@ function Product_management() {
   );
 }
 
-export default Product_management;
+export default Azure;

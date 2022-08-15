@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import cloud9 from "../../assets/images/cloud9.png";
-import cloud2 from "../../assets/images/cloud2.png";
+import cloud from "../../assets/images/cloud.png";
 import GetStarted from "./GetStarted";
 import peoples from "../../assets/images/peoples.png";
 
@@ -40,9 +39,8 @@ function HeroSection() {
           className="col-span-"
           data-aos="fade-right"
           data-aos-duration="2000"
-          style={{ backgroundImage: `url(${cloud2})` }}
         >
-          <img src={cloud9} alt="product" className="w-[90%] h-full" />
+          <img src={cloud} alt="product" className="w-[90%] h-full" />
         </div>
       </div>
     </section>
