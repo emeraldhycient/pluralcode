@@ -11,29 +11,31 @@ import YouWillLearn from "../../components/cloud_school/azure/YouWillLearn";
 function Azure() {
   const [faqs, setfaqs] = useState([
     {
-      title: "What is Product Management?",
+      title: "What is clouding computing in simple words?",
       content:
-        "Product Management is the process of conceiving, planning, developing, testing, launching, delivering and withdrawing products from the market",
+        "In the simplest terms, cloud computing means storing and accessing data and programs over the internet instead of your computer's hard drive.",
       isActive: false,
     },
     {
-      title: "What are the job descriptions of a product manager       ",
+      title: "What are the job descriptions of a cloud engineer?     ",
       content:
-        "They manage from concept to design, sample production, promotion and end of product. They deliver operating plan including market share, revenue, profit and Roi.",
+        "Cloud engineers are IT professionals who design, implement, and manage cloud-based systems for businesses. They develop and implement cloud-applications, migrate existing on-premise applications to the cloud, and debug cloud stacks.",
       isActive: false,
     },
     {
-      title: "What are the three areas of product management       ",
-      content: `Product discovery ,
-      Product planning,
-      Product Development
+      title: "What are some  areas of cloud computing    ",
+      content: `Cloud administrator,
+      Cloud security analyst,
+      Cloud network engineer,
+      Cloud automation engineer,
+      Cloud software engineer etc
       `,
       isActive: false,
     },
     {
-      title: "How much are product managers generally paid      ",
+      title: "How much are cloud engineers generally paid      ",
       content:
-        "An Average product manager is paid betweek $180,000-$200,000   Yearly",
+        "An Average cloud engineer is paid betweek $180,000-$200,000   Yearly",
       isActive: false,
     },
     {
@@ -60,16 +62,10 @@ function Azure() {
         "A working laptop, a note pad and the willingness to start to finish.",
       isActive: false,
     },
-    {
-      title: "What is required of me to start a class.      ",
-      content:
-        "A working laptop, a note pad and the willingness to start to finish.",
-      isActive: false,
-    },
   ]);
 
   useEffect(() => {
-    document.title = "Product Management";
+    document.title = "Cloud Computing (MS Azure)";
   }, []);
 
   return (
