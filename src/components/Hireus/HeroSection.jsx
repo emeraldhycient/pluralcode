@@ -83,7 +83,7 @@ function HeroSection() {
               Build a <span className="text-amber-500">World-Class </span>
               Team From Our Talents
             </h1>
-            <p className="font-gilroyregular text-[16px] lg:text-left  font-extralight text-[#232323] mb-8">
+            <p className="font-gilroyregular text-[16px] lg:text-left  font-extralight text-[#232323] mb-6">
               Hire the best hands from our team of highly experienced Talents.
             </p>
             <React.Fragment>
