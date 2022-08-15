@@ -46,7 +46,7 @@ function HeroSection() {
           data-aos="fade-left"
           data-aos-duration="3000"
         >
-          <Lottie options={defaultOptions} height={550} width={700} />
+          <Lottie options={defaultOptions} height={550} width={620} />
         </div>
         <div
           className="map order-first lg:order-last block md:hidden"
