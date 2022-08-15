@@ -7,7 +7,7 @@ function SchoolDropDown() {
         <h1 className="text-[25px] font-bold  font-gilroyregular  w-full  text-[#222057] mb-2 md:mb-4 ">
           Schools
         </h1>
-        <div className=" grid grid-cols-2 md:grid-cols-2 mt-3">
+        <div className=" grid grid-cols-2 md:grid-cols-2 mt-3 gap-x-3 md:gap-x-8">
           <div className="flex justify-center items-center flex-col">
             <h1 className="text-[16px] font-bold  font-gilroy  w-full  text-[#222057] mb-2 md:mb-2 ">
               <a href="/schools/product">Product School</a>
@@ -73,7 +73,8 @@ function SchoolDropDown() {
                 </a>
               </li>
               <li className="font-gilroyregular text-[14px] my-3 flex items-center">
-                <div className="h-3 w-3 rounded-full mr-2"></div>
+                <div className="h-3 w-3 rounded-full bg-amber-500 ml-2 mr-2"></div>
+                <a href="/schools/cloud/azure">DevOps</a>
               </li>
             </ul>
           </div>
