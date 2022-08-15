@@ -19,14 +19,13 @@ function Testimonies() {
     {
       name: "Ojerinde Adenike",
       //course: "Product Designer",
-      content: `I learned a lot and networking was top-notch. We were able to meet with calm external professionals that enlightened us more about product design. It was transparent and I could say confidently that it was worth my time, resources, and emotions. 
-      I look forward to making them proud and a point of reference in the future. `,
+      content: `I learned a lot and networking was top-notch. We were able to meet with calm external professionals . `,
       image: Ojerinde,
     },
     {
       name: "Etim Samuel",
       //course: " Product Designer",
-      content: `I had a nice time during the product design class, the mentor was on point and apt. I came in as a learner and finished a pro. The payment plan was good as well. It was an entire lovely experience.`,
+      content: `I had a nice time during the product design class, the mentor was on point and apt.`,
       image: Etim,
     },
   ]);
