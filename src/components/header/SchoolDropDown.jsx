@@ -68,7 +68,10 @@ function SchoolDropDown() {
             <ul className="w-full">
               <li className="font-gilroyregular text-[14px] my-3 flex items-center">
                 <div className="h-3 w-3 rounded-full bg-amber-500 mr-2"></div>
-                <a href="/schools/cloud/azure">Cloud Computing (MS Azure)</a>
+                <a href="/schools/cloud/azure">
+                  Cloud Computing{" "}
+                  <span className="hidden md:block">(MS Azure)</span>
+                </a>
               </li>
               <li className="font-gilroyregular text-[14px] my-3 flex items-center">
                 <div className="h-3 w-3 rounded-full mr-2"></div>

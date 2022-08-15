@@ -24,7 +24,7 @@ function PlatformDropDown() {
           <a href="/webseries">Web Series</a>
         </div>
         <p className="font-gilroyregular text-[14px] my-1 md:border-b border-gray-200 pb-1 md:pb-3">
-          Access to tech education for less priviledged.
+          Join our weekly webinar series to discuss technology.{" "}
         </p>
         <h1 className="text-[16px] font-bold  font-gilroy  w-full  text-[#222057] mb-4 md:mb-2 mt-5  border-b md:border-0 border-gray-200 pb-4 md:pb-1">
           <a href="/webseries">What is Web Series?</a>
@@ -36,7 +36,7 @@ function PlatformDropDown() {
           <a href="/exclusive">Exclusive</a>
         </div>
         <p className="font-gilroyregular text-[14px] my-1 md:border-b border-gray-200 pb-1 md:pb-3">
-          Access to tech education for less priviledged.
+          Get a private tutor and learn at your own pace & schedule.{" "}
         </p>
         <h1 className="text-[16px] font-bold  font-gilroy  w-full  text-[#222057] mb-4 md:mb-2 mt-5 pb-4 md:pb-1">
           <a href="/exclusive">What is Pluralcode Exclusive?</a>
