@@ -50,7 +50,7 @@ function BridgingGap() {
             key={gap.id}
           >
             <div
-              className="md:col-span-2 mb-4 md:mb-0 mt-4"
+              className="md:col-span-2 mb-4 md:mb-0 mt-4 pt-6"
               style={{
                 background: `url(${spiral}) no-repeat center center `,
               }}

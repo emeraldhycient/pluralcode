@@ -9,12 +9,12 @@ function Videobg() {
   return (
     <>
       {!isOpen && (
-        <section className="h-[30vh] md:h-[120vh] w-screen md:hidden block">
+        <section className=" w-screen md:hidden block">
           <img
-            src={school}
+            src={vdbg}
             alt=""
             onClick={(e) => setOpen(!isOpen)}
-            className="h-[30vh] md:h-[120vh] w-screen "
+            className=" w-screen "
           />
         </section>
       )}
