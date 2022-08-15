@@ -5,7 +5,7 @@ import stack from "../../assets/images/stack.svg";
 
 function PlatformDropDown() {
   return (
-    <ul className="md:w-[700px] flex">
+    <ul className="md:w-[700px] flex flex-wrap">
       <li className="font-gilroyregular text-[17px] my-1 md:w-[80%] mx-1">
         <div className="flex items-center">
           <img src={cube} alt="" className="mr-3" />
