@@ -2,7 +2,7 @@ import React from "react";
 
 function SchoolDropDown() {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-5 p-0 m-0 md:p-8 gap-5">
+    <div className="grid grid-cols-2 lg:grid-cols-5 p-0 m-0 md:p-8 gap-5">
       <div className="col-span-3">
         <h1 className="text-[20px] font-bold  font-gilroy  w-full  text-[#222057] mb-2 md:mb-4 ">
           Schools

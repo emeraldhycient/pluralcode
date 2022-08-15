@@ -2,6 +2,7 @@ import { useState } from "react";
 import course1 from "../../assets/images/course1.png";
 import course2 from "../../assets/images/course2.png";
 import course3 from "../../assets/images/course3.png";
+import course5 from "../../assets/images/course5.png";
 import CourseCard from "./CourseCard";
 
 function Ourschool() {
@@ -9,20 +10,26 @@ function Ourschool() {
     {
       image: course1,
       title: "Product School",
-      content: `Our Product school has been designed to help students launch a successful career in product design (UI/UX) and Product management.`,
+      content: `Launch a career in Product Design  and Product Management.`,
       link: "schools/product",
     },
     {
-      image: course2,
+      image: course5,
       title: "            Data School      ",
-      content: `   Our data school trains students for careers in Data Science. Learn data manipulation, visualization & machine learning.`,
+      content: `Master data manipulation, visualization, analytics & machine learning.`,
       link: "schools/data",
     },
     {
       image: course3,
       title: "Programming School",
-      content: `  Master mordern tools for building scalable software with our programming courses to help you upskill or change careers.`,
+      content: `Learn to build amazing websites & apps using mordern coding frameworks.`,
       link: "schools/programming",
+    },
+    {
+      image: course2,
+      title: "Cloud School",
+      content: `Understand cloud engineering & devops skills for professional use.`,
+      link: "schools/cloud",
     },
   ]);
 
@@ -33,7 +40,7 @@ function Ourschool() {
           Our Schools
         </h1>
       </center>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 w-11/12 md:w-9/12  mx-auto h-full w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 w-11/12 md:w-11/12  mx-auto h-full w-full">
         {courses.map((course) => (
           <CourseCard course={course} key={course.title} />
         ))}
