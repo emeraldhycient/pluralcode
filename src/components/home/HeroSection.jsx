@@ -18,9 +18,9 @@ function HeroSection() {
 
   return (
     <section className="h-fit lg:h-[90vh] w-screen">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 w-full md:w-11/12 mx-auto h-full w-full">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-0 w-full md:w-11/12 mx-auto h-full w-full">
         <div
-          className=" h-full flex flex-col justify-center items-left text-left w-full align-left mt-6 md:mt-0"
+          className="col-span-2 h-full flex flex-col justify-center items-left text-left w-full align-left mt-6 md:mt-0"
           data-aos="fade-right"
           data-aos-duration="2000"
         >
@@ -42,7 +42,7 @@ function HeroSection() {
           </div>
         </div>
         <div
-          className="map order-first lg:order-last hidden md:block pt-10"
+          className="col-span-3 map order-first lg:order-last hidden md:block pt-16 z-20"
           data-aos="fade-left"
           data-aos-duration="3000"
         >
