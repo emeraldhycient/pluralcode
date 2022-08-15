@@ -21,6 +21,7 @@ import Data_analysis from "./pages/data_school/Data_analysis";
 import Product_management from "./pages/product_school/Product_management";
 import Machine_learning from "./pages/data_school/Machine_learning";
 import Fullstack from "./pages/programming_school/Fullstack";
+import Cloud from "./pages/cloud_school/Cloud";
 
 function App() {
   useEffect(() => {
@@ -59,6 +60,7 @@ function App() {
           path="/schools/programming/fullstack-development"
           element={<Fullstack />}
         />{" "}
+        <Route path="/schools/cloud" element={<Cloud />} />
         <Route path="/corporate-training" element={<Corporate />} />
         <Route path="/Hire-talent" element={<Hireus />} />
         <Route path="/services" element={<Services />} />
