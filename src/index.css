@@ -9,3 +9,11 @@
     font-family: 'Gilroy-regular';
     src: url('./assets/gilroy/Gilroy-Regular.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-family: 'Gilroy-Heavy', sans-serif;
+    font-family: 'Gilroy-Light', sans-serif;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-family: 'Gilroy-Regular', sans-serif;
+}
