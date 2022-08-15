@@ -42,21 +42,19 @@ function YouWillLearn() {
       lessons: [
         "Overview of Azure subscriptions,management groups, and resource groups",
         " azure regions,availability zones and region pairs",
-        " Layer Blending Mode",
-        " Constraint V Auto Layout",
-        " Inspect",
-        " Export",
-        "Class Exercise",
+        " Azure resources and azure resource manager",
+        " Azure subscription  and management group",
+        "knowledge check",
       ],
     },
     {
       week: "5&6",
       icon: week,
       lessons: [
-        "Building Basic App UI",
-        " Prototype",
-        " Recap",
-        "Building basic website ui        ",
+        "Describe Infrastructure as a Service (IaaS)",
+        "Describe platform as a service (PaaS) ",
+        "Describe software as a service (saaS) ",
+        "knowledge check",
       ],
     },
     {
