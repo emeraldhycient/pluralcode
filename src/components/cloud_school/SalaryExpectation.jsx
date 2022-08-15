@@ -4,7 +4,7 @@ import sala from "../../assets/images/sala.png";
 function SalaryExpectation() {
   return (
     <section className="h-fit w-full py-24">
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-2 w-11/12 md:w-10/12 mx-auto h-full w-full">
+      <div className="grid grid-cols-1 md:grid-cols-5 gap-2 md:gap-8 w-11/12 md:w-10/12 mx-auto h-full w-full">
         <div
           className="col-span-3 mb-6"
           data-aos="fade-right"
