@@ -49,7 +49,7 @@ function SchoolDropDown() {
               <li className="font-gilroyregular text-[14px] my-3 flex items-center">
                 <div className="h-3 w-3 rounded-full bg-amber-500 mr-2"></div>
                 <a href="/schools/programming/frontend-development">
-                  Front-End Development
+                  FrontEnd Development
                 </a>
               </li>
 
@@ -67,10 +67,9 @@ function SchoolDropDown() {
             </h1>
             <ul className="w-full">
               <li className="font-gilroyregular text-[14px] my-3 flex items-center">
-                <div className="h-3 w-3 rounded-full bg-amber-500 mr-2"></div>
+                <div className="h-3 w-3 rounded-full bg-amber-500 ml-2 mr-2"></div>
                 <a href="/schools/cloud/azure">
-                  Cloud Computing{" "}
-                  <span className="hidden md:block">(MS Azure)</span>
+                  Cloud Computing <span className="hidden">(MS Azure)</span>
                 </a>
               </li>
               <li className="font-gilroyregular text-[14px] my-3 flex items-center">
