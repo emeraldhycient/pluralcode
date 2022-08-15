@@ -37,7 +37,7 @@ function HeroSection() {
           data-aos="fade-left"
           data-aos-duration="2000"
         >
-          <img src={serv} alt="product" className="w-[90%] h-96" />
+          <img src={serv} alt="product" className="w-[90%] " />
         </div>
       </div>
     </section>

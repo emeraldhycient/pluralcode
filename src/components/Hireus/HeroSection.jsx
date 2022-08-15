@@ -74,11 +74,11 @@ function HeroSection() {
       />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-11/12 md:w-10/12 mx-auto h-full w-full">
         <div
-          className=" h-full flex flex-col lg:justify-between  items-left text-left w-full align-left mt-6 md:mt-0"
+          className=" h-full flex flex-col lg:justify-center  items-center text-left w-full align-left mt-6 md:mt-0"
           data-aos="fade-right"
           data-aos-duration="2000"
         >
-          <div className=" h-full  items-left text-left w-full align-left mt-6 md:mt-0">
+          <div className="flex flex-col justify-center  h-full  items-left text-left w-full align-left mt-6 md:mt-0">
             <h1 className="text-3xl md:text-4xl font-bold  font-gilroy lg:text-left  w-full align-left text-[#222057] mb-4 lg:leading-snug mt-20	">
               Build a <span className="text-amber-500">World-Class </span>
               Team From Our Talents
@@ -89,7 +89,7 @@ function HeroSection() {
             <React.Fragment>
               <button
                 onClick={() => setIsModalOpen(!isModalOpen)}
-                className="bg-amber-500 text-white px-2 py-2 rounded w-44 text-center mt-3"
+                className="bg-amber-500 text-white px-2 py-2 rounded w-44 text-center "
               >
                 <a className="flex text-center justify-center items-center w-full">
                   Get Started

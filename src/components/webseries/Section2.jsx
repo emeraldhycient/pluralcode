@@ -3,7 +3,7 @@ import GetStarted from "./GetStarted";
 
 function Section2() {
   return (
-    <div className="h-fit  w-full md:py-20 py-20 bg-[#FFFAF2]">
+    <div className="h-fit  w-full md:py-20 py-20 bg-[#F8F8FA]">
       <div className="grid grid-cols-1 md:grid-cols-2 w-11/12 md:w-10/12 mx-auto">
         <div className="flex justify-center items-center flex-col mb-10 md:mb-0">
           <center>
@@ -26,7 +26,7 @@ function Section2() {
               World-Class Guests{" "}
             </h1>
             <p
-              className="font-gilroyregular"
+              className="font-gilroyregular -ml-3"
               data-aos="fade-right"
               data-aos-duration="2000"
             >
