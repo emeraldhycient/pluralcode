@@ -2,15 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 @font-face {
-    font-family: 'Gilroy-Bold';
-    src: url('./assets/gilroy/Gilroy-SemiBold.ttf') format('truetype');
-    font-family: 'Gilroy-medium';
-    src: url('./assets/gilroy/Gilroy-Medium.ttf') format('truetype');
-    font-family: 'Gilroy-regular';
-    src: url('./assets/gilroy/Gilroy-Regular.ttf') format('truetype');
-}
-
-@font-face {
     font-family: 'Gilroy-Bold', sans-serif;
     font-family: 'Gilroy-Heavy', sans-serif;
     font-family: 'Gilroy-Light', sans-serif;
