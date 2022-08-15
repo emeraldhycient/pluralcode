@@ -16,13 +16,13 @@ function Ourschool() {
     {
       image: course5,
       title: "            Data School      ",
-      content: `Master data manipulation, visualization, analytics & machine learning.`,
+      content: `Master data manipulation, analytics & machine learning.`,
       link: "schools/data",
     },
     {
       image: course3,
       title: "Programming School",
-      content: `Learn to build amazing websites & apps using mordern coding frameworks.`,
+      content: `Learn to build amazing websites & apps using mordern  frameworks.`,
       link: "schools/programming",
     },
     {

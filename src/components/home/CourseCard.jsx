@@ -24,7 +24,7 @@ function CourseCard({ course }) {
 
       <div className="mt-4">
         <a href={link ? link : ""} className="text-amber-500 font-bold text-sm">
-          View Course
+          View Courses
         </a>
       </div>
     </div>
