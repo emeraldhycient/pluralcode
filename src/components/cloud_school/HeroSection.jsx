@@ -5,8 +5,8 @@ import peoples from "../../assets/images/peoples.png";
 
 function HeroSection() {
   return (
-    <section className="h-fit md:h-[50vh] lg:h-fit w-screen pt-12">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-11/12 md:w-10/12 mx-auto h-full w-full">
+    <section className="h-fit md:h-[50vh] lg:h-fit w-screen ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-11/12 md:w-10/12 mx-auto h-full w-full pt-12">
         <div className=" h-full flex flex-col md:justify-center items-left text-left w-full align-left">
           <h6
             className="text-amber-500"
