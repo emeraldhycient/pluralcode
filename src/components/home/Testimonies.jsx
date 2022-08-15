@@ -31,7 +31,7 @@ function Testimonies() {
   ]);
 
   return (
-    <section className="h-fit lg:h-[100vh] py-16 w-screen bg-[#222057]">
+    <section className="h-fit  py-16 w-screen bg-[#222057]">
       <Carousel next={(next, active) => {}} prev={(prev, active) => {}}>
         {testimony.map((testimony) => (
           <div
