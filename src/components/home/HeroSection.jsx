@@ -29,8 +29,8 @@ function HeroSection() {
             Borderless Career.
           </h1>
           <p className="font-gilroyregular text-[16px] text-center lg:text-left  font-extralight text-[#232323] mb-8">
-            Your global tech journey begins here. Master the skills you need to
-            start <br className="hidden lg:block" />a successful career.
+            Your global tech journey begins here. Master the skills you need{" "}
+            <br className="hidden lg:block" /> to start a successful career.
           </p>
           <div className="flex flex-col lg:flex-row  items-center">
             <GetStarted />
@@ -42,7 +42,7 @@ function HeroSection() {
           </div>
         </div>
         <div
-          className="col-span-3 map order-first lg:order-last hidden md:block pt-16 z-20"
+          className="col-span-3 map order-first lg:order-last hidden md:block pt-16 "
           data-aos="fade-left"
           data-aos-duration="3000"
         >
