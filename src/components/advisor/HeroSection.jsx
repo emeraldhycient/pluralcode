@@ -8,7 +8,7 @@ function HeroSection() {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <section className="h-fit md:h-[60vh] lg:h-[90vh] w-screen pt-12 pb-6 bg-[#F8F8FA]">
+    <section className="h-fit  w-screen pt-12 pb-6 bg-[#F8F8FA]">
       <div className="grid grid-cols-1 md:grid-cols-4 w-11/12 md:w-10/12 mx-auto h-full w-full">
         <div className="col-span-2  h-full flex flex-col md:justify-center items-left text-center md:text-left w-full align-left">
           <h1
@@ -35,11 +35,11 @@ function HeroSection() {
           </div>
         </div>
         {!isOpen && (
-          <div className="col-span-2 flex justify-center items-center h-full pt-4 order-first md:order-last">
+          <div className="col-span-2 flex justify-center items-center h-full pt-4 order-first md:order-last mb-10 md:mb-2">
             <img
               src={adv}
               alt="product"
-              className="w-[70%] h-56 md:h-96 shadow rounded-full"
+              className="w-[80%] shadow rounded-full"
               onClick={(e) => setOpen(!isOpen)}
               data-aos="fade-up"
               data-aos-duration="2000"

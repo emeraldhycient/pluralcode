@@ -6,11 +6,11 @@ import sand5 from "../../assets/images/sand5.png";
 
 function Captures() {
   return (
-    <div className="h-fit md:h-fit lg:h-screen w-full flex justify-center items-center flex-col py-10 md:py-0">
+    <div className="h-fit md:h-fit  w-full flex justify-center items-center flex-col py-10 md:py-0">
       <img
         src={sand5}
         alt=""
-        className="w-full h-32  lg:h-[368px]"
+        className="w-full"
         data-aos="fade-right"
         data-aos-duration="2000"
       />
