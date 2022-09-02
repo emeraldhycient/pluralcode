@@ -23,6 +23,7 @@ import Machine_learning from "./pages/data_school/Machine_learning";
 import Fullstack from "./pages/programming_school/Fullstack";
 import Cloud from "./pages/cloud_school/Cloud";
 import Azure from "./pages/cloud_school/azure";
+import UpdatedExclusive from "./pages/UpdatedExclusive/UpdatedExclusive";
 
 function App() {
   useEffect(() => {
@@ -68,7 +69,10 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/webseries" element={<Webseries />} />
         <Route path="/sandbox" element={<Sandbox />} />
+        {/*
         <Route path="/exclusive" element={<Exclusive />} />
+  */}
+        <Route path="/exclusive" element={<UpdatedExclusive />} />
         <Route path="/about" element={<About />} />
         <Route path="/advisors" element={<Advisor />} />
         <Route path="/mentor" element={<BecomeMentor />} />

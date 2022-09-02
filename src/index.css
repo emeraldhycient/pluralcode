@@ -18,3 +18,7 @@
     font-family: 'Gilroy-regular';
     src: url('./assets/gilroy/Gilroy-Regular.ttf') format('truetype');
 }*/
+
+.header2 div[data-testid="tooltip-target"] {
+    color: white
+}

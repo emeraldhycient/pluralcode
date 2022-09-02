@@ -16,7 +16,7 @@ function Faq({ faqs, setfaqs }) {
   };
 
   return (
-    <div className="w-11/12 md:w-10/12 mx-auto py-32">
+    <div className="w-full md:w-10/12 mx-auto py-28">
       <h1 className="text-2xl font-bold text-center mb-8">
         Frequently Asked Questions
       </h1>

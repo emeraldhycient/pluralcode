@@ -1,167 +1,66 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import logo from "../assets/images/logo.svg";
-import icon from "../assets/images/icon.svg";
-import cancel from "../assets/images/cancel.svg";
+import React from "react";
+import { Navbar, Dropdown, Avatar, Button } from "flowbite-react";
+import logo from "../assets/images/exclusivelogo.svg";
 import GetStarted from "./home/GetStarted";
 import SchoolDropDown from "./header/SchoolDropDown";
 import PlatformDropDown from "./header/PlatformDropDown";
 import EnterpriseDropDown from "./header/EnterpriseDropDown";
 import MoreDropDown from "./header/MoreDropDown";
-import Sidebar from "./header/mobile/Sidebar";
 
 function Header() {
-  const [isSchoolsShowing, setisSchoolsShowing] = useState(false);
-  const [isPlatformShowing, setisPlatformShowing] = useState(false);
-  const [isEnterpriseShowing, setisEnterpriseShowing] = useState(false);
-  const [isMoreShowing, setisMoreShowing] = useState(false);
-
-  const [isMobileSideBarShowing, setisMobileSideBarShowing] = useState(false);
-
   return (
-    <section className="md:absolute w-full mb-6">
-      <section className="bg-[#FFFDFA]  h-[4rem]  px-8 flex items-center justify-between">
-        <div className="logo h-full flex items-center">
-          <img src={logo} alt="Keep" />
-        </div>
-        <ul className="md:flex justify-around items-center hidden ">
-          <li className="mx-2 text-[#232323] font-inter">
-            <Link to="/">Home</Link>
-          </li>
-          <li
-            className="mx-2 text-[#232323] font-inter"
-            onMouseOver={() => {
-              setisSchoolsShowing(!isSchoolsShowing);
-              setisPlatformShowing(false);
-              setisEnterpriseShowing(false);
-              setisMoreShowing(false);
-            }}
-          >
-            <Link to="#" className="flex items-center">
-              Schools
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 text-[#232323]"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </Link>
-          </li>
-          <li
-            className="mx-2 text-[#232323] font-inter"
-            onMouseOver={() => {
-              setisPlatformShowing(!isPlatformShowing);
-              setisSchoolsShowing(false);
-              setisEnterpriseShowing(false);
-              setisMoreShowing(false);
-            }}
-          >
-            <Link to="#" className="flex items-center">
-              Platform
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 text-[#232323]"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </Link>
-          </li>
-          <li
-            className="mx-2 text-[#232323] font-inter"
-            onMouseOver={() => {
-              setisPlatformShowing(false);
-              setisSchoolsShowing(false);
-              setisEnterpriseShowing(!isEnterpriseShowing);
-              setisMoreShowing(false);
-            }}
-          >
-            <Link to="#" className="flex items-center">
-              Enterprise
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 text-[#232323]"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </Link>
-          </li>
-          <li
-            className="mx-2 text-[#232323] font-inter "
-            onMouseOver={() => {
-              setisMoreShowing(!isMoreShowing);
-              setisPlatformShowing(false);
-              setisSchoolsShowing(false);
-              setisEnterpriseShowing(false);
-            }}
-          >
-            <Link to="#" className="flex items-center">
-              More
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 text-[#232323]"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </Link>
-          </li>
-        </ul>
-        <div className="hidden md:block">
-          <GetStarted />
-        </div>
-        {isMobileSideBarShowing ? (
-          <div
-            className="block md:hidden"
-            onClick={(e) => setisMobileSideBarShowing(!isMobileSideBarShowing)}
-          >
-            <img src={cancel} alt="" />
+    <div className="sticky top-0  z-40 header2">
+      <Navbar fluid={true} rounded={true} className="bg-transparent text-white">
+        <Navbar.Brand href="/">
+          <img
+            src={logo}
+            className="mr-3 ml-6 h-6 sm:h-9"
+            alt="pluralcode Logo"
+          />
+        </Navbar.Brand>
+        <div className="flex md:order-2">
+          <div className="hidden lg:block">
+            <GetStarted />
           </div>
-        ) : (
-          <div
-            className="block md:hidden"
-            onClick={(e) => setisMobileSideBarShowing(!isMobileSideBarShowing)}
-          >
-            <img src={icon} alt="" />
-          </div>
-        )}
-      </section>
-      {isSchoolsShowing && <SchoolDropDown />}
-      {isPlatformShowing && <PlatformDropDown />}
-      {isEnterpriseShowing && <EnterpriseDropDown />}
-      {isMoreShowing && <MoreDropDown />}
-      {isMobileSideBarShowing && <Sidebar />}
-    </section>
+          <Navbar.Toggle />
+        </div>
+        <Navbar.Collapse className="text-white">
+          <Navbar.Link className="text-white">
+            <Dropdown arrowIcon={true} inline={true} label={"Schools"}>
+              <Dropdown.Item>
+                <SchoolDropDown />
+              </Dropdown.Item>
+            </Dropdown>
+          </Navbar.Link>
+          <Navbar.Link>
+            <Dropdown arrowIcon={true} inline={true} label={"Platforms"}>
+              <Dropdown.Item>
+                <PlatformDropDown />
+              </Dropdown.Item>
+            </Dropdown>
+          </Navbar.Link>
+          <Navbar.Link>
+            <Dropdown arrowIcon={true} inline={true} label={"Enterprise"}>
+              <Dropdown.Item>
+                <EnterpriseDropDown />
+              </Dropdown.Item>
+            </Dropdown>
+          </Navbar.Link>
+          <Navbar.Link>
+            <Dropdown arrowIcon={true} inline={true} label={"More"}>
+              <Dropdown.Item>
+                <MoreDropDown />
+              </Dropdown.Item>
+            </Dropdown>
+          </Navbar.Link>
+          <Navbar.Link>
+            <div className="block md:hidden">
+              <GetStarted />
+            </div>{" "}
+          </Navbar.Link>
+        </Navbar.Collapse>
+      </Navbar>
+    </div>
   );
 }
 
