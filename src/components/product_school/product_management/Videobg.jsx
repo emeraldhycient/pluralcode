@@ -11,7 +11,7 @@ function Videobg() {
       {!isOpen && (
         <section className=" w-screen md:hidden block">
           <img
-            src={vdbg}
+            src={school}
             alt=""
             onClick={(e) => setOpen(!isOpen)}
             className=" w-screen "
