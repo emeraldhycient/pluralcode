@@ -70,7 +70,7 @@ function Hero() {
           tools and techniques in Product management.
         </p>
         <h4 className="mb-4">Duration: 8 Weeks | Beginner Level</h4>
-        <h4 className="mb-4">Tuition Starting From: 150,000 </h4>
+        <h4 className="mb-4">Tuition Starting From: 160,000 </h4>
         <div className="lg:flex flex-col md:flex-row justify-between  items-center">
           <ApplyNow course="product management" reference="62bb084620283" />
 

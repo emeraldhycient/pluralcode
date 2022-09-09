@@ -70,7 +70,7 @@ function Hero() {
           tools and techniques in Data Science Courses.
         </p>
         <h4 className="mb-4">Duration: 20 Weeks | Beginner Level</h4>
-        <h4 className="mb-4">Tuition Starting From: 240,000 </h4>
+        <h4 className="mb-4">Tuition Starting From: 320,000 </h4>
         <div className="lg:flex flex-col md:flex-row justify-between  items-center">
           <ApplyNow course="machine learning" reference="62b9c81e5e89c" />
 
