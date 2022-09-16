@@ -19,7 +19,7 @@ function UpdatedExclusive() {
     {
       title: "Can I mentored in my house ?",
       content:
-        " Trainings are generated taken at our training centres, but home tutorials attract more fees        .",
+        " Trainings are generally taken at our training centres, but home tutorials attract more fees        .",
       isActive: false,
     },
     {
@@ -30,7 +30,7 @@ function UpdatedExclusive() {
     {
       title: "How long are programs under the exclusive option",
       content:
-        "Courses that normally take 6 months to learn normally will take only 3-4 months under the exclusive program ",
+        "Training durations can vary from 2 - 6 months depending on the program. Contact us to find out more",
       isActive: false,
     },
     {

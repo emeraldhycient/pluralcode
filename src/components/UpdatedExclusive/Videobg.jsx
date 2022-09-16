@@ -37,7 +37,7 @@ function Videobg() {
         >
           <ModalVideo
             setOpen={setOpen}
-            video_url="https://www.w3schools.com/html/mov_bbb.mp4"
+            video_url="https://res.cloudinary.com/gofitish/video/upload/v1663331212/videos/WhatsApp_Video_2022-09-16_at_1.17.41_PM_knyugc.mp4"
           />
         </section>
       )}

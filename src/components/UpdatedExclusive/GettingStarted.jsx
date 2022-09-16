@@ -28,10 +28,36 @@ function GettingStarted() {
             within 24hours and begin your exclusive learning on the go.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-12">
-            <Card title="step 1" desc="Fill the Application" />
-            <Card title="step 2" desc="Get Contacted" />
-            <Card title="step 3" desc="Admission Starter Pack" />
-            <Card title="step 4" desc="Start Learning" />
+            <div className="shadow h-24 w-full rounded p-2 text-center">
+              <h1 className="text-[#222057] text[18px] font-semibold mb-2">
+                step 1
+              </h1>
+              <h6 className=" text-[14px]">Fill the Application</h6>
+            </div>
+            <div className="shadow h-24 w-full rounded p-2 text-center">
+              <h1 className="text-[#222057] text[18px] font-semibold mb-2">
+                step 2
+              </h1>
+              <h6 className=" text-[14px]">
+                Get
+                <br /> Contacted
+              </h6>
+            </div>
+            <div className="shadow h-24 w-full rounded p-2 text-center">
+              <h1 className="text-[#222057] text[18px] font-semibold mb-2">
+                step 3
+              </h1>
+              <h6 className=" text-[14px]">Admission Starter Pack</h6>
+            </div>
+            <div className="shadow h-24 w-full rounded p-2 text-center">
+              <h1 className="text-[#222057] text[18px] font-semibold mb-2">
+                step 4
+              </h1>
+              <h6 className=" text-[14px]">
+                Start
+                <br /> Learning
+              </h6>
+            </div>
           </div>
           <div className="mt-10"></div>
           <GetStarted />
