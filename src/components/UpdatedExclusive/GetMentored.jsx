@@ -6,7 +6,7 @@ function GetMentored() {
     <section className="h-fit md:h-[50vh] lg:h-[100vh] py-24">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-10/12 mx-auto">
         <div className="">
-          <h1 className="text-2xl md:text-3xl font-bold  font-gilroy text-center  w-full align-left text-[#222057] mb-4 lg:leading-snug	">
+          <h1 className="text-2xl md:text-3xl font-bold  font-gilroy   w-full align-left text-[#222057] mb-4 lg:leading-snug	">
             Get Mentored One on One
           </h1>
           <p className="font-gilroyregular text-[#222057] text-left  font-extralight text-white mb-1">

@@ -12,31 +12,31 @@ import BeforeFooter from "../../components/UpdatedExclusive/BeforeFooter";
 function UpdatedExclusive() {
   const [faqs, setfaqs] = useState([
     {
-      title:
-        "What is the difference between a front end developer and a back end developer",
-      content: `Front-end developers are responsible for the website’s appearance, its “look and feel.” They are in charge of things like color schemes, font styles and the general layout
-    
-          Back-end developers are responsible for tasks such as database management and website security. They are also responsible for integrating third-party services with a site, such as social media platforms or payment gateways.`,
+      title: "Are trainings online?",
+      content: `Trainings are both physical and virtual.`,
       isActive: false,
     },
     {
-      title:
-        "Do I need to have a knowledge of coding to learn Web development.      ",
+      title: "Can I mentored in my house ?",
       content:
-        "As much as it is Important, we run a beginner friendly model at PluralCode. Hence you learn from scratch.",
+        " Trainings are generated taken at our training centres, but home tutorials attract more fees        .",
       isActive: false,
     },
     {
-      title:
-        "What's the program duration for Full stack web development       ",
-      content:
-        "28 weeks inclusive of two captstone projects for portfolio development.      ",
+      title: "Can I pay in installments? ",
+      content: "Yes payments on installments are allowed.",
       isActive: false,
     },
     {
-      title: "Can I pay in installments?      ",
+      title: "How long are programs under the exclusive option",
       content:
-        "Yes, we have an installments option, where you pay 50% initial fee and spread the great through the first two months of the program       ",
+        "Courses that normally take 6 months to learn normally will take only 3-4 months under the exclusive program ",
+      isActive: false,
+    },
+    {
+      title: "Do you have certified mentors?",
+      content:
+        "Our mentors are industry professionals who are tested and trusted        ",
       isActive: false,
     },
     {

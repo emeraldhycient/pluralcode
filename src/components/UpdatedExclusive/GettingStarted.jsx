@@ -16,18 +16,18 @@ function GettingStarted() {
         How To get Started{" "}
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-10/12 mx-auto">
-        <div className="mx-auto order-last md:order-first">
+        <div className="mx-auto order-last md:order-first flex justify-center items-center">
           <img src={exclusive} className="h-96" alt="" />
         </div>
         <div className="mt-6 md:mt-10">
-          <h1 className="text-base md:text-lg font-bold  font-gilroy text-center  w-full align-left text-[#222057] mb-4 lg:leading-snug	px-12">
+          <h1 className="text-base md:text-lg font-bold  font-gilroy text-left  w-full align-left text-[#222057] mb-4 lg:leading-snug px-2">
             Get a Personal Tech Tutor Within 24 Hours
           </h1>
-          <p className="font-gilroyregular text-[#222057] text-center  font-extralight text-white mb-1 mx-3">
+          <p className="font-gilroyregular text-[#222057] text-left  font-extralight text-white mb-1 mx-3">
             Book a personal tutor. Get matched with an highly qualified tutor
             within 24hours and begin your exclusive learning on the go.
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-12">
             <Card title="step 1" desc="Fill the Application" />
             <Card title="step 2" desc="Get Contacted" />
             <Card title="step 3" desc="Admission Starter Pack" />

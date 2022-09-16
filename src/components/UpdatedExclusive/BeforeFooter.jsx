@@ -10,9 +10,12 @@ function BeforeFooter() {
         </h1>
         <div className="flex items-center justify-center w-full mx-auto">
           <FcSmartphoneTablet size={30} color="#232323" />
-          <p className="font-gilroyregular text-[16px] text-center  font-extralight text-[#232323]">
+          <a
+            href="https://wa.link/mgh071"
+            className="font-gilroyregular text-[16px] text-center  font-extralight text-[#232323]"
+          >
             Call or Whatsapp: +234 708 315 3185
-          </p>
+          </a>
         </div>
       </div>
       <div className="bg-[#222057] h-[70%] flex flex-col justify-center items-center">

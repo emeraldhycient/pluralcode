@@ -22,9 +22,9 @@ function Herosection() {
             At Your Pace
           </h1>
           <p className="font-gilroyregular text-[16px] text-center  font-extralight text-white mb-8">
-            PluralCode exclusive program gives you access to a private tutor
-            with quality one on one mentorship, fewer distractions, greater
-            learning and focus.
+            PluralCode Exclusive program gives you access to a private tutor for
+            high quality one-on-one mentorship, fewer distractions and a
+            flexible schedule to meet your needs.
           </p>
           <GetStarted />
         </div>
