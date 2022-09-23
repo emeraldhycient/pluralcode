@@ -2,18 +2,27 @@ import React from "react";
 import Layout from "../../components/layout/Layout";
 import { Label, TextInput } from "flowbite-react";
 import CustomButton from "../../components/CustomButton";
+import logo from "../../assets/logo.png";
+
 function Signup() {
   return (
     <Layout>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
-        <div className="w-full h-full mr-5">
+        <div className="w-full h-full mr-5 ">
           <img
             src="https://i.im.ge/2022/09/21/1DGBDY.Frame-946.png"
-            className="h-screen w-full"
+            className="h-screen w-full hidden md:block"
             alt=""
           />
+          <img
+            src={logo}
+            alt=""
+            className="w-[80%] block md:hidden mx-auto my-8"
+          />
         </div>
-        <div className={`bg-[#FFFFFF] h-screen overflow-x-auto w-full p-12`}>
+        <div
+          className={`bg-[#FFFFFF] h-screen overflow-x-auto w-full p-12 rounded-t-xl `}
+        >
           <h1 className="text-[25px] text-[#222057] font-bold">
             Create an Account
           </h1>
