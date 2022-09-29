@@ -35,7 +35,7 @@ function Login() {
       console.log(res)
       setToken(res.data.token)
       setUser(JSON.stringify(res.data))
-      toast.success("registration sucessful, you will be redirected now", {
+      toast.success(res.data?.message ? res.data.message : "login sucessful, you will be redirected now", {
         position: "bottom-center",
         autoClose: 5000,
         hideProgressBar: false,
@@ -43,24 +43,15 @@ function Login() {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-      }); setTimeout(() => {
+      });
+      setTimeout(() => {
         navigate("/student/dashboard")
       }, 1500)
 
     } catch (error) {
       console.log(error)
-      if (error.response?.data?.password) {
-        toast.warn(`${error.response.data?.password[0]}`, {
-          position: "bottom-center",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-        });
-      }
-      toast.error(`${error.response.statusText}`, {
+
+      toast.error(`${error.response.data.message}`, {
         position: "bottom-center",
         autoClose: 5000,
         hideProgressBar: false,
