@@ -1,12 +1,92 @@
-import React from "react";
+import React, { useState } from "react";
 import Layout from "../../components/layout/Layout";
-import { Label, TextInput } from "flowbite-react";
+import { Label, TextInput, Spinner } from "flowbite-react";
+import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
+
 import CustomButton from "../../components/CustomButton";
 import logo from "../../assets/logo.png";
+import axiosClient from "../../services/apiClient"
+import { setToken } from "../../services/storage/token"
+import { setUser } from "../../services/storage/user"
+
+
 
 function Login() {
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+  const [isLoading, setIsloading] = useState(false)
+
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setIsloading(true)
+    const data = new FormData();
+    data.append('email', email);
+    data.append('password', password);
+
+    try {
+
+      const res = await axiosClient.post("/login_student", data)
+      console.log(res)
+      setToken(res.data.token)
+      setUser(JSON.stringify(res.data))
+      toast.success("registration sucessful, you will be redirected now", {
+        position: "bottom-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      }); setTimeout(() => {
+        navigate("/student/dashboard")
+      }, 1500)
+
+    } catch (error) {
+      console.log(error)
+      if (error.response?.data?.password) {
+        toast.warn(`${error.response.data?.password[0]}`, {
+          position: "bottom-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+      }
+      toast.error(`${error.response.statusText}`, {
+        position: "bottom-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    }
+    setIsloading(false)
+
+  }
+
   return (
     <Layout>
+      <ToastContainer
+        position="bottom-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
         <div
           className={`bg-[#FFFFFF] h-screen overflow-x-auto w-full p-12 rounded-t-xl `}
@@ -17,7 +97,7 @@ function Login() {
           <p className="text-[14px] text-[#232323]">
             Login to your PluralCode account
           </p>
-          <form className="mt-3">
+          <form className="mt-3" onSubmit={handleSubmit}>
             <div className="mb-3">
               <div className="mb-2 block">
                 <Label htmlFor="email1" value="Email" />
@@ -26,6 +106,8 @@ function Login() {
                 id="email1"
                 type="email"
                 placeholder="Enter email"
+                value={email}
+                onChange={(text) => setEmail(text.target.value)}
                 required={true}
               />
             </div>
@@ -37,14 +119,26 @@ function Login() {
               <TextInput
                 id="Password"
                 type="password"
-                placeholder="Create password"
+                placeholder="Enter password"
+                value={password}
+                onChange={(text) => setPassword(text.target.value)}
                 required={true}
               />
             </div>
-
-            <div className="w-full mt-7">
-              <CustomButton>Login</CustomButton>
-            </div>
+            {isLoading ?
+              <div className="w-full mt-7">
+                <CustomButton>         <div className="mr-3">
+                  <Spinner
+                    size="sm"
+                    light={true}
+                  />
+                </div>
+                  Loading ...</CustomButton>
+              </div> :
+              <div className="w-full mt-7">
+                <CustomButton>Login</CustomButton>
+              </div>
+            }
           </form>
           <a href="/register" className="text-[14px] text-[#232323] flex mt-4">
             Don't have an account ?
