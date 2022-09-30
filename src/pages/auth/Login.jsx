@@ -116,6 +116,9 @@ function Login() {
                 required={true}
               />
             </div>
+            <a href="/password/reset" className="text-[14px] text-[#232323] flex mt-4">
+              forgot password ?
+            </a>
             {isLoading ?
               <div className="w-full mt-7">
                 <CustomButton>         <div className="mr-3">
