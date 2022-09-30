@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import axiosClient from "../../services/apiClient"
 import CustomButton from "../../components/CustomButton";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.svg";
 
 function PasswordReset() {
   const navigate = useNavigate();

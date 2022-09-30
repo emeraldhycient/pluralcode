@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/auth/Login";
 import PasswordReset from "./pages/auth/PasswordReset";
 import Signup from "./pages/auth/Signup";
+import Home from "./pages/dashboard/Home";
 function App() {
   return (
     <BrowserRouter>
@@ -11,6 +12,7 @@ function App() {
         <Route path="/register" element={<Signup />} />
         <Route path="/register" element={<Signup />} />
         <Route path="/password/reset" element={<PasswordReset />} />
+        <Route path="/student/dashboard" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );

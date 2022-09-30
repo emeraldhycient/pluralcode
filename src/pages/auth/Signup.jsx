@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 import CustomButton from "../../components/CustomButton";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.svg";
 import axiosClient from "../../services/apiClient"
 // import { setToken } from "../../services/storage/token"
 // import { setUser } from "../../services/storage/user"
