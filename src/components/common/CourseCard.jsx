@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 function CourseCard({ course }) {
     return (
         <div
-            className="grid grid-cols-1 md:grid-cols-2  shadow shadow-[0px 4.43484px 6.65226px -1.33045px rgba(16, 24, 40, 0.1), 0px 1.77394px 2.6609px -1.77394px rgba(16, 24, 40, 0.1)]  bg-white h-fit md:h-80 lg:h-fit my-4 rounded-lg py-6 px-3"
+            className="grid grid-cols-1 md:grid-cols-2  shadow shadow-[0px 4.43484px 6.65226px -1.33045px rgba(16, 24, 40, 0.1), 0px 1.77394px 2.6609px -1.77394px rgba(16, 24, 40, 0.1)]  bg-white h-fit md:h-80 lg:h-fit my-4 rounded-tl-3xl rounded-br-3xl py-6 px-3"
             data-aos="fade-right"
             data-aos-duration="2000"
         >
             <img
                 src={"http://pluralcode.academy/assets/product_des.4ad681c3.jpg"}
                 alt="product"
-                className="w-[90%]  rounded-lg"
+                className="w-[90%]  rounded-tl-3xl rounded-br-3xl"
                 data-aos="fade-right"
                 data-aos-duration="2000"
             />

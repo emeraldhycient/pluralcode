@@ -34,7 +34,7 @@ function Home() {
                     </div>
                 </Card>
             </div>
-            <div className="bg-[#FFFFFF] mt-10">
+            <div className=" mt-10">
                 <Tabs.Group
                     aria-label="pluralcode schools"
                     style="underline"
