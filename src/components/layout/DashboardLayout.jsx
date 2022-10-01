@@ -8,9 +8,11 @@ function DashboardLayout({ children }) {
             <div className="col-span-2">
                 <Sidebar />
             </div>
-            <div className="col-span-9 w-full">
+            <div className="col-span-9 w-full h-screen">
                 <Header />
-                {children}
+                <div className="w-full p-10 h-screen overflow-y-auto	-">
+                    {children}
+                </div>
             </div>
         </div>
     )

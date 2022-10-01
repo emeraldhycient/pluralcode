@@ -1,13 +1,14 @@
 import React from 'react'
-import { Card } from 'flowbite-react'
+import { Card, Tabs } from 'flowbite-react'
 import { BsWalletFill } from "react-icons/bs"
 
 import DashboardLayout from '../../components/layout/DashboardLayout'
+import CourseCard from '../../components/common/CourseCard'
 
 function Home() {
     return (
         <DashboardLayout>
-            <div className="grid grid-cols-1 md:grid-cols-2 p-10 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <Card href="#">
                     <div className='flex items-center '>
 
@@ -33,6 +34,60 @@ function Home() {
                     </div>
                 </Card>
             </div>
+            <div className="bg-[#FFFFFF] mt-10">
+                <Tabs.Group
+                    aria-label="pluralcode schools"
+                    style="underline"
+                >
+                    <Tabs.Item
+                        title="Data school"
+                    >
+                        <CourseCard />
+                        <CourseCard />
+                        <CourseCard />
+                        <CourseCard />
+                        <CourseCard />
+                        <CourseCard />
+                        <CourseCard />
+                    </Tabs.Item>
+                    <Tabs.Item
+                        active={true}
+                        title="Product School"
+                    >
+                        <CourseCard />
+                        <CourseCard />
+                        <CourseCard />
+                        <CourseCard />
+                        <CourseCard />
+                        <CourseCard />
+                        <CourseCard />
+                    </Tabs.Item>
+                    <Tabs.Item
+                        title="Programming School"
+                    >
+                        <CourseCard />
+                        <CourseCard />
+                        <CourseCard />
+                        <CourseCard />
+                        <CourseCard />
+                        <CourseCard />
+                        <CourseCard />
+                    </Tabs.Item>
+                    <Tabs.Item
+                        title="Cloud school"
+                    >
+                        <CourseCard />
+                        <CourseCard />
+                        <CourseCard />
+                        <CourseCard />
+                        <CourseCard />
+                        <CourseCard />
+                        <CourseCard />
+                    </Tabs.Item>
+
+                </Tabs.Group>
+            </div>
+
         </DashboardLayout>
     )
 }
