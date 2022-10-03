@@ -9,8 +9,8 @@ function Home() {
     return (
         <DashboardLayout>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <Card href="#">
-                    <div className='flex items-center '>
+                <div className='bg-white flex flex-col justify-center items-center w-full p-6 rounded'>
+                    <div className='flex items-center w-full'>
 
                         <div className="h-[64px] w-[64px] bg-[#2220571A] rounded-full flex justify-center items-center">
                             <BsWalletFill size={30} color="#222057" />
@@ -20,9 +20,9 @@ function Home() {
                             <h5 className='text-[16px] text-[#323232]'>Outstanding Balance:<span className='text-amber-400'>N60,000</span> </h5>
                         </div>
                     </div>
-                </Card>
-                <Card href="#">
-                    <div className='flex items-center '>
+                </div>
+                <div className='bg-white flex flex-col justify-center items-center w-full p-6 rounded'>
+                    <div className='flex items-center w-full'>
 
                         <div className="h-[64px] w-[64px] bg-[#F8991D1A] rounded-full flex justify-center items-center">
                             <BsWalletFill size={30} color="#F8991D" />
@@ -32,7 +32,7 @@ function Home() {
                             <h5 className='text-[16px] text-[#323232]'>2 Registered Courses</h5>
                         </div>
                     </div>
-                </Card>
+                </div>
             </div>
             <div className=" mt-10">
                 <Tabs.Group

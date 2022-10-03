@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+div[aria-label="pluralcode schools"] {
+    background-color: white;
+    border-radius: 8px;
+}
+
+button[aria-selected="true"] {
+    border-bottom-color: #F8991D;
+    border-bottom-width: 2px;
+    color: #F8991D;
+}
