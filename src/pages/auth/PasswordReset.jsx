@@ -4,6 +4,7 @@ import { Label, TextInput, Spinner } from "flowbite-react";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import OtpInput from "react-otp-input";
 
 
 import axiosClient from "../../services/apiClient"
@@ -177,7 +178,7 @@ function PasswordReset() {
         </p>
         <form className="mt-3" onSubmit={handleSubmit}>
           <div className="mb-3">
-            <TextInput
+            {/* <TextInput
               id="otp"
               type="number"
               className="text-center items-center"
@@ -185,7 +186,24 @@ function PasswordReset() {
               value={otp}
               onChange={(text) => setOtp(text.target.value)}
               required={true}
+            /> */}
+            <OtpInput
+              value={otp}
+              onChange={(text) => setOtp(text)}
+              numInputs={4}
+              separator={<span style={{ width: "8px" }}></span>}
+              isInputNum={true}
+              shouldAutoFocus={true}
+              inputStyle={{
+                width: "3rem",
+                height: "3rem",
+                margin: "0 1rem",
+                fontSize: "2rem",
+                borderRadius: 4,
+                border: "1px solid rgba(0,0,0,0.3)"
+              }}
             />
+
           </div>
 
           {isLoading ?
