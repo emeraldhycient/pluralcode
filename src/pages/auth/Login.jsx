@@ -12,6 +12,7 @@ import logo from "../../assets/logo.svg";
 import axiosClient from "../../services/apiClient"
 import { setToken } from "../../services/storage/token"
 import { setUser } from "../../services/storage/user"
+import styles from "./auth.module.css"
 
 
 
@@ -80,9 +81,9 @@ function Login() {
       />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
         <div
-          className={`bg-[#FFFFFF] h-screen overflow-x-auto w-full p-12 rounded-t-xl `}
+          className={`bg-[#FFFFFF] h-screen overflow-x-auto w-full px-12 md:px-32 rounded-t-xl flex flex-col justify-center   `}
         >
-          <h1 className="text-[25px] text-[#222057] font-bold">
+          <h1 className="text-[25px] text-[#222057] font-bold w-full">
             Welcome Back!
           </h1>
           <p className="text-[14px] text-[#232323]">
@@ -134,17 +135,17 @@ function Login() {
               </div>
             }
           </form>
-          <a href="/register" className="text-[14px] text-[#232323] flex mt-4">
+          <a href="/register" className="text-[14px] text-[#232323] flex mt-12 mx-auto">
             Don't have an account ?
             <span className="text-amber-500 mx-1">Create an Account</span>
           </a>
         </div>
-        <div className="w-full h-full mr-5 order-first md:order-last">
-          <img
+        <div className={`w-full h-full mr-5 order-first md:order-last ${styles.login_image}`}>
+          {/* <img
             src="https://i.im.ge/2022/09/21/1IjlAf.Frame-946-1.png"
             className="h-screen w-full hidden md:block"
             alt=""
-          />
+          /> */}
           <img
             src={logo}
             alt=""

@@ -3,41 +3,50 @@ import { FiMonitor } from "react-icons/fi"
 import { IoMdNotificationsOutline } from "react-icons/io"
 import { FaUserGraduate } from "react-icons/fa"
 
+import dashboard_icon from "../assets/dashboard_icon.svg"
+import exclusive_icon from "../assets/exclusive_icon.svg"
+import mycourses_icon from "../assets/mycourses_icon.svg"
+import advsior_icon from "../assets/advsior_icon.svg"
+import pluralcodetv_icon from "../assets/pluralcodetv_icon.svg"
+import notification_icon from "../assets/notification_icon.svg"
+import profile_icon from "../assets/profile_icon.svg"
+import logout_icon from "../assets/logout_icon.svg"
+
 const sidebardata = [
     {
         title: "Dashboard",
-        icon: MdDashboard,
+        icon: dashboard_icon,
         link: "/student/dashboard"
 
     },
     {
         title: "Exclusive",
-        icon: MdCenterFocusStrong,
+        icon: exclusive_icon,
         link: "/"
     },
     {
         title: "My Courses",
-        icon: MdLibraryBooks,
+        icon: mycourses_icon,
         link: "/"
     },
     {
         title: "Student Advisors",
-        icon: MdQuestionAnswer,
+        icon: advsior_icon,
         link: "/"
     },
     {
         title: "Pluralcode TV",
-        icon: FiMonitor,
+        icon: pluralcodetv_icon,
         link: "/"
     },
     {
         title: "Notifications",
-        icon: IoMdNotificationsOutline,
+        icon: notification_icon,
         link: "/"
     },
     {
         title: "Profile",
-        icon: FaUserGraduate,
+        icon: profile_icon,
         link: "/"
     }
 ]

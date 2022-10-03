@@ -8,7 +8,7 @@ function Sidebar() {
 
 
     return (
-        <div className='bg-white h-full overflow-y-auto border-r border-gray-200 shadow'>
+        <div className='bg-white h-full overflow-y-auto border-r border-[#EAEAEA] '>
             <div className="h-[4.5rem] p-3 mb-8">
                 <img src={logo} className="h-full w-full" alt="pluralcode logo" />
             </div>

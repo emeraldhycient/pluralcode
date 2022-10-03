@@ -13,6 +13,7 @@ import logo from "../../assets/logo.svg";
 import axiosClient from "../../services/apiClient"
 // import { setToken } from "../../services/storage/token"
 // import { setUser } from "../../services/storage/user"
+import styles from "./auth.module.css"
 
 
 
@@ -102,12 +103,7 @@ function Signup() {
         pauseOnHover
       />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
-        <div className="w-full h-full mr-5 ">
-          <img
-            src="https://i.im.ge/2022/09/21/1DGBDY.Frame-946.png"
-            className="h-screen w-full hidden md:block"
-            alt=""
-          />
+        <div className={`w-full h-full mr-5 ${styles.signup_image}`}>
           <img
             src={logo}
             alt=""
@@ -115,7 +111,7 @@ function Signup() {
           />
         </div>
         <div
-          className={`bg-[#FFFFFF] h-screen overflow-x-auto w-full p-12 rounded-t-xl `}
+          className={`bg-[#FFFFFF] h-screen overflow-x-auto w-full  rounded-t-xl flex flex-col justify-center px-12 md:px-32 pt-40 pb-3`}
         >
           <h1 className="text-[25px] text-[#222057] font-bold">
             Create an Account
@@ -218,7 +214,7 @@ function Signup() {
             }
 
           </form>
-          <a href="/login" className="text-[14px] text-[#232323] flex mt-4">
+          <a href="/login" className="text-[14px] text-[#232323] flex mt-12 mx-auto">
             Already have an account ?
             <span className="text-amber-500 mx-1">Login</span>
           </a>
