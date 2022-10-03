@@ -117,9 +117,16 @@ function Login() {
                 required={true}
               />
             </div>
-            <a href="/password/reset" className="text-[14px] text-[#232323] flex mt-4">
-              forgot password ?
-            </a>
+            <div className="flex justify-between items-center w-full">
+              <div className="flex items-center gap-2">
+                <input type="checkbox" className="rounded" />
+                <p>Remember Me</p>
+              </div>
+
+              <a href="/password/reset" className="text-[14px] text-[#232323] flex mt-4">
+                forgot password ?
+              </a>
+            </div>
             {isLoading ?
               <div className="w-full mt-7">
                 <CustomButton>         <div className="mr-3">
