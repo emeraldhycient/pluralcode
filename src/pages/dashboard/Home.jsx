@@ -21,7 +21,7 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className='bg-white flex flex-col justify-center items-center w-full p-6 rounded'>
+                <div className='bg-white flex-col justify-center items-center w-full p-6 rounded hidden md:flex '>
                     <div className='flex items-center w-full'>
 
                         <div className="h-[64px] w-[64px] bg-[#F8991D1A] rounded-full flex justify-center items-center">

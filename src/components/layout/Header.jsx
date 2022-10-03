@@ -4,7 +4,7 @@ import { GoSearch } from "react-icons/go"
 
 function Header() {
     return (
-        <div className='bg-white h-[4.5rem]  border-b border-[#EAEAEA]  flex justify-between items-center px-5'>
+        <div className='bg-white h-[4.5rem]  border-b border-[#EAEAEA]   justify-between items-center px-5 hidden md:flex'>
 
             <div className="h-[2.4rem] bg-[#F5F6FA] w-96 rounded flex items-center">
                 <GoSearch size={20} className="text-gray-400 ml-2" />
