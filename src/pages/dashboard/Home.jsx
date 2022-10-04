@@ -41,6 +41,8 @@ function Home() {
                 >
                     <Tabs.Item
                         title="Data school"
+                        active={true}
+
                     >
                         <CourseCard />
                         <CourseCard />
@@ -51,7 +53,6 @@ function Home() {
                         <CourseCard />
                     </Tabs.Item>
                     <Tabs.Item
-                        active={true}
                         title="Product School"
                     >
                         <CourseCard />

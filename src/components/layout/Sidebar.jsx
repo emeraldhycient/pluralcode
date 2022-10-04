@@ -3,15 +3,16 @@ import logo from "../../assets/logo.svg"
 import sidebardata from '../../data/sidebardata';
 import SidebarContent from './sidebarContent';
 import { Avatar, Dropdown } from "flowbite-react"
+import useNavToggle from '../../store/sidebartoggle'
+import close_icon from "../../assets/close_icon.svg"
 
 
 function Sidebar() {
-
-
+    const toggleSideBar = useNavToggle((state) => state.toggle)
 
     return (
         <div className='bg-white h-screen md:h-full overflow-y-auto border-r border-[#EAEAEA] '>
-            <div className="h-[4.5rem] p-3 mb-8">
+            <div className="h-[4.5rem] p-3 mb-8 flex justify-between items-center">
                 <img src={logo} className="h-full w-full hidden md:block" alt="pluralcode logo" />
                 <div className='flex block md:hidden'>
                     <Dropdown
@@ -50,6 +51,7 @@ function Sidebar() {
                         </div>
                     </div>
                 </div>
+                <img src={close_icon} className="h-[2rem] w-[20%] block md:hidden " alt="pluralcode logo" onClick={toggleSideBar} />
             </div>
             <ul className="">
                 {
