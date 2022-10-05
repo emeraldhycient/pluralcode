@@ -3,13 +3,44 @@
 @tailwind utilities;
 
 
-div[aria-label="pluralcode schools"] {
-    background-color: white;
-    border-radius: 8px;
+
+
+@media(min-width : 768px) {
+
+    div[aria-label="pluralcode schools"] {
+        background-color: white;
+        border-radius: 8px;
+    }
+
+    button[aria-selected="true"] {
+        border-bottom-color: #F8991D;
+        border-bottom-width: 2px;
+        color: #F8991D;
+    }
+
 }
 
-button[aria-selected="true"] {
-    border-bottom-color: #F8991D;
-    border-bottom-width: 2px;
-    color: #F8991D;
+@media(max-width : 768px) {
+
+    div[aria-label="pluralcode schools"] {
+        background-color: white;
+        border-radius: 8px;
+        overflow-x: auto;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        /* width: 100vw; */
+        padding: 10px;
+    }
+
+    button[aria-selected="true"] {
+        background-color: #222057;
+        color: whitesmoke;
+        width: fit-content;
+        border-radius: 5px;
+        width: 100%;
+        padding: 0px;
+    }
+
 }
