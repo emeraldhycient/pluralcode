@@ -27,10 +27,11 @@
         border-radius: 8px;
         overflow-x: auto;
         overflow-y: scroll;
+        overflow: hidden;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        /* width: 100vw; */
+        width: 400vw;
         padding: 10px;
     }
 
@@ -39,10 +40,11 @@
         color: whitesmoke;
         width: fit-content;
         border-radius: 5px;
-        width: 100%;
-        padding: 0px;
+        width: 47vw;
+        padding: 10px;
         margin-right: 3px;
         margin-left: 3px;
+        outline: none;
     }
 
     button[aria-selected="false"] {
@@ -50,10 +52,11 @@
         color: #232323;
         width: fit-content;
         border-radius: 5px;
-        width: 100%;
-        padding: 0px;
+        width: 47vw;
+        padding: 10px;
         margin-right: 3px;
         margin-left: 3px;
+        outline: none;
     }
 
 }
