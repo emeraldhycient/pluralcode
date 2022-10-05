@@ -35,14 +35,14 @@
     button[aria-selected="true"] {
         background-color: #222057;
         color: whitesmoke;
-        min-width: 45vw;
+        min-width: 47vw;
 
     }
 
     button[aria-selected="false"] {
         background-color: #F5F6FA;
         color: #232323;
-        min-width: 45vw;
+        min-width: 47vw;
     }
 
     div[aria-label="pluralcode schools"],
