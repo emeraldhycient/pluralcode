@@ -18,7 +18,8 @@ function CourseCard({ course }) {
                 {ismodalshowing ?
                     <VideoModal setismodalshowing={setismodalshowing} video_url="" /> : ""}
                 <img
-                    src={"http://pluralcode.academy/assets/product_des.4ad681c3.jpg"}
+                    src={"https://i.im.ge/2022/10/05/1HdwDa.videoPoster.png"}
+                    // src={"http://pluralcode.academy/assets/product_des.4ad681c3.jpg"}
                     alt="product"
                     className="w-[90%]  rounded-tl-3xl rounded-br-3xl"
                     data-aos="fade-right"
