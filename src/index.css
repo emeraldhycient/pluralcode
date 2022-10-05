@@ -25,38 +25,34 @@
     div[aria-label="pluralcode schools"] {
         background-color: white;
         border-radius: 8px;
-        overflow-x: auto;
-        overflow-y: scroll;
-        overflow: hidden;
+        /* width: 100vw !important; */
         display: flex;
-        flex-direction: row;
         flex-wrap: nowrap;
-        width: 400vw;
+        overflow-x: auto !important;
         padding: 10px;
     }
 
     button[aria-selected="true"] {
         background-color: #222057;
         color: whitesmoke;
-        width: fit-content;
-        border-radius: 5px;
-        width: 47vw;
-        padding: 10px;
-        margin-right: 3px;
-        margin-left: 3px;
-        outline: none;
+        min-width: 45vw;
+
     }
 
     button[aria-selected="false"] {
         background-color: #F5F6FA;
         color: #232323;
-        width: fit-content;
+        min-width: 45vw;
+    }
+
+    div[aria-label="pluralcode schools"],
+    button {
+        width: 100vw;
+        outline: none;
         border-radius: 5px;
-        width: 47vw;
         padding: 10px;
         margin-right: 3px;
         margin-left: 3px;
-        outline: none;
     }
 
 }
