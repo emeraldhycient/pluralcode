@@ -1,20 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import videoPoster from "../../assets/videoPoster.png"
+import VideoModal from "./VideoModal";
 
 function CourseCard({ course }) {
+
+    const [ismodalshowing, setismodalshowing] = useState(false)
+
     return (
         <div
             className="grid grid-cols-1 md:grid-cols-2    bg-white h-fit md:h-80 lg:h-fit my-4 rounded-tl-3xl rounded-br-3xl py-6 px-3"
             data-aos="fade-right"
             data-aos-duration="2000"
         >
-            <img
-                src={"http://pluralcode.academy/assets/product_des.4ad681c3.jpg"}
-                alt="product"
-                className="w-[90%]  rounded-tl-3xl rounded-br-3xl"
-                data-aos="fade-right"
-                data-aos-duration="2000"
-            />
+            {/* <div className="w-[90%] h-full" style={{ backgroundImage: `url(${videoPoster})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}>            </div> */}
+            <div onClick={() => setismodalshowing((prev) => !prev)}>
+                {ismodalshowing ?
+                    <VideoModal setismodalshowing={setismodalshowing} video_url="" /> : ""}
+                <img
+                    src={"http://pluralcode.academy/assets/product_des.4ad681c3.jpg"}
+                    alt="product"
+                    className="w-[90%]  rounded-tl-3xl rounded-br-3xl"
+                    data-aos="fade-right"
+                    data-aos-duration="2000"
+                /></div>
             <div className="pb-4 flex flex-col justify-center ">
                 <h6 data-aos="fade-right" data-aos-duration="2000">
                     {/* <span className="text-semibold"> {course.level}</span>{" "}

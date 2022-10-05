@@ -42,7 +42,6 @@ function Home() {
                     <Tabs.Item
                         title="Data school"
                         active={true}
-
                     >
                         <CourseCard />
                         <CourseCard />
