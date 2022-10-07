@@ -17,7 +17,7 @@ function CourseCard({ course }) {
             {/* <div className="w-[90%] h-full" style={{ backgroundImage: `url(${videoPoster})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}>            </div> */}
             <div onClick={() => setismodalshowing((prev) => !prev)}>
                 {ismodalshowing ?
-                    <VideoModal setismodalshowing={setismodalshowing} video_url="" /> : ""}
+                    <VideoModal setismodalshowing={setismodalshowing} video_url={course.video_url} /> : ""}
                 <img
                     src={course.image ? course.image : data_analytics}
                     // src={"http://pluralcode.academy/assets/product_des.4ad681c3.jpg"}
