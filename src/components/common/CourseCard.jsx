@@ -19,7 +19,7 @@ function CourseCard({ course }) {
                 {ismodalshowing ?
                     <VideoModal setismodalshowing={setismodalshowing} video_url="" /> : ""}
                 <img
-                    src={data_analytics}
+                    src={course.image ? course.image : data_analytics}
                     // src={"http://pluralcode.academy/assets/product_des.4ad681c3.jpg"}
                     alt="product"
                     className="w-[90%]  rounded-tl-3xl rounded-br-3xl"
@@ -36,24 +36,21 @@ function CourseCard({ course }) {
                     data-aos="fade-right"
                     data-aos-duration="2000"
                 >
-                    {/* {course.title} */}
-                    Data Analytics
+                    {course.title}
                 </h1>
                 <p
                     className="font-gilroyregular text-sm  lg:text-left  font-extralight text-[#323232] mb-2"
                     data-aos="fade-right"
                     data-aos-duration="2000"
                 >
-                    {/* {course.description} */}
-                    Learn to build Financial models, forecast performances and perform Valuations for companies. Become industry ready in just 12 weeks.
+                    {course.description}
                 </p>
                 <h5
                     className="text-sm mb-3"
                     data-aos="fade-right"
                     data-aos-duration="2000"
                 >
-                    {/* {course.duration} */}
-                    Duration: 12 Weeks
+                    {course.duration}
                 </h5>
                 <h5
                     className="text-xs mb-3"

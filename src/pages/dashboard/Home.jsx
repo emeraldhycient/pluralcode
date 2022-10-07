@@ -6,6 +6,7 @@ import { useParams } from 'react-router-dom'
 
 import DashboardLayout from '../../components/layout/DashboardLayout'
 import CourseCard from '../../components/common/CourseCard'
+import schoolsdata from '../../data/schoolsdata'
 
 function Home() {
 
@@ -48,49 +49,43 @@ function Home() {
                         title="Data school"
                         active={school === "data" ? true : false}
                     >
-                        <CourseCard />
-                        <CourseCard />
-                        <CourseCard />
-                        <CourseCard />
-                        <CourseCard />
-                        <CourseCard />
-                        <CourseCard />
+
+                        {
+                            schoolsdata.data.length > 0 ? schoolsdata.data.map((data) => (
+                                <CourseCard course={data} />
+                            )) : null
+                        }
+
                     </Tabs.Item>
                     <Tabs.Item
                         title="Product School"
                         active={school === "product" ? true : false}
                     >
-                        <CourseCard />
-                        <CourseCard />
-                        <CourseCard />
-                        <CourseCard />
-                        <CourseCard />
-                        <CourseCard />
-                        <CourseCard />
+                        {
+                            schoolsdata.product.length > 0 ? schoolsdata.product.map((data) => (
+                                <CourseCard course={data} />
+                            )) : null
+                        }
                     </Tabs.Item>
                     <Tabs.Item
                         title="Programming School"
                         active={school === "programming" ? true : false}
                     >
-                        <CourseCard />
-                        <CourseCard />
-                        <CourseCard />
-                        <CourseCard />
-                        <CourseCard />
-                        <CourseCard />
-                        <CourseCard />
+                        {
+                            schoolsdata.programming.length > 0 ? schoolsdata.programming.map((data) => (
+                                <CourseCard course={data} />
+                            )) : null
+                        }
                     </Tabs.Item>
                     <Tabs.Item
                         title="Cloud school"
                         active={school === "cloud" ? true : false}
                     >
-                        <CourseCard />
-                        <CourseCard />
-                        <CourseCard />
-                        <CourseCard />
-                        <CourseCard />
-                        <CourseCard />
-                        <CourseCard />
+                        {
+                            schoolsdata.cloud.length > 0 ? schoolsdata.cloud.map((data) => (
+                                <CourseCard course={data} />
+                            )) : null
+                        }
                     </Tabs.Item>
 
                 </Tabs.Group>
