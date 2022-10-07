@@ -13,7 +13,7 @@ function Sidebar() {
     return (
         <div className='bg-white h-screen md:h-full overflow-y-auto border-r border-[#EAEAEA] '>
             <div className="h-[4.5rem] p-3 mb-8 flex justify-between items-center">
-                <img src={logo} className="h-full w-full hidden md:block" alt="pluralcode logo" />
+                <img src={logo} className="h-[2rem] w-full hidden md:block mx-auto" alt="pluralcode logo" />
                 <div className='flex block md:hidden'>
                     <Dropdown
                         label={<Avatar alt="User settings" img="https://flowbite.com/docs/images/people/profile-picture-5.jpg" rounded={true} />}

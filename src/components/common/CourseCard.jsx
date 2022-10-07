@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import videoPoster from "../../assets/videoPoster.png"
 import VideoModal from "./VideoModal";
+import data_analytics from "../../assets/data_analytics.svg"
 
 function CourseCard({ course }) {
 
@@ -18,7 +19,7 @@ function CourseCard({ course }) {
                 {ismodalshowing ?
                     <VideoModal setismodalshowing={setismodalshowing} video_url="" /> : ""}
                 <img
-                    src={"https://i.im.ge/2022/10/05/1HdwDa.videoPoster.png"}
+                    src={data_analytics}
                     // src={"http://pluralcode.academy/assets/product_des.4ad681c3.jpg"}
                     alt="product"
                     className="w-[90%]  rounded-tl-3xl rounded-br-3xl"
