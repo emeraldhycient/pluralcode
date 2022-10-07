@@ -13,6 +13,7 @@ function App() {
         <Route path="/register" element={<Signup />} />
         <Route path="/password/reset" element={<PasswordReset />} />
         <Route path="/student/dashboard" element={<Home />} />
+        <Route path="/student/dashboard/:school" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );

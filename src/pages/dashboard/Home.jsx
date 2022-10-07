@@ -1,11 +1,16 @@
 import React from 'react'
-import { Card, Tabs } from 'flowbite-react'
+import { Tabs } from 'flowbite-react'
 import { BsWalletFill } from "react-icons/bs"
+import { useParams } from 'react-router-dom'
+
 
 import DashboardLayout from '../../components/layout/DashboardLayout'
 import CourseCard from '../../components/common/CourseCard'
 
 function Home() {
+
+    const { school } = useParams();
+
     return (
         <DashboardLayout>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -41,7 +46,7 @@ function Home() {
                 >
                     <Tabs.Item
                         title="Data school"
-                        active={true}
+                        active={school === "data" ? true : false}
                     >
                         <CourseCard />
                         <CourseCard />
@@ -53,6 +58,7 @@ function Home() {
                     </Tabs.Item>
                     <Tabs.Item
                         title="Product School"
+                        active={school === "product" ? true : false}
                     >
                         <CourseCard />
                         <CourseCard />
@@ -64,6 +70,7 @@ function Home() {
                     </Tabs.Item>
                     <Tabs.Item
                         title="Programming School"
+                        active={school === "programming" ? true : false}
                     >
                         <CourseCard />
                         <CourseCard />
@@ -75,6 +82,7 @@ function Home() {
                     </Tabs.Item>
                     <Tabs.Item
                         title="Cloud school"
+                        active={school === "cloud" ? true : false}
                     >
                         <CourseCard />
                         <CourseCard />
