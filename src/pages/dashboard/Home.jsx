@@ -9,7 +9,7 @@ function Home() {
     return (
         <DashboardLayout>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className='bg-white flex flex-col justify-center items-center w-full p-6 md:p-12 rounded'>
+                <div className='bg-white flex flex-col justify-center items-center w-full p-6 md:p-12 rounded-[8px]'>
                     <div className='flex items-center w-full'>
 
                         <div className="h-[64px] w-[64px] bg-[#2220571A] rounded-full flex justify-center items-center">
@@ -21,7 +21,7 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className='bg-white flex-col justify-center items-center w-full p-6 md:p-12 rounded hidden md:flex '>
+                <div className='bg-white flex-col justify-center items-center w-full p-6 md:p-12 rounded-[8px] hidden md:flex '>
                     <div className='flex items-center w-full'>
 
                         <div className="h-[64px] w-[64px] bg-[#F8991D1A] rounded-full flex justify-center items-center">
