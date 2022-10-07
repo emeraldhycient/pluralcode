@@ -26,7 +26,7 @@ function SidebarContent({ item }) {
                             <img src={item.icon} />
                         </span>
                         <h4>{item.title}</h4>
-                        {item.children ? isdropdownactive ? <MdOutlineKeyboardArrowDown /> : <MdOutlineKeyboardArrowUp /> : null}
+                        {item.children ? isdropdownactive ? <MdOutlineKeyboardArrowUp /> : <MdOutlineKeyboardArrowDown /> : null}
                     </a>}
             </li>
             {
