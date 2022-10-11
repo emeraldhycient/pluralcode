@@ -66,7 +66,7 @@ function CourseCard({ course }) {
                     data-aos-duration="2000"
                 >
                     {/* <Link to={course.link} className="flex items-center"> */}
-                    <Link to="/" className="flex items-center">
+                    <Link to={course.link} className="flex items-center">
                         Learn More
                     </Link>
                 </button>
