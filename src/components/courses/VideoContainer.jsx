@@ -8,14 +8,14 @@ function VideoContainer({ video_url, poster }) {
     const [ismodalshowing, setismodalshowing] = useState(false)
 
     return (
-        <div className='h-fit my-10 bg-white p-5' onClick={() => setismodalshowing((prev) => !prev)}>
+        <div className='h-fit my-10 bg-white p-5 rounded-3xl' onClick={() => setismodalshowing((prev) => !prev)}>
             {ismodalshowing ?
                 <VideoModal setismodalshowing={setismodalshowing} video_url={video_url ? video_url : `https://res.cloudinary.com/gofitish/video/upload/v1659095398/videos/Plural_Code_-_Our_Instructor_t5qtrr.mp4`} /> : ""}
             <img
                 src={poster ? poster : data_analytics}
                 // src={"http://pluralcode.academy/assets/product_des.4ad681c3.jpg"}
                 alt="product"
-                className="w-[100%]  rounded-3xl"
+                className="w-[100%]  "
                 data-aos="fade-right"
                 data-aos-duration="2000"
             />
