@@ -24,11 +24,16 @@ function Enrollment() {
 
 
     // store the if student wants full or half payment
-    const [choiceOfPayment, setchoiceOfPayment] = useState({ mode: "full_payment" })
+    const [choiceOfPayment, setchoiceOfPayment] = useState()
 
 
     // fetch price for the cohort
     const [paymentBreakdown, setpaymentBreakdown] = useState({})
+
+
+    // paymentmethod 
+
+    const [selectedPaymentmethod, setselectedPaymentmethod] = useState("card")
 
 
     useEffect(() => {
@@ -55,7 +60,7 @@ function Enrollment() {
     const payWithCredPal = () => {
         const checkout = new Checkout({
             key: '335f5198-c0d1-47d8-91d9-82ffe6ab0bfc', // Your Key
-            amount: 50000,
+            amount: choiceOfPayment.amount,
             product: `${course}`,
             onClose: () => console.log('Widget closed'),
             onLoad: () => console.log('Widget loaded successfully'),
@@ -210,6 +215,29 @@ function Enrollment() {
 
 
 
+    const BankTransferCard = () => {
+        return (
+            <div className="border border-gray-200 w-full rounded-[8px] px-4 md:px-8 py-12">
+                <h4 className='text-[#1E1E1E] text-[22px] mb-2'>Bank Details</h4>
+                <h4 className='text-[#1E1E1E] text-[18px] mb-2'>Wema</h4>
+                <div className="flex items-center mb-1">
+                    <h4 className='text-[#1E1E1E] text-[18px]'>Account Name: </h4>
+                    <p className='text-[#1E1E1E] text-[16px] mx-2'>PluralCode Technologies</p>
+                </div>
+                <div className="flex items-center mb-1">
+                    <h4 className='text-[#1E1E1E] text-[18px]'>Account Number: </h4>
+                    <p className='text-[#1E1E1E] text-[16px] mx-2'>0089765346</p>
+                </div>
+                <div className="w-fit mt-4">
+                    <button className="bg-amber-500 text-[12px] text-white px-8 py-2 rounded w-[100%] mx-auto lg:mx-0 flex justify-center items-center" onClick={() => payWithCredPal()} type="button">Pay With CredPal</button>
+                </div>
+
+            </div>
+        )
+    }
+
+
+
     const PaymentForm = () => {
         return (
             <div className="bg-white rounded-[8px] h-fit  mt-5 p-10 md:px-16 md:py-16">
@@ -230,7 +258,7 @@ function Enrollment() {
                     <p className='text-[#232323] text-[16px]'>Select the payment choice you prefer</p>
                 </div>
                 <div className="pb-12 grid grid-cols-1 md:grid-cols-2 items-center border-b-[0.12rem] border-gray-200">
-                    <div className={` bg-[#F5F6FA] w-full md:w-[30vw] h-[200px] mb-4 rounded-[8px] mr-[3%] flex flex-col items-center justify-center ${choiceOfPayment.mode === "full_payment" ? " border border-green-300" : ""} `} onClick={(e) => setchoiceOfPayment({
+                    <div className={` bg-[#F5F6FA] w-full md:w-[30vw] h-[200px] mb-4 rounded-[8px] mr-[3%] flex flex-col items-center justify-center ${choiceOfPayment?.mode === "full_payment" ? " border border-green-300" : ""} `} onClick={(e) => setchoiceOfPayment({
                         mode: "full_payment",
                         amount: paymentBreakdown.course_fee
                     })}>
@@ -238,7 +266,7 @@ function Enrollment() {
                         <h4 className='text-[#222057] text-[16px] mb-3'>Course Price:{paymentBreakdown.course_fee}</h4>
                         <h4 className='text-[#222057] text-[16px] mb-3'>100 %: {paymentBreakdown.course_fee}</h4>
                     </div>
-                    <div className={` bg-[#F5F6FA] w-full md:w-[30vw] h-[200px] mb-4 rounded-[8px] mr-[3%] flex flex-col items-center justify-center ${choiceOfPayment.mode === "part_payment" ? " border border-green-300" : "border-[0.223] border-green-300"} `} onClick={(e) => setchoiceOfPayment({
+                    <div className={` bg-[#F5F6FA] w-full md:w-[30vw] h-[200px] mb-4 rounded-[8px] mr-[3%] flex flex-col items-center justify-center ${choiceOfPayment?.mode === "part_payment" ? " border border-green-300" : "border-[0.223] border-green-300"} `} onClick={(e) => setchoiceOfPayment({
                         mode: "part_payment",
                         amount: paymentBreakdown.part_payment_initial_deposit
                     })}>
@@ -254,20 +282,23 @@ function Enrollment() {
                         <p className='text-[#232323] text-[16px]'>Select the payment choice you prefer</p>
                     </div>
                     <div className="md:flex mb-5">
-                        <div className='flex  mx-2 items-center'>
+                        <div className={`flex  mx-2 items-center ${selectedPaymentmethod === "card" ? "border border-green-300 rounded-[8px] p-2" : ""}`} onClick={() => setselectedPaymentmethod("card")}>
                             <input type="radio" name="" id="" className='mr-2' />
                             <label>credit card</label>
                         </div>
-                        <div className='flex  mx-2 items-center'>
+                        <div className={`flex  mx-2 items-center ${selectedPaymentmethod === "transfer" ? "border border-green-300 rounded-[8px] p-2" : ""}`} onClick={() => setselectedPaymentmethod("transfer")}>
                             <input type="radio" name="" id="" className='mr-2' />
                             <label>Bank Transfer</label>
                         </div>
-                        <div className='flex  mx-2 items-center'>
+                        <div className={`flex  mx-2 items-center ${selectedPaymentmethod === "loan" ? "border border-green-300 rounded-[8px] p-2" : ""}`} onClick={() => setselectedPaymentmethod("loan")}>
                             <input type="radio" name="" id="" className='mr-2' />
                             <label>Student Loan</label>
                         </div>
                     </div>
-                    <StudentLoanCard />
+                    {
+                        selectedPaymentmethod === "card" ? "card selected" : selectedPaymentmethod === "transfer" ? <BankTransferCard /> : <StudentLoanCard />
+
+                    }
                 </div>
             </div>
         )
