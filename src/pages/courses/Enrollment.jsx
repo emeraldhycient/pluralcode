@@ -196,7 +196,7 @@ function Enrollment() {
 
     const StudentLoanCard = () => {
         return (
-            <div className="border border-gray-200 w-full rounded-[8px] px-8 py-12">
+            <div className="border border-gray-200 w-full rounded-[8px] px-4 md:px-8 py-12">
                 <h4 className='text-[#232323] text-[22px]'>Student Loan</h4>
                 <p className='text-[#232323] text-[16px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo venenatis, dignissim quam purus rutrum nisi, eu. Ornare viverra neque risus volutpat commodo fermentum, cum. Magna netus iaculis odio eget ut ut justo. Pellentesque risus vivamus tincidunt et ut senectus id ut.
                     Scelerisque dui amet consequat, consectetur etiam viverra dictum id. In fermentum egestas mauris volutpat vitae diam. At a rhoncus amet, habitasse sagittis. Suspendisse eget phasellus pharetra adipiscing at. Enim, enim scelerisque ultrices arcu, magna in amet, imperdiet elementum. Libero ac urna, integer tellus luctus. Leo neque id tellus enim lectus fermentum.</p>
