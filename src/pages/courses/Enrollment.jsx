@@ -100,109 +100,6 @@ function Enrollment() {
     }, [cohort])
 
 
-
-
-
-
-
-
-    const Applicationform = () => {
-        return (
-            <div className="bg-white rounded-[8px] h-fit mt-5 p-10 md:px-16 md:py-24">
-                <div className="flex justify-between items-center mb-8">
-                    <h3 className='text-[#222057] text-[25px]'>Apply For {course}</h3>
-                    <div className="bg-[#F5F6FA] p-2 flex rounded-lg">
-                        <h4 className='px-2'>{enrollmentStage}</h4>
-                        <h4>of</h4>
-                        <h4 className='px-2'>2</h4>
-                    </div>
-                </div>
-                <div className="mb-6">
-                    <h4 className='text-[#232323] text-[22px]'>Bio Details</h4>
-                    <p className='text-[#232323] text-[16px]'>Kindly provide us with your correct info</p>
-                </div>
-                <form className="mt-3">
-                    <div className="mb-3">
-                        <div className="mb-2 block">
-                            <Label htmlFor="skill" value="skill" />
-                        </div>
-                        <TextInput
-                            id="skill"
-                            type="text"
-                            placeholder="Select Skill"
-                            value={course}
-                            onChange={(text) => setEmail(text.target.value)}
-                            required={true}
-                            disabled={true}
-
-                        />
-                    </div>
-                    <div className="mb-3">
-                        <div className="mb-2 block">
-                            <Label htmlFor="Select Cohort" value="Select Cohort" />
-                        </div>
-                        <select
-                            id="countries"
-                            required={true}
-                            className="w-full rounded-lg border-gray-300 text-gray-400"
-                            value={cohort}
-                            onChange={(text) => setcohort(text.target.value)}
-                        >
-                            <option>Select cohorts</option>
-
-                            {
-                                cohorts.map((cour) => (
-                                    <option value={cour.name} key={cour.name}>
-                                        {cour.name}
-                                    </option>
-                                ))
-                            }
-
-                        </select>
-                    </div>
-                    <div className="mb-3">
-                        <div className="mb-2 block">
-                            <Label htmlFor="Highest Academic Level" value="Highest Academic Level" />
-                        </div>
-                        <TextInput
-                            id="Highest Academic Level"
-                            type="text"
-                            placeholder="Highest Academic Level"
-                            value={academicLevel}
-                            onChange={(text) => setAcademicLevel(text.target.value)}
-                            required={true}
-                        />
-                    </div>
-                    <div className="mb-3">
-                        <div className="mb-2 block">
-                            <Label htmlFor="Current Location" value="Current Location" />
-                        </div>
-                        <TextInput
-                            id="Current Location"
-                            type="text"
-                            placeholder="Enter current Location"
-                            value={currentLocation}
-                            onChange={(text) => setCurrentLocation(text.target.value)}
-                            required={true}
-                        />
-                    </div>
-                    {
-                        currentLocation.length > 0 && academicLevel.length > 0 && cohort.length > 0 ?
-                            <div className="w-fit md:w-[15%] mt-12" onClick={() => setEnrollmentStage(2)}>
-                                <CustomButton>
-                                    Next <AiOutlineArrowRight color="white" size={23} className="ml-3" />
-                                </CustomButton>
-                            </div> : ""
-                    }
-                </form>
-            </div>
-        )
-
-    }
-
-
-
-
     const StudentLoanCard = () => {
         return (
             <div className="border border-gray-200 w-full rounded-[8px] px-4 md:px-8 py-12">
@@ -306,8 +203,8 @@ function Enrollment() {
                         amount: paymentBreakdown.course_fee
                     })}>
                         <h5 className='italics text-[#323232] text-[16px] mb-3'>Full Payment</h5>
-                        <h4 className='text-[#222057] text-[16px] mb-3'>Course Price:{paymentBreakdown.course_fee}</h4>
-                        <h4 className='text-[#222057] text-[16px] mb-3'>100 %: {paymentBreakdown.course_fee}</h4>
+                        <h4 className='text-[#222057] text-[16px] mb-3'>Course Price: N {paymentBreakdown.course_fee}</h4>
+                        <h4 className='text-[#222057] text-[16px] mb-3'>100 %:  N {paymentBreakdown.course_fee}</h4>
                     </div>
                     <div className={` bg-[#F5F6FA] w-full md:w-[30vw] h-[200px] mb-4 rounded-[8px] mr-[3%] flex flex-col items-center justify-center ${choiceOfPayment?.mode === "part_payment" ? " border border-green-300" : "border-[0.223] border-green-300"} `} onClick={(e) => setchoiceOfPayment({
                         mode: "part_payment",
@@ -315,7 +212,7 @@ function Enrollment() {
                     })}>
                         <h5 className='italics text-[#323232] text-[16px] mb-3'>Part Payment</h5>
                         <h4 className='text-[#222057] text-[16px] mb-3'>Course Price: N {paymentBreakdown.course_total_part_payment_fee}</h4>
-                        <h4 className='text-[#222057] text-[16px] mb-3'>{paymentBreakdown.course_part_payment_percentage} : N{paymentBreakdown.part_payment_initial_deposit}</h4>
+                        <h4 className='text-[#222057] text-[16px] mb-3'>{paymentBreakdown.course_part_payment_percentage} : N {paymentBreakdown.part_payment_initial_deposit}</h4>
                     </div>
                 </div>
                 <div className="">
@@ -353,7 +250,94 @@ function Enrollment() {
             <BackBtn />
             {
                 enrollmentStage === 1 ?
-                    <Applicationform /> : <PaymentForm />
+                    <div className="bg-white rounded-[8px] h-fit mt-5 p-10 md:px-16 md:py-24">
+                        <div className="flex justify-between items-center mb-8">
+                            <h3 className='text-[#222057] text-[25px]'>Apply For {course}</h3>
+                            <div className="bg-[#F5F6FA] p-2 flex rounded-lg">
+                                <h4 className='px-2'>{enrollmentStage}</h4>
+                                <h4>of</h4>
+                                <h4 className='px-2'>2</h4>
+                            </div>
+                        </div>
+                        <div className="mb-6">
+                            <h4 className='text-[#232323] text-[22px]'>Bio Details</h4>
+                            <p className='text-[#232323] text-[16px]'>Kindly provide us with your correct info</p>
+                        </div>
+                        <form className="mt-3">
+                            <div className="mb-3">
+                                <div className="mb-2 block">
+                                    <Label htmlFor="skill" value="skill" />
+                                </div>
+                                <TextInput
+                                    id="skill"
+                                    type="text"
+                                    placeholder="Select Skill"
+                                    value={course}
+                                    onChange={(text) => setEmail(text.target.value)}
+                                    required={true}
+                                    disabled={true}
+
+                                />
+                            </div>
+                            <div className="mb-3">
+                                <div className="mb-2 block">
+                                    <Label htmlFor="Select Cohort" value="Select Cohort" />
+                                </div>
+                                <select
+                                    id="countries"
+                                    required={true}
+                                    className="w-full rounded-lg border-gray-300 text-gray-400"
+                                    value={cohort}
+                                    onChange={(text) => setcohort(text.target.value)}
+                                >
+                                    <option>Select cohorts</option>
+
+                                    {
+                                        cohorts.map((cour) => (
+                                            <option value={cour.name} key={cour.name}>
+                                                {cour.name}
+                                            </option>
+                                        ))
+                                    }
+
+                                </select>
+                            </div>
+                            <div className="mb-3">
+                                <div className="mb-2 block">
+                                    <Label htmlFor="Highest Academic Level" value="Highest Academic Level" />
+                                </div>
+                                <TextInput
+                                    id="Highest Academic Level"
+                                    type="text"
+                                    placeholder="Highest Academic Level"
+                                    value={academicLevel}
+                                    onChange={(text) => setAcademicLevel(text.target.value)}
+                                    required={true}
+                                />
+                            </div>
+                            <div className="mb-3">
+                                <div className="mb-2 block">
+                                    <Label htmlFor="Current Location" value="Current Location" />
+                                </div>
+                                <TextInput
+                                    id="Current Location"
+                                    type="text"
+                                    placeholder="Enter current Location"
+                                    value={currentLocation}
+                                    onChange={(text) => setCurrentLocation(text.target.value)}
+                                    required={true}
+                                />
+                            </div>
+                            {
+                                currentLocation.length > 0 && academicLevel.length > 0 && cohort.length > 0 ?
+                                    <div className="w-fit md:w-[15%] mt-12" onClick={() => setEnrollmentStage(2)}>
+                                        <CustomButton>
+                                            Next <AiOutlineArrowRight color="white" size={23} className="ml-3" />
+                                        </CustomButton>
+                                    </div> : ""
+                            }
+                        </form>
+                    </div> : <PaymentForm />
             }
         </DashboardLayout>
     )
