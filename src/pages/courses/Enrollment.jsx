@@ -201,7 +201,7 @@ function Enrollment() {
                 <p className='text-[#232323] text-[16px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo venenatis, dignissim quam purus rutrum nisi, eu. Ornare viverra neque risus volutpat commodo fermentum, cum. Magna netus iaculis odio eget ut ut justo. Pellentesque risus vivamus tincidunt et ut senectus id ut.
                     Scelerisque dui amet consequat, consectetur etiam viverra dictum id. In fermentum egestas mauris volutpat vitae diam. At a rhoncus amet, habitasse sagittis. Suspendisse eget phasellus pharetra adipiscing at. Enim, enim scelerisque ultrices arcu, magna in amet, imperdiet elementum. Libero ac urna, integer tellus luctus. Leo neque id tellus enim lectus fermentum.</p>
                 <div className="w-fit mt-4">
-                    <CustomButton onClick={() => payWithCredPal()} type="button">Pay With CredPal</CustomButton>
+                    <button className="bg-amber-500 text-[12px] text-white px-8 py-2 rounded w-[100%] mx-auto lg:mx-0 flex justify-center items-center" onClick={() => payWithCredPal()} type="button">Pay With CredPal</button>
                 </div>
 
             </div>
