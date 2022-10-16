@@ -54,7 +54,7 @@ function Enrollment() {
 
     const payWithCredPal = () => {
         const checkout = new Checkout({
-            key: 'Your Key', // Your Key
+            key: '335f5198-c0d1-47d8-91d9-82ffe6ab0bfc', // Your Key
             amount: 50000,
             product: `${course}`,
             onClose: () => console.log('Widget closed'),
