@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { getToken } from '../../services/storage/token'
 import useNavToggle from '../../store/sidebartoggle'
 import Header from './Header'
 import HeaderMobile from './HeaderMobile'
@@ -7,6 +8,18 @@ import Sidebar from './Sidebar'
 function DashboardLayout({ children }) {
 
     const isNavOpen = useNavToggle((state) => state.isOpen);
+
+    const token = getToken();
+
+    useEffect(() => {
+
+        if (!token) {
+            window.location.href = "/";
+            window.location.reload;
+        }
+
+    }, [token])
+
 
 
     return (
