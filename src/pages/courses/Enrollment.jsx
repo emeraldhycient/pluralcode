@@ -11,6 +11,8 @@ import DashboardLayout from '../../components/layout/DashboardLayout'
 import axiosClient from '../../services/apiClient';
 import CustomButton from '../../components/CustomButton';
 
+import successmodal from '../../store/successmodal';
+
 
 function Enrollment() {
 
@@ -33,8 +35,8 @@ function Enrollment() {
     // paymentmethod 
     const [selectedPaymentmethod, setselectedPaymentmethod] = useState("card")
 
-    const [isModalShowing, setisModalShowing] = useState(true)
-
+    const isModalShowing = successmodal((state) => state.modal)
+    const toggleModalShowing = successmodal((state) => state.toggleModal)
 
     useEffect(() => {
         const getCohort = async () => {
@@ -116,7 +118,7 @@ function Enrollment() {
         try {
             const response = await axiosClient.post("/student/make_payment", data)
             console.log(response)
-            setisModalShowing(true)
+            toggleModalShowing()
         } catch (error) {
             console.log(error.response.data)
         }
@@ -165,7 +167,7 @@ function Enrollment() {
                     show={isModalShowing}
                     size="md"
                     popup={true}
-                    onClose={setisModalShowing(false)}
+                    onClose={toggleModalShowing}
                 >
                     <Modal.Header />
                     <Modal.Body>
