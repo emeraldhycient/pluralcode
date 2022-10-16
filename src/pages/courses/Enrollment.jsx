@@ -260,33 +260,31 @@ function Enrollment() {
                         <h4 className='text-[#222057] text-[16px] mb-3'>{paymentBreakdown.course_part_payment_percentage} : N {paymentBreakdown.part_payment_initial_deposit}</h4>
                     </div>
                 </div>
+                <div className="">
 
-
-                {paymentBreakdown?.mode ?
-                    <div className="">
-                        <div className="pb-6 mt-3">
-                            <h4 className='text-[#222057] text-[18px]'>Payment Method</h4>
-                            <p className='text-[#232323] text-[16px]'>Select the payment choice you prefer</p>
+                    <div className="pb-6 mt-3">
+                        <h4 className='text-[#222057] text-[18px]'>Payment Method</h4>
+                        <p className='text-[#232323] text-[16px]'>Select the payment choice you prefer</p>
+                    </div>
+                    <div className="md:flex mb-5">
+                        <div className={`flex  mx-2 items-center ${selectedPaymentmethod === "card" ? "border border-green-300 rounded-[8px] p-2" : ""}`} onClick={() => setselectedPaymentmethod("card")}>
+                            <input type="radio" name="" id="" className='mr-2' checked={selectedPaymentmethod === "card" ? true : false} />
+                            <label>credit card</label>
                         </div>
-                        <div className="md:flex mb-5">
-                            <div className={`flex  mx-2 items-center ${selectedPaymentmethod === "card" ? "border border-green-300 rounded-[8px] p-2" : ""}`} onClick={() => setselectedPaymentmethod("card")}>
-                                <input type="radio" name="" id="" className='mr-2' checked={selectedPaymentmethod === "card" ? true : false} />
-                                <label>credit card</label>
-                            </div>
-                            <div className={`flex  mx-2 items-center ${selectedPaymentmethod === "transfer" ? "border border-green-300 rounded-[8px] p-2" : ""}`} onClick={() => setselectedPaymentmethod("transfer")}>
-                                <input type="radio" name="" id="" className='mr-2' checked={selectedPaymentmethod === "transfer" ? true : false} />
-                                <label>Bank Transfer</label>
-                            </div>
-                            <div className={`flex  mx-2 items-center ${selectedPaymentmethod === "loan" ? "border border-green-300 rounded-[8px] p-2" : ""}`} onClick={() => setselectedPaymentmethod("loan")}>
-                                <input type="radio" name="" id="" className='mr-2' checked={selectedPaymentmethod === "loan" ? true : false} />
-                                <label>Student Loan</label>
-                            </div>
+                        <div className={`flex  mx-2 items-center ${selectedPaymentmethod === "transfer" ? "border border-green-300 rounded-[8px] p-2" : ""}`} onClick={() => setselectedPaymentmethod("transfer")}>
+                            <input type="radio" name="" id="" className='mr-2' checked={selectedPaymentmethod === "transfer" ? true : false} />
+                            <label>Bank Transfer</label>
                         </div>
-                    </div> : ""}
-                {
-                    paymentBreakdown?.mode ? selectedPaymentmethod === "card" ? <PayWithCard /> : selectedPaymentmethod === "transfer" ? <BankTransferCard /> : <StudentLoanCard /> : ""
+                        <div className={`flex  mx-2 items-center ${selectedPaymentmethod === "loan" ? "border border-green-300 rounded-[8px] p-2" : ""}`} onClick={() => setselectedPaymentmethod("loan")}>
+                            <input type="radio" name="" id="" className='mr-2' checked={selectedPaymentmethod === "loan" ? true : false} />
+                            <label>Student Loan</label>
+                        </div>
+                    </div>
+                    {
+                        selectedPaymentmethod === "card" ? <PayWithCard /> : selectedPaymentmethod === "transfer" ? <BankTransferCard /> : <StudentLoanCard />
 
-                }
+                    }
+                </div>
             </div>
         )
     }
