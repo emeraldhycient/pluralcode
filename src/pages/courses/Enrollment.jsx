@@ -194,7 +194,7 @@ function Enrollment() {
         reference: (new Date()).getTime().toString(),
         email: "okwesimartins@gmail.com",
         amount: choiceOfPayment?.amount,
-        publicKey: 'pk_test_dsdfghuytfd2345678gvxxxxxxxxxx',
+        publicKey: 'sk_test_78d3222355597d8e13ada75b3f02230f6849d4d8',
     };
 
     // you can call this function anything
