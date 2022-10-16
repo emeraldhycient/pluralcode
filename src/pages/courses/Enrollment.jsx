@@ -193,6 +193,23 @@ function Enrollment() {
 
 
 
+
+    const StudentLoanCard = () => {
+        return (
+            <div className="border border-gray-200 w-full rounded-[8px] px-8 py-12">
+                <h4 className='text-[#232323] text-[22px]'>Student Loan</h4>
+                <p className='text-[#232323] text-[16px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo venenatis, dignissim quam purus rutrum nisi, eu. Ornare viverra neque risus volutpat commodo fermentum, cum. Magna netus iaculis odio eget ut ut justo. Pellentesque risus vivamus tincidunt et ut senectus id ut.
+                    Scelerisque dui amet consequat, consectetur etiam viverra dictum id. In fermentum egestas mauris volutpat vitae diam. At a rhoncus amet, habitasse sagittis. Suspendisse eget phasellus pharetra adipiscing at. Enim, enim scelerisque ultrices arcu, magna in amet, imperdiet elementum. Libero ac urna, integer tellus luctus. Leo neque id tellus enim lectus fermentum.</p>
+                <div className="w-fit mt-4">
+                    <CustomButton onClick={() => payWithCredPal()} type="button">Pay With CredPal</CustomButton>
+                </div>
+
+            </div>
+        )
+    }
+
+
+
     const PaymentForm = () => {
         return (
             <div className="bg-white rounded-[8px] h-fit  mt-5 p-10 md:px-16 md:py-16">
@@ -235,7 +252,7 @@ function Enrollment() {
                         <h4 className='text-[#222057] text-[18px]'>Payment Method</h4>
                         <p className='text-[#232323] text-[16px]'>Select the payment choice you prefer</p>
                     </div>
-                    <button onClick={() => payWithCredPal()} type="button">Pay With CredPal</button>
+                    <StudentLoanCard />
                 </div>
             </div>
         )
