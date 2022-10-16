@@ -210,6 +210,7 @@ function Enrollment() {
                 </div>
 
             </div>
+
         )
     }
 
@@ -217,21 +218,28 @@ function Enrollment() {
 
     const BankTransferCard = () => {
         return (
-            <div className="border border-gray-200 w-full rounded-[8px] px-4 md:px-8 py-12">
-                <h4 className='text-[#1E1E1E] text-[22px] mb-2'>Bank Details</h4>
-                <h4 className='text-[#1E1E1E] text-[18px] mb-2'>Wema</h4>
-                <div className="flex items-center mb-1">
-                    <h4 className='text-[#1E1E1E] text-[18px]'>Account Name: </h4>
-                    <p className='text-[#1E1E1E] text-[16px] mx-2'>PluralCode Technologies</p>
+            <div className="">
+                <div className="border border-gray-200 w-full rounded-[8px] px-4 md:px-8 py-12">
+                    <h4 className='text-[#1E1E1E] text-[22px] mb-2'>Bank Details</h4>
+                    <h4 className='text-[#1E1E1E] text-[18px] mb-2'>Wema</h4>
+                    <div className="flex items-center mb-1">
+                        <h4 className='text-[#1E1E1E] text-[18px]'>Account Name: </h4>
+                        <p className='text-[#1E1E1E] text-[16px] mx-2'>PluralCode Technologies</p>
+                    </div>
+                    <div className="flex items-center mb-1">
+                        <h4 className='text-[#1E1E1E] text-[18px]'>Account Number: </h4>
+                        <p className='text-[#1E1E1E] text-[16px] mx-2'>0089765346</p>
+                    </div>
+
                 </div>
-                <div className="flex items-center mb-1">
-                    <h4 className='text-[#1E1E1E] text-[18px]'>Account Number: </h4>
-                    <p className='text-[#1E1E1E] text-[16px] mx-2'>0089765346</p>
-                </div>
-                <div className="w-fit mt-4">
-                    <button className="bg-amber-500 text-[12px] text-white px-8 py-2 rounded w-[100%] mx-auto lg:mx-0 flex justify-center items-center" onClick={() => payWithCredPal()} type="button">Pay With CredPal</button>
+                <div className="flex items-center mt-6">
+                    <input type="checkbox" className='rounded-[8px] mr-4' name="" id="" />
+                    <p>By clicking on payment sent, you agree to our students policy</p>
                 </div>
 
+                <div className="w- md:w-[20vw] mt-6">
+                    <button className="bg-amber-500 text-[12px] text-white px-8 py-2 rounded w-[100%] mx-auto lg:mx-0 flex justify-center items-center" >Payment Sent</button>
+                </div>
             </div>
         )
     }
