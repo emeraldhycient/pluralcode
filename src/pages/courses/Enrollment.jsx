@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Label, TextInput, Spinner } from "flowbite-react";
 import { useParams } from 'react-router-dom';
 import { AiOutlineArrowRight } from "react-icons/ai"
+import { usePaystackPayment } from 'react-paystack';
 
 
 import BackBtn from '../../components/common/BackBtn'
@@ -185,11 +186,14 @@ function Enrollment() {
                             required={true}
                         />
                     </div>
-                    <div className="w-fit md:w-[15%] mt-12" onClick={() => setEnrollmentStage(2)}>
-                        <CustomButton>
-                            Next <AiOutlineArrowRight color="white" size={23} className="ml-3" />
-                        </CustomButton>
-                    </div>
+                    {
+                        currentLocation.length > 0 && academicLevel.length > 0 && cohort.length > 0 ?
+                            <div className="w-fit md:w-[15%] mt-12" onClick={() => setEnrollmentStage(2)}>
+                                <CustomButton>
+                                    Next <AiOutlineArrowRight color="white" size={23} className="ml-3" />
+                                </CustomButton>
+                            </div> : ""
+                    }
                 </form>
             </div>
         )
@@ -237,13 +241,44 @@ function Enrollment() {
                     <p>By clicking on payment sent, you agree to our students policy</p>
                 </div>
 
-                <div className="w- md:w-[20vw] mt-6">
+                <div className="w-[40%] md:w-[20vw] mt-6">
                     <button className="bg-amber-500 text-[12px] text-white px-8 py-2 rounded w-[100%] mx-auto lg:mx-0 flex justify-center items-center" >Payment Sent</button>
                 </div>
             </div>
         )
     }
 
+
+
+    const config = {
+        reference: (new Date()).getTime().toString(),
+        email: "user@example.com",
+        amount: choiceOfPayment?.amount,
+        publicKey: 'pk_test_dsdfghuytfd2345678gvxxxxxxxxxx',
+    };
+
+    // you can call this function anything
+    const onSuccess = (reference) => {
+        // Implementation for whatever you want to do with reference and after success call.
+        console.log(reference);
+    };
+
+    // you can call this function anything
+    const onClose = () => {
+        // implementation for  whatever you want to do when the Paystack dialog closed.
+        console.log('closed')
+    }
+
+    const PayWithCard = () => {
+        const initializePayment = usePaystackPayment(config);
+        return (
+            <div>
+                <button onClick={() => {
+                    initializePayment(onSuccess, onClose)
+                }} className="bg-amber-500 text-[12px] text-white px-8 py-2 rounded w-[100%] mx-auto lg:mx-0 flex justify-center items-center w-[40%] md:w-[20vw]">Pay  N{choiceOfPayment?.amount} Now</button>
+            </div>
+        );
+    };
 
 
     const PaymentForm = () => {
@@ -291,20 +326,20 @@ function Enrollment() {
                     </div>
                     <div className="md:flex mb-5">
                         <div className={`flex  mx-2 items-center ${selectedPaymentmethod === "card" ? "border border-green-300 rounded-[8px] p-2" : ""}`} onClick={() => setselectedPaymentmethod("card")}>
-                            <input type="radio" name="" id="" className='mr-2' />
+                            <input type="radio" name="" id="" className='mr-2' checked={selectedPaymentmethod === "card" ? true : false} />
                             <label>credit card</label>
                         </div>
                         <div className={`flex  mx-2 items-center ${selectedPaymentmethod === "transfer" ? "border border-green-300 rounded-[8px] p-2" : ""}`} onClick={() => setselectedPaymentmethod("transfer")}>
-                            <input type="radio" name="" id="" className='mr-2' />
+                            <input type="radio" name="" id="" className='mr-2' checked={selectedPaymentmethod === "transfer" ? true : false} />
                             <label>Bank Transfer</label>
                         </div>
                         <div className={`flex  mx-2 items-center ${selectedPaymentmethod === "loan" ? "border border-green-300 rounded-[8px] p-2" : ""}`} onClick={() => setselectedPaymentmethod("loan")}>
-                            <input type="radio" name="" id="" className='mr-2' />
+                            <input type="radio" name="" id="" className='mr-2' checked={selectedPaymentmethod === "loan" ? true : false} />
                             <label>Student Loan</label>
                         </div>
                     </div>
                     {
-                        selectedPaymentmethod === "card" ? "card selected" : selectedPaymentmethod === "transfer" ? <BankTransferCard /> : <StudentLoanCard />
+                        selectedPaymentmethod === "card" ? <PayWithCard /> : selectedPaymentmethod === "transfer" ? <BankTransferCard /> : <StudentLoanCard />
 
                     }
                 </div>
