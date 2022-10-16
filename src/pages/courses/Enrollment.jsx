@@ -167,7 +167,7 @@ function Enrollment() {
                     show={isModalShowing}
                     size="md"
                     popup={true}
-                    onClose={toggleModalShowing}
+                    onClose={() => toggleModalShowing()}
                 >
                     <Modal.Header />
                     <Modal.Body>
@@ -201,7 +201,7 @@ function Enrollment() {
     const onSuccess = (reference) => {
         // Implementation for whatever you want to do with reference and after success call.
         console.log(reference);
-        makePayment()
+        // makePayment()
     };
 
     // you can call this function anything
@@ -214,23 +214,7 @@ function Enrollment() {
         const initializePayment = usePaystackPayment(config);
         return (
             <div>
-                <Modal
-                    show={isModalShowing}
-                    size="md"
-                    popup={true}
-                    onClose={toggleModalShowing}
-                >
-                    <Modal.Header />
-                    <Modal.Body>
-                        <div className="text-center">
-                            <BsCheck2Circle className="mx-auto mb-4 h-14 w-14 text-green-400 " />
-                            <h3 className="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">
-                                Enrollment successfull
-                            </h3>
 
-                        </div>
-                    </Modal.Body>
-                </Modal>
                 <button onClick={() => {
                     initializePayment(onSuccess, onClose)
                 }} className="bg-amber-500 text-[12px] text-white px-8 py-2 rounded w-[100%]  lg:mx-0 flex justify-center items-center w-fit md:w-[20vw]">Pay  N{choiceOfPayment?.amount} Now</button>
