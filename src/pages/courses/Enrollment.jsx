@@ -248,9 +248,24 @@ function Enrollment() {
                     </div>
                 </div>
                 <div className="">
+
                     <div className="pb-6 mt-3">
                         <h4 className='text-[#222057] text-[18px]'>Payment Method</h4>
                         <p className='text-[#232323] text-[16px]'>Select the payment choice you prefer</p>
+                    </div>
+                    <div className="flex mb-5">
+                        <div className='flex justify-around mx-2 items-center'>
+                            <input type="radio" name="" id="" className='mr-2' />
+                            <label>credit card</label>
+                        </div>
+                        <div className='flex justify-around mx-2 items-center'>
+                            <input type="radio" name="" id="" className='mr-2' />
+                            <label>Bank Transfer</label>
+                        </div>
+                        <div className='flex justify-around mx-2 items-center'>
+                            <input type="radio" name="" id="" className='mr-2' />
+                            <label>Student Loan</label>
+                        </div>
                     </div>
                     <StudentLoanCard />
                 </div>
