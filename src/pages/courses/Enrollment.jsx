@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import { Label, TextInput, Spinner } from "flowbite-react";
+import { Label, TextInput, Spinner, Modal } from "flowbite-react";
 import { useParams } from 'react-router-dom';
 import { AiOutlineArrowRight } from "react-icons/ai"
+import { BsCheck2Circle } from "react-icons/bs"
 import { usePaystackPayment } from 'react-paystack';
 
 
@@ -13,7 +14,7 @@ import CustomButton from '../../components/CustomButton';
 
 function Enrollment() {
 
-    const { course } = useParams();
+    const { course, school } = useParams();
 
 
     const [academicLevel, setAcademicLevel] = useState("")
@@ -23,18 +24,16 @@ function Enrollment() {
 
     const [cohorts, setcohorts] = useState([])
 
-
     // store the if student wants full or half payment
     const [choiceOfPayment, setchoiceOfPayment] = useState()
-
 
     // fetch price for the cohort
     const [paymentBreakdown, setpaymentBreakdown] = useState({})
 
-
     // paymentmethod 
-
     const [selectedPaymentmethod, setselectedPaymentmethod] = useState("card")
+
+    const [isModalShowing, setisModalShowing] = useState(true)
 
 
     useEffect(() => {
@@ -79,6 +78,7 @@ function Enrollment() {
     const success = (data) => console.log(data);
 
 
+
     useEffect(() => {
 
         const getCourseCohortPrice = async () => {
@@ -98,6 +98,30 @@ function Enrollment() {
         getCourseCohortPrice()
 
     }, [cohort])
+
+
+    const makePayment = async () => {
+
+
+        var data = new FormData();
+        data.append('skills', course);
+        data.append('course_cohort', cohort);
+        data.append('current_location', currentLocation);
+        data.append('highest_academy_level', academicLevel);
+        data.append('payment_choice', paymentBreakdown?.mode);
+        data.append('payment_amount', paymentBreakdown?.amount);
+        data.append('payment_type', selectedPaymentmethod);
+        data.append('school', school);
+
+        try {
+            const response = await axiosClient.post("/student/make_payment", data)
+            console.log(response)
+            setisModalShowing(true)
+        } catch (error) {
+            console.log(error.response.data)
+        }
+
+    }
 
 
     const StudentLoanCard = () => {
@@ -137,8 +161,25 @@ function Enrollment() {
                     <input type="checkbox" className='rounded-[8px] mr-4' name="" id="" />
                     <p>By clicking on payment sent, you agree to our students policy</p>
                 </div>
+                <Modal
+                    show={isModalShowing}
+                    size="md"
+                    popup={true}
+                    onClose={setisModalShowing(false)}
+                >
+                    <Modal.Header />
+                    <Modal.Body>
+                        <div className="text-center">
+                            <BsCheck2Circle className="mx-auto mb-4 h-14 w-14 text-green-400 " />
+                            <h3 className="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">
+                                Enrollment successfull
+                            </h3>
 
-                <div className="w-[40%] md:w-[20vw] mt-6">
+                        </div>
+                    </Modal.Body>
+                </Modal>
+
+                <div className="w-fit md:w-[20vw] mt-6" onClick={() => makePayment()}>
                     <button className="bg-amber-500 text-[12px] text-white px-8 py-2 rounded w-[100%] mx-auto lg:mx-0 flex justify-center items-center" >Payment Sent</button>
                 </div>
             </div>
@@ -172,7 +213,7 @@ function Enrollment() {
             <div>
                 <button onClick={() => {
                     initializePayment(onSuccess, onClose)
-                }} className="bg-amber-500 text-[12px] text-white px-8 py-2 rounded w-[100%] mx-auto lg:mx-0 flex justify-center items-center w-[40%] md:w-[20vw]">Pay  N{choiceOfPayment?.amount} Now</button>
+                }} className="bg-amber-500 text-[12px] text-white px-8 py-2 rounded w-[100%]  lg:mx-0 flex justify-center items-center w-fit md:w-[20vw]">Pay  N{choiceOfPayment?.amount} Now</button>
             </div>
         );
     };
