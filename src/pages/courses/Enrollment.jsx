@@ -284,16 +284,16 @@ function Enrollment() {
                             <p className='text-[#232323] text-[16px]'>Select the payment choice you prefer</p>
                         </div>
                         <div className="md:flex mb-5">
-                            <div className={`flex  mx-2 items-center ${selectedPaymentmethod === "card" ? "border border-green-300 rounded-[8px] p-2" : ""}`} onClick={() => setselectedPaymentmethod("card")}>
-                                <input type="radio" name="" id="" className='mr-2' checked={selectedPaymentmethod === "card" ? true : false} />
+                            <div className={`flex  mx-2 items-center `} onClick={() => setselectedPaymentmethod("card")}>
+                                <input type="radio" name="" id="" className='mr-2 text-amber-500' checked={selectedPaymentmethod === "card" ? true : false} />
                                 <label>credit card</label>
                             </div>
-                            <div className={`flex  mx-2 items-center ${selectedPaymentmethod === "transfer" ? "border border-green-300 rounded-[8px] p-2" : ""}`} onClick={() => setselectedPaymentmethod("transfer")}>
-                                <input type="radio" name="" id="" className='mr-2' checked={selectedPaymentmethod === "transfer" ? true : false} />
+                            <div className={`flex  mx-2 items-center `} onClick={() => setselectedPaymentmethod("transfer")}>
+                                <input type="radio" name="" id="" className='mr-2 text-amber-500' checked={selectedPaymentmethod === "transfer" ? true : false} />
                                 <label>Bank Transfer</label>
                             </div>
-                            <div className={`flex  mx-2 items-center ${selectedPaymentmethod === "loan" ? "border border-green-300 rounded-[8px] p-2" : ""}`} onClick={() => setselectedPaymentmethod("loan")}>
-                                <input type="radio" name="" id="" className='mr-2' checked={selectedPaymentmethod === "loan" ? true : false} />
+                            <div className={`flex  mx-2 items-center`} onClick={() => setselectedPaymentmethod("loan")}>
+                                <input type="radio" name="" id="" className='mr-2 text-amber-500' checked={selectedPaymentmethod === "loan" ? true : false} />
                                 <label>Student Loan</label>
                             </div>
                         </div>
