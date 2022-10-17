@@ -42,7 +42,7 @@ const schoolsdata = {
             description: "Learn to use popular Cloud platforms, understand Cloud computing concepts and technologies apply virtualization and its use in Infrastructure development.",
             duration: "16 weeks",
             video_url: "https://res.cloudinary.com/gofitish/video/upload/v1658931284/videos/Plural_Code_-_Meet_Our_Students_lqtp0y.mp4",
-            link: "/student/courses/product"
+            link: "/student/courses/cloud"
         }
     ],
     programming: [
