@@ -6,7 +6,7 @@ const schoolsdata = {
             description: "Learn to build Financial models, forecast performances and perform Valuations for companies. Become industry ready in just 12 weeks.",
             duration: "12weeks",
             video_url: "https://res.cloudinary.com/gofitish/video/upload/v1658931416/videos/Plural_Code_Ad_-_Data_Analyst_awgthz.mp4",
-            link: "/student/courses/product"
+            link: "/student/courses/data-analytics"
         },
         {
             image: "",
@@ -52,7 +52,7 @@ const schoolsdata = {
             description: "Learn how to create international standard website and apps using the most recent front End frameworks of the day.",
             duration: "28 weeks",
             video_url: "",
-            link: "/student/courses/product"
+            link: "/student/courses/software"
         },
         {
             image: "",
@@ -60,7 +60,7 @@ const schoolsdata = {
             description: "Learn how to create international standard website and apps using the most recent front End frameworks of the day.",
             duration: "28 weeks",
             video_url: "https://res.cloudinary.com/gofitish/video/upload/v1659095398/videos/Plural_Code_-_Our_Instructor_t5qtrr.mp4",
-            link: "/student/courses/product"
+            link: "/student/courses/software"
         }
     ],
 };

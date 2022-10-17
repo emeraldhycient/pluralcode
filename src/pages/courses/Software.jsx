@@ -5,15 +5,14 @@ import VideoContainer from '../../components/courses/VideoContainer'
 import DashboardLayout from '../../components/layout/DashboardLayout'
 
 
-function Product() {
+function Software() {
     return (
         <DashboardLayout>
-            <CourseTitle link="/student/courses/enrollment/product/product design">
-                <p className='text-[16px] mb-2 text-[#323232]'>Product design program sees to teach students how to design attractive mobile and web app interfaces for yourself, companies and startup businesses. You will be guided on how to design high fidelity digital products using Figma (most in-demand skill) and
-                    journey mapping. This course will provide you with a more appropriate view of Design as a process and not just the output.</p>
-                {/* <p className='text-[16px] mb-2 text-[#323232]'>
-                    Nibh pellentesque tincidunt augue sit sit faucibus elementum dictumst pretium. Purus morbi lacinia ullamcorper nunc, est. At ultricies bibendum gravida faucibus id nullam amet. Quis porttitor venenatis in non sapien magna porttitor quis. Consectetur diam, ultricies odio ut duis senectus bibendum sollicitudin imperdiet.
-                </p> */}
+            <CourseTitle link="/student/courses/enrollment/programming/full stack Web Development" title={"Full-Stack Web Development"}>
+                <p className='text-[16px] mb-2 text-[#323232]'>Learn to design and develop powerful modern web applications that form the foundation for the apps, websites, and systems that people and businesses use every day.
+                </p>
+                <p className='text-[16px] mb-2 text-[#323232]'>
+                    Get equipped with the unique skills you need to build database-backed APIs and web applications.                </p>
             </CourseTitle>
             <VideoContainer />
             <ExclsuiveCard >
@@ -31,4 +30,4 @@ function Product() {
     )
 }
 
-export default Product
+export default Software

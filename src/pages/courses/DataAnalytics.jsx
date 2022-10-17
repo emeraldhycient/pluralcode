@@ -5,15 +5,14 @@ import VideoContainer from '../../components/courses/VideoContainer'
 import DashboardLayout from '../../components/layout/DashboardLayout'
 
 
-function Product() {
+function DataAnalytics() {
     return (
         <DashboardLayout>
-            <CourseTitle link="/student/courses/enrollment/product/product design">
-                <p className='text-[16px] mb-2 text-[#323232]'>Product design program sees to teach students how to design attractive mobile and web app interfaces for yourself, companies and startup businesses. You will be guided on how to design high fidelity digital products using Figma (most in-demand skill) and
-                    journey mapping. This course will provide you with a more appropriate view of Design as a process and not just the output.</p>
-                {/* <p className='text-[16px] mb-2 text-[#323232]'>
-                    Nibh pellentesque tincidunt augue sit sit faucibus elementum dictumst pretium. Purus morbi lacinia ullamcorper nunc, est. At ultricies bibendum gravida faucibus id nullam amet. Quis porttitor venenatis in non sapien magna porttitor quis. Consectetur diam, ultricies odio ut duis senectus bibendum sollicitudin imperdiet.
-                </p> */}
+            <CourseTitle link="/student/courses/enrollment/data/data analytics" title={"Data Analytics"}>
+                <p className='text-[16px] mb-2 text-[#323232]'>Data Analytics program provides a range of ​data and analytics​ training designed to help ​individuals as well as ​organisations​, ​enable new and existing internal resources through the use of key data science tools and platforms.
+                </p>
+                <p className='text-[16px] mb-2 text-[#323232]'>
+                    The curriculum is robust and carefully​ designed to address the needs​ and deliver the basic requirements for ​any ​data scientists and big data analysts​ to make business impact                </p>
             </CourseTitle>
             <VideoContainer />
             <ExclsuiveCard >
@@ -31,4 +30,4 @@ function Product() {
     )
 }
 
-export default Product
+export default DataAnalytics

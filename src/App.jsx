@@ -9,6 +9,8 @@ import Home from "./pages/dashboard/Home";
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import DataAnalytics from "./pages/courses/DataAnalytics";
+import Software from "./pages/courses/Software";
 
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
           <Route path="/student/dashboard" element={<Home />} />
           <Route path="/student/dashboard/:school" element={<Home />} />
           <Route path="/student/courses/product" element={<Product />} />
+          <Route path="/student/courses/data-analytics" element={<DataAnalytics />} />
+          <Route path="/student/courses/software" element={<Software />} />
           <Route path="/student/courses/enrollment/:school/:course" element={<Enrollment />} />
         </Routes>
       </BrowserRouter>
