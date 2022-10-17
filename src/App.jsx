@@ -12,6 +12,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import DataAnalytics from "./pages/courses/DataAnalytics";
 import Software from "./pages/courses/Software";
 import ProductManagement from "./pages/courses/ProductManagement";
+import DataScience from "./pages/courses/DataScience";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Route path="/student/courses/product" element={<Product />} />
           <Route path="/student/courses/product-management" element={<ProductManagement />} />
           <Route path="/student/courses/data-analytics" element={<DataAnalytics />} />
+          <Route path="/student/courses/data-science" element={<DataScience />} />
           <Route path="/student/courses/software" element={<Software />} />
           <Route path="/student/courses/enrollment/:school/:course" element={<Enrollment />} />
         </Routes>

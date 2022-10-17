@@ -14,7 +14,7 @@ const schoolsdata = {
             description: "Analyze and visualize data using data science tools.This course also dives into the basics of Data analytics and full fledged machine learning using an approachable, and well-known programming language, Python.",
             duration: "20weeks",
             video_url: "https://res.cloudinary.com/gofitish/video/upload/v1659095398/videos/Plural_Code_-_Our_Instructor_t5qtrr.mp4",
-            link: "/student/courses/product"
+            link: "/student/courses/data-science"
         }
     ],
     product: [
