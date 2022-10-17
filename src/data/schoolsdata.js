@@ -32,7 +32,7 @@ const schoolsdata = {
             description: "Become a professional product manager in 8 weeks. Learn how to gather users data, identify their needs and how it benefits them.",
             duration: "8 weeks",
             video_url: "https://res.cloudinary.com/gofitish/video/upload/v1659440602/videos/Product_Management_IG_h9ahuc.mp4",
-            link: "/student/courses/product"
+            link: "/student/courses/product-management"
         },
     ],
     cloud: [
