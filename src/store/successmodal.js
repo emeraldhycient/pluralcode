@@ -1,7 +1,7 @@
 import create from 'zustand'
 
 const successmodal = create((set) => ({
-    modal: true,
+    modal: false,
     toggleModal: () => set((state) => ({
         modal: !state.modal
     })),
