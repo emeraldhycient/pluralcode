@@ -24,6 +24,7 @@ function Enrollment() {
     const [enrollmentStage, setEnrollmentStage] = useState(1)
     const [cohort, setcohort] = useState("")
 
+    // store fetched cohorts
     const [cohorts, setcohorts] = useState([])
 
     // store the if student wants full or half payment
@@ -34,6 +35,9 @@ function Enrollment() {
 
     // paymentmethod 
     const [selectedPaymentmethod, setselectedPaymentmethod] = useState("card")
+
+    //agreed to student policy
+    const [hasAgreed, sethasAgreed] = useState(false)
 
     const isModalShowing = successmodal((state) => state.modal)
     const toggleModalShowing = successmodal((state) => state.toggleModal)
@@ -158,10 +162,6 @@ function Enrollment() {
                         <p className='text-[#1E1E1E] text-[16px] mx-2'>0089765346</p>
                     </div>
 
-                </div>
-                <div className="flex items-center mt-6">
-                    <input type="checkbox" className='rounded-[8px] mr-4' name="" id="" />
-                    <p>By clicking on payment sent, you agree to our students policy</p>
                 </div>
                 <Modal
                     show={isModalShowing}
@@ -390,8 +390,12 @@ function Enrollment() {
                                     required={true}
                                 />
                             </div>
+                            <div className="flex items-center mt-6" onClick={() => sethasAgreed((prev) => !prev)}>
+                                <input type="checkbox" className='rounded-[8px] mr-4 text-amber-500' name="" id="" checked={hasAgreed} />
+                                <p>By clicking on payment sent, you agree to our <a href="https://docs.google.com/document/d/1JQKbsYXrjyy3oxA3he2ErBc4BsDKYbRX_drhMdIRp24/edit?usp=sharing" target="_blank" className='text-blue-400'>students policy</a></p>
+                            </div>
                             {
-                                currentLocation.length > 0 && academicLevel.length > 0 && cohort.length > 0 ?
+                                currentLocation.length > 0 && academicLevel.length > 0 && cohort.length > 0 && hasAgreed ?
                                     <div className="w-fit md:w-[15%] mt-12" onClick={() => setEnrollmentStage(2)}>
                                         <CustomButton>
                                             Next <AiOutlineArrowRight color="white" size={23} className="ml-3" />
