@@ -174,7 +174,7 @@ function Enrollment() {
                         <div className="text-center">
                             <BsCheck2Circle className="mx-auto mb-4 h-14 w-14 text-green-400 " />
                             <h3 className="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">
-                                Enrollment successfull
+                                Payment submission successfull, we would review and revert at the earliest
                             </h3>
 
                         </div>
@@ -225,7 +225,7 @@ function Enrollment() {
                         <div className="text-center">
                             <BsCheck2Circle className="mx-auto mb-4 h-14 w-14 text-green-400 " />
                             <h3 className="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">
-                                Enrollment successfull
+                                Payment submission successfull, we would review and revert at the earliest
                             </h3>
 
                         </div>
