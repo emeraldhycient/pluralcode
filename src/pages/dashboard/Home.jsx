@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Tabs } from 'flowbite-react'
 import { BsWalletFill } from "react-icons/bs"
 import { useParams } from 'react-router-dom'
@@ -8,9 +8,33 @@ import DashboardLayout from '../../components/layout/DashboardLayout'
 import CourseCard from '../../components/common/CourseCard'
 import schoolsdata from '../../data/schoolsdata'
 
+import DashboardData from '../../store/DashboardData'
+import axiosClient from '../../services/apiClient'
+
 function Home() {
 
     const { school } = useParams();
+
+    const Data = DashboardData((state) => state.data);
+    const StoreData = DashboardData((state) => state.storeData)
+
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const res = await axiosClient.get("/student/dashboard_api");
+                StoreData(res.data)
+                // console.log(res.data)
+            } catch (error) {
+                console.log(error.response)
+            }
+        }
+
+        fetchData()
+    }, [])
+
+    // console.log(Data)
+
 
     return (
         <DashboardLayout>
@@ -23,7 +47,7 @@ function Home() {
                         </div>
                         <div className='ml-4'>
                             <h3 className='text-[24px] text-[#232323]'>My Wallet</h3>
-                            <h5 className='text-[16px] text-[#323232]'>Outstanding Balance:<span className='text-amber-400'>N60,000</span> </h5>
+                            <h5 className='text-[16px] text-[#323232]'>Outstanding Balance:<span className='text-amber-400'>N{Data?.wallet}</span> </h5>
                         </div>
                     </div>
                 </div>
@@ -35,7 +59,7 @@ function Home() {
                         </div>
                         <div className='ml-4'>
                             <h3 className='text-[24px] text-[#232323]'>My Courses</h3>
-                            <h5 className='text-[16px] text-[#323232]'>2 Registered Courses</h5>
+                            <h5 className='text-[16px] text-[#323232]'>{Data?.total_enrolled_courses} Registered Courses</h5>
                         </div>
                     </div>
                 </div>
