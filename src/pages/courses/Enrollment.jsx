@@ -22,8 +22,6 @@ function Enrollment() {
 
     const DashboardData = JSON.parse(sessionStorage.getItem("dashboard"))
 
-
-
     const [academicLevel, setAcademicLevel] = useState("")
     const [currentLocation, setCurrentLocation] = useState("")
     const [enrollmentStage, setEnrollmentStage] = useState(1)
