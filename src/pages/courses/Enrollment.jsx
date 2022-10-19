@@ -12,11 +12,16 @@ import axiosClient from '../../services/apiClient';
 import CustomButton from '../../components/CustomButton';
 
 import successmodal from '../../store/successmodal';
+import { getUser } from '../../services/storage/user';
 
 
 function Enrollment() {
 
     const { course, school } = useParams();
+
+
+    const DashboardData = JSON.parse(sessionStorage.getItem("dashboard"))
+
 
 
     const [academicLevel, setAcademicLevel] = useState("")
@@ -65,7 +70,7 @@ function Enrollment() {
 
     const payWithCredPal = () => {
         const checkout = new Checkout({
-            key: '335f5198-c0d1-47d8-91d9-82ffe6ab0bfc', // Your Key
+            key: DashboardData?.credpal_api_key, // Your Key
             amount: choiceOfPayment.amount,
             product: `${course}`,
             onClose: () => console.log('Widget closed'),
@@ -153,14 +158,14 @@ function Enrollment() {
             <div className="">
                 <div className="border border-gray-200 w-full rounded-[8px] px-4 md:px-8 py-12">
                     <h4 className='text-[#1E1E1E] text-[22px] mb-2'>Bank Details</h4>
-                    <h4 className='text-[#1E1E1E] text-[18px] mb-2'>Wema</h4>
+                    <h4 className='text-[#1E1E1E] text-[18px] mb-2'>{DashboardData?.bank_name}</h4>
                     <div className="flex items-center mb-1">
                         <h4 className='text-[#1E1E1E] text-[18px]'>Account Name: </h4>
-                        <p className='text-[#1E1E1E] text-[16px] mx-2'>PluralCode Technologies</p>
+                        <p className='text-[#1E1E1E] text-[16px] mx-2'>{DashboardData?.bank_account_name}</p>
                     </div>
                     <div className="flex items-center mb-1">
                         <h4 className='text-[#1E1E1E] text-[18px]'>Account Number: </h4>
-                        <p className='text-[#1E1E1E] text-[16px] mx-2'>0089765346</p>
+                        <p className='text-[#1E1E1E] text-[16px] mx-2'>{DashboardData?.bank_account_number}</p>
                     </div>
 
                 </div>
@@ -193,9 +198,9 @@ function Enrollment() {
 
     const config = {
         reference: (new Date()).getTime().toString(),
-        email: "okwesimartins@gmail.com",
+        email: DashboardData.email,
         amount: choiceOfPayment?.amount,
-        publicKey: 'sk_test_78d3222355597d8e13ada75b3f02230f6849d4d8',
+        publicKey: DashboardData?.paystack_api_key,
     };
 
     // you can call this function anything
