@@ -73,6 +73,7 @@ function Enrollment() {
             onError: (error) => console.log(error),
             onSuccess: (data) => {
                 success(data);
+                makePayment()
                 checkout.close();
             },
         });
