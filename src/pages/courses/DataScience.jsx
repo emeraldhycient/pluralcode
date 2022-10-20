@@ -8,7 +8,7 @@ import DashboardLayout from '../../components/layout/DashboardLayout'
 function DataScience() {
     return (
         <DashboardLayout>
-            <CourseTitle link="/student/courses/enrollment/data/data science" title={"Data Science"}>
+            <CourseTitle link="/student/courses/enrollment/data/Data Science" title={"Data Science"}>
                 <p className='text-[16px] mb-2 text-[#323232]'>Learn how Data science combines math and statistics, specialized programming, advanced analytics, artificial intelligence (AI), and machine learning with specific subject matter expertise to uncover actionable insights hidden in an organization’s data.
                 </p>
                 <p className='text-[16px] mb-2 text-[#323232]'>

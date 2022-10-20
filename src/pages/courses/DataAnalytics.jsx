@@ -8,7 +8,7 @@ import DashboardLayout from '../../components/layout/DashboardLayout'
 function DataAnalytics() {
     return (
         <DashboardLayout>
-            <CourseTitle link="/student/courses/enrollment/data/data analytics" title={"Data Analytics"}>
+            <CourseTitle link="/student/courses/enrollment/data/Data Analytics" title={"Data Analytics"}>
                 <p className='text-[16px] mb-2 text-[#323232]'>Data Analytics program provides a range of ​data and analytics​ training designed to help ​individuals as well as ​organisations​, ​enable new and existing internal resources through the use of key data science tools and platforms.
                 </p>
                 <p className='text-[16px] mb-2 text-[#323232]'>

@@ -8,7 +8,7 @@ import DashboardLayout from '../../components/layout/DashboardLayout'
 function Software() {
     return (
         <DashboardLayout>
-            <CourseTitle link="/student/courses/enrollment/programming/full stack Web Development" title={"Full-Stack Web Development"}>
+            <CourseTitle link="/student/courses/enrollment/programming/Full-Stack Web Development" title={"Full-Stack Web Development"}>
                 <p className='text-[16px] mb-2 text-[#323232]'>Learn to design and develop powerful modern web applications that form the foundation for the apps, websites, and systems that people and businesses use every day.
                 </p>
                 <p className='text-[16px] mb-2 text-[#323232]'>

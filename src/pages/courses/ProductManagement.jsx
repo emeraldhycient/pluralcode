@@ -8,7 +8,7 @@ import DashboardLayout from '../../components/layout/DashboardLayout'
 function ProductManagement() {
     return (
         <DashboardLayout>
-            <CourseTitle link="/student/courses/enrollment/product/product management" title={"Product Management"}>
+            <CourseTitle link="/student/courses/enrollment/product/Product Management" title={"Product Management"}>
                 <p className='text-[16px] mb-2 text-[#323232]'>Understand the keys to successfully navigating the roles and responsibilities of being a product manager to champion change with internal and external collaborators and influencers see to the process of bringing a new product to market or developing an existing one.
                 </p>
                 <p className='text-[16px] mb-2 text-[#323232]'>

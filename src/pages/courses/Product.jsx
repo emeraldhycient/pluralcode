@@ -8,7 +8,7 @@ import DashboardLayout from '../../components/layout/DashboardLayout'
 function Product() {
     return (
         <DashboardLayout>
-            <CourseTitle link="/student/courses/enrollment/product/product design">
+            <CourseTitle link="/student/courses/enrollment/product/Product Design">
                 <p className='text-[16px] mb-2 text-[#323232]'>Product design program sees to teach students how to design attractive mobile and web app interfaces for yourself, companies and startup businesses. You will be guided on how to design high fidelity digital products using Figma (most in-demand skill) and
                     journey mapping. This course will provide you with a more appropriate view of Design as a process and not just the output.</p>
                 {/* <p className='text-[16px] mb-2 text-[#323232]'>
