@@ -50,7 +50,7 @@ const sidebardata = [
     {
         title: "My Courses",
         icon: mycourses_icon,
-        link: "/"
+        link: "/student/mycourses/"
     },
     {
         title: "Student Advisors",

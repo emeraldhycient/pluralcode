@@ -14,6 +14,7 @@ import Software from "./pages/courses/Software";
 import ProductManagement from "./pages/courses/ProductManagement";
 import DataScience from "./pages/courses/DataScience";
 import Cloud from "./pages/courses/Cloud";
+import Mycourses from "./pages/mycourses/Mycourses";
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
           <Route path="/student/courses/software" element={<Software />} />
           <Route path="/student/courses/cloud" element={<Cloud />} />
           <Route path="/student/courses/enrollment/:school/:course" element={<Enrollment />} />
+          <Route path="/student/mycourses/" element={<Mycourses />} />
         </Routes>
       </BrowserRouter>
 
