@@ -18,6 +18,7 @@ import slack from "../../assets/slack.svg"
 import MentorCard from '../../components/mycourses/MentorCard'
 import VideoCard from '../../components/mycourses/VideoCard'
 import PaymentCard from '../../components/mycourses/PaymentCard'
+import ResourcesCard from '../../components/mycourses/ResourcesCard'
 
 function CourseDetail() {
 
@@ -57,7 +58,7 @@ function CourseDetail() {
                     </CustomButton>
                 </div>
             </div>
-            <div className="mt-6 md:mt-6 bg-white rounded-[8px]  py-10 w-full">
+            <div className="mt-6 md:mt-6 bg-white rounded-[8px]  py-10  md:px-5 w-full">
                 <div className="hidden  lg:flex flex-col md:flex-row justify-between px-3">
                     <h1
                         className="text-[30px] text-[#222057] font-medium mb-4"
@@ -90,11 +91,10 @@ function CourseDetail() {
                     <Tabs.Item
                         title="Resources"
                     >
-                        <div className="grid grid-cols-1 lg:grid-cols-2  gap-4 bg-white h-fit   my-4 rounded-tl-3xl rounded-br-3xl py-6 w-full">
-                            <CertificateCards />
-                            <CertificateCards />
-                            <CertificateCards />
-                        </div>
+                        <ResourcesCard />
+                        <ResourcesCard />
+                        <ResourcesCard />
+                        <ResourcesCard />
                     </Tabs.Item>
 
                     <Tabs.Item
