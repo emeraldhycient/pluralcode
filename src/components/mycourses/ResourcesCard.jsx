@@ -2,7 +2,7 @@ import React from 'react'
 
 function ResourcesCard({ resource }) {
     return (
-        <a href={resource?.course_docs}>
+        <a href={resource?.course_docs} className="text-[#323232]">
             <div className='flex gap-4 my-2 border-b border-b-gray-300 px-5 py-3'>
                 <div className="col-span-1 text-right">
                     <img src="https://i.im.ge/2022/10/22/2trTt4.Frame.jpg" alt="" />
