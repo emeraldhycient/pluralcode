@@ -17,6 +17,7 @@ import CustomButton from '../../components/CustomButton'
 import slack from "../../assets/slack.svg"
 import MentorCard from '../../components/mycourses/MentorCard'
 import VideoCard from '../../components/mycourses/VideoCard'
+import PaymentCard from '../../components/mycourses/PaymentCard'
 
 function CourseDetail() {
 
@@ -57,7 +58,7 @@ function CourseDetail() {
                 </div>
             </div>
             <div className="mt-6 md:mt-6 bg-white rounded-[8px]  py-10 w-full">
-                <div className="flex flex-col md:flex-row justify-between px-3">
+                <div className="hidden  lg:flex flex-col md:flex-row justify-between px-3">
                     <h1
                         className="text-[30px] text-[#222057] font-medium mb-4"
                         data-aos="fade-right"
@@ -79,7 +80,7 @@ function CourseDetail() {
                     <Tabs.Item
                         title="Videos"
                     >
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 bg-white h-fit md:h-80 lg:h-fit my-4 rounded-tl-3xl rounded-br-3xl py-6 w-full">
+                        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 bg-white h-fit   my-4 rounded-tl-3xl rounded-br-3xl py-6 w-full">
                             <VideoCard />
                             <VideoCard />
                             <VideoCard />
@@ -89,7 +90,7 @@ function CourseDetail() {
                     <Tabs.Item
                         title="Resources"
                     >
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-white h-fit md:h-80 lg:h-fit my-4 rounded-[8px] py-6 px-4">
+                        <div className="grid grid-cols-1 lg:grid-cols-2  gap-4 bg-white h-fit   my-4 rounded-tl-3xl rounded-br-3xl py-6 w-full">
                             <CertificateCards />
                             <CertificateCards />
                             <CertificateCards />
@@ -99,10 +100,8 @@ function CourseDetail() {
                     <Tabs.Item
                         title="Payment Status"
                     >
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-white h-fit md:h-80 lg:h-fit my-4 rounded-[8px] py-6 px-4">
-                            <CertificateCards />
-                            <CertificateCards />
-                            <CertificateCards />
+                        <div className="bg-[#F5F6FA] md:bg-white p-4 md:p-20">
+                            <PaymentCard />
                         </div>
                     </Tabs.Item>
 

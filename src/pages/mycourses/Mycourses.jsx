@@ -50,9 +50,8 @@ function Mycourses() {
                 >
                     <Tabs.Item
                         title="My Courses"
-                        active={school === "data" ? true : false}
                     >
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 bg-white h-fit md:h-80 lg:h-fit my-4 rounded-tl-3xl rounded-br-3xl py-6 px-4">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 bg-white h-fit  my-4 rounded-tl-3xl rounded-br-3xl py-6 px-4">
                             <MyCourseCard />
                             <MyCourseCard />
                             <MyCourseCard />
@@ -62,9 +61,8 @@ function Mycourses() {
                     </Tabs.Item>
                     <Tabs.Item
                         title="Certificates"
-                        active={school === "product" ? true : false}
                     >
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-white h-fit md:h-80 lg:h-fit my-4 rounded-[8px] py-6 px-4">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 bg-white h-fit  my-4 rounded-[8px] py-6 px-4">
                             <CertificateCards />
                             <CertificateCards />
                             <CertificateCards />

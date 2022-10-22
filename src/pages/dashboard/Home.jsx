@@ -39,7 +39,7 @@ function Home() {
 
     return (
         <DashboardLayout>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                 <div className='bg-white flex flex-col justify-center items-center w-full p-6 md:p-12 rounded-[8px]'>
                     <div className='flex items-center w-full'>
 
