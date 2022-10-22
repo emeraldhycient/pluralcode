@@ -49,15 +49,15 @@ function CourseDetail() {
         <DashboardLayout>
             <div className="flex justify-between items-center ">
                 <BackBtn />
-                <div className="w-[22%]">
+                <div className="w-fit md:w-[22%]">
                     <CustomButton>
                         <img src={slack} />
                         Join Community
                     </CustomButton>
                 </div>
             </div>
-            <div className=" mt-6 md:mt-6 bg-white rounded-[8px] p-10">
-                <div className="flex justify-between">
+            <div className="mt-6 md:mt-6 bg-white rounded-[8px]  py-10 w-full">
+                <div className="flex flex-col md:flex-row justify-between px-3">
                     <h1
                         className="text-[30px] text-[#222057] font-medium mb-4"
                         data-aos="fade-right"
@@ -65,7 +65,7 @@ function CourseDetail() {
                     >
                         {course || "Product Design 2"}
                     </h1>
-                    <div className="flex">
+                    <div className="flex mb-3">
                         <div className="h-[2.8rem] bg-[#F5F6FA] w-72 rounded flex items-center rounded-[8px]">
                             <input type="text" placeholder='Seacrch by topic' className="border-0 border-transparent focus:border-transparent focus:ring-0 bg-transparent h-[2.8rem] w-full text-gray-500" />
                         </div>
@@ -79,7 +79,7 @@ function CourseDetail() {
                     <Tabs.Item
                         title="Videos"
                     >
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 bg-white h-fit md:h-80 lg:h-fit my-4 rounded-tl-3xl rounded-br-3xl py-6 px-4">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 bg-white h-fit md:h-80 lg:h-fit my-4 rounded-tl-3xl rounded-br-3xl py-6 w-full">
                             <VideoCard />
                             <VideoCard />
                             <VideoCard />

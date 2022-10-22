@@ -7,7 +7,7 @@ function CertificateCards() {
 
 
     return (
-        <div className='h-fit md:h-[200px] bg-[#F5F6FA] rounded-[8px] grid grid-cols-1 md:grid-cols-5 gap-3 py-6 px-3'>
+        <div className='h-fit md:h-[200px] bg-[#F5F6FA] rounded-[8px] grid grid-cols-1 md:grid-cols-5 gap-3 py-6 px-3 mb-4'>
             <div className="col-span-2 h-full">
                 <img src="https://i.im.ge/2022/10/20/26SwxM.Frame-1037.png" className='rounded-[8px]' alt="" />
             </div>

@@ -10,7 +10,7 @@ function MyCourseCard({ course }) {
 
     return (
         <div
-            className="bg-[#F5F6FA] h-fit md:h-80 lg:h-fit my-4 rounded-tl-3xl rounded-br-3xl py-6 px-3"
+            className="bg-[#F5F6FA] h-fit md:h-80 lg:h-fit my-4 rounded-tl-3xl rounded-br-3xl py-6 px-3 mb-4"
             data-aos="fade-right"
             data-aos-duration="2000"
         >
