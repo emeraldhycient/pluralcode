@@ -46,7 +46,7 @@ function MyCourseCard({ course }) {
                     data-aos="fade-right"
                     data-aos-duration="2000"
                 >
-                    <Link to={`/student/mycourses/${course?.course_name}`} className="flex items-center">
+                    <Link to={`/student/mycourses/${course?.course_name}/${course?.id}`} className="flex items-center">
                         Learn More
                     </Link>
                 </button>

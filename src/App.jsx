@@ -39,7 +39,7 @@ function App() {
           <Route path="/student/courses/cloud" element={<Cloud />} />
           <Route path="/student/courses/enrollment/:school/:course" element={<Enrollment />} />
           <Route path="/student/mycourses/" element={<Mycourses />} />
-          <Route path="/student/mycourses/:course/" element={<CourseDetail />} />
+          <Route path="/student/mycourses/:course/:id" element={<CourseDetail />} />
         </Routes>
       </BrowserRouter>
 

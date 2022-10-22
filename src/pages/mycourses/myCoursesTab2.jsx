@@ -31,7 +31,7 @@ function Tab2() {
 
                         <CertificateCards cert={cert} />
                     ))
-                    : "certificates you earn would show here"
+                    : "certificates you earned would show here"
             }
 
         </div>

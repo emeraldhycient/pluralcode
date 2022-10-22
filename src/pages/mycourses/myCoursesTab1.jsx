@@ -31,7 +31,7 @@ function Tab1() {
                     courses.map((course) => (
                         <MyCourseCard course={course} key={course.id} />
                     ))
-                    : "Course you are currently taking will show here"
+                    : "Courses you are currently taking will show here"
             }
         </div>
     )
