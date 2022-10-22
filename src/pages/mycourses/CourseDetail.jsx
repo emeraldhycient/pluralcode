@@ -5,20 +5,17 @@ import { useParams } from 'react-router-dom'
 
 
 import DashboardLayout from '../../components/layout/DashboardLayout'
-import CourseCard from '../../components/common/CourseCard'
-import schoolsdata from '../../data/schoolsdata'
+
 
 import DashboardData from '../../store/DashboardData'
 import axiosClient from '../../services/apiClient'
-import MyCourseCard from '../../components/mycourses/MyCourseCard'
-import CertificateCards from '../../components/mycourses/CertificateCards'
 import BackBtn from '../../components/common/BackBtn'
 import CustomButton from '../../components/CustomButton'
 import slack from "../../assets/slack.svg"
 import MentorCard from '../../components/mycourses/MentorCard'
-import VideoCard from '../../components/mycourses/VideoCard'
 import PaymentCard from '../../components/mycourses/PaymentCard'
-import ResourcesCard from '../../components/mycourses/ResourcesCard'
+import CourseDetailvideo from './CourseDetailvideo'
+import CourseDetailDoc from './CourseDetailDoc'
 
 function CourseDetail() {
 
@@ -81,20 +78,13 @@ function CourseDetail() {
                     <Tabs.Item
                         title="Videos"
                     >
-                        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 bg-white h-fit   my-4 rounded-tl-3xl rounded-br-3xl py-6 w-full">
-                            <VideoCard />
-                            <VideoCard />
-                            <VideoCard />
-                        </div>
 
+                        <CourseDetailvideo />
                     </Tabs.Item>
                     <Tabs.Item
                         title="Resources"
                     >
-                        <ResourcesCard />
-                        <ResourcesCard />
-                        <ResourcesCard />
-                        <ResourcesCard />
+                        <CourseDetailDoc />
                     </Tabs.Item>
 
                     <Tabs.Item

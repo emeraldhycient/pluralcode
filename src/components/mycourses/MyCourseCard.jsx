@@ -23,7 +23,9 @@ function MyCourseCard({ course }) {
                     className="w-[90%]  rounded-tl-3xl rounded-br-3xl"
                     data-aos="fade-right"
                     data-aos-duration="2000"
-                /></div>
+                />
+
+            </div>
             <div className="pb-4 flex flex-col justify-center mt-4">
 
                 <h1

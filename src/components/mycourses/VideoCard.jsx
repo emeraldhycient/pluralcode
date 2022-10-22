@@ -4,9 +4,11 @@ import videoPoster from "../../assets/videoPoster.png"
 // import VideoModal from "./VideoModal";
 import data_analytics from "../../assets/data_analytics.svg"
 
-function VideoCard({ course }) {
+function VideoCard({ vid }) {
 
     const [ismodalshowing, setismodalshowing] = useState(false)
+
+    console.log(vid.video_link)
 
     return (
         <div
@@ -16,21 +18,27 @@ function VideoCard({ course }) {
         >
 
             <div >
-                <img
-                    src={course?.image ? course.image : data_analytics}
+                <iframe src={vid ? vid.video_link : data_analytics}
+                    className="w-[90%]  rounded-tl-3xl rounded-br-3xl"
+                    allow="autoplay"></iframe>
+
+                {/* <video
+                    src={vid?.image ? vid.image : data_analytics}
                     // src={"http://pluralcode.academy/assets/product_des.4ad681c3.jpg"}
                     alt="product"
                     className="w-[90%]  rounded-tl-3xl rounded-br-3xl"
+                    controls
                     data-aos="fade-right"
                     data-aos-duration="2000"
-                /></div>
+                /> */}
+            </div>
             <div className="pb-4 flex flex-col justify-center mt-4">
                 <p
                     className="font-gilroyregular text-base  lg:text-left  font-light text-[#323232] mb-2"
                     data-aos="fade-right"
                     data-aos-duration="2000"
                 >
-                    {course?.description || "Introduction to User Experience Design"}
+                    {vid?.video_title || "loading video title"}
                 </p>
                 <p
                     className="font-gilroyregular text-base  lg:text-left  font-light text-[#323232] mb-2"
