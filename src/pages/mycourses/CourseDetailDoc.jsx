@@ -34,7 +34,7 @@ function CourseDetailDoc() {
     }, [])
 
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 bg-white h-fit   my-4 rounded-tl-3xl rounded-br-3xl py-6 w-full">
+        <div className="grid grid-cols-1   gap-4 bg-white h-fit   my-4 rounded-tl-3xl rounded-br-3xl py-6 w-full">
             {
                 resources.length > 0 ?
                     resources.map((resource) => (
