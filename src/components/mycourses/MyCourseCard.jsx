@@ -14,37 +14,31 @@ function MyCourseCard({ course }) {
             data-aos="fade-right"
             data-aos-duration="2000"
         >
-            {/* <div className="w-[90%] h-full" style={{ backgroundImage: `url(${videoPoster})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}>            </div> */}
-            {/* onClick={() => setismodalshowing((prev) => !prev)} */}
+
             <div >
-                {/* {ismodalshowing ?
-                    <VideoModal setismodalshowing={setismodalshowing} video_url={course.video_url} /> : ""} */}
+
                 <img
                     src={course?.image ? course.image : data_analytics}
-                    // src={"http://pluralcode.academy/assets/product_des.4ad681c3.jpg"}
                     alt="product"
                     className="w-[90%]  rounded-tl-3xl rounded-br-3xl"
                     data-aos="fade-right"
                     data-aos-duration="2000"
                 /></div>
             <div className="pb-4 flex flex-col justify-center mt-4">
-                <h6 data-aos="fade-right mb-4" data-aos-duration="2000">
-                    {/* <span className="text-semibold"> {course.level}</span>{" "}
-                    <span className="text-sm">{course.mode}</span> */}
-                </h6>
+
                 <h1
-                    className="text-[30px] text-[#222057] font-medium mb-4"
+                    className="text-[25px] text-[#222057] font-medium mb-4"
                     data-aos="fade-right"
                     data-aos-duration="2000"
                 >
-                    {course?.title || "Product Design "}
+                    {course?.course_name || "loading course name"}
                 </h1>
                 <p
                     className="font-gilroyregular text-sm  lg:text-left  font-extralight text-[#323232] mb-2"
                     data-aos="fade-right"
                     data-aos-duration="2000"
                 >
-                    {course?.description || "Learn Ui/Ux from scratch without writing a single code. Master how to design high fidelity interface with FIGMA, design journey mapping and empathize with users."}
+                    {course?.course_description || "loading course description"}
                 </p>
 
                 <button
@@ -52,8 +46,7 @@ function MyCourseCard({ course }) {
                     data-aos="fade-right"
                     data-aos-duration="2000"
                 >
-                    {/* <Link to={course.link} className="flex items-center"> */}
-                    <Link to={course?.link || "/student/mycourses/product design/"} className="flex items-center">
+                    <Link to={`/student/mycourses/${course?.course_name}`} className="flex items-center">
                         Learn More
                     </Link>
                 </button>
