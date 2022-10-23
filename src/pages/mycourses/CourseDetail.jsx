@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Tabs } from 'flowbite-react'
 import { BsWalletFill } from "react-icons/bs"
 import { useParams } from 'react-router-dom'
@@ -19,20 +19,15 @@ import CourseDetailDoc from './CourseDetailDoc'
 
 function CourseDetail() {
 
-    const { course } = useParams();
-
-    const Data = DashboardData((state) => state.data);
-    console.log(Data)
-    const StoreData = DashboardData((state) => state.storeData)
-
+    const { course, id } = useParams();
+    const [communitylink, setcommunitylink] = useState("")
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await axiosClient.get("/student/dashboard_api");
-                StoreData(res.data)
-                sessionStorage.setItem("dashboard", JSON.stringify(res.data))
-                // console.log(res.data)
+                const res = await axiosClient.get(`/student/get_community_link?course_id=${id}`);
+                console.log(res.data)
+                setcommunitylink(res.data.community_link)
             } catch (error) {
                 console.log(error.response)
             }
@@ -49,7 +44,7 @@ function CourseDetail() {
             <div className="flex justify-between items-center ">
                 <BackBtn />
                 <div className="w-fit md:w-[22%]">
-                    <CustomButton>
+                    <CustomButton link={communitylink}>
                         <img src={slack} />
                         Join Community
                     </CustomButton>

@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import { Label, TextInput, Spinner, Modal } from "flowbite-react";
+import React, { useState, useEffect } from 'react'
+import { Modal } from "flowbite-react";
 import { usePaystackPayment } from 'react-paystack';
-import { AiOutlineArrowRight } from "react-icons/ai"
 import { BsCheck2Circle } from "react-icons/bs"
+import { useParams } from 'react-router-dom'
 
 import CustomButton from '../CustomButton'
 import successmodal from '../../store/successmodal';
@@ -12,6 +12,31 @@ import axiosClient from '../../services/apiClient';
 function PaymentCard() {
 
     const DashboardData = JSON.parse(sessionStorage.getItem("dashboard"))
+
+
+    const { course, id } = useParams()
+
+    useEffect(() => {
+        const fetchData = async () => {
+
+            const data = new FormData();
+            data.append("nav", "payment_status")
+            data.append("course_id", id)
+
+            try {
+                const res = await axiosClient.post(`/student/get_enrolled_course_details`, data);
+                console.log(res.data)
+                setchoiceOfPayment({
+                    amount: res.data.balance
+                })
+            } catch (error) {
+                console.log(error.response)
+            }
+        }
+
+        fetchData()
+    }, [])
+
 
     // store the if student wants full or half payment
     const [choiceOfPayment, setchoiceOfPayment] = useState()
@@ -146,52 +171,55 @@ function PaymentCard() {
 
     return (
         <div className='h-[400px] w-full md:w-[100%] lg:w-[70%] mx-auto md:bg-[#F5F6FA] bg-white rounded-[8px] flex flex-col justify-center items-center text-center md:p-12 lg:p-32'>
-            <h4 className='text-[18px] text-[#323232] mt-[12px]'>Total Amount Paid</h4>
-            <h1 className='text-[#222057] text-[40px] font-semibold mt-[12px]'>N60,000</h1>
-            <h4 className='text-[18px] text-[#323232] mt-[12px]'>Outstanding Payment for
-                Product Design:<span className='text-[#323232] font-bold'> N60,000</span></h4>
-            <p className='italic text-[14px] mt-[12px]'>NB: You are to make your outstanding payment
-                on or before Sept 1, 2022</p>
+            {choiceOfPayment?.amount > 0 ?
+                <>
+                    <h4 className='text-[18px] text-[#323232] mt-[12px]'>Total Amount Paid</h4>
+                    <h1 className='text-[#222057] text-[40px] font-semibold mt-[12px]'>N60,000</h1>
+                    <h4 className='text-[18px] text-[#323232] mt-[12px]'>Outstanding Payment for
+                        Product Design:<span className='text-[#323232] font-bold'> N60,000</span></h4>
+                    <p className='italic text-[14px] mt-[12px]'>NB: You are to make your outstanding payment
+                        on or before Sept 1, 2022</p>
 
-            <div className="mt-[12px]" onClick={() => setisModalShowing(true)}>
-                <CustomButton >Complete Payment</CustomButton>
-            </div>
-            <Modal
-                show={isModalShowing}
-                size="md"
-                // popup={true}
-                onClose={() => setisModalShowing(!isModalShowing)}
-            >
-                <Modal.Header >
-                    <h1 className='text-[#222057] text-[20px] mt-[12px]'>Complete Your Oustanding Payment</h1>
-                </Modal.Header>
-                <Modal.Body>
-                    <div className="">
-                        <div className="pb-6 mt-3">
-                            <h4 className='text-[#222057] text-[18px]'>Payment Method</h4>
-                        </div>
-                        <div className="flex mb-5">
-                            <div className={`flex  mx-2 items-center `} onClick={() => setselectedPaymentmethod("card")}>
-                                <input type="radio" name="" id="" className='mr-2 text-amber-500' checked={selectedPaymentmethod === "card" ? true : false} />
-                                <label>credit card</label>
-                            </div>
-                            <div className={`flex  mx-2 items-center `} onClick={() => setselectedPaymentmethod("transfer")}>
-                                <input type="radio" name="" id="" className='mr-2 text-amber-500' checked={selectedPaymentmethod === "transfer" ? true : false} />
-                                <label>Bank Transfer</label>
-                            </div>
-
-                        </div>
+                    <div className="mt-[12px]" onClick={() => setisModalShowing(true)}>
+                        <CustomButton >Complete Payment</CustomButton>
                     </div>
-                    <div className="flex items-center mt-6 mb-3" onClick={() => sethasAgreed((prev) => !prev)}>
-                        <input type="checkbox" className='rounded-[8px] mr-4 text-amber-500' name="" id="" checked={hasAgreed} />
-                        <p className='text-[12px]'>By clicking on make payment, you agree to our <a href="https://docs.google.com/document/d/1JQKbsYXrjyy3oxA3he2ErBc4BsDKYbRX_drhMdIRp24/edit?usp=sharing" target="_blank" className='text-blue-400'>students policy</a></p>
-                    </div>
-                    {
-                        selectedPaymentmethod === "card" ? <PayWithCard /> : <BankTransferCard />
+                    <Modal
+                        show={isModalShowing}
+                        size="md"
+                        // popup={true}
+                        onClose={() => setisModalShowing(!isModalShowing)}
+                    >
+                        <Modal.Header >
+                            <h1 className='text-[#222057] text-[20px] mt-[12px]'>Complete Your Oustanding Payment</h1>
+                        </Modal.Header>
+                        <Modal.Body>
+                            <div className="">
+                                <div className="pb-6 mt-3">
+                                    <h4 className='text-[#222057] text-[18px]'>Payment Method</h4>
+                                </div>
+                                <div className="flex mb-5">
+                                    <div className={`flex  mx-2 items-center `} onClick={() => setselectedPaymentmethod("card")}>
+                                        <input type="radio" name="" id="" className='mr-2 text-amber-500' checked={selectedPaymentmethod === "card" ? true : false} />
+                                        <label>credit card</label>
+                                    </div>
+                                    <div className={`flex  mx-2 items-center `} onClick={() => setselectedPaymentmethod("transfer")}>
+                                        <input type="radio" name="" id="" className='mr-2 text-amber-500' checked={selectedPaymentmethod === "transfer" ? true : false} />
+                                        <label>Bank Transfer</label>
+                                    </div>
 
-                    }
-                </Modal.Body>
-            </Modal>
+                                </div>
+                            </div>
+                            <div className="flex items-center mt-6 mb-3" onClick={() => sethasAgreed((prev) => !prev)}>
+                                <input type="checkbox" className='rounded-[8px] mr-4 text-amber-500' name="" id="" checked={hasAgreed} />
+                                <p className='text-[12px]'>By clicking on make payment, you agree to our <a href="https://docs.google.com/document/d/1JQKbsYXrjyy3oxA3he2ErBc4BsDKYbRX_drhMdIRp24/edit?usp=sharing" target="_blank" className='text-blue-400'>students policy</a></p>
+                            </div>
+                            {
+                                selectedPaymentmethod === "card" ? <PayWithCard /> : <BankTransferCard />
+
+                            }
+                        </Modal.Body>
+                    </Modal>
+                </> : "No outstanding debt"}
         </div>
     )
 }
