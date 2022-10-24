@@ -16,6 +16,7 @@ import DataScience from "./pages/courses/DataScience";
 import Cloud from "./pages/courses/Cloud";
 import Mycourses from "./pages/mycourses/Mycourses";
 import CourseDetail from "./pages/mycourses/CourseDetail"
+import DocViewer from "./components/mycourses/DocViewer";
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
           <Route path="/student/courses/enrollment/:school/:course" element={<Enrollment />} />
           <Route path="/student/mycourses/" element={<Mycourses />} />
           <Route path="/student/mycourses/:course/:id" element={<CourseDetail />} />
+          <Route path="/student/docviewer/:name/:link" element={<DocViewer />} />
         </Routes>
       </BrowserRouter>
 
