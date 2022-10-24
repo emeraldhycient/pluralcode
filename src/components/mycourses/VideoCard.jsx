@@ -20,7 +20,7 @@ function VideoCard({ vid }) {
             <div >
                 <iframe src={vid ? vid.video_link : data_analytics}
                     className="w-[90%]  rounded-tl-3xl rounded-br-3xl"
-                    allow="autoplay"></iframe>
+                    allow="autoplay" allowFullScreen="true" webkitallowfullscreen="true"></iframe>
 
                 {/* <video
                     src={vid?.image ? vid.image : data_analytics}
