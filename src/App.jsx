@@ -18,6 +18,7 @@ import Mycourses from "./pages/mycourses/Mycourses";
 import CourseDetail from "./pages/mycourses/CourseDetail"
 import DocViewer from "./components/mycourses/DocViewer";
 import Advisors from "./pages/advisors/Advisors";
+import Notifications from "./pages/notifications/Notifications";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Route path="/password/reset" element={<PasswordReset />} />
           <Route path="/student/dashboard" element={<Home />} />
           <Route path="/student/advisors" element={<Advisors />} />
+          <Route path="/student/notifications" element={<Notifications />} />
           <Route path="/student/dashboard/:school" element={<Home />} />
           <Route path="/student/courses/product" element={<Product />} />
           <Route path="/student/courses/product-management" element={<ProductManagement />} />

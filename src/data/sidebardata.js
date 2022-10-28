@@ -65,7 +65,7 @@ const sidebardata = [
     {
         title: "Notifications",
         icon: notification_icon,
-        link: "/"
+        link: "/student/notifications"
     },
     {
         title: "Profile",
