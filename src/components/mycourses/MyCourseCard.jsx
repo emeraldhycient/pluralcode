@@ -6,8 +6,6 @@ import data_analytics from "../../assets/data_analytics.svg"
 
 function MyCourseCard({ course }) {
 
-    const [ismodalshowing, setismodalshowing] = useState(false)
-
     return (
         <div
             className="bg-[#F5F6FA] h-fit  my-4 rounded-tl-3xl rounded-br-3xl py-6 px-3 mb-4"

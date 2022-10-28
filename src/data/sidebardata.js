@@ -45,7 +45,7 @@ const sidebardata = [
     {
         title: "Exclusive",
         icon: exclusive_icon,
-        link: "/"
+        link: "/student/exclusive"
     },
     {
         title: "My Courses",
@@ -60,7 +60,7 @@ const sidebardata = [
     {
         title: "Pluralcode TV",
         icon: pluralcodetv_icon,
-        link: "/"
+        link: "/student/tv"
     },
     {
         title: "Notifications",

@@ -19,6 +19,7 @@ import CourseDetail from "./pages/mycourses/CourseDetail"
 import DocViewer from "./components/mycourses/DocViewer";
 import Advisors from "./pages/advisors/Advisors";
 import Notifications from "./pages/notifications/Notifications";
+import Exclusive from "./pages/exclusive/Exclusive";
 
 
 function App() {
@@ -35,6 +36,8 @@ function App() {
           <Route path="/student/dashboard" element={<Home />} />
           <Route path="/student/advisors" element={<Advisors />} />
           <Route path="/student/notifications" element={<Notifications />} />
+          {/* <Route path="/student/tv" element={<Tv />} /> */}
+          <Route path="/student/exclusive" element={<Exclusive />} />
           <Route path="/student/dashboard/:school" element={<Home />} />
           <Route path="/student/courses/product" element={<Product />} />
           <Route path="/student/courses/product-management" element={<ProductManagement />} />
