@@ -17,6 +17,7 @@ import Cloud from "./pages/courses/Cloud";
 import Mycourses from "./pages/mycourses/Mycourses";
 import CourseDetail from "./pages/mycourses/CourseDetail"
 import DocViewer from "./components/mycourses/DocViewer";
+import Advisors from "./pages/advisors/Advisors";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path="/register" element={<Signup />} />
           <Route path="/password/reset" element={<PasswordReset />} />
           <Route path="/student/dashboard" element={<Home />} />
+          <Route path="/student/advisors" element={<Advisors />} />
           <Route path="/student/dashboard/:school" element={<Home />} />
           <Route path="/student/courses/product" element={<Product />} />
           <Route path="/student/courses/product-management" element={<ProductManagement />} />

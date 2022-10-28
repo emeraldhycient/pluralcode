@@ -55,7 +55,7 @@ const sidebardata = [
     {
         title: "Student Advisors",
         icon: advsior_icon,
-        link: "/"
+        link: "/student/advisors"
     },
     {
         title: "Pluralcode TV",
