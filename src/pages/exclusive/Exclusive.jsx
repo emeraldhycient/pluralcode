@@ -11,15 +11,15 @@ function Exclusive() {
         <DashboardLayout>
             <div className='h-fit w-full  rounded-[8px] bg-transparent md:bg-white p-5 mb-4'>
                 <VideoContainer />
-                <h3 className='text-[32px] text-[#222057] mb-5'>PluralCode Exclusive</h3>
+                <h3 className='text-[26px] md:text-[32px] text-[#222057] mb-5'>PluralCode Exclusive</h3>
                 <p className='text-[16px] mb-2 text-[#323232]'>Data Analytics program provides a range of ​data and analytics​ training designed to help ​individuals as well as ​organisations​, ​enable new and existing internal resources through the use of key data science tools and platforms.
                 </p>
                 <p className='text-[16px] mb-2 text-[#323232]'>
                     The curriculum is robust and carefully​ designed to address the needs​ and deliver the basic requirements for ​any ​data scientists and big data analysts​ to make business impact
                 </p>
             </div>
-            <div className='h-fit w-full  rounded-[8px] bg-white p-5 mt-16 md:mt-20'>
-                <h3 className='text-[32px] text-[#222057] mb-5'>Our Exclusive Program Courses</h3>
+            <div className='h-fit w-full  rounded-[8px] bg-white p-5 mt-8 md:mt-20'>
+                <h3 className='text-[26px] md:text-[32px] text-[#222057] mb-5'>Our Exclusive Program Courses</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
                     <ExclusiveCourseCard />
                     <ExclusiveCourseCard />
@@ -29,7 +29,7 @@ function Exclusive() {
                 </div>
             </div>
             <div className='h-fit w-full  rounded-[8px] bg-white p-5 mt-16 md:mt-20'>
-                <h3 className='text-[32px] text-[#222057] mb-5'>Frequently Asked Questions</h3>
+                <h3 className='text-[26px] md:text-[32px] text-[#222057] mb-5'>Frequently Asked Questions</h3>
                 <Faq />
             </div>
         </DashboardLayout>
