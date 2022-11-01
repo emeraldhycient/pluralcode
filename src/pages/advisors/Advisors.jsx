@@ -1,32 +1,33 @@
-import React from 'react'
+import { useState, useEffect } from 'react'
 import DashboardLayout from '../../components/layout/DashboardLayout'
 import { IoLogoWhatsapp } from "react-icons/io"
+import { Spinner } from 'flowbite-react'
+import axiosClient from '../../services/apiClient'
+
 
 function Advisors() {
 
-    const data = [
-        {
-            id: 1,
-            name: "Hillary",
-            skill: "Product Design and Product Management",
-            phoneNumber: "09169190508",
-            image: "https://i.im.ge/2022/10/28/2gfBkc.hillary.png"
-        },
-        {
-            id: 1,
-            name: "Hillary",
-            skill: "Product Design and Product Management",
-            phoneNumber: "09169190508",
-            image: "https://i.im.ge/2022/10/28/2gfeFL.cyril.png"
-        },
-        {
-            id: 3,
-            name: "Hillary",
-            skill: "Product Design and Product Management",
-            phoneNumber: "09169190508",
-            image: "https://i.im.ge/2022/10/28/2gfBkc.hillary.png"
+
+
+    const [advisors, setadvisors] = useState([]);
+    const [loading, setloading] = useState(false)
+
+    useEffect(() => {
+        const getadvisors = async () => {
+            setloading(true)
+            try {
+                const res = await axiosClient.get('/student/get_student_advisors')
+                console.log(res)
+
+                setadvisors(res.data)
+
+            } catch (error) {
+                console.log(error.response)
+            }
         }
-    ]
+        getadvisors()
+        setloading(false)
+    }, [])
 
     return (
         <DashboardLayout>
@@ -37,9 +38,14 @@ function Advisors() {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-16">
                     {
-                        data.map((item) => (
-                            <AdvisorsCard item={item} />
-                        ))
+                        !loading ?
+                            advisors.map((item) => (
+                                <AdvisorsCard item={item} />
+                            ))
+                            : <Spinner
+                                color="warning"
+                                aria-label="Warning spinner example"
+                            />
                     }
                 </div>
             </div>
@@ -58,11 +64,11 @@ const AdvisorsCard = ({ item }) => (
             <img src={item.image} alt="" />
         </div>
         <div className="h-[50%] flex flex-col justify-center items-center">
-            <h3 className='text-amber-500 text-[20px]'>{item.name}</h3>
-            <p className='text-[17px] text-[#323232] text-center my-1'>{item.skill}</p>
-            <h3 className='text-[#232323] text-[20px] font-semibold'>{item.phoneNumber}</h3>
+            <h3 className='text-amber-500 text-[20px]'>{`${item.first_name}${item.last_name}`}</h3>
+            <p className='text-[17px] text-[#323232] text-center my-1'>{item.school_assigned_to}</p>
+            <h3 className='text-[#232323] text-[20px] font-semibold'>{item.phone_number}</h3>
             <div className="grid grid-cols-2 gap-4 mt-4 w-full px-12">
-                <a href={`https://wa.me/${item.phoneNumber}`} className="col-span-1 h-[30px]  border border-[#222057] rounded-[8px] flex items-center justify-center">
+                <a href={`https://wa.me/${item.phone_number}`} className="col-span-1 h-[30px]  border border-[#222057] rounded-[8px] flex items-center justify-center">
                     <IoLogoWhatsapp size={20} color="#222057" />
                     <h6 className='ml-2 text-sm'>chat</h6>
                 </a>
