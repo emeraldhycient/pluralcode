@@ -1,35 +1,66 @@
-import React from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { Spinner } from 'flowbite-react'
 import DashboardLayout from '../../components/layout/DashboardLayout'
 import data_analytics from "../../assets/data_analytics.svg"
 
+import axiosClient from '../../services/apiClient'
+
 function Tv() {
+
+    const [series, setseries] = useState([]);
+    const [loading, setloading] = useState(false)
+
+    useEffect(() => {
+        const getSeries = async () => {
+            setloading(true)
+            try {
+                const res = await axiosClient.get('/student/get_plc_tvcontent')
+                console.log(res)
+
+                setseries(res.data)
+
+            } catch (error) {
+                console.log(error.response)
+            }
+        }
+        getSeries()
+        setloading(false)
+    }, [])
+
+
     return (
         <DashboardLayout>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:pr-6">
-                <TvCard />
-                <TvCard />
-                <TvCard />
-                <TvCard />
-                <TvCard />
+                {
+                    !loading ?
+
+                        series.length > 0 ?
+                            series.map((item) => (
+                                <TvCard item={item} />
+                            )) : "no data"
+
+                        : <Spinner
+                            color="warning"
+                            aria-label="Warning spinner example"
+                        />
+                }
             </div>
         </DashboardLayout>
     )
 }
 
-const TvCard = () => (
+const TvCard = ({ item }) => (
     <div
         className="bg-white h-fit  my-4 rounded-tl-3xl rounded-br-3xl py-6 px-3 mb-4"
         data-aos="fade-right"
         data-aos-duration="2000"
     >  <div >
-            <img
-                src={data_analytics}
-                alt="product"
-                className="w-[100%]  rounded-tl-3xl rounded-br-3xl"
-                data-aos="fade-right"
-                data-aos-duration="2000"
-            />
+
+            <iframe src={item.video_link ? item.video_link : data_analytics}
+                className="w-[100%]  rounded-tl-3xl rounded-br-3xl h-56"
+                allowFullScreen="true" webkitallowfullscreen="true" sandbox="allow-same-origin allow-scripts"></iframe>
+
         </div>
         <div className="pb-4 flex flex-col justify-center mt-4">
             <h1
@@ -37,14 +68,14 @@ const TvCard = () => (
                 data-aos="fade-right"
                 data-aos-duration="2000"
             >
-                Azure Cloud Computing
+                {item.content_name}
             </h1>
             <p
                 className="font-gilroyregular text-sm  lg:text-left  font-extralight text-[#323232] mb-2"
                 data-aos="fade-right"
                 data-aos-duration="2000"
             >
-                Learn to use popular Cloud platforms, understand Cloud computing concepts and technologies apply virtualization and its use in Infrastructure development.
+                {item.content_description}
             </p>
             <div className="w-fit mt-3 flex">
                 <h4 className="semibold pr-1">12 weeks | </h4>
