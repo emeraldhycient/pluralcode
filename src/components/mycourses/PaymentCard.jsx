@@ -27,7 +27,8 @@ function PaymentCard() {
                 const res = await axiosClient.post(`/student/get_enrolled_course_details`, data);
                 console.log(res.data)
                 setchoiceOfPayment({
-                    amount: res.data.balance
+                    amount: res.data.balance,
+                    fee: res.data.course_fee
                 })
             } catch (error) {
                 console.log(error.response)
@@ -57,17 +58,17 @@ function PaymentCard() {
 
 
         var data = new FormData();
-        data.append('skills', course);
-        data.append('course_cohort', cohort);
-        data.append('current_location', currentLocation);
-        data.append('highest_academy_level', academicLevel);
-        data.append('payment_choice', paymentBreakdown?.mode);
-        data.append('payment_amount', paymentBreakdown?.amount);
+        // data.append('skills', course);
+        // data.append('course_cohort', cohort);
+        // data.append('current_location', currentLocation);
+        // data.append('highest_academy_level', academicLevel);
+        // data.append('payment_choice', paymentBreakdown?.mode);
+        data.append('amount_paid', paymentBreakdown?.amount);
         data.append('payment_type', selectedPaymentmethod);
-        data.append('school', school);
+        data.append('course_id', id);
 
         try {
-            const response = await axiosClient.post("/student/make_payment", data)
+            const response = await axiosClient.post("/student/balance_payment", data)
             console.log(response)
             toggleModalShowing()
         } catch (error) {
@@ -174,9 +175,9 @@ function PaymentCard() {
             {choiceOfPayment?.amount > 0 ?
                 <>
                     <h4 className='text-[18px] text-[#323232] mt-[12px]'>Total Amount Paid</h4>
-                    <h1 className='text-[#222057] text-[40px] font-semibold mt-[12px]'>N60,000</h1>
+                    <h1 className='text-[#222057] text-[40px] font-semibold mt-[12px]'>N{choiceOfPayment?.fee}</h1>
                     <h4 className='text-[18px] text-[#323232] mt-[12px]'>Outstanding Payment for
-                        Product Design:<span className='text-[#323232] font-bold'> N60,000</span></h4>
+                        Product Design:<span className='text-[#323232] font-bold'> N{choiceOfPayment?.amount}</span></h4>
                     <p className='italic text-[14px] mt-[12px]'>NB: You are to make your outstanding payment
                         on or before Sept 1, 2022</p>
 
