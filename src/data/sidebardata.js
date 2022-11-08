@@ -70,7 +70,7 @@ const sidebardata = [
     {
         title: "Profile",
         icon: profile_icon,
-        link: "/"
+        link: "/student/profile"
     }
 ]
 

@@ -1,4 +1,8 @@
+import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import firebaseapp, { onMessageListener, AskForToken, subscribeTopic } from "./services/pushNotification";
+
+
 import Login from "./pages/auth/Login";
 import PasswordReset from "./pages/auth/PasswordReset";
 import Signup from "./pages/auth/Signup";
@@ -21,12 +25,55 @@ import Advisors from "./pages/advisors/Advisors";
 import Notifications from "./pages/notifications/Notifications";
 import Exclusive from "./pages/exclusive/Exclusive";
 import Tv from "./pages/tv/Tv";
+import ReactNotificationComponent from "./components/common/ReactNotificationComponent";
+import Profile from "./pages/profile/Profile";
 
 
 function App() {
+
+
+  const [isTokenFound, setTokenFound] = useState(false);
+  console.log("Token found", isTokenFound);
+  useEffect(() => {
+    let data;
+    async function tokenFunc() {
+      data = await AskForToken(setTokenFound);
+      if (data) {
+        console.log("Token is", data);
+        subscribeTopic(data)
+      }
+      subscribeTopic(data)
+      return data;
+    }
+    tokenFunc();
+  }, [setTokenFound]);
+
+
+
+
+
+
+  const [show, setShow] = useState(false);
+  const [notification, setNotification] = useState({ title: "", body: "" });
+
+  onMessageListener()
+    .then((payload) => {
+      setShow(true);
+      setNotification({
+        title: payload.notification.title,
+        body: payload.notification.body,
+      });
+      console.log(payload);
+    })
+    .catch((err) => console.log("failed: ", err));
+
   return (
     <>
 
+      {
+        show ?
+          <ReactNotificationComponent title={notification.title} body={notification.body} /> : ""
+      }
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Signup />} />
@@ -50,20 +97,10 @@ function App() {
           <Route path="/student/mycourses/" element={<Mycourses />} />
           <Route path="/student/mycourses/:course/:id" element={<CourseDetail />} />
           <Route path="/student/docviewer/:name/:link" element={<DocViewer />} />
+          <Route path="/student/profile" element={<Profile />} />
+
         </Routes>
       </BrowserRouter>
-
-      <ToastContainer
-        position="bottom-center"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-      />
     </>
   );
 }

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
+    "firebase": "^9.13.0",
     "flowbite": "^1.5.3",
     "flowbite-react": "^0.1.11",
     "pdf-viewer-reactjs": "^2.2.3",
