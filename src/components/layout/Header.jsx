@@ -3,8 +3,12 @@ import { Avatar, Dropdown } from "flowbite-react"
 import { GoSearch } from "react-icons/go"
 import message_question_icon from "../../assets/message_question_icon.svg"
 import { FaBell } from "react-icons/fa"
+import { getUser } from '../../services/storage/user'
 
 function Header() {
+
+    const user = JSON.parse(getUser());
+
     return (
         <div className='bg-white h-[4.5rem]  border-b border-[#EAEAEA]   justify-between items-center px-5 hidden md:flex'>
 
@@ -27,10 +31,10 @@ function Header() {
                 >
                     <Dropdown.Header>
                         <span className="block text-sm">
-                            Mabel Praise
+                            {user.name}
                         </span>
                         <span className="block truncate text-sm font-medium">
-                            MabelPraise@pluralcode.com
+                            {user.email}
                         </span>
                     </Dropdown.Header>
                     <Dropdown.Item>
@@ -39,20 +43,15 @@ function Header() {
                     <Dropdown.Item>
                         Settings
                     </Dropdown.Item>
-                    <Dropdown.Item>
-                        Earnings
-                    </Dropdown.Item>
                     <Dropdown.Divider />
-                    <Dropdown.Item>
-                        Sign out
-                    </Dropdown.Item>
+
                 </Dropdown>
                 <div className=" font-medium dark:text-white ml-2">
                     <div>
-                        Mabel Praise
+                        {user.name}
                     </div>
                     <div className="text-xs text-gray-500 dark:text-gray-400">
-                        Student ID: COH3456
+                        Student ID: {user.id}
                     </div>
                 </div>
             </div>

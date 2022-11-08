@@ -5,10 +5,14 @@ import SidebarContent from './sidebarContent';
 import { Avatar, Dropdown } from "flowbite-react"
 import useNavToggle from '../../store/sidebartoggle'
 import close_icon from "../../assets/close_icon.svg"
+import { getUser } from '../../services/storage/user';
 
 
 function Sidebar() {
     const toggleSideBar = useNavToggle((state) => state.toggle)
+
+    const user = JSON.parse(getUser());
+    console.log(user)
 
     return (
         <div className='bg-white h-screen md:h-full overflow-y-auto border-r border-[#EAEAEA] '>
@@ -22,10 +26,10 @@ function Sidebar() {
                     >
                         <Dropdown.Header>
                             <span className="block text-sm">
-                                Mabel Praise
+                                {user.name}
                             </span>
                             <span className="block truncate text-sm font-medium">
-                                MabelPraise@pluralcode.com
+                                {user.email}
                             </span>
                         </Dropdown.Header>
                         <Dropdown.Item>
@@ -44,10 +48,10 @@ function Sidebar() {
                     </Dropdown>
                     <div className=" font-medium dark:text-white ml-2">
                         <div>
-                            Mabel Praise
+                            {user.name}
                         </div>
                         <div className="text-xs text-gray-500 dark:text-gray-400">
-                            Student ID: COH3456
+                            Student ID: {user.id}
                         </div>
                     </div>
                 </div>

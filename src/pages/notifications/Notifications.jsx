@@ -9,7 +9,7 @@ function Notifications() {
         const getNotifi = async () => {
             try {
                 const res = await axiosClient.get("get_notification_list")
-                console.log(res);
+                // console.log(res);
                 setdata(res.data)
             } catch (error) {
                 console.error(error.response);
@@ -26,7 +26,7 @@ function Notifications() {
                 {
                     data.length > 0 ?
                         data.map((item) => (
-                            <NotificationCard item={item} />
+                            <NotificationCard item={item} key={item.id} />
 
                         )) : <NotificationCard item={{ body: "No Notifications", date: "" }} />
                 }
