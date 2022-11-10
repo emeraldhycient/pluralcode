@@ -138,8 +138,17 @@ function Enrollment() {
         return (
             <div className="border border-gray-200 w-full rounded-[8px] px-4 md:px-8 py-12">
                 <h4 className='text-[#232323] text-[22px]'>Student Loan</h4>
-                <p className='text-[#232323] text-[16px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo venenatis, dignissim quam purus rutrum nisi, eu. Ornare viverra neque risus volutpat commodo fermentum, cum. Magna netus iaculis odio eget ut ut justo. Pellentesque risus vivamus tincidunt et ut senectus id ut.
-                    Scelerisque dui amet consequat, consectetur etiam viverra dictum id. In fermentum egestas mauris volutpat vitae diam. At a rhoncus amet, habitasse sagittis. Suspendisse eget phasellus pharetra adipiscing at. Enim, enim scelerisque ultrices arcu, magna in amet, imperdiet elementum. Libero ac urna, integer tellus luctus. Leo neque id tellus enim lectus fermentum.</p>
+                <p className='text-[#232323] text-[16px]'>Apply for a student loan through Credpal loan facility. </p>
+                <p className='text-[#232323] text-[16px]'>Apply for a student loan through Credpal loan facility.
+                    Eligible students are required to have an account with Credpal. Don’t have an account?
+                </p>
+                <p className='text-[#232323] text-[16px]'>
+                    Sign up to access the student loan applicable to your course of interest.
+                    Once applied your account will be checked for eligibility.
+                </p>
+                <p className='text-[#232323] text-[16px]'>
+
+                    If approved, you get a success prompt and guidelines for payments spread within 6 months. </p>
                 <div className="w-fit mt-4">
                     <button className="bg-amber-500 text-[12px] text-white px-8 py-2 rounded w-[100%] mx-auto lg:mx-0 flex justify-center items-center" onClick={() => payWithCredPal()} type="button">Pay With CredPal</button>
                 </div>
