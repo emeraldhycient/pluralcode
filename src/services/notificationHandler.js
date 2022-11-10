@@ -1,12 +1,11 @@
 export const checkNofiticationSent = (item) => {
     if (item.id) {
         const data = sessionStorage.getItem(item.id);
-        if (data)
+        if (data) {
+            console.log("here brrrruh")
             return false
-        else {
-            sessionStorage.setItem(item.id, JSON.stringify(item))
-            return true
         }
+        return true
     } else
         return false
 

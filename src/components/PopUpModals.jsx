@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Tabs, Modal, Button } from 'flowbite-react'
+import React, { useState, useEffect } from 'react'
+import { Modal } from 'flowbite-react'
 
 import styles from "./PopUpModals.module.css"
 import cancel from "../assets/menux.svg"
@@ -8,9 +8,15 @@ import { checkNofiticationSent } from '../services/notificationHandler'
 
 function PopUpModals({ data }) {
 
-    const [showModal, setshowModal] = useState(true)
+    const [showModal, setshowModal] = useState(false)
 
-    console.log(showModal)
+    useEffect(() => {
+        const state = checkNofiticationSent(data)
+        console.log(state)
+        setshowModal(state)
+        sessionStorage.setItem(data.id, JSON.stringify(data))
+    }, [])
+
 
     return (
         <div>
@@ -28,12 +34,12 @@ function PopUpModals({ data }) {
                             </div>
                         </div>
                         <div className={styles.modalOneBody}>
-                            <h3 className='text-[16px] font-bold text-[#222057]'>{data.title}</h3>
+                            <h3 className='text-[16px] font-bold text-[#222057]'>{data?.title}</h3>
                             <p className='text-sm text-gray-500'>
-                                {data.body}
+                                {data?.body}
                             </p>
                             {
-                                data.type !== "discount" ? < button
+                                data?.type !== "discount" ? < button
                                     className="bg-amber-500 text-[16px] text-white px-8 py-2 rounded w-fit  mx-auto lg:w-fit flex justify-center items-center mt-3"
                                     data-aos="fade-right"
                                     data-aos-duration="2000"
