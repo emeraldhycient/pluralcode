@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Tabs } from 'flowbite-react'
 import { BsWalletFill } from "react-icons/bs"
 import { useParams } from 'react-router-dom'
@@ -10,6 +10,8 @@ import schoolsdata from '../../data/schoolsdata'
 
 import DashboardData from '../../store/DashboardData'
 import axiosClient from '../../services/apiClient'
+import PopUpModals from '../../components/PopUpModals'
+// import { checkNofiticationSent } from '../../services/notificationHandler'
 
 function Home() {
 
@@ -18,6 +20,8 @@ function Home() {
     const Data = DashboardData((state) => state.data);
     const StoreData = DashboardData((state) => state.storeData)
 
+    const [notification, setnotification] = useState("")
+
 
     useEffect(() => {
         const fetchData = async () => {
@@ -25,7 +29,7 @@ function Home() {
                 const res = await axiosClient.get("/student/dashboard_api");
                 StoreData(res.data)
                 sessionStorage.setItem("dashboard", JSON.stringify(res.data))
-                console.log(res.data)
+                setnotification(res?.data?.notification)
             } catch (error) {
                 console.log(error.response)
             }
@@ -34,11 +38,11 @@ function Home() {
         fetchData()
     }, [])
 
-    // console.log(Data)
 
 
     return (
         <DashboardLayout>
+            <PopUpModals data={notification} />
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                 <div className='bg-white flex flex-col justify-center items-center w-full p-6 md:p-12 rounded-[8px]'>
                     <div className='flex items-center w-full'>

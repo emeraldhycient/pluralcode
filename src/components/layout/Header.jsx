@@ -18,10 +18,10 @@ function Header() {
             </div>
 
             <div className='flex items-center'>
-                <a href='' className='h-[2rem] w-24'>
+                <a href='/student/advisors' className='h-[2rem] w-24'>
                     <img src={message_question_icon} className="h-[2rem] w-24 " alt="question logo" />
                 </a>
-                <a href='' className='w-12'>
+                <a href='/student/notifications' className='w-12'>
                     <FaBell size={20} color='#323232' />
                 </a>
                 <Dropdown
@@ -37,12 +37,7 @@ function Header() {
                             {user.email}
                         </span>
                     </Dropdown.Header>
-                    <Dropdown.Item>
-                        Dashboard
-                    </Dropdown.Item>
-                    <Dropdown.Item>
-                        Settings
-                    </Dropdown.Item>
+
                     <Dropdown.Divider />
 
                 </Dropdown>

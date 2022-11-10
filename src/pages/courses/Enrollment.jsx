@@ -296,10 +296,11 @@ function Enrollment() {
                                 <input type="radio" name="" id="" className='mr-2 text-amber-500' checked={selectedPaymentmethod === "transfer" ? true : false} />
                                 <label>Bank Transfer</label>
                             </div>
-                            <div className={`flex  mx-2 items-center`} onClick={() => setselectedPaymentmethod("loan")}>
-                                <input type="radio" name="" id="" className='mr-2 text-amber-500' checked={selectedPaymentmethod === "loan" ? true : false} />
-                                <label>Student Loan</label>
-                            </div>
+                            {choiceOfPayment?.mode !== "part_payment" ?
+                                <div className={`flex  mx-2 items-center`} onClick={() => setselectedPaymentmethod("loan")}>
+                                    <input type="radio" name="" id="" className='mr-2 text-amber-500' checked={selectedPaymentmethod === "loan" ? true : false} />
+                                    <label>Student Loan</label>
+                                </div> : ""}
                         </div>
                         {
                             selectedPaymentmethod === "card" ? <PayWithCard /> : selectedPaymentmethod === "transfer" ? <BankTransferCard /> : <StudentLoanCard />

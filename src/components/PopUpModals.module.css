@@ -1,0 +1,41 @@
+.modalOne {
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.modalOneHeader {
+    background-image: url("../assets/webseriespop.svg");
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+    background-color: #222057;
+    border-radius: 10px;
+}
+
+.modalTwoHeader {
+    background-image: url("../assets/dsc.svg");
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+    background-color: #222057;
+    border-radius: 10px;
+}
+
+.modalOneBody {
+    background-image: url("../assets/cloudcurve.svg");
+    background-repeat: repeat-x;
+    height: fit-content;
+    padding-bottom: 30px;
+    margin-top: -94px;
+    z-index: 100;
+    border-radius: 10px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+div:has(> .modalOne) {
+    padding: 0;
+}

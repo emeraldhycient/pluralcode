@@ -12,7 +12,6 @@ function Sidebar() {
     const toggleSideBar = useNavToggle((state) => state.toggle)
 
     const user = JSON.parse(getUser());
-    console.log(user)
 
     return (
         <div className='bg-white h-screen md:h-full overflow-y-auto border-r border-[#EAEAEA] '>
@@ -32,19 +31,7 @@ function Sidebar() {
                                 {user.email}
                             </span>
                         </Dropdown.Header>
-                        <Dropdown.Item>
-                            Dashboard
-                        </Dropdown.Item>
-                        <Dropdown.Item>
-                            Settings
-                        </Dropdown.Item>
-                        <Dropdown.Item>
-                            Earnings
-                        </Dropdown.Item>
-                        <Dropdown.Divider />
-                        <Dropdown.Item>
-                            Sign out
-                        </Dropdown.Item>
+
                     </Dropdown>
                     <div className=" font-medium dark:text-white ml-2">
                         <div>
