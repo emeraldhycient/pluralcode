@@ -12,7 +12,7 @@ function PopUpModals({ data }) {
 
     useEffect(() => {
         const state = checkNofiticationSent(data)
-        console.log(state)
+        console.log(data)
         setshowModal(state)
         sessionStorage.setItem(data.id, JSON.stringify(data))
     }, [])
