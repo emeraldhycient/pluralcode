@@ -96,7 +96,7 @@ function App() {
           <Route path="/student/courses/enrollment/:school/:course" element={<Enrollment />} />
           <Route path="/student/mycourses/" element={<Mycourses />} />
           <Route path="/student/mycourses/:course/:id" element={<CourseDetail />} />
-          <Route path="/student/docviewer/:name/:link" element={<DocViewer />} />
+          <Route path="/student/docviewer/:name/:fileurl" element={<DocViewer />} />
           <Route path="/student/profile" element={<Profile />} />
 
         </Routes>
