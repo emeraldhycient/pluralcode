@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Layout from "../../components/layout/Layout";
 import { Label, TextInput, Spinner } from "flowbite-react";
 import { useNavigate } from "react-router-dom";
@@ -11,6 +11,7 @@ import axiosClient from "../../services/apiClient"
 // import { setToken } from "../../services/storage/token"
 // import { setUser } from "../../services/storage/user"
 import DashboardLayout from '../../components/layout/DashboardLayout'
+import { getUser } from "../../services/storage/user";
 
 function Profile() {
 
@@ -22,6 +23,16 @@ function Profile() {
     const [emergency_phone_number, setemergency_phone_number] = useState("")
     const [emergency_name, setemergency_name] = useState("")
     const [isLoading, setIsloading] = useState(false)
+
+    useEffect(() => {
+        const user = JSON.parse(getUser());
+        setEmail(user.email)
+        setPhoneNumber(user.phone_number)
+        const name = user.name.split(" ");
+        setFName(name[0])
+        setLName(name[2])
+    }, [])
+
 
 
     const handleSubmit = async (event) => {

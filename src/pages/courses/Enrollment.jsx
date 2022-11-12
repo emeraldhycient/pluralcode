@@ -206,7 +206,7 @@ function Enrollment() {
     const config = {
         reference: (new Date()).getTime().toString(),
         email: DashboardData.email,
-        amount: choiceOfPayment?.amount,
+        amount: choiceOfPayment?.amount * 100,
         publicKey: DashboardData?.paystack_api_key,
     };
 

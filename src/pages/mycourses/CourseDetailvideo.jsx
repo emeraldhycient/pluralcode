@@ -3,19 +3,21 @@ import { useParams } from 'react-router-dom'
 
 import axiosClient from '../../services/apiClient'
 import VideoCard from '../../components/mycourses/VideoCard'
+import Loader from '../../components/Loader'
 
 
 function CourseDetailvideo() {
 
     const [videos, setvideos] = useState([])
+    const [isloading, setisloading] = useState(false)
 
     const { course, id } = useParams()
 
     useEffect(() => {
 
         const getvideos = async () => {
+            setisloading(true)
             try {
-
                 const data = new FormData();
                 data.append("course_id", id)
                 data.append("nav", "videos")
@@ -27,6 +29,7 @@ function CourseDetailvideo() {
             } catch (error) {
                 console.log(error.response.data)
             }
+            setisloading(false)
         }
 
         getvideos()
@@ -36,11 +39,13 @@ function CourseDetailvideo() {
     return (
         <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 bg-white h-fit   my-4 rounded-tl-3xl rounded-br-3xl py-6 w-full">
             {
-                videos.length > 0 ?
-                    videos.map((vid) => (
-                        <VideoCard vid={vid} />
+                !isloading ?
+                    videos.length > 0 ?
+                        videos.map((vid) => (
+                            <VideoCard vid={vid} />
 
-                    )) : "Videos for this course would be shown here"
+                        )) : "Videos for this course would be shown here"
+                    : <Loader />
             }
         </div>
     )

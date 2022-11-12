@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Loader from '../../components/Loader'
 import MyCourseCard from '../../components/mycourses/MyCourseCard'
 import axiosClient from '../../services/apiClient'
 
@@ -6,10 +7,11 @@ import axiosClient from '../../services/apiClient'
 function Tab1() {
 
     const [courses, setcourses] = useState([])
+    const [isloading, setisloading] = useState(false)
 
     useEffect(() => {
-
         const getcourses = async () => {
+            setisloading(true)
             try {
                 const res = await axiosClient.get("/student/get_enrolled_courses?nav=my_courses")
                 console.log(res.data)
@@ -17,6 +19,7 @@ function Tab1() {
             } catch (error) {
                 console.log(error.response.data)
             }
+            setisloading(false)
         }
 
         getcourses()
@@ -27,11 +30,13 @@ function Tab1() {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 bg-white h-fit  my-4 rounded-tl-3xl rounded-br-3xl py-6 px-4">
             {
-                courses.length > 0 ?
-                    courses.map((course) => (
-                        <MyCourseCard course={course} key={course.id} />
-                    ))
-                    : "Courses you are currently taking will show here"
+                !isloading ?
+                    courses.length > 0 ?
+                        courses.map((course) => (
+                            <MyCourseCard course={course} key={course.id} />
+                        ))
+                        : "Courses you are currently taking will show here"
+                    : <Loader />
             }
         </div>
     )

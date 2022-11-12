@@ -90,13 +90,6 @@ function CourseDetail() {
                         </div>
                     </Tabs.Item>
 
-                    <Tabs.Item
-                        title="Mentor"
-                    >
-                        <MentorCard />
-                    </Tabs.Item>
-
-
                 </Tabs.Group>
             </div>
 

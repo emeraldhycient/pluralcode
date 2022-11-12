@@ -15,9 +15,7 @@ function Software() {
                     Get equipped with the unique skills you need to build database-backed APIs and web applications.                </p>
             </CourseTitle>
             <VideoContainer />
-            <ExclsuiveCard >
-
-
+            <ExclsuiveCard link={"/student/exclusive"}>
                 <p className='text-[16px] mb-2 text-[#323232]'>
                     PluralCode exclusive program gives you access to a private tutor with quality one on one mentorship, fewer distractions, greater learning and focus.
                 </p>

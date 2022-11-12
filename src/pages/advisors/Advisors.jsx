@@ -3,6 +3,7 @@ import DashboardLayout from '../../components/layout/DashboardLayout'
 import { IoLogoWhatsapp } from "react-icons/io"
 import { Spinner } from 'flowbite-react'
 import axiosClient from '../../services/apiClient'
+import Loader from '../../components/Loader'
 
 
 function Advisors() {
@@ -42,10 +43,11 @@ function Advisors() {
                             advisors.map((item) => (
                                 <AdvisorsCard item={item} />
                             ))
-                            : <Spinner
-                                color="warning"
-                                aria-label="Warning spinner example"
-                            />
+                            : <Loader />
+                        // : <Spinner
+                        //     color="warning"
+                        //     aria-label="Warning spinner example"
+                        // />
                     }
                 </div>
             </div>

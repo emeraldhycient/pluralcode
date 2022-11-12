@@ -5,6 +5,7 @@ import DashboardLayout from '../../components/layout/DashboardLayout'
 import data_analytics from "../../assets/data_analytics.svg"
 
 import axiosClient from '../../services/apiClient'
+import Loader from '../../components/Loader'
 
 function Tv() {
 
@@ -23,9 +24,10 @@ function Tv() {
             } catch (error) {
                 console.log(error.response)
             }
+            setloading(false)
+
         }
         getSeries()
-        setloading(false)
     }, [])
 
 
@@ -40,10 +42,7 @@ function Tv() {
                                 <TvCard item={item} />
                             )) : "no data"
 
-                        : <Spinner
-                            color="warning"
-                            aria-label="Warning spinner example"
-                        />
+                        : <Loader />
                 }
             </div>
         </DashboardLayout>
@@ -60,6 +59,11 @@ const TvCard = ({ item }) => (
             <iframe src={item.video_link ? item.video_link : data_analytics}
                 className="w-[100%]  rounded-tl-3xl rounded-br-3xl h-56"
                 allowFullScreen="true" webkitallowfullscreen="true" sandbox="allow-same-origin allow-scripts"></iframe>
+            {/* 
+            <video src={item.video_link ? item.video_link : data_analytics}
+                className="w-[100%]  rounded-tl-3xl rounded-br-3xl h-56"
+                controls
+            ></video> */}
 
         </div>
         <div className="pb-4 flex flex-col justify-center mt-4">
@@ -77,19 +81,7 @@ const TvCard = ({ item }) => (
             >
                 {item.content_description}
             </p>
-            <div className="w-fit mt-3 flex">
-                <h4 className="semibold pr-1">12 weeks | </h4>
-                <h4 className="bold">230k Views | </h4>
-                <button
-                    className="text-amber-500 text-[18px] text-white px-2 rounded w-fit  lg:mx-0 lg:w-fit flex justify-center items-center"
-                    data-aos="fade-right"
-                    data-aos-duration="2000"
-                >
-                    <Link to={``} className="flex items-center">
-                        Learn More
-                    </Link>
-                </button>
-            </div>
+
         </div>
     </div>
 )

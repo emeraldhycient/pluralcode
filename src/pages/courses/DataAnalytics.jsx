@@ -15,9 +15,7 @@ function DataAnalytics() {
                     The curriculum is robust and carefully​ designed to address the needs​ and deliver the basic requirements for ​any ​data scientists and big data analysts​ to make business impact                </p>
             </CourseTitle>
             <VideoContainer />
-            <ExclsuiveCard >
-
-
+            <ExclsuiveCard link={"/student/exclusive"}>
                 <p className='text-[16px] mb-2 text-[#323232]'>
                     PluralCode exclusive program gives you access to a private tutor with quality one on one mentorship, fewer distractions, greater learning and focus.
                 </p>
