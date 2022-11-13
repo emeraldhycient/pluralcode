@@ -22,7 +22,7 @@ function CourseCard({ course }) {
                     src={course.image ? course.image : data_analytics}
                     // src={"http://pluralcode.academy/assets/product_des.4ad681c3.jpg"}
                     alt="product"
-                    className="w-[100%]  rounded-tl-3xl rounded-br-3xl"
+                    className="w-[90%]  rounded-tl-3xl rounded-br-3xl"
                     data-aos="fade-right"
                     data-aos-duration="2000"
                 /></div>

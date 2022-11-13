@@ -50,6 +50,9 @@ const ExclusiveCourseCard = (item) => {
     const [isModalShowing, setisModalShowing] = useState(false)
     const [isloading, setisloading] = useState(false)
 
+    const [showMore, setShowMore] = useState(false);
+
+
     const [phoneNumber, setphoneNumber] = useState("")
     const [email, setemail] = useState("")
     const [state, setstate] = useState("")
@@ -100,7 +103,7 @@ const ExclusiveCourseCard = (item) => {
 
     return (
         <div
-            className="bg-[#F5F6FA] h-fit  my-4 rounded-tl-3xl rounded-br-3xl py-6 px-3 mb-4"
+            className="bg-[#F5F6FA]   my-4 rounded-tl-3xl rounded-br-3xl py-6 px-3 mb-4"
             data-aos="fade-right"
             data-aos-duration="2000"
         >
@@ -137,7 +140,10 @@ const ExclusiveCourseCard = (item) => {
                     data-aos="fade-right"
                     data-aos-duration="2000"
                 >
-                    {item.item.description}
+                    {showMore ? item.item.description : `${item.item.description.substring(0, 150)}`}
+
+                    <button className="text-amber-500 ml-2" onClick={() => setShowMore(!showMore)}>{showMore ? "Show less" : "Show more"}</button>
+
                 </p>
                 <div className="w-fit mt-3" onClick={() => setisModalShowing(true)}>
                     <CustomButton>Apply Now</CustomButton>

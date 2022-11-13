@@ -5,10 +5,12 @@ import videoPoster from "../../assets/videoPoster.png"
 import data_analytics from "../../assets/data_analytics.svg"
 
 function MyCourseCard({ course }) {
+    const [showMore, setShowMore] = useState(false);
+
 
     return (
         <div
-            className="bg-[#F5F6FA] h-fit  my-4 rounded-tl-3xl rounded-br-3xl py-6 px-3 mb-4"
+            className="bg-[#F5F6FA]  my-4 rounded-tl-3xl rounded-br-3xl py-6 px-3 mb-4"
             data-aos="fade-right"
             data-aos-duration="2000"
         >
@@ -38,7 +40,9 @@ function MyCourseCard({ course }) {
                     data-aos="fade-right"
                     data-aos-duration="2000"
                 >
-                    {course?.course_description || "loading course description"}
+                    {showMore ? course?.course_description : `${course?.course_description.substring(0, 150)}`}
+
+                    <button className="text-amber-500 ml-2" onClick={() => setShowMore(!showMore)}>{showMore ? "Show less" : "Show more"}</button>
                 </p>
 
                 <button
