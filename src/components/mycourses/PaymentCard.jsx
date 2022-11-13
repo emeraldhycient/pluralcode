@@ -31,7 +31,7 @@ function PaymentCard() {
                     fee: res.data.course_fee
                 })
             } catch (error) {
-                console.log(error.response)
+                console.error(error.response)
             }
         }
 
@@ -172,18 +172,18 @@ function PaymentCard() {
 
     return (
         <div className='h-[400px] w-full md:w-[100%] lg:w-[70%] mx-auto md:bg-[#F5F6FA] bg-white rounded-[8px] flex flex-col justify-center items-center text-center md:p-12 lg:p-32'>
-            {choiceOfPayment?.amount > 0 ?
+            {choiceOfPayment?.fee > 0 ?
                 <>
                     <h4 className='text-[18px] text-[#323232] mt-[12px]'>Total Amount Paid</h4>
                     <h1 className='text-[#222057] text-[40px] font-semibold mt-[12px]'>N{choiceOfPayment?.fee}</h1>
                     <h4 className='text-[18px] text-[#323232] mt-[12px]'>Outstanding Payment for
-                        Product Design:<span className='text-[#323232] font-bold'> N{choiceOfPayment?.amount}</span></h4>
-                    <p className='italic text-[14px] mt-[12px]'>NB: You are to make your outstanding payment
-                        on or before Sept 1, 2022</p>
+                        {course}:<span className='text-[#323232] font-bold'> N{choiceOfPayment?.amount}</span></h4>
+                    {
+                        choiceOfPayment?.amount > 0 ? <div className="mt-[12px]" onClick={() => setisModalShowing(true)}>
+                            <CustomButton >Complete Payment</CustomButton>
+                        </div> : ""
+                    }
 
-                    <div className="mt-[12px]" onClick={() => setisModalShowing(true)}>
-                        <CustomButton >Complete Payment</CustomButton>
-                    </div>
                     <Modal
                         show={isModalShowing}
                         size="md"
