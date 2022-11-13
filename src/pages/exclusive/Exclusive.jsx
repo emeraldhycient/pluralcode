@@ -119,7 +119,7 @@ const ExclusiveCourseCard = (item) => {
                 <img
                     src={item.item.image}
                     alt="product"
-                    className="w-[90%]  rounded-tl-3xl rounded-br-3xl"
+                    className="w-[100%]  rounded-tl-3xl rounded-br-3xl"
                     data-aos="fade-right"
                     data-aos-duration="2000"
                 />

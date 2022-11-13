@@ -18,7 +18,7 @@ function MyCourseCard({ course }) {
                 <img
                     src={course?.image ? course.image : data_analytics}
                     alt="product"
-                    className="w-[90%]  rounded-tl-3xl rounded-br-3xl"
+                    className="w-[100%]  rounded-tl-3xl rounded-br-3xl"
                     data-aos="fade-right"
                     data-aos-duration="2000"
                 />

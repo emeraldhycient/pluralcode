@@ -14,7 +14,7 @@ function CourseCard({ course }) {
             data-aos="fade-right"
             data-aos-duration="2000"
         >
-            {/* <div className="w-[90%] h-full" style={{ backgroundImage: `url(${videoPoster})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}>            </div> */}
+            {/* <div className="w-[100%] h-full" style={{ backgroundImage: `url(${videoPoster})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}>            </div> */}
             <div onClick={() => setismodalshowing((prev) => !prev)}>
                 {ismodalshowing ?
                     <VideoModal setismodalshowing={setismodalshowing} video_url={course.video_url} /> : ""}
@@ -22,7 +22,7 @@ function CourseCard({ course }) {
                     src={course.image ? course.image : data_analytics}
                     // src={"http://pluralcode.academy/assets/product_des.4ad681c3.jpg"}
                     alt="product"
-                    className="w-[90%]  rounded-tl-3xl rounded-br-3xl"
+                    className="w-[100%]  rounded-tl-3xl rounded-br-3xl"
                     data-aos="fade-right"
                     data-aos-duration="2000"
                 /></div>
