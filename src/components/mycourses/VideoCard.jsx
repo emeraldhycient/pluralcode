@@ -40,13 +40,13 @@ function VideoCard({ vid }) {
                 >
                     {vid?.video_title || "loading video title"}
                 </p>
-                <p
+                {/* <p
                     className="font-gilroyregular text-base  lg:text-left  font-light text-[#323232] mb-2"
                     data-aos="fade-right"
                     data-aos-duration="2000"
                 >
                     15mins
-                </p>
+                </p> */}
             </div>
         </div>
     );
