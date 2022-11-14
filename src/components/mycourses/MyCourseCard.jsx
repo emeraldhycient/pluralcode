@@ -51,7 +51,7 @@ function MyCourseCard({ course }) {
                     data-aos-duration="2000"
                 >
                     <Link to={`/student/mycourses/${course?.course_name}/${course?.id}`} className="flex items-center">
-                        Learn More
+                        Course details
                     </Link>
                 </button>
             </div>
