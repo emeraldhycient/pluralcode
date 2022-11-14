@@ -299,7 +299,7 @@ function Enrollment() {
                         <div className="md:flex mb-5">
                             <div className={`flex  mx-2 items-center `} onClick={() => setselectedPaymentmethod("card")}>
                                 <input type="radio" name="" id="" className='mr-2 text-amber-500' checked={selectedPaymentmethod === "card" ? true : false} />
-                                <label>credit card</label>
+                                <label>credit/debit card</label>
                             </div>
                             <div className={`flex  mx-2 items-center `} onClick={() => setselectedPaymentmethod("transfer")}>
                                 <input type="radio" name="" id="" className='mr-2 text-amber-500' checked={selectedPaymentmethod === "transfer" ? true : false} />
