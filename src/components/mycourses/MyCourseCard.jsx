@@ -42,7 +42,7 @@ function MyCourseCard({ course }) {
                 >
                     {showMore ? course?.course_description : `${course?.course_description.substring(0, 150)}`}
 
-                    <button className="text-amber-500 ml-2" onClick={() => setShowMore(!showMore)}>{showMore ? "Show less" : "Show more"}</button>
+                    {course?.course_description.length > 150 ? <button className="text-amber-500 ml-2" onClick={() => setShowMore(!showMore)}>{showMore ? "Show less" : "Show more"}</button> : ""}
                 </p>
 
                 <button

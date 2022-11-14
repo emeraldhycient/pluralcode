@@ -142,7 +142,7 @@ const ExclusiveCourseCard = (item) => {
                 >
                     {showMore ? item.item.description : `${item.item.description.substring(0, 150)}`}
 
-                    <button className="text-amber-500 ml-2" onClick={() => setShowMore(!showMore)}>{showMore ? "Show less" : "Show more"}</button>
+                    {item.item.description.length > 150 ? <button className="text-amber-500 ml-2" onClick={() => setShowMore(!showMore)}>{showMore ? "Show less" : "Show more"}</button> : ""}
 
                 </p>
                 <div className="w-fit mt-3" onClick={() => setisModalShowing(true)}>

@@ -85,7 +85,7 @@ const TvCard = ({ item }) => {
                     data-aos-duration="2000"
                 >
                     {showMore ? item.content_description : `${item.content_description.substring(0, 150)}`}
-                    <button className="text-amber-500 ml-2" onClick={() => setShowMore(!showMore)}>{showMore ? "Show less" : "Show more"}</button>
+                    {item.content_description.length > 150 ? <button className="text-amber-500 ml-2" onClick={() => setShowMore(!showMore)}>{showMore ? "Show less" : "Show more"}</button> : ""}
 
                 </p>
 
