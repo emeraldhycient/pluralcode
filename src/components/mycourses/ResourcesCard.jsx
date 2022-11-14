@@ -2,7 +2,7 @@ import React from 'react'
 
 function ResourcesCard({ resource }) {
     return (
-        <a href={`${resource?.course_docs}`} className="text-[#323232]">
+        <a href={`${resource?.course_docs}`} target="_blank" className="text-[#323232]">
             {/* <a href={`/student/docviewer/${resource?.course_docs_title}/${resource?.course_docs}`} className="text-[#323232]"> */}
             <div className='flex gap-4 my-2 border-b border-b-gray-300 px-5 py-3'>
                 <div className="col-span-1 text-right">
