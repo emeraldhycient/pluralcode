@@ -45,7 +45,7 @@ function CourseCard({ course }) {
                 >
                     {course.description}
                 </p>
-                <h5
+                {/* <h5
                     className="text-sm mb-3"
                     data-aos="fade-right"
                     data-aos-duration="2000"
@@ -57,11 +57,10 @@ function CourseCard({ course }) {
                     data-aos="fade-right"
                     data-aos-duration="2000"
                 >
-                    {/* {course.duration} */}
-                    Next Class Starts: July 2, 2022                </h5>
+                    Next Class Starts: July 2, 2022                </h5> */}
 
                 <button
-                    className="bg-amber-500 text-[12px] text-white px-8 py-2 rounded w-fit  lg:mx-0 lg:w-fit flex justify-center items-center"
+                    className="bg-amber-500 text-[12px] text-white px-8 py-2 rounded w-fit  lg:mx-0 lg:w-fit flex justify-center items-center mt-3"
                     data-aos="fade-right"
                     data-aos-duration="2000"
                 >
