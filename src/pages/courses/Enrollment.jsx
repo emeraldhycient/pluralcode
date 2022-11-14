@@ -406,7 +406,7 @@ function Enrollment() {
                             </div>
                             <div className="flex items-center mt-6" onClick={() => sethasAgreed((prev) => !prev)}>
                                 <input type="checkbox" className='rounded-[8px] mr-4 text-amber-500' name="" id="" checked={hasAgreed} />
-                                <p>By clicking on payment sent, you agree to our <a href="https://docs.google.com/document/d/1JQKbsYXrjyy3oxA3he2ErBc4BsDKYbRX_drhMdIRp24/edit?usp=sharing" target="_blank" className='text-blue-400'>students policy</a></p>
+                                <p>By clicking on payment sent, you agree to our <a href="https://pluralcode.academy/payment/terms.html" target="_blank" className='text-blue-400'>students policy</a></p>
                             </div>
                             {
                                 currentLocation.length > 0 && academicLevel.length > 0 && cohort.length > 0 && hasAgreed ?
