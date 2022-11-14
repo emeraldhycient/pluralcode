@@ -21,10 +21,11 @@ function Exclusive() {
             <div className='h-fit w-full  rounded-[8px] bg-transparent md:bg-white p-5 mb-4'>
                 <VideoContainer video_url={"https://res.cloudinary.com/gofitish/video/upload/v1663331212/videos/WhatsApp_Video_2022-09-16_at_1.17.41_PM_knyugc.mp4"} />
                 <h3 className='text-[26px] md:text-[32px] text-[#222057] mb-5'>PluralCode Exclusive</h3>
-                <p className='text-[16px] mb-2 text-[#323232]'>Data Analytics program provides a range of ​data and analytics​ training designed to help ​individuals as well as ​organisations​, ​enable new and existing internal resources through the use of key data science tools and platforms.
+                <p className='text-[16px] mb-2 text-[#323232]'>PluralCode exclusive program gives you access to a private tutor with quality one on one mentorship, fewer distractions, greater learning and focus.
                 </p>
+                <h4 className='mb-3 text-[18px] font-bold'> Get one on one mentorship.</h4>
                 <p className='text-[16px] mb-2 text-[#323232]'>
-                    The curriculum is robust and carefully​ designed to address the needs​ and deliver the basic requirements for ​any ​data scientists and big data analysts​ to make business impact
+                    This program gives you exclusive access to a mentor with a physical and virtual option to learn at your own pace. It’s a Flexible class model with hands on intensive learning, quality approach at your own pace. Perks of our exclusive program is more learning hours, question and answers sessions with few or no distractions. Location is not restricted to our learning centre, however exclusive program students who comes in to use our facility have full access to WiFi and a comfortable environment suitable for learning.
                 </p>
             </div>
             <div className='h-fit w-full  rounded-[8px] bg-white p-5 mt-8 md:mt-20'>
