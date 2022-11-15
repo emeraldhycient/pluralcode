@@ -19,7 +19,7 @@ function Sidebar() {
                 <img src={logo} className="h-[2rem] w-full hidden md:block mx-auto" alt="pluralcode logo" />
                 <div className='flex block md:hidden'>
                     <Dropdown
-                        label={<Avatar alt="User settings" img="https://flowbite.com/docs/images/people/profile-picture-5.jpg" rounded={true} />}
+                        label={<Avatar alt="User settings" img={`https://ui-avatars.com/api/?name=${user.name}`} rounded={true} />}
                         arrowIcon={false}
                         inline={true}
                     >
