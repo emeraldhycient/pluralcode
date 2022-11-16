@@ -1,13 +1,31 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Avatar, Dropdown } from "flowbite-react"
 import { GoSearch } from "react-icons/go"
 import message_question_icon from "../../assets/message_question_icon.svg"
 import { FaBell } from "react-icons/fa"
 import { getUser } from '../../services/storage/user'
+import axiosClient from '../../services/apiClient'
 
 function Header() {
 
     const user = JSON.parse(getUser());
+    const navigate = useNavigate()
+
+    const signOut = async () => {
+        if (
+            confirm("Are you sure you want to sign out?")
+        ) {
+            try {
+                const res = await axiosClient.post(`/student/logout`)
+                localStorage.clear()
+                sessionStorage.clear()
+                navigate('/login')
+            } catch (error) {
+                console.log(error)
+            }
+        }
+    }
 
     return (
         <div className='bg-white h-[4.5rem]  border-b border-[#EAEAEA]   justify-between items-center px-5 hidden md:flex'>
@@ -38,7 +56,7 @@ function Header() {
                         </span>
                     </Dropdown.Header>
                     <Dropdown.Divider />
-                    <Dropdown.Item>
+                    <Dropdown.Item onClick={signOut}>
                         Sign out
                     </Dropdown.Item>
                 </Dropdown>

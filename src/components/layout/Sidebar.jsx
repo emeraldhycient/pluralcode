@@ -6,12 +6,31 @@ import { Avatar, Dropdown } from "flowbite-react"
 import useNavToggle from '../../store/sidebartoggle'
 import close_icon from "../../assets/close_icon.svg"
 import { getUser } from '../../services/storage/user';
+import axiosClient from '../../services/apiClient'
+import { useNavigate } from 'react-router-dom'
 
 
 function Sidebar() {
     const toggleSideBar = useNavToggle((state) => state.toggle)
 
     const user = JSON.parse(getUser());
+    const navigate = useNavigate()
+
+    const signOut = async () => {
+        if (
+            confirm("Are you sure you want to sign out?")
+        ) {
+            try {
+                const res = await axiosClient.post(`/student/logout`)
+                localStorage.clear()
+                sessionStorage.clear()
+                navigate('/login')
+            } catch (error) {
+                console.log(error)
+            }
+        }
+    }
+
 
     return (
         <div className='bg-white h-screen md:h-full overflow-y-auto border-r border-[#EAEAEA] '>
@@ -32,7 +51,7 @@ function Sidebar() {
                             </span>
                         </Dropdown.Header>
                         <Dropdown.Divider />
-                        <Dropdown.Item>
+                        <Dropdown.Item onClick={signOut}>
                             Sign out
                         </Dropdown.Item>
                     </Dropdown>

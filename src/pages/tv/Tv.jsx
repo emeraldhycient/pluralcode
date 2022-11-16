@@ -21,33 +21,21 @@ function Tv() {
     const [isSearchloading, setisSearchloading] = useState(false)
 
 
-
     const getSeries = async () => {
         setloading(true)
         try {
             const res = await axiosClient.get(`/student/get_plc_tvcontent?page=${nextPage}`)
-            console.log(res)
-
             if (series.length > 0) {
                 setseries([...series, ...res.data.data])
             } else {
                 setseries(res.data.data)
             }
-
-            // setnextPage(nextPage + 1)
-            console.log(nextPage)
-
         } catch (error) {
             console.log(error.response)
         }
         setloading(false)
 
     }
-
-    // useEffect(() => {
-
-    //     getSeries()
-    // }, [nextPage])
 
     const searchTv = async () => {
         setisSearchloading(true)
