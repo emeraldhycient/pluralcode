@@ -1,12 +1,13 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { Spinner } from 'flowbite-react'
 import DashboardLayout from '../../components/layout/DashboardLayout'
 import data_analytics from "../../assets/data_analytics.svg"
+import { GoSearch } from "react-icons/go"
 
 import axiosClient from '../../services/apiClient'
 import Loader from '../../components/Loader'
-import InfiniteScroll from 'react-infinite-scroller';
+
 
 
 function Tv() {
@@ -16,15 +17,25 @@ function Tv() {
 
     const [nextPage, setnextPage] = useState(1)
 
+    const [searchQuery, setsearchQuery] = useState("")
+    const [isSearchloading, setisSearchloading] = useState(false)
+
+
+
     const getSeries = async () => {
         setloading(true)
         try {
             const res = await axiosClient.get(`/student/get_plc_tvcontent?page=${nextPage}`)
             console.log(res)
 
-            setseries(res.data.data)
+            if (series.length > 0) {
+                setseries([...series, ...res.data.data])
+            } else {
+                setseries(res.data.data)
+            }
 
-            setnextPage(nextPage + 1)
+            // setnextPage(nextPage + 1)
+            console.log(nextPage)
 
         } catch (error) {
             console.log(error.response)
@@ -38,37 +49,64 @@ function Tv() {
     //     getSeries()
     // }, [nextPage])
 
+    const searchTv = async () => {
+        setisSearchloading(true)
+        try {
+            const formdata = new FormData()
+            formdata.append("search_title", searchQuery)
+            const res = await axiosClient.post(`/student/search_pluralcode_tv`, formdata)
+            console.log('res', res)
+
+            setseries(res.data.data)
+
+        } catch (error) {
+            console.error(error.response)
+        }
+        setisSearchloading(false)
+
+    }
+
+
+
+    useEffect(() => {
+        getSeries()
+    }, [nextPage])
+
+
+    // live saver for infinite scroll
+    const handleScrollx = (e) => {
+        const bottom = Math.abs(e.target.scrollHeight - e.target.clientHeight - e.target.scrollTop) < 1;
+        if (bottom) { setnextPage(nextPage + 1) }
+    }
 
     return (
         <DashboardLayout>
-            {/* {
-                    !loading ?
+            <div className="h-[2.4rem] bg-gray-200 border-2 border-gray-300 w-full rounded flex items-center ml-auto mr-[30px]">
+                {
+                    isSearchloading ? <Spinner
+                        color="warning"
+                        aria-label="Warning spinner example"
+                    />
+                        :
+                        <GoSearch size={20} className="text-gray-400 ml-2" onClick={() => searchTv()} />
+                }
+                <input type="text" value={searchQuery} onChange={(text) => setsearchQuery(text.target.value)} className="border-0 border-transparent focus:border-transparent focus:ring-0 bg-transparent h-[2.4rem] w-full text-gray-500" />
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:pr-6 h-screen overflow-scroll" onScroll={handleScrollx}>
 
-                        series.length > 0 ?
-                            series.map((item) => (
-                                <TvCard item={item} />
-                            )) : "no data"
+                {
 
-                        : <Loader />
-                } */}
-
-            <InfiniteScroll
-                pageStart={nextPage}
-                loadMore={getSeries}
-                hasMore={true || false}
-                loader={<Loader />}
-            >
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:pr-6">
-                    {
-
-                        series.length > 0 ?
-                            series.map((item) => (
-                                <TvCard item={item} />
-                            )) : "no data"}
-                </div>
-            </InfiniteScroll>
-
-
+                    series.length > 0 ?
+                        series.map((item) => (
+                            <TvCard item={item} />
+                        )) : !loading ?
+                            series.length > 0 ?
+                                series.map((item) => (
+                                    <TvCard item={item} />
+                                )) : "no Tv content found" :
+                            <Loader />
+                }
+            </div>
         </DashboardLayout>
     )
 }

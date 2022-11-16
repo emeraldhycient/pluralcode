@@ -12,7 +12,7 @@ function Header() {
     return (
         <div className='bg-white h-[4.5rem]  border-b border-[#EAEAEA]   justify-between items-center px-5 hidden md:flex'>
 
-            <div className="h-[2.4rem] bg-[#F5F6FA] w-96 rounded flex items-center">
+            <div className="h-[2.4rem] bg-[#F5F6FA] w-96 rounded flex items-center invisible">
                 <GoSearch size={20} className="text-gray-400 ml-2" />
                 <input type="text" className="border-0 border-transparent focus:border-transparent focus:ring-0 bg-transparent h-[2.4rem] w-full text-gray-500" />
             </div>
