@@ -6,35 +6,42 @@ import data_analytics from "../../assets/data_analytics.svg"
 
 import axiosClient from '../../services/apiClient'
 import Loader from '../../components/Loader'
+import InfiniteScroll from 'react-infinite-scroller';
+
 
 function Tv() {
 
     const [series, setseries] = useState([]);
     const [loading, setloading] = useState(false)
 
-    useEffect(() => {
-        const getSeries = async () => {
-            setloading(true)
-            try {
-                const res = await axiosClient.get('/student/get_plc_tvcontent')
-                console.log(res)
+    const [nextPage, setnextPage] = useState(1)
 
-                setseries(res.data)
+    const getSeries = async () => {
+        setloading(true)
+        try {
+            const res = await axiosClient.get(`/student/get_plc_tvcontent?page=${nextPage}`)
+            console.log(res)
 
-            } catch (error) {
-                console.log(error.response)
-            }
-            setloading(false)
+            setseries(res.data.data)
 
+            setnextPage(nextPage + 1)
+
+        } catch (error) {
+            console.log(error.response)
         }
-        getSeries()
-    }, [])
+        setloading(false)
+
+    }
+
+    // useEffect(() => {
+
+    //     getSeries()
+    // }, [nextPage])
 
 
     return (
         <DashboardLayout>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:pr-6">
-                {
+            {/* {
                     !loading ?
 
                         series.length > 0 ?
@@ -43,8 +50,25 @@ function Tv() {
                             )) : "no data"
 
                         : <Loader />
-                }
-            </div>
+                } */}
+
+            <InfiniteScroll
+                pageStart={nextPage}
+                loadMore={getSeries}
+                hasMore={true || false}
+                loader={<Loader />}
+            >
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:pr-6">
+                    {
+
+                        series.length > 0 ?
+                            series.map((item) => (
+                                <TvCard item={item} />
+                            )) : "no data"}
+                </div>
+            </InfiniteScroll>
+
+
         </DashboardLayout>
     )
 }

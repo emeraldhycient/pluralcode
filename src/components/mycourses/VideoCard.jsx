@@ -18,19 +18,20 @@ function VideoCard({ vid }) {
         >
 
             <div >
-                <iframe src={vid ? vid.video_link : data_analytics}
+                {/* <iframe src={vid ? vid.video_link : data_analytics}
                     className="mx-auto w-[100%]  rounded-tl-3xl rounded-br-3xl"
-                    allowFullScreen="true" webkitallowfullscreen="true" sandbox="allow-same-origin allow-scripts"></iframe>
+                    allowFullScreen="true" webkitallowfullscreen="true" sandbox="allow-same-origin allow-scripts"></iframe> */}
 
-                {/* <video
-                    src={vid?.image ? vid.image : data_analytics}
+                <video
+                    src={vid?.video_link ? vid.video_link : data_analytics}
                     // src={"http://pluralcode.academy/assets/product_des.4ad681c3.jpg"}
                     alt="product"
+                    poster={vid?.video_thumbnail}
                     className="w-[90%]  rounded-tl-3xl rounded-br-3xl"
                     controls
                     data-aos="fade-right"
                     data-aos-duration="2000"
-                /> */}
+                />
             </div>
             <div className="pb-4 flex flex-col justify-center mt-4">
                 <p

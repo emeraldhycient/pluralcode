@@ -37,9 +37,10 @@ function Header() {
                             {user.email}
                         </span>
                     </Dropdown.Header>
-
                     <Dropdown.Divider />
-
+                    <Dropdown.Item>
+                        Sign out
+                    </Dropdown.Item>
                 </Dropdown>
                 <div className=" font-medium dark:text-white ml-2">
                     <div>
