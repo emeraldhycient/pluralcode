@@ -69,7 +69,7 @@ function Tv() {
 
     return (
         <DashboardLayout>
-            <div className="h-[2.4rem] bg-gray-200 border-2 border-gray-300 w-full rounded flex items-center ml-auto mr-[30px]">
+            <div className="h-[2.4rem] bg-gray-200 border-2 border-gray-300 w-[60%] md:w-[30%] rounded flex items-center ml-auto mr-[30px]">
                 {
                     isSearchloading ? <Spinner
                         color="warning"
