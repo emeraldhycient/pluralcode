@@ -59,7 +59,7 @@ function CourseDetail() {
                     >
                         {course || "Product Design 2"}
                     </h1>
-                    <div className="flex mb-3">
+                    <div className="flex mb-3 invisible">
                         <div className="h-[2.8rem] bg-[#F5F6FA] w-72 rounded flex items-center rounded-[8px]">
                             <input type="text" placeholder='Seacrch by topic' className="border-0 border-transparent focus:border-transparent focus:ring-0 bg-transparent h-[2.8rem] w-full text-gray-500" />
                         </div>
