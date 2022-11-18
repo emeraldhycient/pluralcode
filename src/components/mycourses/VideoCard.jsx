@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import videoPoster from "../../assets/videoPoster.png"
 // import VideoModal from "./VideoModal";
 import data_analytics from "../../assets/data_analytics.svg"
+import VideoModal from "../common/VideoModal";
 
 function VideoCard({ vid }) {
 
@@ -22,7 +23,7 @@ function VideoCard({ vid }) {
                     className="mx-auto w-[100%]  rounded-tl-3xl rounded-br-3xl"
                     allowFullScreen="true" webkitallowfullscreen="true" sandbox="allow-same-origin allow-scripts"></iframe> */}
 
-                <video
+                {/* <video
                     src={vid?.video_link ? vid.video_link : data_analytics}
                     // src={"http://pluralcode.academy/assets/product_des.4ad681c3.jpg"}
                     alt="product"
@@ -31,7 +32,13 @@ function VideoCard({ vid }) {
                     controls
                     data-aos="fade-right"
                     data-aos-duration="2000"
-                />
+                /> */}
+                {
+                    ismodalshowing ?
+                        <VideoModal video_url={vid?.video_link} setismodalshowing={setismodalshowing} video_thumbnail={vid?.video_thumbnail} /> :
+                        <img src={vid?.video_thumbnail} className="w-[90%]  rounded-tl-3xl rounded-br-3xl" onClick={() => setismodalshowing(true)}
+                            alt="" />
+                }
             </div>
             <div className="pb-4 flex flex-col justify-center mt-4">
                 <p
