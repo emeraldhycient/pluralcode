@@ -1,9 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import videoPoster from "../../assets/videoPoster.png"
-// import VideoModal from "./VideoModal";
-import data_analytics from "../../assets/data_analytics.svg"
 import VideoModal from "../common/VideoModal";
+import { GrPlay } from "react-icons/gr";
 
 function VideoCard({ vid }) {
 
@@ -36,8 +33,14 @@ function VideoCard({ vid }) {
                 {
                     ismodalshowing ?
                         <VideoModal video_url={vid?.video_link} setismodalshowing={setismodalshowing} video_thumbnail={vid?.video_thumbnail} /> :
-                        <img src={vid?.video_thumbnail} className="w-[90%]  rounded-tl-3xl rounded-br-3xl" onClick={() => setismodalshowing(true)}
-                            alt="" />
+                        // center play icon on video
+                        <div className="relative">
+                            <img src={vid?.video_thumbnail} className="w-[90%]  rounded-tl-3xl rounded-br-3xl" onClick={() => setismodalshowing(true)}
+                                alt="" />
+                            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                <GrPlay className="text-5xl text-white" onClick={() => setismodalshowing(true)} />
+                            </div>
+                        </div>
                 }
             </div>
             <div className="pb-4 flex flex-col justify-center mt-4">
