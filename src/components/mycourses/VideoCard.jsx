@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import VideoModal from "../common/VideoModal";
-import { GrPlay } from "react-icons/gr";
+import { FaPlay } from "react-icons/fa";
 
 function VideoCard({ vid }) {
 
@@ -38,7 +38,7 @@ function VideoCard({ vid }) {
                             <img src={vid?.video_thumbnail} className="w-[90%]  rounded-tl-3xl rounded-br-3xl" onClick={() => setismodalshowing(true)}
                                 alt="" />
                             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                <GrPlay className="text-5xl text-white" onClick={() => setismodalshowing(true)} />
+                                <FaPlay className="text-5xl text-white" onClick={() => setismodalshowing(true)} />
                             </div>
                         </div>
                 }
