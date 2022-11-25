@@ -1,8 +1,8 @@
 import axios from 'axios'
-import {getToken} from './storage/token'
+import { getToken } from './storage/token'
 
 const axiosClient = axios.create({
-    baseURL: 'https://pluralcode.academy/pluralcode_payments/api', 
+    baseURL: 'https://pluralcode.institute/pluralcode_apis/api/',
     headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json'
@@ -11,7 +11,7 @@ const axiosClient = axios.create({
 
 axiosClient.interceptors.request.use(
     async (config) => {
-        const token =  getToken()
+        const token = getToken()
 
         if (token) config.headers.Authorization = `Bearer ${token}`
 
