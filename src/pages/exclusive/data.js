@@ -47,6 +47,18 @@ const ExclusiveCourses = [
         title: "DevOps Engineering",
         description: "Become an expert in the principles of continuous development and deployment, automation of configuration management, inter-team collaboration and IT service agility using DevOps tools such as Git, Docker, Jenkins and more",
         image: "https://i.im.ge/2022/11/05/2vGZML.Group-50-6.png"
+    },
+    {
+        id: 9,
+        title: "Product Marketing",
+        description: "Learn to use popular Cloud platforms, understand Cloud computing concepts and technologies apply virtualization and its use in Infrastructure development.",
+        image: "https://i.im.ge/2022/11/05/2vGRgc.Group-50-5.png"
+    },
+    {
+        id: 10,
+        title: "Data Engineering ",
+        description: "Become an expert in the principles of continuous development and deployment, automation of configuration management, inter-team collaboration and IT service agility using DevOps tools such as Git, Docker, Jenkins and more",
+        image: "https://i.im.ge/2022/11/05/2vGZML.Group-50-6.png"
     }
 ]
 

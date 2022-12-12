@@ -27,6 +27,8 @@ import Exclusive from "./pages/exclusive/Exclusive";
 import Tv from "./pages/tv/Tv";
 import ReactNotificationComponent from "./components/common/ReactNotificationComponent";
 import Profile from "./pages/profile/Profile";
+import DataEngineering from "./pages/courses/DataEngineering";
+import ProductMarketing from "./pages/courses/ProductMarketing";
 
 
 function App() {
@@ -89,8 +91,10 @@ function App() {
           <Route path="/student/dashboard/:school" element={<Home />} />
           <Route path="/student/courses/product" element={<Product />} />
           <Route path="/student/courses/product-management" element={<ProductManagement />} />
+          <Route path="/student/courses/product-marketing" element={<ProductMarketing />} />
           <Route path="/student/courses/data-analytics" element={<DataAnalytics />} />
           <Route path="/student/courses/data-science" element={<DataScience />} />
+          <Route path="/student/courses/data-engineering" element={<DataEngineering />} />
           <Route path="/student/courses/software" element={<Software />} />
           <Route path="/student/courses/cloud" element={<Cloud />} />
           <Route path="/student/courses/enrollment/:school/:course" element={<Enrollment />} />

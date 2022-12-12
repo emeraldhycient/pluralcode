@@ -15,7 +15,15 @@ const schoolsdata = {
             duration: "20weeks",
             video_url: "https://res.cloudinary.com/gofitish/video/upload/v1659095398/videos/Plural_Code_-_Our_Instructor_t5qtrr.mp4",
             link: "/student/courses/data-science"
-        }
+        },
+        {
+            image: "",
+            title: "Data Engineering",
+            description: `Data engineering allows you to master the practice of designing and building systems for collecting , storing and analyzing data at scale.`,
+            duration: "28 weeks",
+            video_url: "",
+            link: "/student/courses/data-engineering"
+        },
     ],
     product: [
         {
@@ -33,6 +41,14 @@ const schoolsdata = {
             duration: "8 weeks",
             video_url: "https://res.cloudinary.com/gofitish/video/upload/v1659440602/videos/Product_Management_IG_h9ahuc.mp4",
             link: "/student/courses/product-management"
+        },
+        {
+            image: "",
+            title: "Product Marketing ",
+            description: `Become a Product marketing expert in this 8 weeks course. Learn and understand the principles of marketing as a tool in product management.`,
+            duration: "8 weeks",
+            video_url: "https://res.cloudinary.com/gofitish/video/upload/v1659440602/videos/Product_Management_IG_h9ahuc.mp4",
+            link: "/student/courses/product-marketing"
         },
     ],
     cloud: [
@@ -63,6 +79,9 @@ const schoolsdata = {
             link: "/student/courses/software"
         }
     ],
+    dataEngineering: [
+
+    ]
 };
 
 
