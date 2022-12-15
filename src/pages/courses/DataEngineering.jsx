@@ -16,7 +16,7 @@ function DataEngineering() {
 
                 </p>
             </CourseTitle>
-            <VideoContainer />
+            <VideoContainer video_url={"https://res.cloudinary.com/gofitish/video/upload/v1671103651/videos/data-engineering_2_xfpwkb.mp4"} />
             <ExclsuiveCard link={"/student/exclusive"}>
                 <p className='text-[16px] mb-2 text-[#323232]'>
                     PluralCode exclusive program gives you access to a private tutor with quality one on one mentorship, fewer distractions, greater learning and focus.

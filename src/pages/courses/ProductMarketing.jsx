@@ -15,7 +15,7 @@ function ProductMarketing() {
                     Product marketing is the process of bringing a product to market, promoting it, and selling it to a customer. Learn how to understand a product’s target audience using strategic positioning and messaging to boost revenue and demand for the product.
                 </p>
             </CourseTitle>
-            <VideoContainer />
+            <VideoContainer video_url={"https://res.cloudinary.com/gofitish/video/upload/v1671103652/videos/product-marketing_1_u8a597.mp4"} />
             <ExclsuiveCard link={"/student/exclusive"}>
                 <p className='text-[16px] mb-2 text-[#323232]'>
                     PluralCode exclusive program gives you access to a private tutor with quality one on one mentorship, fewer distractions, greater learning and focus.
