@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-family: 'Gilroy-Heavy', sans-serif;
+    font-family: 'Gilroy-Light', sans-serif;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-family: 'Gilroy-Regular', sans-serif;
+}
+
+
+/*@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('./assets/gilroy/Gilroy-SemiBold.ttf') format('truetype');
+    font-family: 'Gilroy-medium';
+    src: url('./assets/gilroy/Gilroy-Medium.ttf') format('truetype');
+    font-family: 'Gilroy-regular';
+    src: url('./assets/gilroy/Gilroy-Regular.ttf') format('truetype');
+}*/
+
+.header2 div[data-testid="tooltip-target"] {
+    color: white
+}
+
+#visit_hero_bg {
+    background-image: url(./assets/images/visit_bg.png);
+    background-repeat: no-repeat;
+}
+
+.press_shadow {
+    box-shadow: 0px -7.42184px 16.7347px -1.85539px rgba(16, 24, 40, 0.05), 0px 2.96863px 67.7755px -2.22647px rgba(16, 24, 40, 0.05);
+}
+
+
+
+#accredition {
+    box-shadow: 0px 0px 42px rgba(0, 0, 0, 0.32);
+    z-index: 20;
+}
+
+#testimonies {
+    z-index: -2000;
+}
+
+#why-certificate-course {
+    background-image: url(https://i.im.ge/2023/02/08/amfQPz.image-7.png);
+}
+#Howitworksdiploma {
+    background-image: url(https://i.im.ge/2023/03/03/7hGcUy.image-108.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#howtoenrollimage {
+    background-image: url(https://i.im.ge/2023/03/03/7iXEO6.image-109.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.testimage {
+height: 300px;
+width: 100%;
+justify-content: center;
+align-items: center;
+}
+
+.testimages{
+    height: 300px;
+    width: 100%;
+}
+
+/* .testimage1{
+    height: 320px;
+    margin-top: 30px;
+    width: 100%;
+} */
