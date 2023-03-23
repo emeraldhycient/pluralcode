@@ -11,7 +11,6 @@ function CourseCard({ course }) {
   return (
     <a
       key={title}
-      href={link ? link : "https://wa.me/2347083153185?text=I'm%20interested%20in%20your%20courses"}
       className="bg-white press_shadow  rounded-tl-3xl rounded-br-3xl p-6"
       data-aos="fade-right"
       data-aos-duration="2000"

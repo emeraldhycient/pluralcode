@@ -115,7 +115,7 @@ function App() {
         <Route path="/mentor" element={<BecomeMentor />} />
         <Route path="/visit" element={<Visit />} />
         <Route path="/tuition-fees" element={<Fees />} />
-        <Route path="/scholarship" element={<Ambassador />} />
+        <Route path="/rasheedat-scholarship" element={<Ambassador />} />
       </Routes>
     </BrowserRouter>
   );

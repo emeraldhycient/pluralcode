@@ -66,7 +66,7 @@ function FormSection() {
 
 
   return (
-    <section className=" py-10 lg:py-20 w-full bg-[#FFFDFA]">
+    <section id="formsection" className=" py-10 lg:py-20 w-full bg-[#FFFDFA]">
       <ToastContainer
         position="top-right"
         autoClose={5000}
@@ -164,11 +164,8 @@ function FormSection() {
                 className="form-select block w-full mt-1 rounded-lg border border-gray-300 mb-2 text-gray-400"
               >
                 <option>Select Cohort</option>
-                {
-                  cohorts.map((cohort, index) => (
-                    <option value={cohort.course_category_name} key={index}>{cohort.course_category_name}</option>
-                  ))
-                }
+                    <option value={"Product Design (UI / UX)"}>{"Product Design (UI / UX)"}</option>
+                    <option value={"Software Dev (Front-End)"}>{"Software Dev (Front-End)"}</option>
               </select>
             </div>
             <div className="flex justify-between w-full">
