@@ -175,7 +175,7 @@ function FormSection() {
               </div>
               <TextInput
                 id="city"
-                placeholder="citys"
+                placeholder="city"
                 value={city}
                 onChange={(e) => setcity(e.target.value)}
                 required={true}
@@ -199,7 +199,7 @@ function FormSection() {
               </div>
               <TextInput
                 id="country"
-                placeholder="countrys"
+                placeholder="country"
                 value={country}
                 onChange={(e) => setcountry(e.target.value)}
                 required={true}
