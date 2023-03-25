@@ -219,14 +219,13 @@ function FormSection() {
             </div>
             <div className="mt-5">
               <div className="mb-2 block">
-                <Label htmlFor="video_url" value="video_url" />
+                <Label htmlFor="video_url" value="applicants are required to post a short video on Instagram telling us who they are, their background and why they should be chosen for this scholarship. Tag @pluralcode_academy and @rasheedatt10 and use the hashtag #rasheedatxpluralcode *  *Once done, copy the video link and paste in the box below" />
               </div>
               <TextInput
                 id="video_url"
-                placeholder="video_urls"
+                placeholder="Paste video link here"
                 value={video_url}
                 onChange={(e) => setvideo_url(e.target.value)}
-                required={true}
               />
             </div>
             <div className="w-full mt-12">
