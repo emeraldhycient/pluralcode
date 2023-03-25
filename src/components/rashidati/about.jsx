@@ -8,7 +8,7 @@ function About() {
         <section className='py-24 md:py-36'>
             <center data-aos="zoom-in-up pt-[30px]" data-aos-duration="1200">
                 <h1 className="text-3xl md:text-[44px] font-bold  text-[#222057] font-gilroy text-center w-full align-left mb-10 md:mb-20 leading-snug	">
-                    About Rasheedat 
+                    About Rasheedat
                 </h1>
             </center>
             <div
@@ -22,17 +22,12 @@ function About() {
                     <h1 className="text-[28px] font-semibold text-[#222057] font-gilroymedium text-center md:text-left w-full align-left  mb-4 leading-snug	">
                         About Rasheedat
                     </h1>
+                    <p className="font-gilroyregular text-[16px] font-extralight text-[#232323] mb-2 text-center md:text-left">
+                        Rasheedat Ajibade is a 23-year-old  professional female footballer  from Nigeria, currently signed with Atletico De Madrid Femenino (Spain) and the Nigerian National Team(Super Falcons).
+                    </p>
                     <p className="font-gilroyregular text-[16px] font-extralight text-[#232323] mb-8 text-center md:text-left">
-Rasheedat Ajibade is a 23-year-old  professional female footballer  from Nigeria, currently signed with Atletico De Madrid Femenino (Spain) and the Nigerian National Team(Super Falcons).                     </p>
-                    {/* <div className="text-center md:text-left hidden md:block">
-                        <button className="bg-amber-500 text-[12px] text-white px-8 py-2 rounded  lg:w-fit flex justify-center items-center">
-                            <a
-                                href="https://drive.google.com/file/d/1niU2GVqP4KODyePPlb6k6JxDGnFT1L96/view?usp=sharing" target={"_blank"} className="flex items-center"
-                            >
-                                Download Brochure
-                            </a>
-                        </button>
-                    </div> */}
+                        Nicknamed "RASH", a shortened form of her first name, and fondly called "The Girl With The Blue Hair", an ode to her bright-blue hairstyle which she dons whenever she takes onto the field.”                    </p>
+
                 </div>
 
                 <div
