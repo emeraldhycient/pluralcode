@@ -163,7 +163,7 @@ function FormSection() {
               </div>
               <TextInput
                 id="phone"
-                placeholder="+2347088639675"
+                placeholder="male or female "
                 value={gender}
                 onChange={(e) => setgender(e.target.value)}
                 required={true}

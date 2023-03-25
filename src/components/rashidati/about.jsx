@@ -26,7 +26,7 @@ function About() {
                         Rasheedat Ajibade is a 23-year-old  professional female footballer  from Nigeria, currently signed with Atletico De Madrid Femenino (Spain) and the Nigerian National Team(Super Falcons).
                     </p>
                     <p className="font-gilroyregular text-[16px] font-extralight text-[#232323] mb-8 text-center md:text-left">
-                        Nicknamed "RASH", a shortened form of her first name, and fondly called "The Girl With The Blue Hair", an ode to her bright-blue hairstyle which she dons whenever she takes onto the field.”                    </p>
+                        Nicknamed "RASH", a shortened form of her first name, and fondly called "The Girl With The Blue Hair", an ode to her bright-blue hairstyle which she dons whenever she takes onto the field.                   </p>
 
                 </div>
 
