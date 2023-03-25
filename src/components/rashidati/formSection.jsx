@@ -13,14 +13,16 @@ function FormSection() {
   const [name, setname] = useState("");
   const [email, setemail] = useState("");
   const [loading, setloading] = useState(false);
-  const [cohorts, setcohorts] = useState([])
-  const [cohort, setcohort] = useState("")
-  const [date, setdate] = useState("")
-  const [time, settime] = useState("")
+  const [city, setcity] = useState([])
+  const [gender, setgender] = useState("")
+  const [state, setstate] = useState("")
+  const [country, setcountry] = useState("")
   const [phone, setphone] = useState("")
+  const [address, setaddress] = useState("")
+  const [video_url, setvideo_url] = useState("")
 
   const notifySuccess = () =>
-    toast.success("visit booked successfully ☺️!", {
+    toast.success("registration successful ☺️!", {
       position: "top-right",
       autoClose: 5000,
       hideProgressBar: false,
@@ -35,15 +37,17 @@ function FormSection() {
     setloading(true);
 
     const formdata = new FormData();
-    formdata.append("name", name);
+    formdata.append("full_name", name);
     formdata.append("email", email);
-    formdata.append("course", cohort);
-    formdata.append("date", date);
-    formdata.append("time", time);
+    formdata.append("gender", gender);
+    formdata.append("state", state);
+    formdata.append("country", country);
+    formdata.append("city", city);
+    formdata.append("address", address);
     formdata.append("phone_number", phone);
+    formdata.append("video_url", video_url);
 
-
-    const response = await axios.post(`${API_URL}book_a_visit`, formdata);
+    const response = await axios.post(`${API_URL}scholarship_registeration`, formdata);
     // console.log(response);
     if (response.status === 200) {
       setloading(false);
@@ -51,17 +55,17 @@ function FormSection() {
     }
   };
 
-  useEffect(() => {
-    (async () => {
-      try {
-        const res = await axios.get(`${API_URL}get_cohort_list`)
-        console.log(res.data)
-        setcohorts(res.data)
-      } catch (error) {
-        console.log(error)
-      }
-    })()
-  }, [])
+  // useEffect(() => {
+  //   (async () => {
+  //     try {
+  //       const res = await axios.get(`${API_URL}get_cohort_list`)
+  //       console.log(res.data)
+  //       setcohorts(res.data)
+  //     } catch (error) {
+  //       console.log(error)
+  //     }
+  //   })()
+  // }, [])
 
 
 
@@ -97,10 +101,10 @@ function FormSection() {
               These are the things required of you before filling this form
             </p>
             <p className="font-gilroyregular text-[14px] font-extralight mb-3  mx-auto">
-             1) A Working Laptop 
+              1) A Working Laptop
             </p>
             <p className="font-gilroyregular text-[14px] font-extralight mb-3  mx-auto">
-              2) Basic Knowledge of Computer Science 
+              2) Basic Knowledge of Computer Science
             </p>
             <p className="font-gilroyregular text-[14px] font-extralight mb-3  mx-auto">
               3) A Great Story
@@ -155,64 +159,76 @@ function FormSection() {
             </div>
             <div className="mt-5">
               <div className="mb-2 block">
-                <Label htmlFor="cohort" value="Cohorts" />
+                <Label className="text-gray-100" htmlFor="gender" value="gender" />
               </div>
-              <select
-                id="cohort"
-                value={cohort}
-                onChange={(e) => setcohort(e.target.value)}
-                className="form-select block w-full mt-1 rounded-lg border border-gray-300 mb-2 text-gray-400"
-              >
-                <option>Select Cohort</option>
-                    <option value={"Product Design (UI / UX)"}>{"Product Design (UI / UX)"}</option>
-                    <option value={"Software Dev (Front-End)"}>{"Software Dev (Front-End)"}</option>
-              </select>
+              <TextInput
+                id="phone"
+                placeholder="+2347088639675"
+                value={gender}
+                onChange={(e) => setgender(e.target.value)}
+                required={true}
+              />
             </div>
-            <div className="flex justify-between w-full">
-              <div className="mt-5 w-[47%]">
-                <div className="mb-2 block">
-                  <Label htmlFor="date" value="Day" />
-                </div>
-                <select
-                  id="date"
-                  value={date}
-                  onChange={(e) => setdate(e.target.value)}
-                  className="form-select block w-full mt-1 rounded-lg border border-gray-300 mb-2 text-gray-400"
-                >
-                  <option>Select Day of the week</option>
-                  <option value={"monday"}>Monday</option>
-                  <option value={"Tuesday"}>Tuesday</option>
-                  <option value={"Wednesday"}>Wednesday</option>
-                  <option value={"Thursday"}>Thursday</option>
-                  <option value={"Friday"}>Friday</option>
-                  <option value={"Saturday"}>Saturday</option>
-                  <option value={"Sunday"}>Sunday</option>
-                </select>
-
+            <div className="mt-5">
+              <div className="mb-2 block">
+                <Label htmlFor="city" value="city" />
               </div>
-              <div className="mt-5 w-[47%]">
-                <div className="mb-2 block">
-                  <Label htmlFor="time" value="time" />
-                </div>
-                <select
-                  id="time"
-                  value={time}
-                  onChange={(e) => settime(e.target.value)}
-                  className="form-select block w-full mt-1 rounded-lg border border-gray-300 mb-2 text-gray-400"
-                >
-                  <option>Select time</option>
-                  <option value={"9:00am"}> 9:00am</option>
-                  <option value={" 10:00am"}> 10:00am</option>
-                  <option value={"  11:00am"}>  11:00am</option>
-                  <option value={" 12:00pm"}> 12:00pm</option>
-                  <option value={"1:00pm"}>1:00pm</option>
-                  <option value={"2:00pm"}>  2:00pm</option>
-                  <option value={" 3:00pm"}> 3:00pm</option>
-                  <option value={"4:00pm"}>4:00pm</option>
-                </select>
-              </div>
+              <TextInput
+                id="city"
+                placeholder="citys"
+                value={city}
+                onChange={(e) => setcity(e.target.value)}
+                required={true}
+              />
             </div>
-
+            <div className="mt-5">
+              <div className="mb-2 block">
+                <Label htmlFor="state" value="state" />
+              </div>
+              <TextInput
+                id="state"
+                placeholder="states"
+                value={state}
+                onChange={(e) => setstate(e.target.value)}
+                required={true}
+              />
+            </div>
+            <div className="mt-5">
+              <div className="mb-2 block">
+                <Label htmlFor="country" value="country" />
+              </div>
+              <TextInput
+                id="country"
+                placeholder="countrys"
+                value={country}
+                onChange={(e) => setcountry(e.target.value)}
+                required={true}
+              />
+            </div>
+            <div className="mt-5">
+              <div className="mb-2 block">
+                <Label htmlFor="address" value="address" />
+              </div>
+              <TextInput
+                id="address"
+                placeholder="addresss"
+                value={address}
+                onChange={(e) => setaddress(e.target.value)}
+                required={true}
+              />
+            </div>
+            <div className="mt-5">
+              <div className="mb-2 block">
+                <Label htmlFor="video_url" value="video_url" />
+              </div>
+              <TextInput
+                id="video_url"
+                placeholder="video_urls"
+                value={video_url}
+                onChange={(e) => setvideo_url(e.target.value)}
+                required={true}
+              />
+            </div>
             <div className="w-full mt-12">
               <button
                 type="submit"
