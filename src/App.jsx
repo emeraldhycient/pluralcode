@@ -35,6 +35,7 @@ import Home3 from "./pages/Home3";
 import Fees from "./pages/tuition/Fees";
 import Agile_Product_management from "./pages/agile/Product_management";
 import Ambassador from "./pages/rashidat/ambassador";
+import AdmissionForm from "./pages/AdmissionForm";
 
 function App() {
   useEffect(() => {
@@ -116,6 +117,7 @@ function App() {
         <Route path="/visit" element={<Visit />} />
         <Route path="/tuition-fees" element={<Fees />} />
         <Route path="/rasheedat-scholarship" element={<Ambassador />} />
+        <Route path="/admission" element={<AdmissionForm />} />
       </Routes>
     </BrowserRouter>
   );
