@@ -148,7 +148,7 @@ function AdmissionForm() {
                                 required={true}
                             />
                         </div>
-                        <div className="mt-5">
+                        {/* <div className="mt-5">
                             <div className="mb-2 block">
                                 <Label className="text-gray-100" htmlFor="gender" value="gender" />
                             </div>
@@ -159,7 +159,7 @@ function AdmissionForm() {
                                 onChange={(e) => setgender(e.target.value)}
                                 required={true}
                             />
-                        </div>
+                        </div> */}
                         <div className="mt-5">
                             <div className="mb-2 block">
                                 <Label htmlFor="city" value="city" />
@@ -208,17 +208,53 @@ function AdmissionForm() {
                                 required={true}
                             />
                         </div>
-                        <div className="mt-5">
+                        <h1
+                            className="text-medium md:text-xl font-bold  font-gilroy text-left  text-[#222057] my-6 lg:leading-tight	"
+                            data-aos="fade-right"
+                            data-aos-duration="2000"
+                        >
+                            Add Reference 
+                        </h1>
+                        
+                      
+                        <div>
                             <div className="mb-2 block">
-                                <Label htmlFor="video_url" value="applicants are required to post a short video on Instagram telling us who they are, their background and why they should be chosen for this scholarship. Tag @pluralcode_academy and @rasheedatt10 and use the hashtag #rasheedatxpluralcode *  *Once done, copy the video link and paste in the box below" />
+                                <Label htmlFor="name" value="Reference Full name" />
                             </div>
                             <TextInput
-                                id="video_url"
-                                placeholder="Paste video link here"
-                                value={video_url}
-                                onChange={(e) => setvideo_url(e.target.value)}
+                                id="name"
+                                placeholder="Full name"
+                                value={name}
+                                onChange={(e) => setname(e.target.value)}
+                                required={true}
                             />
                         </div>
+                        <div className="mt-5">
+                            <div className="mb-2 block">
+                                <Label htmlFor="email" value="Reference email" />
+                            </div>
+                            <TextInput
+                                id="email"
+                                placeholder="name@company.com"
+                                value={email}
+                                onChange={(e) => setemail(e.target.value)}
+                                required={true}
+                            />
+                        </div>
+                        <div className="mt-5">
+                            <div className="mb-2 block">
+                                <Label className="text-gray-100" htmlFor="phone" value="Reference Phone Number" />
+                            </div>
+                            <TextInput
+                                id="phone"
+                                placeholder="+2347088639675"
+                                value={phone}
+                                onChange={(e) => setphone(e.target.value)}
+                                required={true}
+                            />
+                        </div>
+
+
                         <div className="w-full mt-12">
                             <button
                                 type="submit"
@@ -235,7 +271,7 @@ function AdmissionForm() {
                                         "Submit"
                                     )}
                                 </a>
-                            </button>{" "}
+                            </button>
                         </div>
                     </form>
                 </div>
