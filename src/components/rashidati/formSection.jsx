@@ -45,10 +45,10 @@ function FormSection() {
     formdata.append("city", city);
     formdata.append("address", address);
     formdata.append("phone_number", phone);
-    formdata.append("video_url", video_url);
+    formdata.append("video_link", video_url);
 
     const response = await axios.post(`${API_URL}scholarship_registeration`, formdata);
-    // console.log(response);
+    console.log(response);
     if (response.status === 200) {
       setloading(false);
       notifySuccess();

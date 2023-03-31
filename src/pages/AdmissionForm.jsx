@@ -46,12 +46,16 @@ function AdmissionForm() {
         formdata.append("phone_number", phone);
         formdata.append("video_url", video_url);
 
-        const response = await axios.post(`${API_URL}enroll_student`, formdata);
-        // console.log(response);
-        if (response.status === 200) {
-            setloading(false);
-            notifySuccess();
+        try {
+            const response = await axios.post(`${API_URL}enroll_student`, formdata);
+            if (response.status === 200) {
+                setloading(false);
+                notifySuccess();
+            }
+        } catch (error) {
+            
         }
+
     };
 
 
