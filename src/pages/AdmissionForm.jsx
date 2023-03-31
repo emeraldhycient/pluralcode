@@ -190,6 +190,7 @@ function AdmissionForm() {
                                 value={course_of_interest}
                                 onChange={(e) => setcourse_of_interest(e.target.value)}
                                 className="form-select block w-full mt-1 rounded-lg border border-gray-300 mb-2 text-gray-400"
+                                required
                             >
                                 <option>Course of Interest</option>
 
@@ -210,6 +211,7 @@ function AdmissionForm() {
                                 value={program_type}
                                 onChange={(e) => setprogram_type(e.target.value)}
                                 className="form-select block w-full mt-1 rounded-lg border border-gray-300 mb-2 text-gray-400"
+                                required
                             >
                                 <option>Program type</option>
                                <option value={"diploma"}>Diploma course</option>
