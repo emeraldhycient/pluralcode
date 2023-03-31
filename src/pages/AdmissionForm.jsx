@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Spinner, Modal, TextInput, Label } from "flowbite-react";
+import { Spinner, Modal, TextInput, Label, FileInput } from "flowbite-react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
@@ -13,12 +13,17 @@ function AdmissionForm() {
     const [email, setemail] = useState("");
     const [loading, setloading] = useState(false);
     const [city, setcity] = useState([])
-    const [gender, setgender] = useState("")
+    const [program_type, setprogram_type] = useState("")
+    const [course_of_interest, setcourse_of_interest] = useState("")
     const [state, setstate] = useState("")
     const [country, setcountry] = useState("")
     const [phone, setphone] = useState("")
     const [address, setaddress] = useState("")
-    const [video_url, setvideo_url] = useState("")
+    const [passport_photograph, setpassport_photograph] = useState("")
+    const [personal_id_photograph, setpersonal_id_photograph] = useState("")
+    const [reference_name, setreference_name] = useState("")
+    const [reference_phone, setreference_phone] = useState("")
+    const [reference_email, setreference_email] = useState("")
 
     const notifySuccess = () =>
         toast.success("registration successful ☺️!", {
@@ -36,15 +41,20 @@ function AdmissionForm() {
         setloading(true);
 
         const formdata = new FormData();
-        formdata.append("full_name", name);
+        formdata.append("name", name);
         formdata.append("email", email);
-        formdata.append("gender", gender);
-        formdata.append("state", state);
+        formdata.append("course_of_interest", course_of_interest);
+        formdata.append("state_of_residence", state);
         formdata.append("country", country);
         formdata.append("city", city);
         formdata.append("address", address);
         formdata.append("phone_number", phone);
-        formdata.append("video_url", video_url);
+        formdata.append("reference_name", reference_name);
+        formdata.append("reference_phone", reference_phone);
+        formdata.append("reference_email", reference_email);
+        formdata.append("program_type", program_type);
+        formdata.append("passport_photograph", passport_photograph);
+        formdata.append("personal_id_photograph", personal_id_photograph);
 
         try {
             const response = await axios.post(`${API_URL}enroll_student`, formdata);
@@ -53,11 +63,31 @@ function AdmissionForm() {
                 notifySuccess();
             }
         } catch (error) {
-            
+            setloading(false);
+            toast.error(error.response.data.message, {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
         }
 
     };
 
+    const [courses, setcourses] = useState([])
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const response = await axios.get(`${API_URL}bot_course_list`);
+            setcourses(response.data);
+        };
+        fetchData();
+    }
+        , []);
+    
 
     return (
         <section id="formsection">
@@ -93,9 +123,8 @@ function AdmissionForm() {
                             Disclaimer
                         </p>
                         <p className="font-gilroyregular text-[14px] font-extralight mb-16  mx-auto">
-                            These are the things required of you before filling this form
-                        </p>
-                        <p className="font-gilroyregular text-[14px] font-extralight mb-3  mx-auto">
+                            Please ensure that the name provided on the form is what you want on your certificate.                         </p>
+                        {/* <p className="font-gilroyregular text-[14px] font-extralight mb-3  mx-auto">
                             1) A Working Laptop
                         </p>
                         <p className="font-gilroyregular text-[14px] font-extralight mb-3  mx-auto">
@@ -103,7 +132,7 @@ function AdmissionForm() {
                         </p>
                         <p className="font-gilroyregular text-[14px] font-extralight mb-3  mx-auto">
                             3) A Great Story
-                        </p>
+                        </p> */}
                     </div>
                 </div>
                 <div className="flex justify-center items-center flex-col w-full order-last md:order-first">
@@ -152,18 +181,63 @@ function AdmissionForm() {
                                 required={true}
                             />
                         </div>
-                        {/* <div className="mt-5">
+                        <div className="mt-5">
                             <div className="mb-2 block">
-                                <Label className="text-gray-100" htmlFor="gender" value="gender" />
+                                <Label htmlFor="city" value="Course of Interest" />
                             </div>
-                            <TextInput
-                                id="phone"
-                                placeholder="male or female "
-                                value={gender}
-                                onChange={(e) => setgender(e.target.value)}
-                                required={true}
+                            <select
+                                id="bjuebsjsn"
+                                value={course_of_interest}
+                                onChange={(e) => setcourse_of_interest(e.target.value)}
+                                className="form-select block w-full mt-1 rounded-lg border border-gray-300 mb-2 text-gray-400"
+                            >
+                                <option>Course of Interest</option>
+
+                                {
+                                    courses.map((item) => (
+                                        <option value={item.name} key={item.id}>{item.name}</option>
+                                    ))
+                                }
+
+                            </select>
+                        </div>
+                        <div className="mt-5">
+                            <div className="mb-2 block">
+                                <Label htmlFor="city" value="Program Type" />
+                            </div>
+                            <select
+                                id="2swiwn"
+                                value={program_type}
+                                onChange={(e) => setprogram_type(e.target.value)}
+                                className="form-select block w-full mt-1 rounded-lg border border-gray-300 mb-2 text-gray-400"
+                            >
+                                <option>Program type</option>
+                               <option value={"diploma"}>Diploma course</option>
+                                <option value={"Certificate"}>Certificate course</option>
+                            </select>
+                        </div>
+                        <div className="mt-5">
+                            <div className="mb-2 block">
+                                <Label htmlFor="city" value="passport photograph" />
+                            </div>
+                            <FileInput
+                                id="file"
+                                onChange={(event) => {
+                                    setpassport_photograph(event.target.files[0])
+                                }}
                             />
-                        </div> */}
+                        </div>
+                        <div className="mt-5">
+                            <div className="mb-2 block">
+                                <Label htmlFor="city" value="personal id photograph" />
+                            </div>
+                            <FileInput
+                                id="file"
+                                onChange={(event) => {
+                                    setpersonal_id_photograph(event.target.files[0])
+                                }}
+                            />
+                        </div>
                         <div className="mt-5">
                             <div className="mb-2 block">
                                 <Label htmlFor="city" value="city" />
@@ -217,10 +291,10 @@ function AdmissionForm() {
                             data-aos="fade-right"
                             data-aos-duration="2000"
                         >
-                            Add Reference 
+                            Add Reference
                         </h1>
-                        
-                      
+
+
                         <div>
                             <div className="mb-2 block">
                                 <Label htmlFor="name" value="Reference Full name" />
@@ -228,8 +302,8 @@ function AdmissionForm() {
                             <TextInput
                                 id="name"
                                 placeholder="Full name"
-                                value={name}
-                                onChange={(e) => setname(e.target.value)}
+                                value={reference_name}
+                                onChange={(e) => setreference_name(e.target.value)}
                                 required={true}
                             />
                         </div>
@@ -240,8 +314,8 @@ function AdmissionForm() {
                             <TextInput
                                 id="email"
                                 placeholder="name@company.com"
-                                value={email}
-                                onChange={(e) => setemail(e.target.value)}
+                                value={reference_email}
+                                onChange={(e) => setreference_email(e.target.value)}
                                 required={true}
                             />
                         </div>
@@ -252,8 +326,8 @@ function AdmissionForm() {
                             <TextInput
                                 id="phone"
                                 placeholder="+2347088639675"
-                                value={phone}
-                                onChange={(e) => setphone(e.target.value)}
+                                value={reference_phone}
+                                onChange={(e) => setreference_phone(e.target.value)}
                                 required={true}
                             />
                         </div>

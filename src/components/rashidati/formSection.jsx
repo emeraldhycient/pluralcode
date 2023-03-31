@@ -20,6 +20,7 @@ function FormSection() {
   const [phone, setphone] = useState("")
   const [address, setaddress] = useState("")
   const [video_url, setvideo_url] = useState("")
+  const [course_of_interest, setcourse_of_interest] = useState("")
 
   const notifySuccess = () =>
     toast.success("registration successful ☺️!", {
@@ -46,12 +47,23 @@ function FormSection() {
     formdata.append("address", address);
     formdata.append("phone_number", phone);
     formdata.append("video_link", video_url);
+    formdata.append("course", course_of_interest);
 
     const response = await axios.post(`${API_URL}scholarship_registeration`, formdata);
     console.log(response);
     if (response.status === 200) {
       setloading(false);
       notifySuccess();
+    } else {
+      toast.error("unable to submit form", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
     }
   };
 
@@ -216,6 +228,21 @@ function FormSection() {
                 onChange={(e) => setaddress(e.target.value)}
                 required={true}
               />
+            </div>
+            <div className="mt-5">
+              <div className="mb-2 block">
+                <Label htmlFor="city" value="Course of Interest" />
+              </div>
+              <select
+                id="bjuebsjsn"
+                value={course_of_interest}
+                onChange={(e) => setcourse_of_interest(e.target.value)}
+                className="form-select block w-full mt-1 rounded-lg border border-gray-300 mb-2 text-gray-400"
+              >
+                <option>Course of Interest</option>
+                <option value={"product design"}>product design </option>
+                <option value={"web development"}>web development</option>
+              </select>
             </div>
             <div className="mt-5">
               <div className="mb-2 block">
