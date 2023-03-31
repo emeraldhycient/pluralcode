@@ -18,11 +18,11 @@ function ApplicationProcess() {
                 className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 w-11/12 md:w-10/12   mx-auto h-full w-full"
             >
 
-                <img src="https://i.im.ge/2023/03/23/D4emqm.Group-20659.png" alt="" />
-                <img src="https://i.im.ge/2023/03/23/D4ePF0.Group-20660.png" alt="" />
-                <img src="https://i.im.ge/2023/03/23/D4ebqJ.Group-20661.png" alt="" />
-                <img src="https://i.im.ge/2023/03/23/D4eJzY.Group-20662.png" alt="" />
-                <img src="https://i.im.ge/2023/03/23/DBM0Z6.Group-20663.png" alt="" />
+                <img loading='lazy' src="https://i.im.ge/2023/03/23/D4emqm.Group-20659.png" alt="" />
+                <img loading='lazy' src="https://i.im.ge/2023/03/23/D4ePF0.Group-20660.png" alt="" />
+                <img loading='lazy' src="https://i.im.ge/2023/03/23/D4ebqJ.Group-20661.png" alt="" />
+                <img loading='lazy' src="https://i.im.ge/2023/03/23/D4eJzY.Group-20662.png" alt="" />
+                <img loading='lazy' src="https://i.im.ge/2023/03/23/DBM0Z6.Group-20663.png" alt="" />
             </div>
         </section>
     )

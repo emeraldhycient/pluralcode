@@ -16,6 +16,7 @@ function CourseCard({ course }) {
       data-aos-duration="2000"
     >
       <img
+        loading='lazy'
         src={`${image}`}
         alt="course1"
         className="w-full h-50 rounded-tl-3xl rounded-br-3xl"

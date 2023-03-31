@@ -36,7 +36,7 @@ function HeroSection() {
           data-aos="fade-left"
           data-aos-duration="2000"
         >
-          <img src={"https://i.im.ge/2023/03/23/D4J3XX.Group-20657.png"} alt="product" className="w-[90%] " />
+          <img loading='lazy' src={"https://i.im.ge/2023/03/23/D4J3XX.Group-20657.png"} alt="product" className="w-[90%] " />
         </div>
       </div>
     </section>
