@@ -36,6 +36,7 @@ import Fees from "./pages/tuition/Fees";
 import Agile_Product_management from "./pages/agile/Product_management";
 import Ambassador from "./pages/rashidat/ambassador";
 import AdmissionForm from "./pages/AdmissionForm";
+import VerifyCertificate from "./pages/verifyCertificate/VerifyCertificate";
 
 function App() {
   useEffect(() => {
@@ -118,6 +119,7 @@ function App() {
         <Route path="/tuition-fees" element={<Fees />} />
         <Route path="/rasheedat-scholarship" element={<Ambassador />} />
         <Route path="/admission" element={<AdmissionForm />} />
+        <Route path="/verify-certificate" element={<VerifyCertificate />} />
       </Routes>
     </BrowserRouter>
   );

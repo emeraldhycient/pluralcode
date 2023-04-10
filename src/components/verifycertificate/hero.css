@@ -1,0 +1,23 @@
+.map {
+    /*   background: url(../../assets/images/mp3.svg) no-repeat right center;
+    background-size: cover;*/
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .map {
+        /* background: url(../../assets/images/map.png) no-repeat center center;
+        background-size: cover;*/
+        width: 100vw;
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .map {
+        /* background: url(../../assets/images/map.png) no-repeat center center;
+        background-size: cover;*/
+        width: 100vw;
+        height: 60vh;
+    }
+}

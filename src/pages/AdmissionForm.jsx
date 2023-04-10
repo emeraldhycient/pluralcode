@@ -25,6 +25,14 @@ function AdmissionForm() {
     const [reference_phone, setreference_phone] = useState("")
     const [reference_email, setreference_email] = useState("")
 
+    const [checked, setChecked] = React.useState(false);
+
+    const handleChange = () => {
+        setChecked(!checked);
+    };
+
+
+
     const notifySuccess = () =>
         toast.success("registration successful ☺️!", {
             position: "top-right",
@@ -38,33 +46,48 @@ function AdmissionForm() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setloading(true);
+      
 
-        const formdata = new FormData();
-        formdata.append("name", name);
-        formdata.append("email", email);
-        formdata.append("course_of_interest", course_of_interest);
-        formdata.append("state_of_residence", state);
-        formdata.append("country", country);
-        formdata.append("city", city);
-        formdata.append("address", address);
-        formdata.append("phone_number", phone);
-        formdata.append("reference_name", reference_name);
-        formdata.append("reference_phone", reference_phone);
-        formdata.append("reference_email", reference_email);
-        formdata.append("program_type", program_type);
-        formdata.append("passport_photograph", passport_photograph);
-        formdata.append("personal_id_photograph", personal_id_photograph);
+        if (checked) {
 
-        try {
-            const response = await axios.post(`${API_URL}enroll_student`, formdata);
-            if (response.status === 200) {
+            setloading(true);
+
+            const formdata = new FormData();
+            formdata.append("name", name);
+            formdata.append("email", email);
+            formdata.append("course_of_interest", course_of_interest);
+            formdata.append("state_of_residence", state);
+            formdata.append("country", country);
+            formdata.append("city", city);
+            formdata.append("address", address);
+            formdata.append("phone_number", phone);
+            formdata.append("reference_name", reference_name);
+            formdata.append("reference_phone", reference_phone);
+            formdata.append("reference_email", reference_email);
+            formdata.append("program_type", program_type);
+            formdata.append("passport_photograph", passport_photograph);
+            formdata.append("personal_id_photograph", personal_id_photograph);
+            
+            try {
+                const response = await axios.post(`${API_URL}enroll_student`, formdata);
+                if (response.status === 200) {
+                    setloading(false);
+                    notifySuccess();
+                }
+            } catch (error) {
                 setloading(false);
-                notifySuccess();
+                toast.error(error.response.data.message, {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
             }
-        } catch (error) {
-            setloading(false);
-            toast.error(error.response.data.message, {
+        } else {
+            toast.error("Please read and  accept our terms and conditions to proceed", {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -87,7 +110,9 @@ function AdmissionForm() {
         fetchData();
     }
         , []);
-    
+
+
+
 
     return (
         <section id="formsection">
@@ -214,7 +239,7 @@ function AdmissionForm() {
                                 required
                             >
                                 <option>Program type</option>
-                               <option value={"diploma"}>Diploma course</option>
+                                <option value={"diploma"}>Diploma course</option>
                                 <option value={"Certificate"}>Certificate course</option>
                             </select>
                         </div>
@@ -333,8 +358,11 @@ function AdmissionForm() {
                                 required={true}
                             />
                         </div>
-
-
+                        <div className="mt-5 flex items-center">
+                            <input type="checkbox" checked={checked}
+                                onChange={handleChange} className="mr-2 border-[1px] border-gray-300 rounded-sm" />
+                            <p className="text-gray-500">By clicking on Submit, you agree to our <a href="https://pluralcode.academy/payment/terms.html" className="text-amber-500">students policy</a></p>
+                        </div>
                         <div className="w-full mt-12">
                             <button
                                 type="submit"
