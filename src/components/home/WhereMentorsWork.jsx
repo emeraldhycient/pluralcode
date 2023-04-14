@@ -9,7 +9,7 @@ function WhereMentorsWork() {
           data-aos="fade-right"
           data-aos-duration="2000"
         >
-          Where Our Mentors Work
+          Where Our Talents Work
         </h1>
       </center>
       <div
