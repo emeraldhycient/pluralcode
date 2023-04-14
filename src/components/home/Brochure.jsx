@@ -28,7 +28,7 @@ function Brochure() {
                     <div className="text-center md:text-left hidden md:block">
                         <button className="bg-amber-500 text-[12px] text-white px-8 py-2 rounded  lg:w-fit flex justify-center items-center">
                             <a
-                                href="https://drive.google.com/file/d/1niU2GVqP4KODyePPlb6k6JxDGnFT1L96/view?usp=sharing" target={"_blank"} className="flex items-center"
+                                href="https://drive.google.com/file/d/1k1MDoS-VqL6ETrNx19rllM86CIzXcFgL/view?usp=sharing" target={"_blank"} className="flex items-center"
                             >
                                 Download Brochure
                             </a>

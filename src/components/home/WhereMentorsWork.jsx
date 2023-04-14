@@ -1,4 +1,4 @@
-import mentorswork from "../../assets/images/mentorswork1.png";
+import mentorswork from "../../assets/images/mentorswork.png";
 
 function WhereMentorsWork() {
   return (
