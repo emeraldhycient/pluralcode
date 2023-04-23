@@ -141,25 +141,8 @@ function AdmissionForm() {
                     </p>
                 </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-11/12 md:w-11/12 h-full w-full mx-auto">
-                <div className="flex justify-start items-center flex-col py-4 px-4">
-                    <div className="lg:h-[300px] bg-[#FFFFFF] w-full lg:w-8/12 rounded-[24px] p-10 shadow shadow-[0px -8.87px 55px -2.21742px rgba(248, 153, 29, 0.05), 0px 3.54787px 154px -2.6609px rgba(16, 24, 40, 0.03)]">
-                        <p className="font-gilroyregular text-[20px] font-medium mb-3  mx-auto text-center  text-[#222057]">
-                            Disclaimer
-                        </p>
-                        <p className="font-gilroyregular text-[14px] font-extralight mb-16  mx-auto">
-                            Please ensure that the name provided on the form is what you want on your certificate.                         </p>
-                        {/* <p className="font-gilroyregular text-[14px] font-extralight mb-3  mx-auto">
-                            1) A Working Laptop
-                        </p>
-                        <p className="font-gilroyregular text-[14px] font-extralight mb-3  mx-auto">
-                            2) Basic Knowledge of Computer Science
-                        </p>
-                        <p className="font-gilroyregular text-[14px] font-extralight mb-3  mx-auto">
-                            3) A Great Story
-                        </p> */}
-                    </div>
-                </div>
+            <div className=" w-11/12 md:w-6/12 h-full w-full mx-auto">
+                
                 <div className="flex justify-center items-center flex-col w-full order-last md:order-first">
 
                     <form onSubmit={handleSubmit} className=" rounded-3xl w-full py-12 px-4 md:p-12">
@@ -173,6 +156,7 @@ function AdmissionForm() {
                         <div>
                             <div className="mb-2 block">
                                 <Label htmlFor="name" value="Full name" />
+                                <p className="text-xs text-gray-400">Please ensure that the name provided on the form is what you want on your certificate.</p>
                             </div>
                             <TextInput
                                 id="name"
@@ -246,6 +230,7 @@ function AdmissionForm() {
                         <div className="mt-5">
                             <div className="mb-2 block">
                                 <Label htmlFor="city" value="passport photograph" />
+                                <p className="text-xs text-gray-400">Needed to visually identify all our students.</p>
                             </div>
                             <FileInput
                                 id="file"
@@ -256,7 +241,8 @@ function AdmissionForm() {
                         </div>
                         <div className="mt-5">
                             <div className="mb-2 block">
-                                <Label htmlFor="city" value="personal id photograph" />
+                                <Label htmlFor="city" value="Personal ID" />
+                                <p className="text-xs text-gray-400">Kindly upload a picture of your legal identity National id, driver’s license or passport.</p>
                             </div>
                             <FileInput
                                 id="file"
@@ -320,8 +306,7 @@ function AdmissionForm() {
                         >
                             Add Reference
                         </h1>
-
-
+                        <p className="text-xs text-gray-400 mb-4">Your references could be a parent, guardian, sibling or emergency contact. Kindly provide their contact information below.</p>
                         <div>
                             <div className="mb-2 block">
                                 <Label htmlFor="name" value="Reference Full name" />
