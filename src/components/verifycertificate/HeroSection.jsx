@@ -35,7 +35,7 @@ function HeroSection() {
 
   return (
     <>
-      <section className="h-fit  lg:h-screen w-screen">
+      <section className="h-fit  lg:h-screen w-screen pb-20 md:pb-5">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-0 w-full md:w-11/12 mx-auto h-full w-full">
           <div
             className="col-span-2 h-fit lg:h-screen flex flex-col justify-center items-center text-left w-full align-left mt-6 lg:-mt-8"
@@ -66,10 +66,9 @@ function HeroSection() {
       </section>
       {
         isValidCertificate ?
-        certData ?
-          <CertificateData data={certData} />
-          :
-            null
+        certData.first_name ?
+            <CertificateData data={certData} />
+            : null
           : <InvalidCert/>
       }
     </>
