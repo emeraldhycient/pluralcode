@@ -118,7 +118,7 @@ function App() {
         <Route path="/visit" element={<Visit />} />
         <Route path="/tuition-fees" element={<Fees />} />
         <Route path="/rasheedat-scholarship" element={<Ambassador />} />
-        <Route path="/admission" element={<AdmissionForm />} />
+        {/* <Route path="/admission" element={<AdmissionForm />} /> */}
         <Route path="/verify-certificate" element={<VerifyCertificate />} />
       </Routes>
     </BrowserRouter>
