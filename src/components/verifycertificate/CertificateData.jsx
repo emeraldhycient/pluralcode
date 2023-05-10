@@ -113,7 +113,7 @@ function CertificateData({ data }) {
                                 Accredited by
                             </p>
                             <div className="">
-                                <img src={data?.accredited_by} alt="" />
+                                <img src={data?.accredited_by || "https://pluralcode.institute/assets/logo.f6e516ab.svg"} alt="" />
                             </div>
                         </div>
                         {

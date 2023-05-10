@@ -59,8 +59,14 @@ function HeroSection() {
             className="col-span-3 map order-first lg:order-last   w-full h-full justify-center items-center  px-6 md:px-2"
             data-aos="fade-left"
             data-aos-duration="3000"
+            style={{
+              backgroundImage: `url(https://i.im.ge/2023/05/10/U587lx.Group-20667.png)`,
+              backgroundSize: "contain",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }}
           >
-            <img src={"https://i.im.ge/2023/05/09/UD3ghP.Group-20667.png"} className=" mx-auto" alt="" />
+            {/* <img src={"https://i.im.ge/2023/05/10/U587lx.Group-20667.png"} className=" mx-auto" alt="" /> */}
           </div>
         </div>
       </section>
