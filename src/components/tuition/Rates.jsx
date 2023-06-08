@@ -304,7 +304,7 @@ function Rates() {
                         <Table.Body className="divide-y">
                             {
                                 ratesData?.diploma?.diploma_data?.length > 0 ?
-                                    ratesData?.product.map((item) => (
+                                   ratesData?.diploma?.diploma_data?.map((item) => (
                                         <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
                                             <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
                                                 {item.name}
@@ -351,7 +351,7 @@ function Rates() {
                         <Table.Body className="divide-y">
                             {
                                 ratesData?.diploma?.diploma_software?.length > 0 ?
-                                    ratesData?.product.map((item) => (
+                                    ratesData?.diploma?.diploma_software?.map((item) => (
                                         <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
                                             <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
                                                 {item.name}
