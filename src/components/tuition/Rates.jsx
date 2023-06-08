@@ -235,6 +235,147 @@ function Rates() {
                     </Table>
                 </div>
             </div>
+            <div className="w-11/12 mx-auto my-8">
+                <h3 className='text-lg font-bold text-[#232057] ml-6'>PRODUCT SCHOOL:</h3>
+                <div className='w-11/12 mx-auto mt-4'>
+                    <Table>
+                        <Table.Head>
+                            <Table.HeadCell>
+                                Course
+                            </Table.HeadCell>
+                            <Table.HeadCell>
+                                Full Payment Plan
+                            </Table.HeadCell>
+                            <Table.HeadCell>
+                                Part Payment Plan
+                            </Table.HeadCell>
+                            <Table.HeadCell>
+                                Duration
+                            </Table.HeadCell>
+
+                        </Table.Head>
+                        <Table.Body className="divide-y">
+                            {
+                                ratesData?.product.length > 0 ?
+                                    ratesData?.product.map((item) => (
+                                        <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
+                                            <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
+                                                {item.name}
+                                            </Table.Cell>
+                                            <Table.Cell>
+                                                ₦{item?.course_fee}
+                                            </Table.Cell>
+                                            <Table.Cell>
+                                                ₦{item?.part_payment}
+                                            </Table.Cell>
+                                            <Table.Cell>
+                                                {item?.duration}
+                                            </Table.Cell>
+                                        </Table.Row>
+                                    )) : <Spinner
+                                        color="failure"
+                                        aria-label="Failure spinner example"
+                                    />
+                            }
+
+                        </Table.Body>
+                    </Table>
+                </div>
+            </div>
+            <div className="w-11/12 mx-auto my-8">
+                <h3 className='text-lg font-bold text-[#232057] ml-6'>DIPLOMA SCHOOL(data)</h3>
+                <div className='w-11/12 mx-auto mt-4'>
+                    <Table>
+                        <Table.Head>
+                            <Table.HeadCell>
+                                Course
+                            </Table.HeadCell>
+                            <Table.HeadCell>
+                                Full Payment Plan
+                            </Table.HeadCell>
+                            <Table.HeadCell>
+                                Part Payment Plan
+                            </Table.HeadCell>
+                            <Table.HeadCell>
+                                Duration
+                            </Table.HeadCell>
+
+                        </Table.Head>
+                        <Table.Body className="divide-y">
+                            {
+                                ratesData?.diploma?.diploma_data?.length > 0 ?
+                                    ratesData?.product.map((item) => (
+                                        <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
+                                            <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
+                                                {item.name}
+                                            </Table.Cell>
+                                            <Table.Cell>
+                                                ₦{item?.course_fee}
+                                            </Table.Cell>
+                                            <Table.Cell>
+                                                ₦{item?.part_payment}
+                                            </Table.Cell>
+                                            <Table.Cell>
+                                                {item?.duration}
+                                            </Table.Cell>
+                                        </Table.Row>
+                                    )) : <Spinner
+                                        color="failure"
+                                        aria-label="Failure spinner example"
+                                    />
+                            }
+
+                        </Table.Body>
+                    </Table>
+                </div>
+            </div>
+            <div className="w-11/12 mx-auto my-8">
+                <h3 className='text-lg font-bold text-[#232057] ml-6'>DIPLOMA SCHOOL(Software)</h3>
+                <div className='w-11/12 mx-auto mt-4'>
+                    <Table>
+                        <Table.Head>
+                            <Table.HeadCell>
+                                Course
+                            </Table.HeadCell>
+                            <Table.HeadCell>
+                                Full Payment Plan
+                            </Table.HeadCell>
+                            <Table.HeadCell>
+                                Part Payment Plan
+                            </Table.HeadCell>
+                            <Table.HeadCell>
+                                Duration
+                            </Table.HeadCell>
+
+                        </Table.Head>
+                        <Table.Body className="divide-y">
+                            {
+                                ratesData?.diploma?.diploma_software?.length > 0 ?
+                                    ratesData?.product.map((item) => (
+                                        <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
+                                            <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
+                                                {item.name}
+                                            </Table.Cell>
+                                            <Table.Cell>
+                                                ₦{item?.course_fee}
+                                            </Table.Cell>
+                                            <Table.Cell>
+                                                ₦{item?.part_payment}
+                                            </Table.Cell>
+                                            <Table.Cell>
+                                                {item?.duration}
+                                            </Table.Cell>
+                                        </Table.Row>
+                                    )) : <Spinner
+                                        color="failure"
+                                        aria-label="Failure spinner example"
+                                    />
+                            }
+
+                        </Table.Body>
+                    </Table>
+                </div>
+            </div>
         </section>
     )
 }
