@@ -10,6 +10,14 @@ const schoolsdata = {
         },
         {
             image: "",
+            title: "Business Analytics",
+            description: "Learn how to analyse data & build statistical models for practical, and real-life scenarios to inform business decisions in just 12 weeks.",
+            duration: "12weeks",
+            video_url: "https://res.cloudinary.com/gofitish/video/upload/v1658931416/videos/Plural_Code_Ad_-_Data_Analyst_awgthz.mp4",
+            link: "/student/courses/business-analytics"
+        },
+        {
+            image: "",
             title: "Data science",
             description: "Analyze and visualize data using data science tools.This course also dives into the basics of Data analytics and full fledged machine learning using an approachable, and well-known programming language, Python.",
             duration: "20weeks",

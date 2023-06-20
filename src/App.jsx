@@ -29,6 +29,7 @@ import ReactNotificationComponent from "./components/common/ReactNotificationCom
 import Profile from "./pages/profile/Profile";
 import DataEngineering from "./pages/courses/DataEngineering";
 import ProductMarketing from "./pages/courses/ProductMarketing";
+import BusinessAnalytics from "./pages/courses/BusinessAnalytics";
 
 
 function App() {
@@ -93,6 +94,7 @@ function App() {
           <Route path="/student/courses/product-management" element={<ProductManagement />} />
           <Route path="/student/courses/product-marketing" element={<ProductMarketing />} />
           <Route path="/student/courses/data-analytics" element={<DataAnalytics />} />
+          <Route path="/student/courses/business-analytics" element={<BusinessAnalytics />} />
           <Route path="/student/courses/data-science" element={<DataScience />} />
           <Route path="/student/courses/data-engineering" element={<DataEngineering />} />
           <Route path="/student/courses/software" element={<Software />} />
